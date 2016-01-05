@@ -27,5 +27,13 @@ namespace SoapServiceLibrary
         /// <returns></returns>
         [OperationContract]
         string[] FindAllDistinctCities();
+
+        /// <summary>
+        /// This method returns the count of the addresses by City
+        /// </summary>
+        /// <param name="city"></param>
+        /// <returns></returns>
+        [OperationContract]
+        int CountOfAddressesByCity(string city);
     }
 }

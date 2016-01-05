@@ -1,4 +1,5 @@
-﻿using System.Runtime.Serialization;
+﻿using System.Globalization;
+using System.Runtime.Serialization;
 
 namespace SoapServiceLibrary.Definitions
 {
@@ -35,5 +36,17 @@ namespace SoapServiceLibrary.Definitions
         /// </summary>
         [DataMember]
         public string Country { set; get; }
+
+        /// <summary>
+        /// Overriden for log
+        /// </summary>
+        /// <returns></returns>
+        public override string ToString()
+        {
+            return string.Format(
+                CultureInfo.InvariantCulture,
+                "StreetLine1={0}, StreetLine2={1}, City={2}, State={3}, Country={4}",
+                StreetLine1, StreetLine2, City, State, Country);
+        }
     }
 }
