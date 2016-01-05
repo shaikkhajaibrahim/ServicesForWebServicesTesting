@@ -20,5 +20,12 @@ namespace SoapServiceLibrary
         /// <param name="address"></param>
         [OperationContract]
         void AddAddress(Address address);
+
+        /// <summary>
+        /// This method returns all the Cities in the address
+        /// </summary>
+        /// <returns></returns>
+        [OperationContract]
+        string[] FindAllDistinctCities();
     }
 }

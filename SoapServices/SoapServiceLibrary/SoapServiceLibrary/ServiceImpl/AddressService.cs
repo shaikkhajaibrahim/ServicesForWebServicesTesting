@@ -33,7 +33,19 @@ namespace SoapServiceLibrary.ServiceImpl
             }
         }
 
-        
-        
+        /// <summary>
+        /// Returns all the distinct cites
+        /// </summary>
+        /// <returns></returns>
+        public string[] FindAllDistinctCities()
+        {
+            string[] cities = null;
+            using (EducationalInstitutionDbContext context = new EducationalInstitutionDbContext())
+            {
+                cities=context.Addresses.Select(item => item.City).Distinct().ToArray();
+            }
+            return cities;
+
+        }
     }
 }
