@@ -7,13 +7,13 @@ namespace SoapServices.DAL.Migrations
     using System.Resources;
     
     [GeneratedCode("EntityFramework.Migrations", "6.1.3-40302")]
-    public sealed partial class WithIdentity_2 : IMigrationMetadata
+    public sealed partial class First : IMigrationMetadata
     {
-        private readonly ResourceManager Resources = new ResourceManager(typeof(WithIdentity_2));
+        private readonly ResourceManager Resources = new ResourceManager(typeof(First));
         
         string IMigrationMetadata.Id
         {
-            get { return "201601040845178_WithIdentity_2"; }
+            get { return "201601050632479_First"; }
         }
         
         string IMigrationMetadata.Source

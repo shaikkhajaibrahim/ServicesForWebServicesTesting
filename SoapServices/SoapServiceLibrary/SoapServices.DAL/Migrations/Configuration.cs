@@ -11,6 +11,7 @@ namespace SoapServices.DAL.Migrations
         public Configuration()
         {
             AutomaticMigrationsEnabled = false;
+            SetSqlGenerator("MySql.Data.MySqlClient", new MySql.Data.Entity.MySqlMigrationSqlGenerator());
         }
 
         protected override void Seed(SoapServices.DAL.EducationalInstitution.EducationalInstitutionDbContext context)
@@ -37,23 +38,23 @@ namespace SoapServices.DAL.Migrations
             },
             new Address()
             {
-                City="Vijayawada",
-                Country="India",
-                State="Andhra Pradesh",
-                StreetLine1="Near Sai Convention Center"
+                City = "Vijayawada",
+                Country = "India",
+                State = "Andhra Pradesh",
+                StreetLine1 = "Near Sai Convention Center"
             }
             );
 
             context.ContactInformations.AddOrUpdate(
                 new ContactInformation
                 {
-                    PrimaryContactNumber="999999999",
-                    EmailId="soaptest1@mytrails.in"
+                    PrimaryContactNumber = "999999999",
+                    EmailId = "soaptest1@mytrails.in"
                 },
                 new ContactInformation
                 {
-                    PrimaryContactNumber="8888888888",
-                    EmailId="soaptest2@mytrails.in"
+                    PrimaryContactNumber = "8888888888",
+                    EmailId = "soaptest2@mytrails.in"
                 }
                 );
         }
