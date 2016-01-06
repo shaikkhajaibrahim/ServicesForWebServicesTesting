@@ -1,6 +1,6 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <asmv1:assembly xsi:schemaLocation="urn:schemas-microsoft-com:asm.v1 assembly.adaptive.xsd" manifestVersion="1.0" xmlns:asmv1="urn:schemas-microsoft-com:asm.v1" xmlns="urn:schemas-microsoft-com:asm.v2" xmlns:asmv2="urn:schemas-microsoft-com:asm.v2" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:co.v1="urn:schemas-microsoft-com:clickonce.v1" xmlns:asmv3="urn:schemas-microsoft-com:asm.v3" xmlns:dsig="http://www.w3.org/2000/09/xmldsig#" xmlns:co.v2="urn:schemas-microsoft-com:clickonce.v2">
-  <asmv1:assemblyIdentity name="SoapServiceBootStrapper.exe" version="1.0.0.0" publicKeyToken="69d049b2b4d43fd9" language="neutral" processorArchitecture="msil" type="win32" />
+  <asmv1:assemblyIdentity name="SoapServiceBootStrapper.exe" version="1.0.0.0" publicKeyToken="425ca1c7a1d07a16" language="neutral" processorArchitecture="msil" type="win32" />
   <application />
   <entryPoint>
     <assemblyIdentity name="SoapServiceBootStrapper" version="1.0.0.0" language="neutral" processorArchitecture="msil" />
@@ -102,48 +102,48 @@
     </dependentAssembly>
   </dependency>
   <dependency>
-    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="SoapServiceBootStrapper.exe" size="7112">
+    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="SoapServiceBootStrapper.exe" size="8136">
       <assemblyIdentity name="SoapServiceBootStrapper" version="1.0.0.0" language="neutral" processorArchitecture="msil" />
       <hash>
         <dsig:Transforms>
           <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
         </dsig:Transforms>
         <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
-        <dsig:DigestValue>1aiprB/86WigqJEhpNpE6IIFFdHb7fNlUzc0wA+aTmA=</dsig:DigestValue>
+        <dsig:DigestValue>EkyYOE2Sglr9rHkHfCA41L51tA9pk8WAPXyKHCHieeE=</dsig:DigestValue>
       </hash>
     </dependentAssembly>
   </dependency>
   <dependency>
-    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="SoapServiceLibrary.dll" size="9728">
+    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="SoapServiceLibrary.dll" size="13312">
       <assemblyIdentity name="SoapServiceLibrary" version="1.0.0.0" language="neutral" processorArchitecture="msil" />
       <hash>
         <dsig:Transforms>
           <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
         </dsig:Transforms>
         <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
-        <dsig:DigestValue>LfFBS05RDz5hCGGXik2ivVhDggFaKPLUyDz3bKf/KF8=</dsig:DigestValue>
+        <dsig:DigestValue>JQWPwNFq0I4Opn+/tMilSHa1J6kwZYrZMWKORCtqP/Y=</dsig:DigestValue>
       </hash>
     </dependentAssembly>
   </dependency>
   <dependency>
-    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="SoapServices.DAL.dll" size="26624">
+    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="SoapServices.DAL.dll" size="27136">
       <assemblyIdentity name="SoapServices.DAL" version="1.0.0.0" language="neutral" processorArchitecture="msil" />
       <hash>
         <dsig:Transforms>
           <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
         </dsig:Transforms>
         <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
-        <dsig:DigestValue>u0KL/oy708keEaHogblvpC8e1D6p1lNuExr98nG70dI=</dsig:DigestValue>
+        <dsig:DigestValue>7AdxYQ5JznKhilJKeuZytqFL0G/iurGLzzszrx+ipBI=</dsig:DigestValue>
       </hash>
     </dependentAssembly>
   </dependency>
-  <file name="SoapServiceBootStrapper.exe.config" size="4965">
+  <file name="SoapServiceBootStrapper.exe.config" size="6213">
     <hash>
       <dsig:Transforms>
         <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
       </dsig:Transforms>
       <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
-      <dsig:DigestValue>1R9uRKeps/YtQaDqei1qWrWmeSkrFGlZ1RnXt4ETeAI=</dsig:DigestValue>
+      <dsig:DigestValue>CMoxA4NTH/8vyCVXWsUCFIM0aBglyvJVlt8WFvBD8ew=</dsig:DigestValue>
     </hash>
   </file>
-<publisherIdentity name="CN=BROADCOM\khajasha" issuerKeyHash="ca1cde4b0185be86b4676518f4a9916365c03271" /><Signature Id="StrongNameSignature" xmlns="http://www.w3.org/2000/09/xmldsig#"><SignedInfo><CanonicalizationMethod Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#" /><SignatureMethod Algorithm="http://www.w3.org/2000/09/xmldsig#rsa-sha256" /><Reference URI=""><Transforms><Transform Algorithm="http://www.w3.org/2000/09/xmldsig#enveloped-signature" /><Transform Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#" /></Transforms><DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" /><DigestValue>B48HaI+msEEQEw6MEmfuyEg7P/lMcYr1XRGDD+8BgF4=</DigestValue></Reference></SignedInfo><SignatureValue>l67nKD8mZMUm9gsY1ViAFl1l5GLh5eal4w3ahDogS/T1BGV6WOSCtmDKpT2f5P5Mio/iM/ZOTs5Rrza52Xfd/bXuOLurZXEAlkwrS2GK3TIAsJZHk+UEr7iY5+nr0G6lXaXEhiaZ03NyG3rkqaoqLG7Q917mtTY5PrkcdI0mxgE=</SignatureValue><KeyInfo Id="StrongNameKeyInfo"><KeyValue><RSAKeyValue><Modulus>1NYpF1JUxC0oP/YaT8kTOtrv1Sfj6eSLG+0UJ7I4W2AnYthVnUBz24+ZXmv5Ykt77suJtBSmW4QSNHCV2xBxsFTokUjt6Y/84mrQtaUB2Q97Mr/l1opqc5AIhNdFGwuP18iJdCkrmFaPhCh55LnwpY/Aai78YlRCUywNPFFP3BE=</Modulus><Exponent>AQAB</Exponent></RSAKeyValue></KeyValue><msrel:RelData xmlns:msrel="http://schemas.microsoft.com/windows/rel/2005/reldata"><r:license xmlns:r="urn:mpeg:mpeg21:2003:01-REL-R-NS" xmlns:as="http://schemas.microsoft.com/windows/pki/2005/Authenticode"><r:grant><as:ManifestInformation Hash="5e8001ef0f83115df58a714cf93f3b48c8ee67128c0e131041b0a68f68078f07" Description="" Url=""><as:assemblyIdentity name="SoapServiceBootStrapper.exe" version="1.0.0.0" publicKeyToken="69d049b2b4d43fd9" language="neutral" processorArchitecture="msil" type="win32" /></as:ManifestInformation><as:SignedBy /><as:AuthenticodePublisher><as:X509SubjectName>CN=BROADCOM\khajasha</as:X509SubjectName></as:AuthenticodePublisher></r:grant><r:issuer><Signature Id="AuthenticodeSignature" xmlns="http://www.w3.org/2000/09/xmldsig#"><SignedInfo><CanonicalizationMethod Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#" /><SignatureMethod Algorithm="http://www.w3.org/2000/09/xmldsig#rsa-sha256" /><Reference URI=""><Transforms><Transform Algorithm="http://www.w3.org/2000/09/xmldsig#enveloped-signature" /><Transform Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#" /></Transforms><DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" /><DigestValue>xyO2tEVl1Blr26FUWHWUD0mFvl/TlkfEEVZSGXoECRw=</DigestValue></Reference></SignedInfo><SignatureValue>qa4GBP7xhuJfO27yjo6NciDenolDbL8CgBjk3Q18owXrasB7Az0k3S/eucpnCrFLcGHWFMSuHEX4vpS2uPzqFfR3iQvs9LUzeug+fuoqbUTKq5Gc/ZolWyJclcRBg/wxhs16lMYaMgzQA6nS9aCVOvf0uFRMETYkw8JiRS/YruE=</SignatureValue><KeyInfo><KeyValue><RSAKeyValue><Modulus>1NYpF1JUxC0oP/YaT8kTOtrv1Sfj6eSLG+0UJ7I4W2AnYthVnUBz24+ZXmv5Ykt77suJtBSmW4QSNHCV2xBxsFTokUjt6Y/84mrQtaUB2Q97Mr/l1opqc5AIhNdFGwuP18iJdCkrmFaPhCh55LnwpY/Aai78YlRCUywNPFFP3BE=</Modulus><Exponent>AQAB</Exponent></RSAKeyValue></KeyValue><X509Data><X509Certificate>MIIB3TCCAUagAwIBAgIQE59lbCDab41FsQGK2Zy6UDANBgkqhkiG9w0BAQsFADAtMSswKQYDVQQDHiIAQgBSAE8AQQBEAEMATwBNAFwAawBoAGEAagBhAHMAaABhMB4XDTE2MDEwNjA2MjUyNFoXDTE3MDEwNTEyMjUyNFowLTErMCkGA1UEAx4iAEIAUgBPAEEARABDAE8ATQBcAGsAaABhAGoAYQBzAGgAYTCBnzANBgkqhkiG9w0BAQEFAAOBjQAwgYkCgYEA1NYpF1JUxC0oP/YaT8kTOtrv1Sfj6eSLG+0UJ7I4W2AnYthVnUBz24+ZXmv5Ykt77suJtBSmW4QSNHCV2xBxsFTokUjt6Y/84mrQtaUB2Q97Mr/l1opqc5AIhNdFGwuP18iJdCkrmFaPhCh55LnwpY/Aai78YlRCUywNPFFP3BECAwEAATANBgkqhkiG9w0BAQsFAAOBgQAftugYcxv9p37fqtlZmMTNvwBocKkgYkMdrggh4pUcg5i60+xLSTrfcN1EdzIKHqbqkB4Lli1XwQuYpwxoL/vmMMK0Xo6K4dApBxPK0UlQBmJb2/znuFnnGzHGo+N/mX6cGigXhYi8h4VS8Wqzs7rqOU4St7fbIkuX0X7kR1nQ4Q==</X509Certificate></X509Data></KeyInfo></Signature></r:issuer></r:license></msrel:RelData></KeyInfo></Signature></asmv1:assembly>
+<publisherIdentity name="CN=BROADCOM\khajasha" issuerKeyHash="632ea960d4af53126874622e663c4c297538077e" /><Signature Id="StrongNameSignature" xmlns="http://www.w3.org/2000/09/xmldsig#"><SignedInfo><CanonicalizationMethod Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#" /><SignatureMethod Algorithm="http://www.w3.org/2000/09/xmldsig#rsa-sha256" /><Reference URI=""><Transforms><Transform Algorithm="http://www.w3.org/2000/09/xmldsig#enveloped-signature" /><Transform Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#" /></Transforms><DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" /><DigestValue>P6hNEdXqAtADKTIMSLu/bJWlq/mp2oR7+01frnNdCBI=</DigestValue></Reference></SignedInfo><SignatureValue>VI1riIR4EyArO5ZPp3+sCHfYM5bz8AEGjhpRhK59C9Ov9I0A30fv4W/0ycS25bVEb+TQfx8u4hLW6RpY0XjMPEjbECqNWJZToJwS3OYsvlvXKZoCL2AtAnpDd1bI4Rp+3If8yUKN1vOZ8hSALMsjvrurN9m5COwcXruc1bV3sn4=</SignatureValue><KeyInfo Id="StrongNameKeyInfo"><KeyValue><RSAKeyValue><Modulus>oCv+bJoitTvXwv7Km3Rul8n117Xx94a/d6IPtVreAP0KQtJBwXnDCXNGaU86jeqOGiOYX+VDor9IPRwjrR2dBPGkCfJ5oiCXLQsbANysBxkH94p6xbFp8/bs3N35niuVAJM2ozUf0ECGf/qelM8nSHYrj+h2lfhzZyFD5ogBL9k=</Modulus><Exponent>AQAB</Exponent></RSAKeyValue></KeyValue><msrel:RelData xmlns:msrel="http://schemas.microsoft.com/windows/rel/2005/reldata"><r:license xmlns:r="urn:mpeg:mpeg21:2003:01-REL-R-NS" xmlns:as="http://schemas.microsoft.com/windows/pki/2005/Authenticode"><r:grant><as:ManifestInformation Hash="12085d73ae5f4dfb7b84daa9f9aba5956cbfbb480c322903d002ead5114da83f" Description="" Url=""><as:assemblyIdentity name="SoapServiceBootStrapper.exe" version="1.0.0.0" publicKeyToken="425ca1c7a1d07a16" language="neutral" processorArchitecture="msil" type="win32" /></as:ManifestInformation><as:SignedBy /><as:AuthenticodePublisher><as:X509SubjectName>CN=BROADCOM\khajasha</as:X509SubjectName></as:AuthenticodePublisher></r:grant><r:issuer><Signature Id="AuthenticodeSignature" xmlns="http://www.w3.org/2000/09/xmldsig#"><SignedInfo><CanonicalizationMethod Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#" /><SignatureMethod Algorithm="http://www.w3.org/2000/09/xmldsig#rsa-sha256" /><Reference URI=""><Transforms><Transform Algorithm="http://www.w3.org/2000/09/xmldsig#enveloped-signature" /><Transform Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#" /></Transforms><DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" /><DigestValue>0Q5H5ayJSn50xnmr2jTugz2JNqZR+CMdFg7kVwnMSMI=</DigestValue></Reference></SignedInfo><SignatureValue>kKz/jtYd+hKEZ3NBKi3aZZD9vFcxhX9n0E7Yh509Rjl5iGp11Nq40K/gQzefIYuwy7QzDSqrInLTP50c3gUlBADXw7rYJneloicRn92zn6A/92JzQGaGIrcjuiERk3/Mky4VSSy+ZSRaXmNF2llUpvXgPv/oWL1H2vVT+miF2iQ=</SignatureValue><KeyInfo><KeyValue><RSAKeyValue><Modulus>oCv+bJoitTvXwv7Km3Rul8n117Xx94a/d6IPtVreAP0KQtJBwXnDCXNGaU86jeqOGiOYX+VDor9IPRwjrR2dBPGkCfJ5oiCXLQsbANysBxkH94p6xbFp8/bs3N35niuVAJM2ozUf0ECGf/qelM8nSHYrj+h2lfhzZyFD5ogBL9k=</Modulus><Exponent>AQAB</Exponent></RSAKeyValue></KeyValue><X509Data><X509Certificate>MIIB3TCCAUagAwIBAgIQOEfcVUltibpCMpZLtAx/ojANBgkqhkiG9w0BAQsFADAtMSswKQYDVQQDHiIAQgBSAE8AQQBEAEMATwBNAFwAawBoAGEAagBhAHMAaABhMB4XDTE2MDEwNjA3MjY1NFoXDTE3MDEwNTEzMjY1NFowLTErMCkGA1UEAx4iAEIAUgBPAEEARABDAE8ATQBcAGsAaABhAGoAYQBzAGgAYTCBnzANBgkqhkiG9w0BAQEFAAOBjQAwgYkCgYEAoCv+bJoitTvXwv7Km3Rul8n117Xx94a/d6IPtVreAP0KQtJBwXnDCXNGaU86jeqOGiOYX+VDor9IPRwjrR2dBPGkCfJ5oiCXLQsbANysBxkH94p6xbFp8/bs3N35niuVAJM2ozUf0ECGf/qelM8nSHYrj+h2lfhzZyFD5ogBL9kCAwEAATANBgkqhkiG9w0BAQsFAAOBgQBXIfL8WKoLT7g5jNM/3mn7z8Kn7Fpwpjp++ux7kizgziwbRxNVAz9klUzbIRHCLHezu5UhWHQJPqUIOAS2TkljgW4CgmoiaFHB7E5hgsaK1fq1yZvqA8HI5/SCRxbZaAwQpZTA3YPQ/QBaUjLl6g6eqxnqIEwZVlQKc/OKo9G+XA==</X509Certificate></X509Data></KeyInfo></Signature></r:issuer></r:license></msrel:RelData></KeyInfo></Signature></asmv1:assembly>
