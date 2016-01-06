@@ -59,11 +59,14 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Definitions\Address.cs" />
+    <Compile Include="Definitions\ContactInformation.cs" />
     <Compile Include="IAddressService.cs" />
+    <Compile Include="IContactInfoService.cs" />
     <Compile Include="IService1.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Service1.cs" />
     <Compile Include="ServiceImpl\AddressService.cs" />
+    <Compile Include="ServiceImpl\ContactInfoService.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
