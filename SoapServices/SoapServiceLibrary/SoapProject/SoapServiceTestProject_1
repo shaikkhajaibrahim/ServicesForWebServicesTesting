@@ -226,6 +226,12 @@
   <wsdl:message name="IContactInfoService_GetAllContactInformations_OutputMessage">
     <wsdl:part name="parameters" element="tns:GetAllContactInformationsResponse"/>
   </wsdl:message>
+  <wsdl:message name="IContactInfoService_DeleteContactsByEmailId_InputMessage">
+    <wsdl:part name="parameters" element="tns:DeleteContactsByEmailId"/>
+  </wsdl:message>
+  <wsdl:message name="IContactInfoService_DeleteContactsByEmailId_OutputMessage">
+    <wsdl:part name="parameters" element="tns:DeleteContactsByEmailIdResponse"/>
+  </wsdl:message>
   <wsdl:portType name="IContactInfoService">
     <wsdl:operation name="AddContactInfo">
       <wsdl:input wsaw:Action="http://tempuri.org/IContactInfoService/AddContactInfo" message="tns:IContactInfoService_AddContactInfo_InputMessage"/>
@@ -234,6 +240,10 @@
     <wsdl:operation name="GetAllContactInformations">
       <wsdl:input wsaw:Action="http://tempuri.org/IContactInfoService/GetAllContactInformations" message="tns:IContactInfoService_GetAllContactInformations_InputMessage"/>
       <wsdl:output wsaw:Action="http://tempuri.org/IContactInfoService/GetAllContactInformationsResponse" message="tns:IContactInfoService_GetAllContactInformations_OutputMessage"/>
+    </wsdl:operation>
+    <wsdl:operation name="DeleteContactsByEmailId">
+      <wsdl:input wsaw:Action="http://tempuri.org/IContactInfoService/DeleteContactsByEmailId" message="tns:IContactInfoService_DeleteContactsByEmailId_InputMessage"/>
+      <wsdl:output wsaw:Action="http://tempuri.org/IContactInfoService/DeleteContactsByEmailIdResponse" message="tns:IContactInfoService_DeleteContactsByEmailId_OutputMessage"/>
     </wsdl:operation>
   </wsdl:portType>
   <wsdl:binding name="BasicHttpBinding_IContactInfoService" type="tns:IContactInfoService">
@@ -249,6 +259,15 @@
     </wsdl:operation>
     <wsdl:operation name="GetAllContactInformations">
       <soap:operation soapAction="http://tempuri.org/IContactInfoService/GetAllContactInformations" style="document"/>
+      <wsdl:input>
+        <soap:body use="literal"/>
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal"/>
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="DeleteContactsByEmailId">
+      <soap:operation soapAction="http://tempuri.org/IContactInfoService/DeleteContactsByEmailId" style="document"/>
       <wsdl:input>
         <soap:body use="literal"/>
       </wsdl:input>
@@ -287,6 +306,20 @@
     <xs:complexType>
       <xs:sequence>
         <xs:element minOccurs="0" name="GetAllContactInformationsResult" nillable="true" type="q2:ArrayOfContactInformation" xmlns:q2="http://schemas.datacontract.org/2004/07/SoapServiceLibrary.Definitions"/>
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="DeleteContactsByEmailId">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="emailId" nillable="true" type="xs:string"/>
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="DeleteContactsByEmailIdResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="DeleteContactsByEmailIdResult" type="xs:int"/>
       </xs:sequence>
     </xs:complexType>
   </xs:element>
@@ -348,33 +381,41 @@
   <xs:attribute name="FactoryType" type="xs:QName"/>
   <xs:attribute name="Id" type="xs:ID"/>
   <xs:attribute name="Ref" type="xs:IDREF"/>
-</xs:schema>]]></con:content><con:type>http://www.w3.org/2001/XMLSchema</con:type></con:part></con:definitionCache><con:endpoints><con:endpoint>http://localhost:8733/SoapServiceLibrary/ContactInfoService/</con:endpoint></con:endpoints><con:operation id="c12806bd-558f-413e-a368-5373a74413c1" isOneWay="false" action="http://tempuri.org/IContactInfoService/AddContactInfo" name="AddContactInfo" bindingOperationName="AddContactInfo" type="Request-Response" inputName="" receivesAttachments="false" sendsAttachments="false" anonymous="optional"><con:settings/><con:call id="a4408db2-2b19-44d3-8486-c6e74924a54c" name="Request 1"><con:settings/><con:encoding>UTF-8</con:encoding><con:endpoint>http://localhost:8733/SoapServiceLibrary/ContactInfoService/</con:endpoint><con:request><![CDATA[<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:tem="http://tempuri.org/" xmlns:soap="http://schemas.datacontract.org/2004/07/SoapServiceLibrary.Definitions">\r
+</xs:schema>]]></con:content><con:type>http://www.w3.org/2001/XMLSchema</con:type></con:part></con:definitionCache><con:endpoints><con:endpoint>http://localhost:8733/SoapServiceLibrary/ContactInfoService/</con:endpoint></con:endpoints><con:operation id="c12806bd-558f-413e-a368-5373a74413c1" isOneWay="false" action="http://tempuri.org/IContactInfoService/AddContactInfo" name="AddContactInfo" bindingOperationName="AddContactInfo" type="Request-Response" inputName="" receivesAttachments="false" sendsAttachments="false" anonymous="optional"><con:settings/><con:call id="a4408db2-2b19-44d3-8486-c6e74924a54c" name="Request 1"><con:settings><con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;xml-fragment/></con:setting></con:settings><con:encoding>UTF-8</con:encoding><con:endpoint>http://localhost:8733/SoapServiceLibrary/ContactInfoService/</con:endpoint><con:request><![CDATA[<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:tem="http://tempuri.org/" xmlns:soap="http://schemas.datacontract.org/2004/07/SoapServiceLibrary.Definitions">\r
    <soapenv:Header/>\r
    <soapenv:Body>\r
       <tem:AddContactInfo>\r
          <!--Optional:-->\r
          <tem:contactInformation>\r
             <!--Optional:-->\r
-            <soap:EmailId>?</soap:EmailId>\r
+            <soap:EmailId>shaik.khaja.ibrahim@live.in</soap:EmailId>\r
             <!--Optional:-->\r
-            <soap:FacebookId>?</soap:FacebookId>\r
+            <soap:FacebookId>shaikkhajaibrahim</soap:FacebookId>\r
             <!--Optional:-->\r
-            <soap:LinkedInId>?</soap:LinkedInId>\r
+            <soap:LinkedInId>shaikkhajaibrahim</soap:LinkedInId>\r
             <!--Optional:-->\r
-            <soap:PrimaryContactNumber>?</soap:PrimaryContactNumber>\r
+            <soap:PrimaryContactNumber>9972110414</soap:PrimaryContactNumber>\r
             <!--Optional:-->\r
-            <soap:SecondaryContactNumber>?</soap:SecondaryContactNumber>\r
+            <soap:SecondaryContactNumber>8088110414</soap:SecondaryContactNumber>\r
             <!--Optional:-->\r
-            <soap:SkypeId>?</soap:SkypeId>\r
+            <soap:SkypeId>shaikkhajaibrahim</soap:SkypeId>\r
          </tem:contactInformation>\r
       </tem:AddContactInfo>\r
    </soapenv:Body>\r
-</soapenv:Envelope>]]></con:request><con:wsaConfig mustUnderstand="NONE" version="200508" action="http://tempuri.org/IContactInfoService/AddContactInfo"/></con:call></con:operation><con:operation id="364f1c2d-2687-4c61-8bfc-2575ba403d6c" isOneWay="false" action="http://tempuri.org/IContactInfoService/GetAllContactInformations" name="GetAllContactInformations" bindingOperationName="GetAllContactInformations" type="Request-Response" inputName="" receivesAttachments="false" sendsAttachments="false" anonymous="optional"><con:settings/><con:call id="7c99de22-831e-4bad-9971-9a48c5066473" name="Request 1"><con:settings><con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;xml-fragment/></con:setting></con:settings><con:encoding>UTF-8</con:encoding><con:endpoint>http://localhost:8733/SoapServiceLibrary/ContactInfoService/</con:endpoint><con:request><![CDATA[<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:tem="http://tempuri.org/">\r
+</soapenv:Envelope>]]></con:request><con:credentials><con:authType>No Authorization</con:authType></con:credentials><con:jmsConfig JMSDeliveryMode="PERSISTENT"/><con:jmsPropertyConfig/><con:wsaConfig mustUnderstand="NONE" version="200508" action="http://tempuri.org/IContactInfoService/AddContactInfo"/><con:wsrmConfig version="1.2"/></con:call></con:operation><con:operation id="364f1c2d-2687-4c61-8bfc-2575ba403d6c" isOneWay="false" action="http://tempuri.org/IContactInfoService/GetAllContactInformations" name="GetAllContactInformations" bindingOperationName="GetAllContactInformations" type="Request-Response" inputName="" receivesAttachments="false" sendsAttachments="false" anonymous="optional"><con:settings/><con:call id="7c99de22-831e-4bad-9971-9a48c5066473" name="Request 1"><con:settings><con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;xml-fragment/></con:setting></con:settings><con:encoding>UTF-8</con:encoding><con:endpoint>http://localhost:8733/SoapServiceLibrary/ContactInfoService/</con:endpoint><con:request><![CDATA[<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:tem="http://tempuri.org/">\r
    <soapenv:Header/>\r
    <soapenv:Body>\r
       <tem:GetAllContactInformations/>\r
    </soapenv:Body>\r
-</soapenv:Envelope>]]></con:request><con:credentials><con:authType>No Authorization</con:authType></con:credentials><con:jmsConfig JMSDeliveryMode="PERSISTENT"/><con:jmsPropertyConfig/><con:wsaConfig mustUnderstand="NONE" version="200508" action="http://tempuri.org/IContactInfoService/GetAllContactInformations"/><con:wsrmConfig version="1.2"/></con:call></con:operation></con:interface><con:testSuite id="97ba8bd2-56ee-419c-9d9d-fe07e17bee35" name="AddressService"><con:settings/><con:runType>SEQUENTIAL</con:runType><con:testCase id="d2404f4a-3769-4a94-b278-773e35338737" failOnError="true" failTestCaseOnErrors="true" keepSession="false" maxResults="0" name="AddressService_Positive_NewCity" searchProperties="true"><con:settings/><con:testStep type="request" name="CountOfToBeAddedCity" id="4f754259-fe7e-4ce2-a240-6ae923cf5cd2"><con:settings/><con:config xsi:type="con:RequestStep" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"><con:interface>BasicHttpBinding_IAddressService</con:interface><con:operation>CountOfAddressesByCity</con:operation><con:request name="CountOfToBeAddedCity" id="bedd7ba5-0f4b-424f-9f9b-946d523fea1a"><con:settings><con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;xml-fragment/></con:setting></con:settings><con:encoding>UTF-8</con:encoding><con:endpoint>http://localhost:8733/SoapServiceLibrary/AddressService/</con:endpoint><con:request><![CDATA[<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:tem="http://tempuri.org/">\r
+</soapenv:Envelope>]]></con:request><con:credentials><con:authType>No Authorization</con:authType></con:credentials><con:jmsConfig JMSDeliveryMode="PERSISTENT"/><con:jmsPropertyConfig/><con:wsaConfig mustUnderstand="NONE" version="200508" action="http://tempuri.org/IContactInfoService/GetAllContactInformations"/><con:wsrmConfig version="1.2"/></con:call></con:operation><con:operation id="18fac312-ab24-4c1d-a2a7-e7e5a9419c9b" isOneWay="false" action="http://tempuri.org/IContactInfoService/DeleteContactsByEmailId" name="DeleteContactsByEmailId" bindingOperationName="DeleteContactsByEmailId" type="Request-Response" inputName="" receivesAttachments="false" sendsAttachments="false" anonymous="optional"><con:settings/><con:call id="e27574b1-e278-4f34-88d1-34c5c36e1720" name="Request 1"><con:settings/><con:encoding>UTF-8</con:encoding><con:endpoint>http://localhost:8733/SoapServiceLibrary/ContactInfoService/</con:endpoint><con:request><![CDATA[<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:tem="http://tempuri.org/">\r
+   <soapenv:Header/>\r
+   <soapenv:Body>\r
+      <tem:DeleteContactsByEmailId>\r
+         <!--Optional:-->\r
+         <tem:emailId>?</tem:emailId>\r
+      </tem:DeleteContactsByEmailId>\r
+   </soapenv:Body>\r
+</soapenv:Envelope>]]></con:request><con:wsaConfig mustUnderstand="NONE" version="200508" action="http://tempuri.org/IContactInfoService/DeleteContactsByEmailId"/></con:call></con:operation></con:interface><con:testSuite id="97ba8bd2-56ee-419c-9d9d-fe07e17bee35" name="AddressService"><con:settings/><con:runType>SEQUENTIAL</con:runType><con:testCase id="d2404f4a-3769-4a94-b278-773e35338737" failOnError="true" failTestCaseOnErrors="true" keepSession="false" maxResults="0" name="AddressService_Positive_NewCity" searchProperties="true"><con:settings/><con:testStep type="request" name="CountOfToBeAddedCity" id="4f754259-fe7e-4ce2-a240-6ae923cf5cd2"><con:settings/><con:config xsi:type="con:RequestStep" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"><con:interface>BasicHttpBinding_IAddressService</con:interface><con:operation>CountOfAddressesByCity</con:operation><con:request name="CountOfToBeAddedCity" id="bedd7ba5-0f4b-424f-9f9b-946d523fea1a"><con:settings><con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;xml-fragment/></con:setting></con:settings><con:encoding>UTF-8</con:encoding><con:endpoint>http://localhost:8733/SoapServiceLibrary/AddressService/</con:endpoint><con:request><![CDATA[<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:tem="http://tempuri.org/">\r
    <soapenv:Header/>\r
    <soapenv:Body>\r
       <tem:CountOfAddressesByCity>\r
@@ -382,7 +423,7 @@
          <tem:city>Bangalore</tem:city>\r
       </tem:CountOfAddressesByCity>\r
    </soapenv:Body>\r
-</soapenv:Envelope>]]></con:request><con:assertion type="SOAP Response" id="25a7674a-3b0d-41f4-ab1a-1af0c807b8ff"/><con:credentials><con:authType>No Authorization</con:authType></con:credentials><con:jmsConfig JMSDeliveryMode="PERSISTENT"/><con:jmsPropertyConfig/><con:wsaConfig mustUnderstand="NONE" version="200508"/><con:wsrmConfig version="1.2"/></con:request></con:config></con:testStep><con:testStep type="request" name="PositiveRequest" id="37c6f362-c260-44ad-8cb7-087fd6df6957"><con:settings/><con:config xsi:type="con:RequestStep" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"><con:interface>BasicHttpBinding_IAddressService</con:interface><con:operation>AddAddress</con:operation><con:request name="PositiveRequest" id="4971e7b3-392e-4491-8946-ac9b8ff3d451"><con:settings><con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;xml-fragment/></con:setting></con:settings><con:encoding>UTF-8</con:encoding><con:endpoint>http://localhost:8733/SoapServiceLibrary/AddressService/</con:endpoint><con:request><![CDATA[<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:tem="http://tempuri.org/" xmlns:soap="http://schemas.datacontract.org/2004/07/SoapServiceLibrary.Definitions">\r
+</soapenv:Envelope>]]></con:request><con:assertion type="SOAP Response" id="25a7674a-3b0d-41f4-ab1a-1af0c807b8ff"/><con:assertion type="Valid HTTP Status Codes" id="2758f47d-7a48-460d-b507-a3ad2932bcc6" name="Valid HTTP Status Codes"><con:configuration><codes>200</codes></con:configuration></con:assertion><con:credentials><con:authType>No Authorization</con:authType></con:credentials><con:jmsConfig JMSDeliveryMode="PERSISTENT"/><con:jmsPropertyConfig/><con:wsaConfig mustUnderstand="NONE" version="200508"/><con:wsrmConfig version="1.2"/></con:request></con:config></con:testStep><con:testStep type="request" name="PositiveRequest" id="37c6f362-c260-44ad-8cb7-087fd6df6957"><con:settings/><con:config xsi:type="con:RequestStep" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"><con:interface>BasicHttpBinding_IAddressService</con:interface><con:operation>AddAddress</con:operation><con:request name="PositiveRequest" id="4971e7b3-392e-4491-8946-ac9b8ff3d451"><con:settings><con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;xml-fragment/></con:setting></con:settings><con:encoding>UTF-8</con:encoding><con:endpoint>http://localhost:8733/SoapServiceLibrary/AddressService/</con:endpoint><con:request><![CDATA[<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:tem="http://tempuri.org/" xmlns:soap="http://schemas.datacontract.org/2004/07/SoapServiceLibrary.Definitions">\r
    <soapenv:Header/>\r
    <soapenv:Body>\r
       <tem:AddAddress>\r
@@ -401,12 +442,16 @@
          </tem:address>\r
       </tem:AddAddress>\r
    </soapenv:Body>\r
-</soapenv:Envelope>]]></con:request><con:assertion type="SOAP Response" id="82f21dc4-6f47-43d3-b35c-d55d11202460"/><con:credentials><con:authType>No Authorization</con:authType></con:credentials><con:jmsConfig JMSDeliveryMode="PERSISTENT"/><con:jmsPropertyConfig/><con:wsaConfig mustUnderstand="NONE" version="200508"/><con:wsrmConfig version="1.2"/></con:request></con:config></con:testStep><con:testStep type="request" name="FindNewlyAddedCity" id="38cf32d1-83ea-4dee-9703-e73a3a2be667"><con:settings/><con:config xsi:type="con:RequestStep" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"><con:interface>BasicHttpBinding_IAddressService</con:interface><con:operation>FindAllDistinctCities</con:operation><con:request name="FindNewlyAddedCity" id="237fdc8e-de64-4ce3-84bc-87d7407d17a5"><con:settings><con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;xml-fragment/></con:setting></con:settings><con:encoding>UTF-8</con:encoding><con:endpoint>http://localhost:8733/SoapServiceLibrary/AddressService/</con:endpoint><con:request><![CDATA[<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:tem="http://tempuri.org/">\r
+</soapenv:Envelope>]]></con:request><con:assertion type="SOAP Response" id="82f21dc4-6f47-43d3-b35c-d55d11202460"/><con:assertion type="Valid HTTP Status Codes" id="bc89de9a-a691-414a-b898-e782b1b6462f" name="Valid HTTP Status Codes"><con:configuration><codes>200</codes></con:configuration></con:assertion><con:credentials><con:authType>No Authorization</con:authType></con:credentials><con:jmsConfig JMSDeliveryMode="PERSISTENT"/><con:jmsPropertyConfig/><con:wsaConfig mustUnderstand="NONE" version="200508"/><con:wsrmConfig version="1.2"/></con:request></con:config></con:testStep><con:testStep type="request" name="FindNewlyAddedCity" id="38cf32d1-83ea-4dee-9703-e73a3a2be667"><con:settings/><con:config xsi:type="con:RequestStep" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"><con:interface>BasicHttpBinding_IAddressService</con:interface><con:operation>FindAllDistinctCities</con:operation><con:request name="FindNewlyAddedCity" id="237fdc8e-de64-4ce3-84bc-87d7407d17a5"><con:settings><con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;xml-fragment/></con:setting></con:settings><con:encoding>UTF-8</con:encoding><con:endpoint>http://localhost:8733/SoapServiceLibrary/AddressService/</con:endpoint><con:request><![CDATA[<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:tem="http://tempuri.org/">\r
    <soapenv:Header/>\r
    <soapenv:Body>\r
       <tem:FindAllDistinctCities/>\r
    </soapenv:Body>\r
-</soapenv:Envelope>]]></con:request><con:assertion type="SOAP Response" id="cbf09d06-dac9-4aff-a2f2-2da04d2a74b9"/><con:assertion type="Simple Contains" id="da142fc6-8fbd-4901-b4b2-4687cb7bb25a" name="Contains"><con:configuration><token>Bangalore</token><ignoreCase>true</ignoreCase><useRegEx>false</useRegEx></con:configuration></con:assertion><con:credentials><con:authType>No Authorization</con:authType></con:credentials><con:jmsConfig JMSDeliveryMode="PERSISTENT"/><con:jmsPropertyConfig/><con:wsaConfig mustUnderstand="NONE" version="200508"/><con:wsrmConfig version="1.2"/></con:request></con:config></con:testStep><con:testStep type="request" name="CountOfAddedCity" id="22298f89-e44c-45b5-937b-01ba62fac83f"><con:settings/><con:config xsi:type="con:RequestStep" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"><con:interface>BasicHttpBinding_IAddressService</con:interface><con:operation>CountOfAddressesByCity</con:operation><con:request name="CountOfAddedCity" id="8a2adc8b-0483-451d-90f5-9cd767c6a2eb"><con:settings><con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;xml-fragment/></con:setting></con:settings><con:encoding>UTF-8</con:encoding><con:endpoint>http://localhost:8733/SoapServiceLibrary/AddressService/</con:endpoint><con:request><![CDATA[<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:tem="http://tempuri.org/">\r
+</soapenv:Envelope>]]></con:request><con:assertion type="SOAP Response" id="cbf09d06-dac9-4aff-a2f2-2da04d2a74b9"/><con:assertion type="Simple Contains" id="da142fc6-8fbd-4901-b4b2-4687cb7bb25a" name="Contains"><con:configuration><token>Bangalore</token><ignoreCase>true</ignoreCase><useRegEx>false</useRegEx></con:configuration></con:assertion><con:assertion type="XPath Match" id="b7527237-08f9-4780-97ad-5948e1ef7178" name="XPath Match"><con:configuration><path>declare namespace ns1='http://tempuri.org/';
+declare namespace i='http://www.w3.org/2001/XMLSchema-instance';
+declare namespace a='http://schemas.microsoft.com/2003/10/Serialization/Arrays';
+declare namespace s='http://schemas.xmlsoap.org/soap/envelope/';
+//ns1:FindAllDistinctCitiesResponse/ns1:FindAllDistinctCitiesResult/a:string</path><content>Bangalore</content><allowWildcards>false</allowWildcards><ignoreNamspaceDifferences>false</ignoreNamspaceDifferences><ignoreComments>false</ignoreComments></con:configuration></con:assertion><con:assertion type="Valid HTTP Status Codes" id="2ea67df1-3a38-4c9f-98e2-ef3183f977b2" name="Valid HTTP Status Codes"><con:configuration><codes>200</codes></con:configuration></con:assertion><con:credentials><con:authType>No Authorization</con:authType></con:credentials><con:jmsConfig JMSDeliveryMode="PERSISTENT"/><con:jmsPropertyConfig/><con:wsaConfig mustUnderstand="NONE" version="200508"/><con:wsrmConfig version="1.2"/></con:request></con:config></con:testStep><con:testStep type="request" name="CountOfAddedCity" id="22298f89-e44c-45b5-937b-01ba62fac83f"><con:settings/><con:config xsi:type="con:RequestStep" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"><con:interface>BasicHttpBinding_IAddressService</con:interface><con:operation>CountOfAddressesByCity</con:operation><con:request name="CountOfAddedCity" id="8a2adc8b-0483-451d-90f5-9cd767c6a2eb"><con:settings><con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;xml-fragment/></con:setting></con:settings><con:encoding>UTF-8</con:encoding><con:endpoint>http://localhost:8733/SoapServiceLibrary/AddressService/</con:endpoint><con:request><![CDATA[<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:tem="http://tempuri.org/">\r
    <soapenv:Header/>\r
    <soapenv:Body>\r
       <tem:CountOfAddressesByCity>\r
@@ -414,4 +459,56 @@
          <tem:city>Bangalore</tem:city>\r
       </tem:CountOfAddressesByCity>\r
    </soapenv:Body>\r
-</soapenv:Envelope>]]></con:request><con:assertion type="SOAP Response" id="20e2c2ad-2ff3-4090-870d-681377d33c98"/><con:credentials><con:authType>No Authorization</con:authType></con:credentials><con:jmsConfig JMSDeliveryMode="PERSISTENT"/><con:jmsPropertyConfig/><con:wsaConfig mustUnderstand="NONE" version="200508"/><con:wsrmConfig version="1.2"/></con:request></con:config></con:testStep><con:loadTest id="03fb2015-3f23-4695-8d96-2c319381e289" name="MyFirstLoadTest"><con:settings><con:setting id="HttpSettings@close-connections">false</con:setting></con:settings><con:threadCount>100</con:threadCount><con:startDelay>0</con:startDelay><con:sampleInterval>250</con:sampleInterval><con:calculateTPSOnTimePassed>true</con:calculateTPSOnTimePassed><con:resetStatisticsOnThreadCountChange>true</con:resetStatisticsOnThreadCountChange><con:historyLimit>-1</con:historyLimit><con:testLimit>60</con:testLimit><con:limitType>TIME</con:limitType><con:loadStrategy><con:type>Simple</con:type><con:config><testDelay>1000</testDelay><randomFactor>0.5</randomFactor></con:config></con:loadStrategy><con:assertion type="Step Status" name="Step Status"/><con:maxAssertionErrors>100</con:maxAssertionErrors><con:cancelExcessiveThreads>true</con:cancelExcessiveThreads><con:strategyInterval>500</con:strategyInterval></con:loadTest><con:properties/></con:testCase><con:properties/></con:testSuite><con:properties/><con:wssContainer/><con:oAuth2ProfileContainer/></con:soapui-project>
+</soapenv:Envelope>]]></con:request><con:assertion type="SOAP Response" id="20e2c2ad-2ff3-4090-870d-681377d33c98"/><con:assertion type="Valid HTTP Status Codes" id="7482dd28-b4bd-45d0-9622-a5dd660f8fdc" name="Valid HTTP Status Codes"><con:configuration><codes>200</codes></con:configuration></con:assertion><con:credentials><con:authType>No Authorization</con:authType></con:credentials><con:jmsConfig JMSDeliveryMode="PERSISTENT"/><con:jmsPropertyConfig/><con:wsaConfig mustUnderstand="NONE" version="200508"/><con:wsrmConfig version="1.2"/></con:request></con:config></con:testStep><con:loadTest id="03fb2015-3f23-4695-8d96-2c319381e289" name="MyFirstLoadTest"><con:settings><con:setting id="HttpSettings@close-connections">false</con:setting></con:settings><con:threadCount>5</con:threadCount><con:startDelay>0</con:startDelay><con:sampleInterval>250</con:sampleInterval><con:calculateTPSOnTimePassed>true</con:calculateTPSOnTimePassed><con:resetStatisticsOnThreadCountChange>true</con:resetStatisticsOnThreadCountChange><con:historyLimit>-1</con:historyLimit><con:testLimit>60</con:testLimit><con:limitType>TIME</con:limitType><con:loadStrategy><con:type>Simple</con:type><con:config><testDelay>1000</testDelay><randomFactor>0.5</randomFactor></con:config></con:loadStrategy><con:assertion type="Step Status" name="Step Status"/><con:maxAssertionErrors>100</con:maxAssertionErrors><con:cancelExcessiveThreads>true</con:cancelExcessiveThreads><con:strategyInterval>500</con:strategyInterval></con:loadTest><con:properties/></con:testCase><con:properties/></con:testSuite><con:testSuite id="e157baa4-a588-4c85-82d7-a2d3aa3e87e2" name="ContactInfoService"><con:settings/><con:runType>SEQUENTIAL</con:runType><con:testCase id="e89c1623-196f-4d36-a3c2-b1c3359c6ecb" failOnError="true" failTestCaseOnErrors="true" keepSession="false" maxResults="0" name="ContactInfo_Positive" searchProperties="true"><con:settings/><con:testStep type="request" name="DeleteContactsIfExisting" id="52ce55a1-ad0b-4dc9-aed1-3f6e8824d5c3"><con:settings/><con:config xsi:type="con:RequestStep" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"><con:interface>BasicHttpBinding_IContactInfoService</con:interface><con:operation>DeleteContactsByEmailId</con:operation><con:request name="DeleteContactsIfExisting" id="19b1e1bb-ff56-45eb-a887-265b404c750c"><con:settings><con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;xml-fragment/></con:setting></con:settings><con:encoding>UTF-8</con:encoding><con:endpoint>http://localhost:8733/SoapServiceLibrary/ContactInfoService/</con:endpoint><con:request><![CDATA[<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:tem="http://tempuri.org/">\r
+   <soapenv:Header/>\r
+   <soapenv:Body>\r
+      <tem:DeleteContactsByEmailId>\r
+         <!--Optional:-->\r
+         <tem:emailId>myfirsttest@testme.com</tem:emailId>\r
+      </tem:DeleteContactsByEmailId>\r
+   </soapenv:Body>\r
+</soapenv:Envelope>]]></con:request><con:assertion type="SOAP Response" id="f2248c94-9390-4761-ba2b-3d2c364ccbc4"/><con:assertion type="Valid HTTP Status Codes" id="1494d27e-ef94-4bef-8c29-4979c6cd798e" name="Valid HTTP Status Codes"><con:configuration><codes>200</codes></con:configuration></con:assertion><con:credentials><con:authType>No Authorization</con:authType></con:credentials><con:jmsConfig JMSDeliveryMode="PERSISTENT"/><con:jmsPropertyConfig/><con:wsaConfig mustUnderstand="NONE" version="200508"/><con:wsrmConfig version="1.2"/></con:request></con:config></con:testStep><con:testStep type="request" name="AddContact" id="6ceecf82-53ba-440c-a7e0-c988c52e885c"><con:settings/><con:config xsi:type="con:RequestStep" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"><con:interface>BasicHttpBinding_IContactInfoService</con:interface><con:operation>AddContactInfo</con:operation><con:request name="AddContact" id="00017c60-eeab-4562-87a3-73ab6358555c"><con:settings><con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;xml-fragment/></con:setting></con:settings><con:encoding>UTF-8</con:encoding><con:endpoint>http://localhost:8733/SoapServiceLibrary/ContactInfoService/</con:endpoint><con:request><![CDATA[<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:tem="http://tempuri.org/" xmlns:soap="http://schemas.datacontract.org/2004/07/SoapServiceLibrary.Definitions">\r
+   <soapenv:Header/>\r
+   <soapenv:Body>\r
+      <tem:AddContactInfo>\r
+         <!--Optional:-->\r
+         <tem:contactInformation>\r
+            <!--Optional:-->\r
+            <soap:EmailId>myfirsttest@testme.com</soap:EmailId>\r
+            <!--Optional:-->\r
+            <soap:FacebookId>myfirstId</soap:FacebookId>\r
+            <!--Optional:-->\r
+            <soap:LinkedInId>myfirstId</soap:LinkedInId>\r
+            <!--Optional:-->\r
+            <soap:PrimaryContactNumber>99999999</soap:PrimaryContactNumber>\r
+            <!--Optional:-->\r
+            <soap:SecondaryContactNumber>999999</soap:SecondaryContactNumber>\r
+            <!--Optional:-->\r
+            <soap:SkypeId>myfirstId</soap:SkypeId>\r
+         </tem:contactInformation>\r
+      </tem:AddContactInfo>\r
+   </soapenv:Body>\r
+</soapenv:Envelope>]]></con:request><con:assertion type="SOAP Response" id="f92b2e55-97df-407c-84e5-c4fd44ce2831"/><con:assertion type="Simple Contains" id="8d6efe0d-7725-4158-8bc5-fef3860523d3" name="Contains"><con:configuration><token>true</token><ignoreCase>true</ignoreCase><useRegEx>false</useRegEx></con:configuration></con:assertion><con:assertion type="Simple NotContains" id="72b5d2a7-bc7a-4784-81e9-5fd5303fc36f" name="Not Contains"><con:configuration><token>false</token><ignoreCase>true</ignoreCase><useRegEx>false</useRegEx></con:configuration></con:assertion><con:assertion type="Response SLA Assertion" id="c5d84f9a-cd0e-475c-af32-a15ef311bd73" name="Response SLA"><con:configuration><SLA>200</SLA></con:configuration></con:assertion><con:assertion type="Valid HTTP Status Codes" id="d666dd13-64b8-4123-a06a-cdbb0c146419" name="Valid HTTP Status Codes"><con:configuration><codes>200</codes></con:configuration></con:assertion><con:credentials><con:authType>No Authorization</con:authType></con:credentials><con:jmsConfig JMSDeliveryMode="PERSISTENT"/><con:jmsPropertyConfig/><con:wsaConfig mustUnderstand="NONE" version="200508"/><con:wsrmConfig version="1.2"/></con:request></con:config></con:testStep><con:testStep type="request" name="GetContacts" id="5e874e9a-fcba-4798-aad5-dbae649bef35"><con:settings/><con:config xsi:type="con:RequestStep" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"><con:interface>BasicHttpBinding_IContactInfoService</con:interface><con:operation>GetAllContactInformations</con:operation><con:request name="GetContacts" id="e038e2dd-1d6e-4d43-9ad1-ffde2e1809c7"><con:settings><con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;xml-fragment/></con:setting></con:settings><con:encoding>UTF-8</con:encoding><con:endpoint>http://localhost:8733/SoapServiceLibrary/ContactInfoService/</con:endpoint><con:request><![CDATA[<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:tem="http://tempuri.org/">\r
+   <soapenv:Header/>\r
+   <soapenv:Body>\r
+      <tem:GetAllContactInformations/>\r
+   </soapenv:Body>\r
+</soapenv:Envelope>]]></con:request><con:assertion type="SOAP Response" id="7ea3fc14-bb77-48f1-9f66-98cdca4b86b5"/><con:assertion type="XPath Match" id="1d4de368-103b-4a28-a278-bbed07756409" name="XpathEmailIdExists"><con:configuration><path>declare namespace a='http://schemas.datacontract.org/2004/07/SoapServiceLibrary.Definitions';
+declare namespace ns1='http://tempuri.org/';
+declare namespace i='http://www.w3.org/2001/XMLSchema-instance';
+declare namespace s='http://schemas.xmlsoap.org/soap/envelope/';
+exists(//a:EmailId)</path><content>true</content><allowWildcards>false</allowWildcards><ignoreNamspaceDifferences>false</ignoreNamspaceDifferences><ignoreComments>false</ignoreComments></con:configuration></con:assertion><con:assertion type="XPath Match" id="a8e4b7c1-9b3b-4bd1-96dc-739161e129f8" name="Count Email Ids"><con:configuration><path>declare namespace a='http://schemas.datacontract.org/2004/07/SoapServiceLibrary.Definitions';
+declare namespace ns1='http://tempuri.org/';
+declare namespace i='http://www.w3.org/2001/XMLSchema-instance';
+declare namespace s='http://schemas.xmlsoap.org/soap/envelope/';
+count(//a:EmailId)</path><content>1</content><allowWildcards>false</allowWildcards><ignoreNamspaceDifferences>false</ignoreNamspaceDifferences><ignoreComments>false</ignoreComments></con:configuration></con:assertion><con:assertion type="Valid HTTP Status Codes" id="aa76e1cf-8933-4543-abe8-d5bd1718af5e" name="Valid HTTP Status Codes"><con:configuration><codes>200</codes></con:configuration></con:assertion><con:credentials><con:authType>No Authorization</con:authType></con:credentials><con:jmsConfig JMSDeliveryMode="PERSISTENT"/><con:jmsPropertyConfig/><con:wsaConfig mustUnderstand="NONE" version="200508"/><con:wsrmConfig version="1.2"/></con:request></con:config></con:testStep><con:testStep type="request" name="DeleteContactsAfterAdding" id="0dcd8019-3267-462c-b488-d4ce9120b414"><con:settings/><con:config xsi:type="con:RequestStep" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"><con:interface>BasicHttpBinding_IContactInfoService</con:interface><con:operation>DeleteContactsByEmailId</con:operation><con:request name="DeleteContactsAfterAdding" id="19b1e1bb-ff56-45eb-a887-265b404c750c"><con:settings><con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;xml-fragment/></con:setting></con:settings><con:encoding>UTF-8</con:encoding><con:endpoint>http://localhost:8733/SoapServiceLibrary/ContactInfoService/</con:endpoint><con:request><![CDATA[<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:tem="http://tempuri.org/">\r
+   <soapenv:Header/>\r
+   <soapenv:Body>\r
+      <tem:DeleteContactsByEmailId>\r
+         <!--Optional:-->\r
+         <tem:emailId>myfirsttest@testme.com</tem:emailId>\r
+      </tem:DeleteContactsByEmailId>\r
+   </soapenv:Body>\r
+</soapenv:Envelope>]]></con:request><con:assertion type="SOAP Response" id="f2248c94-9390-4761-ba2b-3d2c364ccbc4"/><con:assertion type="XPath Match" id="90c9f01d-8631-4818-8ef5-d43b94aefcf2" name="XPath Match"><con:configuration><path>declare namespace ns1='http://tempuri.org/';
+declare namespace s='http://schemas.xmlsoap.org/soap/envelope/';
+//ns1:DeleteContactsByEmailIdResponse/ns1:DeleteContactsByEmailIdResult</path><content>1</content><allowWildcards>false</allowWildcards><ignoreNamspaceDifferences>false</ignoreNamspaceDifferences><ignoreComments>false</ignoreComments></con:configuration></con:assertion><con:assertion type="Valid HTTP Status Codes" id="5a4ec353-5dbf-4e25-935d-c8ec868d3b56" name="Valid HTTP Status Codes"><con:configuration><codes>200</codes></con:configuration></con:assertion><con:credentials><con:authType>No Authorization</con:authType></con:credentials><con:jmsConfig JMSDeliveryMode="PERSISTENT"/><con:jmsPropertyConfig/><con:wsaConfig mustUnderstand="NONE" version="200508"/><con:wsrmConfig version="1.2"/></con:request></con:config></con:testStep><con:properties/></con:testCase><con:properties/></con:testSuite><con:properties/><con:wssContainer/><con:oAuth2ProfileContainer/><con:sensitiveInformation/></con:soapui-project>

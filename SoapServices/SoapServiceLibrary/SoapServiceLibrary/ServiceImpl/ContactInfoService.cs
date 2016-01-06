@@ -42,6 +42,29 @@ namespace SoapServiceLibrary.ServiceImpl
             return true;
             
         }
+        /// <summary>
+        /// Deletes Contact By email id
+        /// </summary>
+        /// <param name="emailId"></param>
+        /// <returns>number of records deleted</returns>
+        public int DeleteContactsByEmailId(string emailId)
+        {
+            Log.DebugFormat(" Received Request to DeleteContactsByEmailId with emailid: {0}", emailId);
+            int count = 0;
+            using (EducationalInstitutionDbContext context = new EducationalInstitutionDbContext())
+            {
+                var items=context.ContactInformations.Where(item => item.EmailId.Equals(emailId, StringComparison.OrdinalIgnoreCase));
+                Parallel.ForEach(items, item =>
+                {
+                    Log.DebugFormat("Removing record with contactInformation {0}", item);
+                });
+                count = items.Count();
+                context.ContactInformations.RemoveRange(items);
+                context.SaveChanges();
+            }
+            Log.Debug("Processed Request DeleteContactsByEmailId");
+            return count;
+        }
 
         /// <summary>
         /// This method returns all the contact information

@@ -28,5 +28,14 @@ namespace SoapServiceLibrary
         /// <returns></returns>
         [OperationContract]
         ContactInformation[] GetAllContactInformations();
+
+        /// <summary>
+        /// Deletes all the contacts of the email id
+        /// </summary>
+        /// <param name="emailId"></param>
+        /// <returns></returns>
+        [OperationContract]
+        int DeleteContactsByEmailId(string emailId);
+
     }
 }
