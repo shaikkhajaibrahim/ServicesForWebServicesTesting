@@ -36,6 +36,7 @@ namespace SoapServiceLibrary.ServiceImpl
                     SecondaryContactNumber = contactInformation.SecondaryContactNumber,
                     SkypeId = contactInformation.SkypeId
                 });
+                context.SaveChanges();
             }
             Log.Debug("Addition Succesful & sending response as true");
             return true;

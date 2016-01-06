@@ -24,6 +24,8 @@ namespace SoapServices.DAL.EducationalInstitution
         /// <summary>
         /// Course Name
         /// </summary>
+        [Required]
+        [StringLength(255)]
         public string CourseName { set; get; }
 
         /// <summary>

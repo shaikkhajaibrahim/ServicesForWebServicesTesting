@@ -66,10 +66,6 @@
     <Compile Include="EducationalInstitution\Course.cs" />
     <Compile Include="EducationalInstitution\EducationalInstitutionDbContext.cs" />
     <Compile Include="EducationalInstitution\Student.cs" />
-    <Compile Include="Migrations\201601050632479_First.cs" />
-    <Compile Include="Migrations\201601050632479_First.Designer.cs">
-      <DependentUpon>201601050632479_First.cs</DependentUpon>
-    </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
@@ -82,11 +78,7 @@
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </None>
   </ItemGroup>
-  <ItemGroup>
-    <EmbeddedResource Include="Migrations\201601050632479_First.resx">
-      <DependentUpon>201601050632479_First.cs</DependentUpon>
-    </EmbeddedResource>
-  </ItemGroup>
+  <ItemGroup />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
        Other similar extension points exist, see Microsoft.Common.targets.

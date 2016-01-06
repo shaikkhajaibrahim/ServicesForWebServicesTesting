@@ -22,6 +22,7 @@ namespace SoapServices.DAL.EducationalInstitution
         /// Primary Contact Number
         /// </summary>
         [Required]
+        [StringLength(15)]
         public string PrimaryContactNumber { set; get; }
 
         /// <summary>
@@ -33,6 +34,7 @@ namespace SoapServices.DAL.EducationalInstitution
         /// Email Id
         /// </summary>
         [Required]
+        [StringLength(255)]
         public string EmailId { set; get; }
 
         /// <summary>
