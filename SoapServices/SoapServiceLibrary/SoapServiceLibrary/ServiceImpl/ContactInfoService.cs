@@ -1,9 +1,6 @@
 ﻿using System;
-using System.Collections.Generic;
 using System.Linq;
-using System.Text;
 using System.Threading.Tasks;
-using SoapServiceLibrary.Definitions;
 using log4net;
 using SoapServices.DAL.EducationalInstitution;
 
@@ -27,7 +24,7 @@ namespace SoapServiceLibrary.ServiceImpl
 
             using (EducationalInstitutionDbContext context = new EducationalInstitutionDbContext())
             {
-                context.ContactInformations.Add(new SoapServices.DAL.EducationalInstitution.ContactInformation
+                context.ContactInformations.Add(new ContactInformation
                 {
                     EmailId = contactInformation.EmailId,
                     FacebookId = contactInformation.FacebookId,
@@ -86,7 +83,35 @@ namespace SoapServiceLibrary.ServiceImpl
                 }).ToArray();
                 //Logging the contacts
                 Parallel.ForEach(contacts, item =>{Log.Debug(item);});
+                Log.Debug("Processed Request for the GetAllContactInformations");
                 return contacts;
+            }
+        }
+
+        /// <summary>
+        /// Gets the Contact Information By Mail
+        /// </summary>
+        /// <param name="emailId"></param>
+        /// <returns></returns>
+        public Definitions.ContactInformation[] GetContactInformationByMail(string emailId)
+        {
+            Log.DebugFormat("Received Request for GetContactInformationByMail with email id {0}",emailId);
+            Definitions.ContactInformation[] contactInformations;
+            using (EducationalInstitutionDbContext context = new EducationalInstitutionDbContext())
+            {
+                contactInformations = context.ContactInformations.Where(
+                    item => item.EmailId.Equals(emailId, StringComparison.OrdinalIgnoreCase)).Select(item=> new Definitions.ContactInformation
+                    {
+                        EmailId = item.EmailId,
+                        FacebookId = item.FacebookId,
+                        LinkedInId = item.LinkedInId,
+                        PrimaryContactNumber = item.FacebookId,
+                        SecondaryContactNumber = item.SecondaryContactNumber,
+                        SkypeId = item.SkypeId
+                    }).ToArray();
+                Parallel.ForEach(contactInformations, item => { Log.Debug(item); });
+                Log.DebugFormat("Processed Request for GetContactInformationByMail with email id {0}",emailId);
+                return contactInformations;
             }
         }
     }

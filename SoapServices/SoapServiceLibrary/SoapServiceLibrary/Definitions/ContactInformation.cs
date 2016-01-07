@@ -1,4 +1,5 @@
-﻿using System.Globalization;
+﻿using System;
+using System.Globalization;
 using System.Runtime.Serialization;
 
 namespace SoapServiceLibrary.Definitions
@@ -6,6 +7,14 @@ namespace SoapServiceLibrary.Definitions
     [DataContract]
     public class ContactInformation
     {
+        /// <summary>
+        /// Constructor
+        /// </summary>
+        public ContactInformation()
+        {
+            CreatedDateTime = DateTime.Now;
+             
+        }
         /// <summary>
         /// Primary Contact Number
         /// </summary>
@@ -41,6 +50,13 @@ namespace SoapServiceLibrary.Definitions
         /// </summary>
         [DataMember]
         public string FacebookId { set; get; }
+
+
+        /// <summary>
+        /// Date Time when the Contact Information was created
+        /// </summary>
+        [DataMember]
+        public DateTime CreatedDateTime { set; get; }
 
         /// <summary>
         /// Overriden for better logs

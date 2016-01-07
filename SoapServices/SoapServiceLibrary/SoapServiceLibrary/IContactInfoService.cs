@@ -37,5 +37,13 @@ namespace SoapServiceLibrary
         [OperationContract]
         int DeleteContactsByEmailId(string emailId);
 
+        /// <summary>
+        /// Gets the contact information by the email id
+        /// </summary>
+        /// <param name="emailId"></param>
+        /// <returns></returns>
+        [OperationContract]
+        ContactInformation[] GetContactInformationByMail(string emailId);
+
     }
 }
