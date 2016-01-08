@@ -105,7 +105,7 @@ namespace SoapServiceLibrary.ServiceImpl
                         EmailId = item.EmailId,
                         FacebookId = item.FacebookId,
                         LinkedInId = item.LinkedInId,
-                        PrimaryContactNumber = item.FacebookId,
+                        PrimaryContactNumber = item.PrimaryContactNumber,
                         SecondaryContactNumber = item.SecondaryContactNumber,
                         SkypeId = item.SkypeId
                     }).ToArray();
