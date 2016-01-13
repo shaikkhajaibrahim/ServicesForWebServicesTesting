@@ -18,7 +18,7 @@ namespace SoapServiceLibrary.Definitions
         /// <summary>
         /// Primary Contact Number
         /// </summary>
-        [DataMember]
+        [DataMember(IsRequired =true)]
         public string PrimaryContactNumber { set; get; }
 
         /// <summary>
@@ -30,7 +30,7 @@ namespace SoapServiceLibrary.Definitions
         /// <summary>
         /// Email Id
         /// </summary>
-        [DataMember]
+        [DataMember(IsRequired = true)]
         public string EmailId { set; get; }
 
         /// <summary>
