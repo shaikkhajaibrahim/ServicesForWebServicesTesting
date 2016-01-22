@@ -9,6 +9,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SoapServices.DAL", "SoapSer
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SoapServiceBootStrapper", "SoapServiceBootStrapper\SoapServiceBootStrapper.csproj", "{CFF34C1F-95CD-4C2D-BF45-CE627F164CC4}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SoapServiceWeb", "SoapServiceWeb\SoapServiceWeb.csproj", "{5A09FD49-D0E9-4532-8805-EC6C06166399}"
+EndProject
 Global
 	GlobalSection(Performance) = preSolution
 		HasPerformanceSessions = true
@@ -30,6 +32,10 @@ Global
 		{CFF34C1F-95CD-4C2D-BF45-CE627F164CC4}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{CFF34C1F-95CD-4C2D-BF45-CE627F164CC4}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{CFF34C1F-95CD-4C2D-BF45-CE627F164CC4}.Release|Any CPU.Build.0 = Release|Any CPU
+		{5A09FD49-D0E9-4532-8805-EC6C06166399}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{5A09FD49-D0E9-4532-8805-EC6C06166399}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{5A09FD49-D0E9-4532-8805-EC6C06166399}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{5A09FD49-D0E9-4532-8805-EC6C06166399}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
