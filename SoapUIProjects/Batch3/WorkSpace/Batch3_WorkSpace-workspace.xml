@@ -2,4 +2,7 @@
 <con:soapui-workspace name="Batch3_WorkSpace" soapui-version="5.2.1" xmlns:con="http://eviware.com/soapui/config">
   <con:settings/>
   <con:project name="HelloWorld">D:/ServicesForWebServiceTesting/ServicesForWebServicesTesting/SoapUIProjects/Batch3/WorkSpace/Projects/HelloWorld-soapui-project.xml</con:project>
+  <con:project name="GlobalWeather">D:/ServicesForWebServiceTesting/ServicesForWebServicesTesting/SoapUIProjects/Batch3/WorkSpace/Projects/GlobalWeather-soapui-project.xml</con:project>
+  <con:project name="XPathExamples">C:/Users/sys/Documents/Batch3/Projects/XPathExamples-soapui-project.xml</con:project>
+  <con:collectInfoForSupport>false</con:collectInfoForSupport>
 </con:soapui-workspace>
