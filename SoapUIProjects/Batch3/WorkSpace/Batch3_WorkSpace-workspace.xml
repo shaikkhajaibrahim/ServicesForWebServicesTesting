@@ -4,5 +4,6 @@
   <con:project name="HelloWorld">D:/ServicesForWebServiceTesting/ServicesForWebServicesTesting/SoapUIProjects/Batch3/WorkSpace/Projects/HelloWorld-soapui-project.xml</con:project>
   <con:project name="GlobalWeather">D:/ServicesForWebServiceTesting/ServicesForWebServicesTesting/SoapUIProjects/Batch3/WorkSpace/Projects/GlobalWeather-soapui-project.xml</con:project>
   <con:project name="XPathExamples">D:/ServicesForWebServiceTesting/ServicesForWebServicesTesting/SoapUIProjects/Batch3/WorkSpace/Projects/XPathExamples-soapui-project.xml</con:project>
+  <con:project name="ContactInfoService">D:/ServicesForWebServiceTesting/ServicesForWebServicesTesting/SoapUIProjects/Batch3/WorkSpace/Projects/ContactInfoService-soapui-project.xml</con:project>
   <con:collectInfoForSupport>false</con:collectInfoForSupport>
 </con:soapui-workspace>
