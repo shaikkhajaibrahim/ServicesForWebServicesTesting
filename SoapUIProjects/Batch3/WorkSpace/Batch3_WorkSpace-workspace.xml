@@ -1,9 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<con:soapui-workspace name="Batch3_WorkSpace" soapui-version="5.2.1" xmlns:con="http://eviware.com/soapui/config">
+<con:soapui-workspace name="Batch3_WorkSpace" soapui-version="5.0.0" xmlns:con="http://eviware.com/soapui/config">
   <con:settings/>
   <con:project name="HelloWorld">D:/ServicesForWebServiceTesting/ServicesForWebServicesTesting/SoapUIProjects/Batch3/WorkSpace/Projects/HelloWorld-soapui-project.xml</con:project>
   <con:project name="GlobalWeather">D:/ServicesForWebServiceTesting/ServicesForWebServicesTesting/SoapUIProjects/Batch3/WorkSpace/Projects/GlobalWeather-soapui-project.xml</con:project>
   <con:project name="XPathExamples">D:/ServicesForWebServiceTesting/ServicesForWebServicesTesting/SoapUIProjects/Batch3/WorkSpace/Projects/XPathExamples-soapui-project.xml</con:project>
   <con:project name="ContactInfoService">D:/ServicesForWebServiceTesting/ServicesForWebServicesTesting/SoapUIProjects/Batch3/WorkSpace/Projects/ContactInfoService-soapui-project.xml</con:project>
   <con:collectInfoForSupport>false</con:collectInfoForSupport>
+  <con:project name="ContactINfoServiceForPro">D:/ServicesForWebServiceTesting/ServicesForWebServicesTesting/SoapUIProjects/Batch3/WorkSpace/Projects/ContactINfoServiceForPro-soapui-project.xml</con:project>
+  <con:project name="Test">C:/Users/sys/Documents/Test-soapui-project.xml</con:project>
 </con:soapui-workspace>
