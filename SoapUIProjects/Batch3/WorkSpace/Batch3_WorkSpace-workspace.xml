@@ -8,4 +8,7 @@
   <con:collectInfoForSupport>false</con:collectInfoForSupport>
   <con:project name="ContactINfoServiceForPro">D:/ServicesForWebServiceTesting/ServicesForWebServicesTesting/SoapUIProjects/Batch3/WorkSpace/Projects/ContactINfoServiceForPro-soapui-project.xml</con:project>
   <con:project name="Test">C:/Users/sys/Documents/Test-soapui-project.xml</con:project>
+  <con:project name="tde">C:/Users/sys/Documents/tde-soapui-project.xml</con:project>
+  <con:project name="globalweather_KPS">C:/Users/sys/Documents/globalweather-KPS-soapui-project.xml</con:project>
+  <con:project name="123">C:/Users/sys/Documents/123-soapui-project.xml</con:project>
 </con:soapui-workspace>
