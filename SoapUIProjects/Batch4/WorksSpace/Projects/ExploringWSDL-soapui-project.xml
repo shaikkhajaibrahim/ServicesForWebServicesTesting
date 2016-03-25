@@ -1,0 +1,139 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<con:soapui-project id="8a4b3345-ac7d-43d3-b73c-81495c733313" activeEnvironment="Default" name="ExploringWSDL" soapui-version="5.2.1" abortOnError="false" runType="SEQUENTIAL" xmlns:con="http://eviware.com/soapui/config"><con:settings/><con:interface xsi:type="con:WsdlInterface" id="6e780bcc-c0a0-44f4-8078-f8b67c0fa208" wsaVersion="NONE" name="whoisSoap12" type="wsdl" bindingName="{http://www.webservicex.net}whoisSoap12" soapVersion="1_2" anonymous="optional" definition="http://www.webservicex.net/whois.asmx?WSDL" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"><con:settings/><con:definitionCache/><con:endpoints><con:endpoint>http://www.webservicex.net/whois.asmx</con:endpoint></con:endpoints><con:operation id="def9f880-7369-4d0f-a64d-20e78f30f065" isOneWay="false" action="http://www.webservicex.net/GetWhoIS" name="GetWhoIS" bindingOperationName="GetWhoIS" type="Request-Response" inputName="" receivesAttachments="false" sendsAttachments="false" anonymous="optional"><con:settings/><con:call id="2530d489-0662-41df-a169-703f6eab0bbe" name="Request 1"><con:settings/><con:encoding>UTF-8</con:encoding><con:endpoint>http://www.webservicex.net/whois.asmx</con:endpoint><con:request><![CDATA[<soap:Envelope xmlns:soap="http://www.w3.org/2003/05/soap-envelope" xmlns:web="http://www.webservicex.net">\r
+   <soap:Header/>\r
+   <soap:Body>\r
+      <web:GetWhoIS>\r
+         <!--Optional:-->\r
+         <web:HostName>?</web:HostName>\r
+      </web:GetWhoIS>\r
+   </soap:Body>\r
+</soap:Envelope>]]></con:request><con:wsaConfig mustUnderstand="NONE" version="200508" action="http://www.webservicex.net/whoisSoap/GetWhoISRequest"/></con:call></con:operation></con:interface><con:interface xsi:type="con:WsdlInterface" id="5da4b0a3-7c30-45df-9524-f8de24846881" wsaVersion="NONE" name="whoisSoap" type="wsdl" bindingName="{http://www.webservicex.net}whoisSoap" soapVersion="1_1" anonymous="optional" definition="http://www.webservicex.net/whois.asmx?WSDL" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"><con:settings/><con:definitionCache type="TEXT" rootPart="http://www.webservicex.net/whois.asmx?WSDL"><con:part><con:url>http://www.webservicex.net/whois.asmx?WSDL</con:url><con:content><![CDATA[<wsdl:definitions targetNamespace="http://www.webservicex.net" xmlns:tm="http://microsoft.com/wsdl/mime/textMatching/" xmlns:soapenc="http://schemas.xmlsoap.org/soap/encoding/" xmlns:mime="http://schemas.xmlsoap.org/wsdl/mime/" xmlns:tns="http://www.webservicex.net" xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" xmlns:s="http://www.w3.org/2001/XMLSchema" xmlns:soap12="http://schemas.xmlsoap.org/wsdl/soap12/" xmlns:http="http://schemas.xmlsoap.org/wsdl/http/" xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">
+  <wsdl:types>
+    <s:schema elementFormDefault="qualified" targetNamespace="http://www.webservicex.net">
+      <s:element name="GetWhoIS">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="HostName" type="s:string"/>
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GetWhoISResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="GetWhoISResult" type="s:string"/>
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="string" nillable="true" type="s:string"/>
+    </s:schema>
+  </wsdl:types>
+  <wsdl:message name="GetWhoISSoapIn">
+    <wsdl:part name="parameters" element="tns:GetWhoIS"/>
+  </wsdl:message>
+  <wsdl:message name="GetWhoISSoapOut">
+    <wsdl:part name="parameters" element="tns:GetWhoISResponse"/>
+  </wsdl:message>
+  <wsdl:message name="GetWhoISHttpGetIn">
+    <wsdl:part name="HostName" type="s:string"/>
+  </wsdl:message>
+  <wsdl:message name="GetWhoISHttpGetOut">
+    <wsdl:part name="Body" element="tns:string"/>
+  </wsdl:message>
+  <wsdl:message name="GetWhoISHttpPostIn">
+    <wsdl:part name="HostName" type="s:string"/>
+  </wsdl:message>
+  <wsdl:message name="GetWhoISHttpPostOut">
+    <wsdl:part name="Body" element="tns:string"/>
+  </wsdl:message>
+  <wsdl:portType name="whoisSoap">
+    <wsdl:operation name="GetWhoIS">
+      <wsdl:documentation>Get domain name registration record by Host Name / Domain Name (WhoIS)</wsdl:documentation>
+      <wsdl:input message="tns:GetWhoISSoapIn"/>
+      <wsdl:output message="tns:GetWhoISSoapOut"/>
+    </wsdl:operation>
+  </wsdl:portType>
+  <wsdl:portType name="whoisHttpGet">
+    <wsdl:operation name="GetWhoIS">
+      <wsdl:documentation>Get domain name registration record by Host Name / Domain Name (WhoIS)</wsdl:documentation>
+      <wsdl:input message="tns:GetWhoISHttpGetIn"/>
+      <wsdl:output message="tns:GetWhoISHttpGetOut"/>
+    </wsdl:operation>
+  </wsdl:portType>
+  <wsdl:portType name="whoisHttpPost">
+    <wsdl:operation name="GetWhoIS">
+      <wsdl:documentation>Get domain name registration record by Host Name / Domain Name (WhoIS)</wsdl:documentation>
+      <wsdl:input message="tns:GetWhoISHttpPostIn"/>
+      <wsdl:output message="tns:GetWhoISHttpPostOut"/>
+    </wsdl:operation>
+  </wsdl:portType>
+  <wsdl:binding name="whoisSoap" type="tns:whoisSoap">
+    <soap:binding transport="http://schemas.xmlsoap.org/soap/http"/>
+    <wsdl:operation name="GetWhoIS">
+      <soap:operation soapAction="http://www.webservicex.net/GetWhoIS" style="document"/>
+      <wsdl:input>
+        <soap:body use="literal"/>
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal"/>
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:binding name="whoisSoap12" type="tns:whoisSoap">
+    <soap12:binding transport="http://schemas.xmlsoap.org/soap/http"/>
+    <wsdl:operation name="GetWhoIS">
+      <soap12:operation soapAction="http://www.webservicex.net/GetWhoIS" style="document"/>
+      <wsdl:input>
+        <soap12:body use="literal"/>
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal"/>
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:binding name="whoisHttpGet" type="tns:whoisHttpGet">
+    <http:binding verb="GET"/>
+    <wsdl:operation name="GetWhoIS">
+      <http:operation location="/GetWhoIS"/>
+      <wsdl:input>
+        <http:urlEncoded/>
+      </wsdl:input>
+      <wsdl:output>
+        <mime:mimeXml part="Body"/>
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:binding name="whoisHttpPost" type="tns:whoisHttpPost">
+    <http:binding verb="POST"/>
+    <wsdl:operation name="GetWhoIS">
+      <http:operation location="/GetWhoIS"/>
+      <wsdl:input>
+        <mime:content type="application/x-www-form-urlencoded"/>
+      </wsdl:input>
+      <wsdl:output>
+        <mime:mimeXml part="Body"/>
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:service name="whois">
+    <wsdl:port name="whoisSoap" binding="tns:whoisSoap">
+      <soap:address location="http://www.webservicex.net/whois.asmx"/>
+    </wsdl:port>
+    <wsdl:port name="whoisSoap12" binding="tns:whoisSoap12">
+      <soap12:address location="http://www.webservicex.net/whois.asmx"/>
+    </wsdl:port>
+    <wsdl:port name="whoisHttpGet" binding="tns:whoisHttpGet">
+      <http:address location="http://www.webservicex.net/whois.asmx"/>
+    </wsdl:port>
+    <wsdl:port name="whoisHttpPost" binding="tns:whoisHttpPost">
+      <http:address location="http://www.webservicex.net/whois.asmx"/>
+    </wsdl:port>
+  </wsdl:service>
+</wsdl:definitions>]]></con:content><con:type>http://schemas.xmlsoap.org/wsdl/</con:type></con:part></con:definitionCache><con:endpoints><con:endpoint>http://www.webservicex.net/whois.asmx</con:endpoint></con:endpoints><con:operation id="cbd73580-6aa6-462e-af6e-9835902cd2e2" isOneWay="false" action="http://www.webservicex.net/GetWhoIS" name="GetWhoIS" bindingOperationName="GetWhoIS" type="Request-Response" inputName="" receivesAttachments="false" sendsAttachments="false" anonymous="optional"><con:settings/><con:call id="f346eced-8e99-4775-b615-c45676c063e2" name="Request 1"><con:settings/><con:encoding>UTF-8</con:encoding><con:endpoint>http://www.webservicex.net/whois.asmx</con:endpoint><con:request><![CDATA[<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:web="http://www.webservicex.net">\r
+   <soapenv:Header/>\r
+   <soapenv:Body>\r
+      <web:GetWhoIS>\r
+         <!--Optional:-->\r
+         <web:HostName>?</web:HostName>\r
+      </web:GetWhoIS>\r
+   </soapenv:Body>\r
+</soapenv:Envelope>]]></con:request><con:credentials><con:authType>No Authorization</con:authType></con:credentials><con:jmsConfig JMSDeliveryMode="PERSISTENT"/><con:jmsPropertyConfig/><con:wsaConfig mustUnderstand="NONE" version="200508" action="http://www.webservicex.net/GetWhoIS"/><con:wsrmConfig version="1.2"/></con:call></con:operation></con:interface><con:properties/><con:wssContainer/><con:databaseConnectionContainer/><con:oAuth2ProfileContainer/><con:reporting><con:xmlTemplates/><con:parameters/></con:reporting></con:soapui-project>

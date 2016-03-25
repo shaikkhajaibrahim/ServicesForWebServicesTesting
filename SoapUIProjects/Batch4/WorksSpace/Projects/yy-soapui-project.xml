@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<con:soapui-project id="e443781b-3586-4893-afa3-36d835352ab1" activeEnvironment="Default" name="yy" soapui-version="5.2.1" abortOnError="false" runType="SEQUENTIAL" xmlns:con="http://eviware.com/soapui/config"><con:settings/><con:interface xsi:type="con:WsdlInterface" id="53d0327c-91ec-4458-ac96-f100c47eec23" wsaVersion="NONE" name="SunSetRiseServiceSoap12" type="wsdl" bindingName="{http://www.webserviceX.NET/}SunSetRiseServiceSoap12" soapVersion="1_2" anonymous="optional" definition="http://www.webservicex.net/sunsetriseservice.asmx?WSDL" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"><con:settings/><con:definitionCache type="TEXT" rootPart="http://www.webservicex.net/sunsetriseservice.asmx?WSDL"><con:part><con:url>http://www.webservicex.net/sunsetriseservice.asmx?WSDL</con:url><con:content><![CDATA[<wsdl:definitions targetNamespace="http://www.webserviceX.NET/" xmlns:tm="http://microsoft.com/wsdl/mime/textMatching/" xmlns:soapenc="http://schemas.xmlsoap.org/soap/encoding/" xmlns:mime="http://schemas.xmlsoap.org/wsdl/mime/" xmlns:tns="http://www.webserviceX.NET/" xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" xmlns:s="http://www.w3.org/2001/XMLSchema" xmlns:soap12="http://schemas.xmlsoap.org/wsdl/soap12/" xmlns:http="http://schemas.xmlsoap.org/wsdl/http/" xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">
+  <wsdl:types>
+    <s:schema elementFormDefault="qualified" targetNamespace="http://www.webserviceX.NET/">
+      <s:element name="GetSunSetRiseTime">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="L" type="tns:LatLonDate"/>
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:complexType name="LatLonDate">
+        <s:sequence>
+          <s:element minOccurs="1" maxOccurs="1" name="Latitude" type="s:float"/>
+          <s:element minOccurs="1" maxOccurs="1" name="Longitude" type="s:float"/>
+          <s:element minOccurs="1" maxOccurs="1" name="SunSetTime" type="s:float"/>
+          <s:element minOccurs="1" maxOccurs="1" name="SunRiseTime" type="s:float"/>
+          <s:element minOccurs="1" maxOccurs="1" name="TimeZone" type="s:int"/>
+          <s:element minOccurs="1" maxOccurs="1" name="Day" type="s:int"/>
+          <s:element minOccurs="1" maxOccurs="1" name="Month" type="s:int"/>
+          <s:element minOccurs="1" maxOccurs="1" name="Year" type="s:int"/>
+        </s:sequence>
+      </s:complexType>
+      <s:element name="GetSunSetRiseTimeResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="GetSunSetRiseTimeResult" type="tns:LatLonDate"/>
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+    </s:schema>
+  </wsdl:types>
+  <wsdl:message name="GetSunSetRiseTimeSoapIn">
+    <wsdl:part name="parameters" element="tns:GetSunSetRiseTime"/>
+  </wsdl:message>
+  <wsdl:message name="GetSunSetRiseTimeSoapOut">
+    <wsdl:part name="parameters" element="tns:GetSunSetRiseTimeResponse"/>
+  </wsdl:message>
+  <wsdl:portType name="SunSetRiseServiceSoap">
+    <wsdl:operation name="GetSunSetRiseTime">
+      <wsdl:documentation><![CDATA[Get Sunset and Sunrise time for any location in the world<br><b>Longitude:</b>Positive in Western Hemisphere,Negative in Eastern Hemisphere<br><b>Latitude:</b>Positive in Northern Hemisphere,Negative in Southern Hemisphere]]]]>><![CDATA[</wsdl:documentation>
+      <wsdl:input message="tns:GetSunSetRiseTimeSoapIn"/>
+      <wsdl:output message="tns:GetSunSetRiseTimeSoapOut"/>
+    </wsdl:operation>
+  </wsdl:portType>
+  <wsdl:portType name="SunSetRiseServiceHttpGet"/>
+  <wsdl:portType name="SunSetRiseServiceHttpPost"/>
+  <wsdl:binding name="SunSetRiseServiceSoap" type="tns:SunSetRiseServiceSoap">
+    <soap:binding transport="http://schemas.xmlsoap.org/soap/http"/>
+    <wsdl:operation name="GetSunSetRiseTime">
+      <soap:operation soapAction="http://www.webserviceX.NET/GetSunSetRiseTime" style="document"/>
+      <wsdl:input>
+        <soap:body use="literal"/>
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal"/>
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:binding name="SunSetRiseServiceSoap12" type="tns:SunSetRiseServiceSoap">
+    <soap12:binding transport="http://schemas.xmlsoap.org/soap/http"/>
+    <wsdl:operation name="GetSunSetRiseTime">
+      <soap12:operation soapAction="http://www.webserviceX.NET/GetSunSetRiseTime" style="document"/>
+      <wsdl:input>
+        <soap12:body use="literal"/>
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal"/>
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:binding name="SunSetRiseServiceHttpGet" type="tns:SunSetRiseServiceHttpGet">
+    <http:binding verb="GET"/>
+  </wsdl:binding>
+  <wsdl:binding name="SunSetRiseServiceHttpPost" type="tns:SunSetRiseServiceHttpPost">
+    <http:binding verb="POST"/>
+  </wsdl:binding>
+  <wsdl:service name="SunSetRiseService">
+    <wsdl:port name="SunSetRiseServiceSoap" binding="tns:SunSetRiseServiceSoap">
+      <soap:address location="http://www.webservicex.net/sunsetriseservice.asmx"/>
+    </wsdl:port>
+    <wsdl:port name="SunSetRiseServiceSoap12" binding="tns:SunSetRiseServiceSoap12">
+      <soap12:address location="http://www.webservicex.net/sunsetriseservice.asmx"/>
+    </wsdl:port>
+    <wsdl:port name="SunSetRiseServiceHttpGet" binding="tns:SunSetRiseServiceHttpGet">
+      <http:address location="http://www.webservicex.net/sunsetriseservice.asmx"/>
+    </wsdl:port>
+    <wsdl:port name="SunSetRiseServiceHttpPost" binding="tns:SunSetRiseServiceHttpPost">
+      <http:address location="http://www.webservicex.net/sunsetriseservice.asmx"/>
+    </wsdl:port>
+  </wsdl:service>
+</wsdl:definitions>]]></con:content><con:type>http://schemas.xmlsoap.org/wsdl/</con:type></con:part></con:definitionCache><con:endpoints><con:endpoint>http://www.webservicex.net/sunsetriseservice.asmx</con:endpoint></con:endpoints><con:operation id="e9a3a758-e115-4712-b9d1-dd779f0f28c6" isOneWay="false" action="http://www.webserviceX.NET/GetSunSetRiseTime" name="GetSunSetRiseTime" bindingOperationName="GetSunSetRiseTime" type="Request-Response" inputName="" receivesAttachments="false" sendsAttachments="false" anonymous="optional"><con:settings/><con:call id="c1bba342-9a5a-4458-900f-265e8d7aa9b5" name="Request 1"><con:settings/><con:encoding>UTF-8</con:encoding><con:endpoint>http://www.webservicex.net/sunsetriseservice.asmx</con:endpoint><con:request><![CDATA[<soap:Envelope xmlns:soap="http://www.w3.org/2003/05/soap-envelope" xmlns:web="http://www.webserviceX.NET/">\r
+   <soap:Header/>\r
+   <soap:Body>\r
+      <web:GetSunSetRiseTime>\r
+         <web:L>\r
+            <web:Latitude>?</web:Latitude>\r
+            <web:Longitude>?</web:Longitude>\r
+            <web:SunSetTime>?</web:SunSetTime>\r
+            <web:SunRiseTime>?</web:SunRiseTime>\r
+            <web:TimeZone>?</web:TimeZone>\r
+            <web:Day>?</web:Day>\r
+            <web:Month>?</web:Month>\r
+            <web:Year>?</web:Year>\r
+         </web:L>\r
+      </web:GetSunSetRiseTime>\r
+   </soap:Body>\r
+</soap:Envelope>]]></con:request><con:wsaConfig mustUnderstand="NONE" version="200508" action="http://www.webserviceX.NET/SunSetRiseServiceSoap/GetSunSetRiseTimeRequest"/></con:call></con:operation></con:interface><con:testSuite id="cb7fe746-da52-4665-be95-b38fd38cb8ae" name="TestSuite 1"><con:settings/><con:runType>SEQUENTIAL</con:runType><con:testCase id="915b4079-47df-4058-82a9-46b334bc6649" failOnError="true" failTestCaseOnErrors="true" keepSession="false" maxResults="0" name="TestCase 1" searchProperties="true"><con:settings/><con:testStep type="request" name="SOAP Request" id="0c71092a-c17c-4f00-93c1-a0151e5cd9f3"><con:settings/><con:config xsi:type="con:RequestStep" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"><con:interface>SunSetRiseServiceSoap12</con:interface><con:operation>GetSunSetRiseTime</con:operation><con:request name="SOAP Request" id="2b7378b3-3865-43e7-a7ce-a71912024d7b"><con:settings><con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;xml-fragment/></con:setting></con:settings><con:encoding>UTF-8</con:encoding><con:endpoint>http://www.webservicex.net/sunsetriseservice.asmx</con:endpoint><con:request><![CDATA[<soap:Envelope xmlns:soap="http://www.w3.org/2003/05/soap-envelope" xmlns:web="http://www.webserviceX.NET/">\r
+   <soap:Header/>\r
+   <soap:Body>\r
+      <web:GetSunSetRiseTime>\r
+         <web:L>\r
+            <web:Latitude>?</web:Latitude>\r
+            <web:Longitude>?</web:Longitude>\r
+            <web:SunSetTime>?</web:SunSetTime>\r
+            <web:SunRiseTime>?</web:SunRiseTime>\r
+            <web:TimeZone>?</web:TimeZone>\r
+            <web:Day>?</web:Day>\r
+            <web:Month>?</web:Month>\r
+            <web:Year>?</web:Year>\r
+         </web:L>\r
+      </web:GetSunSetRiseTime>\r
+   </soap:Body>\r
+</soap:Envelope>]]></con:request><con:assertion type="SOAP Response" id="5314d456-4b56-41aa-8b9c-8f78dac1a75f"/><con:credentials><con:authType>No Authorization</con:authType></con:credentials><con:jmsConfig JMSDeliveryMode="PERSISTENT"/><con:jmsPropertyConfig/><con:wsaConfig mustUnderstand="NONE" version="200508"/><con:wsrmConfig version="1.2"/></con:request></con:config></con:testStep><con:properties/><con:reportParameters/></con:testCase><con:properties/><con:reportParameters/></con:testSuite><con:properties/><con:wssContainer/><con:databaseConnectionContainer/><con:oAuth2ProfileContainer/><con:reporting><con:xmlTemplates/><con:parameters/></con:reporting></con:soapui-project>
