@@ -4,5 +4,8 @@
   <con:project name="ExploringWSDL">D:/ServicesForWebServiceTesting/ServicesForWebServicesTesting/SoapUIProjects/Batch4/WorksSpace/Projects/ExploringWSDL-soapui-project.xml</con:project>
   <con:project name="ManualSoap">D:/ServicesForWebServiceTesting/ServicesForWebServicesTesting/SoapUIProjects/Batch4/WorksSpace/Projects/ManualSoap-soapui-project.xml</con:project>
   <con:project name="yy">D:/ServicesForWebServiceTesting/ServicesForWebServicesTesting/SoapUIProjects/Batch4/WorksSpace/Projects/yy-soapui-project.xml</con:project>
+  <con:project name="StartedAssertions">D:/ServicesForWebServiceTesting/ServicesForWebServicesTesting/SoapUIProjects/Batch4/WorksSpace/Projects/StartedAssertions-soapui-project.xml</con:project>
+  <con:project name="zipcode">D:/ServicesForWebServiceTesting/ServicesForWebServicesTesting/SoapUIProjects/Batch4/WorksSpace/zipcode-soapui-project.xml</con:project>
+  <con:project name="XPath">C:/Users/sys/Documents/XPath-soapui-project.xml</con:project>
   <con:collectInfoForSupport>false</con:collectInfoForSupport>
 </con:soapui-workspace>
