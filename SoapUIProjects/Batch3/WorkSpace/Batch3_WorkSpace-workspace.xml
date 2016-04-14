@@ -11,4 +11,5 @@
   <con:project name="tde">C:/Users/sys/Documents/tde-soapui-project.xml</con:project>
   <con:project name="globalweather_KPS">C:/Users/sys/Documents/globalweather-KPS-soapui-project.xml</con:project>
   <con:project name="123">C:/Users/sys/Documents/123-soapui-project.xml</con:project>
+  <con:project name="GrrovyTrails">D:/ServicesForWebServiceTesting/ServicesForWebServicesTesting/SoapUIProjects/Batch3/WorkSpace/Projects/GrrovyTrails-soapui-project.xml</con:project>
 </con:soapui-workspace>
