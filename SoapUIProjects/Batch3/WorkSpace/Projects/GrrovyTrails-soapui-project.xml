@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<con:soapui-project id="d6bdfea2-9c3e-4d7f-8737-8a16401f0160" activeEnvironment="Default" name="GrrovyTrails" soapui-version="5.2.1" xmlns:con="http://eviware.com/soapui/config"><con:settings/><con:testSuite id="0a02908d-ed32-451e-8a62-0d0974c1983e" name="TestSuite 1"><con:settings/><con:runType>SEQUENTIAL</con:runType><con:testCase id="b6b3ca14-00a9-4f17-b344-be033cf58fcf" failOnError="true" failTestCaseOnErrors="true" keepSession="false" maxResults="0" name="TestCase 1" searchProperties="true"><con:settings/><con:testStep type="groovy" name="Groovy Script" id="d9adcc6d-508d-4cf1-9323-84208ba571d9"><con:settings/><con:config><script>int number1=context.expand('${#TestCase#number1}').toInteger()
+int number2=context.expand('${#TestCase#number2}').toInteger()
+int maxNumber=context.expand('${#TestCase#maxNumber}').toInteger()
+int sum=0
+
+for(int index=1;index&lt;maxNumber;index++)
+{
+	if(index%number1==0 || index%number2==0)
+	{
+		sum=sum+index;
+	}
+}
+log.info sum
+log.info context.getClass()
+log.info context.getCurrentStep().getName()
+context.getTestCase().getTestStepAt(1).getName()
+</script></con:config></con:testStep><con:testStep type="delay" name="Delay" id="9b8b4aa0-d8de-46a8-8476-7b294124fdf6"><con:settings/><con:config><delay>1000</delay></con:config></con:testStep><con:properties><con:property><con:name>number1</con:name><con:value>3</con:value></con:property><con:property><con:name>number2</con:name><con:value>5</con:value></con:property><con:property><con:name>maxNumber</con:name><con:value>10</con:value></con:property></con:properties></con:testCase><con:properties/></con:testSuite><con:properties/><con:wssContainer/><con:oAuth2ProfileContainer/></con:soapui-project>
