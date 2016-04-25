@@ -1,0 +1,430 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<con:soapui-project id="076c0cc0-6aef-4a7c-b949-34fc4423edc4" activeEnvironment="Default" name="Contact" resourceRoot="" soapui-version="5.0.0" abortOnError="false" runType="SEQUENTIAL" xmlns:con="http://eviware.com/soapui/config"><con:settings/><con:interface xsi:type="con:WsdlInterface" id="53875f88-aef2-4ed3-9557-95d26bd82e6c" wsaVersion="NONE" name="BasicHttpBinding_IContactInfoService" type="wsdl" bindingName="{http://tempuri.org/}BasicHttpBinding_IContactInfoService" soapVersion="1_1" anonymous="optional" definition="http://localhost:8733/SoapServiceLibrary/ContactInfoService/?wsdl" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"><con:settings/><con:definitionCache type="TEXT" rootPart="http://localhost:8733/SoapServiceLibrary/ContactInfoService/?wsdl"><con:part><con:url>http://localhost:8733/SoapServiceLibrary/ContactInfoService/?wsdl</con:url><con:content><![CDATA[<wsdl:definitions name="ContactInfoService" targetNamespace="http://tempuri.org/" xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:soapenc="http://schemas.xmlsoap.org/soap/encoding/" xmlns:wsu="http://docs.oasis-open.org/wss/2004/01/oasis-200401-wss-wssecurity-utility-1.0.xsd" xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" xmlns:soap12="http://schemas.xmlsoap.org/wsdl/soap12/" xmlns:tns="http://tempuri.org/" xmlns:wsa="http://schemas.xmlsoap.org/ws/2004/08/addressing" xmlns:wsx="http://schemas.xmlsoap.org/ws/2004/09/mex" xmlns:wsap="http://schemas.xmlsoap.org/ws/2004/08/addressing/policy" xmlns:wsaw="http://www.w3.org/2006/05/addressing/wsdl" xmlns:msc="http://schemas.microsoft.com/ws/2005/12/wsdl/contract" xmlns:wsp="http://schemas.xmlsoap.org/ws/2004/09/policy" xmlns:wsa10="http://www.w3.org/2005/08/addressing" xmlns:wsam="http://www.w3.org/2007/05/addressing/metadata">
+  <wsdl:types>
+    <xsd:schema targetNamespace="http://tempuri.org/Imports">
+      <xsd:import schemaLocation="http://localhost:8733/SoapServiceLibrary/ContactInfoService/?xsd=xsd0" namespace="http://tempuri.org/"/>
+      <xsd:import schemaLocation="http://localhost:8733/SoapServiceLibrary/ContactInfoService/?xsd=xsd1" namespace="http://schemas.microsoft.com/2003/10/Serialization/"/>
+      <xsd:import schemaLocation="http://localhost:8733/SoapServiceLibrary/ContactInfoService/?xsd=xsd2" namespace="http://schemas.datacontract.org/2004/07/SoapServiceLibrary.Definitions"/>
+    </xsd:schema>
+  </wsdl:types>
+  <wsdl:message name="IContactInfoService_AddContactInfo_InputMessage">
+    <wsdl:part name="parameters" element="tns:AddContactInfo"/>
+  </wsdl:message>
+  <wsdl:message name="IContactInfoService_AddContactInfo_OutputMessage">
+    <wsdl:part name="parameters" element="tns:AddContactInfoResponse"/>
+  </wsdl:message>
+  <wsdl:message name="IContactInfoService_GetAllContactInformations_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetAllContactInformations"/>
+  </wsdl:message>
+  <wsdl:message name="IContactInfoService_GetAllContactInformations_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetAllContactInformationsResponse"/>
+  </wsdl:message>
+  <wsdl:message name="IContactInfoService_DeleteContactsByEmailId_InputMessage">
+    <wsdl:part name="parameters" element="tns:DeleteContactsByEmailId"/>
+  </wsdl:message>
+  <wsdl:message name="IContactInfoService_DeleteContactsByEmailId_OutputMessage">
+    <wsdl:part name="parameters" element="tns:DeleteContactsByEmailIdResponse"/>
+  </wsdl:message>
+  <wsdl:message name="IContactInfoService_GetContactInformationByMail_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetContactInformationByMail"/>
+  </wsdl:message>
+  <wsdl:message name="IContactInfoService_GetContactInformationByMail_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetContactInformationByMailResponse"/>
+  </wsdl:message>
+  <wsdl:portType name="IContactInfoService">
+    <wsdl:operation name="AddContactInfo">
+      <wsdl:input wsaw:Action="http://tempuri.org/IContactInfoService/AddContactInfo" message="tns:IContactInfoService_AddContactInfo_InputMessage"/>
+      <wsdl:output wsaw:Action="http://tempuri.org/IContactInfoService/AddContactInfoResponse" message="tns:IContactInfoService_AddContactInfo_OutputMessage"/>
+    </wsdl:operation>
+    <wsdl:operation name="GetAllContactInformations">
+      <wsdl:input wsaw:Action="http://tempuri.org/IContactInfoService/GetAllContactInformations" message="tns:IContactInfoService_GetAllContactInformations_InputMessage"/>
+      <wsdl:output wsaw:Action="http://tempuri.org/IContactInfoService/GetAllContactInformationsResponse" message="tns:IContactInfoService_GetAllContactInformations_OutputMessage"/>
+    </wsdl:operation>
+    <wsdl:operation name="DeleteContactsByEmailId">
+      <wsdl:input wsaw:Action="http://tempuri.org/IContactInfoService/DeleteContactsByEmailId" message="tns:IContactInfoService_DeleteContactsByEmailId_InputMessage"/>
+      <wsdl:output wsaw:Action="http://tempuri.org/IContactInfoService/DeleteContactsByEmailIdResponse" message="tns:IContactInfoService_DeleteContactsByEmailId_OutputMessage"/>
+    </wsdl:operation>
+    <wsdl:operation name="GetContactInformationByMail">
+      <wsdl:input wsaw:Action="http://tempuri.org/IContactInfoService/GetContactInformationByMail" message="tns:IContactInfoService_GetContactInformationByMail_InputMessage"/>
+      <wsdl:output wsaw:Action="http://tempuri.org/IContactInfoService/GetContactInformationByMailResponse" message="tns:IContactInfoService_GetContactInformationByMail_OutputMessage"/>
+    </wsdl:operation>
+  </wsdl:portType>
+  <wsdl:binding name="BasicHttpBinding_IContactInfoService" type="tns:IContactInfoService">
+    <soap:binding transport="http://schemas.xmlsoap.org/soap/http"/>
+    <wsdl:operation name="AddContactInfo">
+      <soap:operation soapAction="http://tempuri.org/IContactInfoService/AddContactInfo" style="document"/>
+      <wsdl:input>
+        <soap:body use="literal"/>
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal"/>
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetAllContactInformations">
+      <soap:operation soapAction="http://tempuri.org/IContactInfoService/GetAllContactInformations" style="document"/>
+      <wsdl:input>
+        <soap:body use="literal"/>
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal"/>
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="DeleteContactsByEmailId">
+      <soap:operation soapAction="http://tempuri.org/IContactInfoService/DeleteContactsByEmailId" style="document"/>
+      <wsdl:input>
+        <soap:body use="literal"/>
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal"/>
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetContactInformationByMail">
+      <soap:operation soapAction="http://tempuri.org/IContactInfoService/GetContactInformationByMail" style="document"/>
+      <wsdl:input>
+        <soap:body use="literal"/>
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal"/>
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:service name="ContactInfoService">
+    <wsdl:port name="BasicHttpBinding_IContactInfoService" binding="tns:BasicHttpBinding_IContactInfoService">
+      <soap:address location="http://localhost:8733/SoapServiceLibrary/ContactInfoService/"/>
+    </wsdl:port>
+  </wsdl:service>
+</wsdl:definitions>]]></con:content><con:type>http://schemas.xmlsoap.org/wsdl/</con:type></con:part><con:part><con:url>http://localhost:8733/SoapServiceLibrary/ContactInfoService/?xsd=xsd0</con:url><con:content><![CDATA[<xs:schema elementFormDefault="qualified" targetNamespace="http://tempuri.org/" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:tns="http://tempuri.org/">
+  <xs:import schemaLocation="http://localhost:8733/SoapServiceLibrary/ContactInfoService/?xsd=xsd2" namespace="http://schemas.datacontract.org/2004/07/SoapServiceLibrary.Definitions"/>
+  <xs:element name="AddContactInfo">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="contactInformation" nillable="true" type="q1:ContactInformation" xmlns:q1="http://schemas.datacontract.org/2004/07/SoapServiceLibrary.Definitions"/>
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="AddContactInfoResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="AddContactInfoResult" type="xs:boolean"/>
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetAllContactInformations">
+    <xs:complexType>
+      <xs:sequence/>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetAllContactInformationsResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="GetAllContactInformationsResult" nillable="true" type="q2:ArrayOfContactInformation" xmlns:q2="http://schemas.datacontract.org/2004/07/SoapServiceLibrary.Definitions"/>
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="DeleteContactsByEmailId">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="emailId" nillable="true" type="xs:string"/>
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="DeleteContactsByEmailIdResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="DeleteContactsByEmailIdResult" type="xs:int"/>
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetContactInformationByMail">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="emailId" nillable="true" type="xs:string"/>
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetContactInformationByMailResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="GetContactInformationByMailResult" nillable="true" type="q3:ArrayOfContactInformation" xmlns:q3="http://schemas.datacontract.org/2004/07/SoapServiceLibrary.Definitions"/>
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+</xs:schema>]]></con:content><con:type>http://www.w3.org/2001/XMLSchema</con:type></con:part><con:part><con:url>http://localhost:8733/SoapServiceLibrary/ContactInfoService/?xsd=xsd2</con:url><con:content><![CDATA[<xs:schema elementFormDefault="qualified" targetNamespace="http://schemas.datacontract.org/2004/07/SoapServiceLibrary.Definitions" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:tns="http://schemas.datacontract.org/2004/07/SoapServiceLibrary.Definitions">
+  <xs:complexType name="ContactInformation">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="CreatedDateTime" type="xs:dateTime"/>
+      <xs:element minOccurs="0" name="EmailId" nillable="true" type="xs:string"/>
+      <xs:element minOccurs="0" name="FacebookId" nillable="true" type="xs:string"/>
+      <xs:element minOccurs="0" name="LinkedInId" nillable="true" type="xs:string"/>
+      <xs:element minOccurs="0" name="PrimaryContactNumber" nillable="true" type="xs:string"/>
+      <xs:element minOccurs="0" name="SecondaryContactNumber" nillable="true" type="xs:string"/>
+      <xs:element minOccurs="0" name="SkypeId" nillable="true" type="xs:string"/>
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ContactInformation" nillable="true" type="tns:ContactInformation"/>
+  <xs:complexType name="ArrayOfContactInformation">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="ContactInformation" nillable="true" type="tns:ContactInformation"/>
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ArrayOfContactInformation" nillable="true" type="tns:ArrayOfContactInformation"/>
+</xs:schema>]]></con:content><con:type>http://www.w3.org/2001/XMLSchema</con:type></con:part><con:part><con:url>http://localhost:8733/SoapServiceLibrary/ContactInfoService/?xsd=xsd1</con:url><con:content><![CDATA[<xs:schema attributeFormDefault="qualified" elementFormDefault="qualified" targetNamespace="http://schemas.microsoft.com/2003/10/Serialization/" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:tns="http://schemas.microsoft.com/2003/10/Serialization/">
+  <xs:element name="anyType" nillable="true" type="xs:anyType"/>
+  <xs:element name="anyURI" nillable="true" type="xs:anyURI"/>
+  <xs:element name="base64Binary" nillable="true" type="xs:base64Binary"/>
+  <xs:element name="boolean" nillable="true" type="xs:boolean"/>
+  <xs:element name="byte" nillable="true" type="xs:byte"/>
+  <xs:element name="dateTime" nillable="true" type="xs:dateTime"/>
+  <xs:element name="decimal" nillable="true" type="xs:decimal"/>
+  <xs:element name="double" nillable="true" type="xs:double"/>
+  <xs:element name="float" nillable="true" type="xs:float"/>
+  <xs:element name="int" nillable="true" type="xs:int"/>
+  <xs:element name="long" nillable="true" type="xs:long"/>
+  <xs:element name="QName" nillable="true" type="xs:QName"/>
+  <xs:element name="short" nillable="true" type="xs:short"/>
+  <xs:element name="string" nillable="true" type="xs:string"/>
+  <xs:element name="unsignedByte" nillable="true" type="xs:unsignedByte"/>
+  <xs:element name="unsignedInt" nillable="true" type="xs:unsignedInt"/>
+  <xs:element name="unsignedLong" nillable="true" type="xs:unsignedLong"/>
+  <xs:element name="unsignedShort" nillable="true" type="xs:unsignedShort"/>
+  <xs:element name="char" nillable="true" type="tns:char"/>
+  <xs:simpleType name="char">
+    <xs:restriction base="xs:int"/>
+  </xs:simpleType>
+  <xs:element name="duration" nillable="true" type="tns:duration"/>
+  <xs:simpleType name="duration">
+    <xs:restriction base="xs:duration">
+      <xs:pattern value="\-?P(\d*D)?(T(\d*H)?(\d*M)?(\d*(\.\d*)?S)?)?"/>
+      <xs:minInclusive value="-P10675199DT2H48M5.4775808S"/>
+      <xs:maxInclusive value="P10675199DT2H48M5.4775807S"/>
+    </xs:restriction>
+  </xs:simpleType>
+  <xs:element name="guid" nillable="true" type="tns:guid"/>
+  <xs:simpleType name="guid">
+    <xs:restriction base="xs:string">
+      <xs:pattern value="[\da-fA-F]{8}-[\da-fA-F]{4}-[\da-fA-F]{4}-[\da-fA-F]{4}-[\da-fA-F]{12}"/>
+    </xs:restriction>
+  </xs:simpleType>
+  <xs:attribute name="FactoryType" type="xs:QName"/>
+  <xs:attribute name="Id" type="xs:ID"/>
+  <xs:attribute name="Ref" type="xs:IDREF"/>
+</xs:schema>]]></con:content><con:type>http://www.w3.org/2001/XMLSchema</con:type></con:part></con:definitionCache><con:endpoints><con:endpoint>http://localhost:8733/SoapServiceLibrary/ContactInfoService/</con:endpoint></con:endpoints><con:operation id="518b0c92-b021-4d62-bf0d-9e6ade4747e0" isOneWay="false" action="http://tempuri.org/IContactInfoService/AddContactInfo" name="AddContactInfo" bindingOperationName="AddContactInfo" type="Request-Response" inputName="" receivesAttachments="false" sendsAttachments="false" anonymous="optional"><con:settings/><con:call id="24c3c96a-0ffc-424e-be1a-ad95705ef4ba" name="Request 1"><con:settings/><con:encoding>UTF-8</con:encoding><con:endpoint>http://localhost:8733/SoapServiceLibrary/ContactInfoService/</con:endpoint><con:request><![CDATA[<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:tem="http://tempuri.org/" xmlns:soap="http://schemas.datacontract.org/2004/07/SoapServiceLibrary.Definitions">\r
+   <soapenv:Header/>\r
+   <soapenv:Body>\r
+      <tem:AddContactInfo>\r
+         <!--Optional:-->\r
+         <tem:contactInformation>\r
+            <!--Optional:-->\r
+            <soap:CreatedDateTime>?</soap:CreatedDateTime>\r
+            <!--Optional:-->\r
+            <soap:EmailId>?</soap:EmailId>\r
+            <!--Optional:-->\r
+            <soap:FacebookId>?</soap:FacebookId>\r
+            <!--Optional:-->\r
+            <soap:LinkedInId>?</soap:LinkedInId>\r
+            <!--Optional:-->\r
+            <soap:PrimaryContactNumber>?</soap:PrimaryContactNumber>\r
+            <!--Optional:-->\r
+            <soap:SecondaryContactNumber>?</soap:SecondaryContactNumber>\r
+            <!--Optional:-->\r
+            <soap:SkypeId>?</soap:SkypeId>\r
+         </tem:contactInformation>\r
+      </tem:AddContactInfo>\r
+   </soapenv:Body>\r
+</soapenv:Envelope>]]></con:request><con:wsaConfig mustUnderstand="NONE" version="200508" action="http://tempuri.org/IContactInfoService/AddContactInfo"/></con:call></con:operation><con:operation id="a0637d03-4d09-4d69-9bd8-a17d721fc26d" isOneWay="false" action="http://tempuri.org/IContactInfoService/DeleteContactsByEmailId" name="DeleteContactsByEmailId" bindingOperationName="DeleteContactsByEmailId" type="Request-Response" inputName="" receivesAttachments="false" sendsAttachments="false" anonymous="optional"><con:settings/><con:call id="4efc40ac-da8c-4ccb-9b48-b2e0591e4eee" name="Request 1"><con:settings/><con:encoding>UTF-8</con:encoding><con:endpoint>http://localhost:8733/SoapServiceLibrary/ContactInfoService/</con:endpoint><con:request><![CDATA[<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:tem="http://tempuri.org/">\r
+   <soapenv:Header/>\r
+   <soapenv:Body>\r
+      <tem:DeleteContactsByEmailId>\r
+         <!--Optional:-->\r
+         <tem:emailId>?</tem:emailId>\r
+      </tem:DeleteContactsByEmailId>\r
+   </soapenv:Body>\r
+</soapenv:Envelope>]]></con:request><con:wsaConfig mustUnderstand="NONE" version="200508" action="http://tempuri.org/IContactInfoService/DeleteContactsByEmailId"/></con:call></con:operation><con:operation id="0db2a2a9-0716-415e-9350-4b0b9861830b" isOneWay="false" action="http://tempuri.org/IContactInfoService/GetAllContactInformations" name="GetAllContactInformations" bindingOperationName="GetAllContactInformations" type="Request-Response" inputName="" receivesAttachments="false" sendsAttachments="false" anonymous="optional"><con:settings/><con:call id="3b1bd504-67be-4c1e-aaae-2a086da4f8b6" name="Request 1"><con:settings><con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;xml-fragment/></con:setting></con:settings><con:encoding>UTF-8</con:encoding><con:endpoint>http://localhost:8733/SoapServiceLibrary/ContactInfoService/</con:endpoint><con:request><![CDATA[<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:tem="http://tempuri.org/">\r
+   <soapenv:Header/>\r
+   <soapenv:Body>\r
+      <tem:GetAllContactInformations/>\r
+   </soapenv:Body>\r
+</soapenv:Envelope>]]></con:request><con:credentials><con:authType>No Authorization</con:authType></con:credentials><con:jmsConfig JMSDeliveryMode="PERSISTENT"/><con:jmsPropertyConfig/><con:wsaConfig mustUnderstand="NONE" version="200508" action="http://tempuri.org/IContactInfoService/GetAllContactInformations"/><con:wsrmConfig version="1.2"/></con:call></con:operation><con:operation id="c526474a-cf63-401c-855e-f6bf3e266543" isOneWay="false" action="http://tempuri.org/IContactInfoService/GetContactInformationByMail" name="GetContactInformationByMail" bindingOperationName="GetContactInformationByMail" type="Request-Response" inputName="" receivesAttachments="false" sendsAttachments="false" anonymous="optional"><con:settings/><con:call id="dd090c4e-8896-4c0f-b484-7cb110cd24be" name="Request 1"><con:settings/><con:encoding>UTF-8</con:encoding><con:endpoint>http://localhost:8733/SoapServiceLibrary/ContactInfoService/</con:endpoint><con:request><![CDATA[<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:tem="http://tempuri.org/">\r
+   <soapenv:Header/>\r
+   <soapenv:Body>\r
+      <tem:GetContactInformationByMail>\r
+         <!--Optional:-->\r
+         <tem:emailId>?</tem:emailId>\r
+      </tem:GetContactInformationByMail>\r
+   </soapenv:Body>\r
+</soapenv:Envelope>]]></con:request><con:wsaConfig mustUnderstand="NONE" version="200508" action="http://tempuri.org/IContactInfoService/GetContactInformationByMail"/></con:call></con:operation></con:interface><con:testSuite id="8b21bcf7-0e0e-4a19-84f3-f16e312b1318" name="POCTS"><con:settings/><con:runType>SEQUENTIAL</con:runType><con:testCase id="243d6d96-2fda-4567-b8fb-490827d526d2" failOnError="true" failTestCaseOnErrors="true" keepSession="false" maxResults="0" name="POC_1" searchProperties="true"><con:settings/><con:testStep type="request" name="GetAllContacts" id="7405cb2a-bf5a-45be-a41a-7271862a5fcb"><con:settings/><con:config xsi:type="con:RequestStep" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"><con:interface>BasicHttpBinding_IContactInfoService</con:interface><con:operation>GetAllContactInformations</con:operation><con:request name="GetAllContacts" id="b9a53df9-b832-4a6b-8689-fef1d754c5e6"><con:settings><con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;xml-fragment/></con:setting></con:settings><con:encoding>UTF-8</con:encoding><con:endpoint>http://localhost:8733/SoapServiceLibrary/ContactInfoService/</con:endpoint><con:request><![CDATA[<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:tem="http://tempuri.org/">\r
+   <soapenv:Header/>
+   <soapenv:Body>
+      <tem:GetAllContactInformations/>
+   </soapenv:Body>
+</soapenv:Envelope>]]></con:request><con:assertion type="SOAP Response" id="f97ad6e6-d6b7-4829-b3c7-6cd2c65253bb"/><con:credentials><con:authType>No Authorization</con:authType></con:credentials><con:jmsConfig JMSDeliveryMode="PERSISTENT"/><con:jmsPropertyConfig/><con:wsaConfig mustUnderstand="NONE" version="200508"/><con:wsrmConfig version="1.2"/></con:request></con:config></con:testStep><con:testStep type="transfer" name="TransferCount" id="b5dcff3c-3069-4e6d-b832-718eb2782faa"><con:settings/><con:config xsi:type="con:PropertyTransfersStep" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"><con:transfers setNullOnMissingSource="true" transferTextContent="true" failOnError="true" ignoreEmpty="false" transferToAll="false" entitize="false" transferChildNodes="false"><con:name>countBeforeAdd</con:name><con:sourceType>Response</con:sourceType><con:sourceStep>GetAllContacts</con:sourceStep><con:sourcePath>declare namespace soap='http://schemas.xmlsoap.org/soap/envelope/';
+declare namespace ns1='http://schemas.microsoft.com/2003/10/Serialization/';
+declare namespace ns2='http://schemas.datacontract.org/2004/07/SoapServiceLibrary.Definitions';
+declare namespace ns3='http://tempuri.org/';
+count(//ns2:ContactInformation)</con:sourcePath><con:targetType>countBeforeAdd</con:targetType><con:targetStep>#TestCase#</con:targetStep><con:upgraded>true</con:upgraded></con:transfers><con:transfers setNullOnMissingSource="true" transferTextContent="true" failOnError="true"><con:name>transfer</con:name><con:sourceType>Response</con:sourceType><con:sourceStep>GetAllContacts</con:sourceStep><con:sourcePath/><con:targetType>Request</con:targetType><con:targetStep>AddContact</con:targetStep><con:upgraded>true</con:upgraded></con:transfers></con:config></con:testStep><con:testStep type="request" name="AddContact" id="9ca61eed-a681-4294-96ab-908e0b80eaed"><con:settings/><con:config xsi:type="con:RequestStep" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"><con:interface>BasicHttpBinding_IContactInfoService</con:interface><con:operation>AddContactInfo</con:operation><con:request name="AddContact" id="ba7fa3ab-cca8-4056-abe7-df51f225f89b"><con:settings><con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;xml-fragment/></con:setting></con:settings><con:encoding>UTF-8</con:encoding><con:endpoint>http://localhost:8733/SoapServiceLibrary/ContactInfoService/</con:endpoint><con:request><![CDATA[<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:tem="http://tempuri.org/" xmlns:soap="http://schemas.datacontract.org/2004/07/SoapServiceLibrary.Definitions">\r
+   <soapenv:Header/>\r
+   <soapenv:Body>\r
+      <tem:AddContactInfo>\r
+         <!--Optional:-->\r
+         <tem:contactInformation>\r
+           
+            <!--Optional:-->\r
+            <soap:EmailId>${#TestCase#email}</soap:EmailId>\r
+            <!--Optional:-->\r
+            <soap:FacebookId>?</soap:FacebookId>\r
+            <!--Optional:-->\r
+            <soap:LinkedInId>?</soap:LinkedInId>\r
+            <!--Optional:-->\r
+            <soap:PrimaryContactNumber>${#TestCase#pco}</soap:PrimaryContactNumber>\r
+            <!--Optional:-->\r
+            <soap:SecondaryContactNumber>?</soap:SecondaryContactNumber>\r
+            <!--Optional:-->\r
+            <soap:SkypeId>?</soap:SkypeId>\r
+         </tem:contactInformation>\r
+      </tem:AddContactInfo>\r
+   </soapenv:Body>\r
+</soapenv:Envelope>]]></con:request><con:assertion type="SOAP Response" id="5587e1e1-f895-4c58-b74b-4aed4efb5e4d"/><con:credentials><con:authType>No Authorization</con:authType></con:credentials><con:jmsConfig JMSDeliveryMode="PERSISTENT"/><con:jmsPropertyConfig/><con:wsaConfig mustUnderstand="NONE" version="200508"/><con:wsrmConfig version="1.2"/></con:request></con:config></con:testStep><con:testStep type="request" name="Copy of GetAllContacts" id="9a10fdb8-aac4-44de-a949-c48f8bde7eaa"><con:settings/><con:config xsi:type="con:RequestStep" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"><con:interface>BasicHttpBinding_IContactInfoService</con:interface><con:operation>GetAllContactInformations</con:operation><con:request name="Copy of GetAllContacts" id="b9a53df9-b832-4a6b-8689-fef1d754c5e6"><con:settings><con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;xml-fragment/></con:setting></con:settings><con:encoding>UTF-8</con:encoding><con:endpoint>http://localhost:8733/SoapServiceLibrary/ContactInfoService/</con:endpoint><con:request><![CDATA[<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:tem="http://tempuri.org/">\r
+   <soapenv:Header/>\r
+   <soapenv:Body>\r
+      <tem:GetAllContactInformations/>\r
+   </soapenv:Body>\r
+</soapenv:Envelope>]]></con:request><con:assertion type="SOAP Response" id="f97ad6e6-d6b7-4829-b3c7-6cd2c65253bb"/><con:assertion type="XPath Match" id="d2d98c5c-8e57-40b5-a6ae-09e51e5a88f8" name="XPath Match"><con:configuration><path>declare namespace a='http://schemas.datacontract.org/2004/07/SoapServiceLibrary.Definitions';
+declare namespace ns1='http://tempuri.org/';
+declare namespace i='http://www.w3.org/2001/XMLSchema-instance';
+declare namespace s='http://schemas.xmlsoap.org/soap/envelope/';
+count(//a:ContactInformation)-1</path><content>${#TestCase#countbeforeAdd}</content><allowWildcards>false</allowWildcards><ignoreNamspaceDifferences>false</ignoreNamspaceDifferences><ignoreComments>false</ignoreComments></con:configuration></con:assertion><con:credentials><con:authType>No Authorization</con:authType></con:credentials><con:jmsConfig JMSDeliveryMode="PERSISTENT"/><con:jmsPropertyConfig/><con:wsaConfig mustUnderstand="NONE" version="200508"/><con:wsrmConfig version="1.2"/></con:request></con:config></con:testStep><con:testStep type="request" name="GetSpecificContact" id="e9da4a02-6327-45e0-91b0-819fed57ebbe"><con:settings/><con:config xsi:type="con:RequestStep" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"><con:interface>BasicHttpBinding_IContactInfoService</con:interface><con:operation>GetContactInformationByMail</con:operation><con:request name="GetSpecificContact" id="99904696-5804-4123-98f4-92339462f4d4"><con:settings><con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;xml-fragment/></con:setting></con:settings><con:encoding>UTF-8</con:encoding><con:endpoint>http://localhost:8733/SoapServiceLibrary/ContactInfoService/</con:endpoint><con:request><![CDATA[<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:tem="http://tempuri.org/">\r
+   <soapenv:Header/>\r
+   <soapenv:Body>\r
+      <tem:GetContactInformationByMail>\r
+         <!--Optional:-->\r
+         <tem:emailId>${#TestCase#email}</tem:emailId>\r
+      </tem:GetContactInformationByMail>\r
+   </soapenv:Body>\r
+</soapenv:Envelope>]]></con:request><con:assertion type="SOAP Response" id="f991feca-bb77-4106-b503-3f49345d1d81"/><con:assertion type="XPath Match" id="18eda616-7230-41a0-8ff6-c01804c87ab1" name="XPath Match"><con:configuration><path>declare namespace a='http://schemas.datacontract.org/2004/07/SoapServiceLibrary.Definitions';
+declare namespace ns1='http://tempuri.org/';
+declare namespace i='http://www.w3.org/2001/XMLSchema-instance';
+declare namespace s='http://schemas.xmlsoap.org/soap/envelope/';
+exists(//a:ContactInformation)</path><content>true</content><allowWildcards>false</allowWildcards><ignoreNamspaceDifferences>false</ignoreNamspaceDifferences><ignoreComments>false</ignoreComments></con:configuration></con:assertion><con:credentials><con:authType>No Authorization</con:authType></con:credentials><con:jmsConfig JMSDeliveryMode="PERSISTENT"/><con:jmsPropertyConfig/><con:wsaConfig mustUnderstand="NONE" version="200508"/><con:wsrmConfig version="1.2"/></con:request></con:config></con:testStep><con:testStep type="request" name="Delete" id="0c68cbe3-87d5-41b4-95bc-c776de579f11"><con:settings/><con:config xsi:type="con:RequestStep" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"><con:interface>BasicHttpBinding_IContactInfoService</con:interface><con:operation>DeleteContactsByEmailId</con:operation><con:request name="Delete" id="1b8bce8e-a9c9-407d-9ce5-378e75e31ce8"><con:settings><con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;xml-fragment/></con:setting></con:settings><con:encoding>UTF-8</con:encoding><con:endpoint>http://localhost:8733/SoapServiceLibrary/ContactInfoService/</con:endpoint><con:request><![CDATA[<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:tem="http://tempuri.org/">\r
+   <soapenv:Header/>\r
+   <soapenv:Body>\r
+      <tem:DeleteContactsByEmailId>\r
+         <!--Optional:-->\r
+         <tem:emailId>${#TestCase#email}</tem:emailId>\r
+      </tem:DeleteContactsByEmailId>\r
+   </soapenv:Body>\r
+</soapenv:Envelope>]]></con:request><con:assertion type="SOAP Response" id="36e09d6b-3462-4bc4-abe4-f4fb077f9a6d"/><con:credentials><con:authType>No Authorization</con:authType></con:credentials><con:jmsConfig JMSDeliveryMode="PERSISTENT"/><con:jmsPropertyConfig/><con:wsaConfig mustUnderstand="NONE" version="200508"/><con:wsrmConfig version="1.2"/></con:request></con:config></con:testStep><con:testStep type="request" name="Copy of GetAllContacts1" id="eb48b5de-2720-4114-92e5-0286fc9b03c7"><con:settings/><con:config xsi:type="con:RequestStep" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"><con:interface>BasicHttpBinding_IContactInfoService</con:interface><con:operation>GetAllContactInformations</con:operation><con:request name="Copy of GetAllContacts1" id="b9a53df9-b832-4a6b-8689-fef1d754c5e6"><con:settings><con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;xml-fragment/></con:setting></con:settings><con:encoding>UTF-8</con:encoding><con:endpoint>http://localhost:8733/SoapServiceLibrary/ContactInfoService/</con:endpoint><con:request><![CDATA[<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:tem="http://tempuri.org/">\r
+   <soapenv:Header/>\r
+   <soapenv:Body>\r
+      <tem:GetAllContactInformations/>\r
+   </soapenv:Body>\r
+</soapenv:Envelope>]]></con:request><con:assertion type="SOAP Response" id="f97ad6e6-d6b7-4829-b3c7-6cd2c65253bb"/><con:assertion type="XPath Match" id="369f9bd2-8125-45bc-ba2e-2f97c88b3d65" name="XPath Match"><con:configuration><path>declare namespace a='http://schemas.datacontract.org/2004/07/SoapServiceLibrary.Definitions';
+declare namespace ns1='http://tempuri.org/';
+declare namespace i='http://www.w3.org/2001/XMLSchema-instance';
+declare namespace s='http://schemas.xmlsoap.org/soap/envelope/';
+count(//a:ContactInformation)</path><content>${#TestCase#countBeforeAdd}</content><allowWildcards>false</allowWildcards><ignoreNamspaceDifferences>false</ignoreNamspaceDifferences><ignoreComments>false</ignoreComments></con:configuration></con:assertion><con:credentials><con:authType>No Authorization</con:authType></con:credentials><con:jmsConfig JMSDeliveryMode="PERSISTENT"/><con:jmsPropertyConfig/><con:wsaConfig mustUnderstand="NONE" version="200508"/><con:wsrmConfig version="1.2"/></con:request></con:config></con:testStep><con:properties><con:property><con:name>countBeforeAdd</con:name><con:value>9</con:value></con:property><con:property><con:name>email</con:name><con:value>qt@one.com</con:value></con:property><con:property><con:name>pco</con:name><con:value>99999999999</con:value></con:property></con:properties><con:reportParameters/></con:testCase><con:properties/><con:reportParameters/></con:testSuite><con:testSuite name="ContactInfoDD" id="e83cf07e-f37d-4719-b1ba-f79f81074c22"><con:settings/><con:runType>SEQUENTIAL</con:runType><con:testCase failOnError="true" failTestCaseOnErrors="true" keepSession="false" maxResults="0" name="DD1" searchProperties="true" id="645e2b8b-04a4-49fc-ace5-c86fc0bdd0ba"><con:settings/><con:testStep type="datasource" name="DataSource" id="95b196bd-2f59-43d1-b97b-81a13664ce5c"><con:settings/><con:config xsi:type="con:DataSourceStep" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"><con:dataSource type="XML"><con:configuration><sourceStep/><sourceProperty/><rowPath/></con:configuration></con:dataSource><con:restartOnRun>true</con:restartOnRun></con:config></con:testStep><con:testStep type="datagen" name="DataGen" id="9bcc8160-76ca-4e10-a910-63ac77fbf16d"><con:settings/><con:config xsi:type="con:DataGeneratorStep" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"><con:property type="Number"><con:configuration><start>111111111</start><end>999999999</end><step/><pattern/><random>true</random><persist>false</persist></con:configuration><con:name>sco</con:name><con:mode>STEP</con:mode><con:shared>false</con:shared></con:property><con:property type="List"><con:configuration><value>test1</value><value>test2</value><value>test3</value><value>test4</value><value>test5</value><value>test6</value><value>test7</value><random>false</random></con:configuration><con:name>socialMediaId</con:name><con:mode>STEP</con:mode><con:shared>false</con:shared></con:property></con:config></con:testStep><con:testStep type="request" name="AddContact" id="1c578399-93ea-43b6-9ff3-523687f33ba8"><con:settings/><con:config xsi:type="con:RequestStep" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"><con:interface>BasicHttpBinding_IContactInfoService</con:interface><con:operation>AddContactInfo</con:operation><con:request name="AddContact" id="c031d2d1-7b9c-4e04-8624-df0a72726f30"><con:settings><con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;xml-fragment/></con:setting></con:settings><con:encoding>UTF-8</con:encoding><con:endpoint>http://localhost:8733/SoapServiceLibrary/ContactInfoService/</con:endpoint><con:request><![CDATA[<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:tem="http://tempuri.org/" xmlns:soap="http://schemas.datacontract.org/2004/07/SoapServiceLibrary.Definitions">
+   <soapenv:Header/>
+   <soapenv:Body>
+      <tem:AddContactInfo>
+         <!--Optional:-->
+         <tem:contactInformation>
+           
+            <!--Optional:-->
+            <soap:EmailId>${DataSource#email}</soap:EmailId>
+            <!--Optional:-->
+            <soap:FacebookId>${DataGen#socialMediaId}</soap:FacebookId>
+            <!--Optional:-->
+            <soap:LinkedInId>${DataGen#socialMediaId}</soap:LinkedInId>
+            <!--Optional:-->
+            <soap:PrimaryContactNumber>${DataSource#pco}</soap:PrimaryContactNumber>
+            <!--Optional:-->
+            <soap:SecondaryContactNumber>${DataGen#sco}</soap:SecondaryContactNumber>
+            <!--Optional:-->
+            <soap:SkypeId>${DataGen#socialMediaId}</soap:SkypeId>
+         </tem:contactInformation>
+      </tem:AddContactInfo>
+   </soapenv:Body>
+</soapenv:Envelope>]]></con:request><con:assertion type="SOAP Response" id="f7ac1a40-95c9-4829-9254-86457a609331"/><con:credentials><con:authType>No Authorization</con:authType></con:credentials><con:jmsConfig JMSDeliveryMode="PERSISTENT"/><con:jmsPropertyConfig/><con:wsaConfig mustUnderstand="NONE" version="200508"/><con:wsrmConfig version="1.2"/></con:request></con:config></con:testStep><con:testStep type="request" name="Delete" disabled="true" id="110fb51d-e527-4378-b5e7-ac3a86bbee81"><con:settings/><con:config xsi:type="con:RequestStep" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"><con:interface>BasicHttpBinding_IContactInfoService</con:interface><con:operation>DeleteContactsByEmailId</con:operation><con:request name="Delete" id="bac43160-e777-4da9-9332-2afc1b92563a"><con:settings><con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;xml-fragment/></con:setting></con:settings><con:encoding>UTF-8</con:encoding><con:endpoint>http://localhost:8733/SoapServiceLibrary/ContactInfoService/</con:endpoint><con:request><![CDATA[<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:tem="http://tempuri.org/">
+   <soapenv:Header/>
+   <soapenv:Body>
+      <tem:DeleteContactsByEmailId>
+         <!--Optional:-->
+         <tem:emailId>${DataSource#email}</tem:emailId>
+      </tem:DeleteContactsByEmailId>
+   </soapenv:Body>
+</soapenv:Envelope>]]></con:request><con:assertion type="SOAP Response" id="e87a816f-0ecf-4448-b430-7289a540749a"/><con:credentials><con:authType>No Authorization</con:authType></con:credentials><con:jmsConfig JMSDeliveryMode="PERSISTENT"/><con:jmsPropertyConfig/><con:wsaConfig mustUnderstand="NONE" version="200508"/><con:wsrmConfig version="1.2"/></con:request></con:config></con:testStep><con:testStep type="request" name="GetAllContacts" id="0000cf03-554d-4aa8-93e1-f5db90d2cecd"><con:settings/><con:config xsi:type="con:RequestStep" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"><con:interface>BasicHttpBinding_IContactInfoService</con:interface><con:operation>GetAllContactInformations</con:operation><con:request name="GetAllContacts" id="9310ee09-a480-421f-ba16-4a4edc7ebdfc"><con:settings><con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;xml-fragment/></con:setting></con:settings><con:encoding>UTF-8</con:encoding><con:endpoint>http://localhost:8733/SoapServiceLibrary/ContactInfoService/</con:endpoint><con:request><![CDATA[<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:tem="http://tempuri.org/">
+   <soapenv:Header/>
+   <soapenv:Body>
+      <tem:GetAllContactInformations/>
+   </soapenv:Body>
+</soapenv:Envelope>]]></con:request><con:assertion type="SOAP Response" id="015a461d-94b3-437f-ad70-f45489a3f4cc"/><con:credentials><con:authType>No Authorization</con:authType></con:credentials><con:jmsConfig JMSDeliveryMode="PERSISTENT"/><con:jmsPropertyConfig/><con:wsaConfig mustUnderstand="NONE" version="200508"/><con:wsrmConfig version="1.2"/></con:request></con:config></con:testStep><con:testStep type="datasourceloop" name="DataSource Loop" id="5aab9232-2d9e-47b6-b575-832e16670692"><con:settings/><con:config><dataSourceStep>DataSource</dataSourceStep><targetStep>DataGen</targetStep></con:config></con:testStep><con:testStep type="transfer" name="Property Transfer" id="dfee93b5-32ff-47ec-83a6-4fa06a552842"><con:settings/><con:config xsi:type="con:PropertyTransfersStep" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"/></con:testStep><con:properties/><con:reportParameters/></con:testCase><con:testCase failOnError="true" failTestCaseOnErrors="true" keepSession="false" maxResults="0" name="CGoto" searchProperties="true" id="05be9d96-c51d-4439-8817-8aa7cb738bb6"><con:settings/><con:testStep type="request" name="GetallContacts" id="46b18905-77d2-4a17-818a-66f63ed8cd51"><con:settings/><con:config xsi:type="con:RequestStep" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"><con:interface>BasicHttpBinding_IContactInfoService</con:interface><con:operation>GetAllContactInformations</con:operation><con:request name="GetallContacts" id="dbe02172-129b-40f9-b3be-0d389e07d505"><con:settings><con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;xml-fragment/></con:setting></con:settings><con:encoding>UTF-8</con:encoding><con:endpoint>http://localhost:8733/SoapServiceLibrary/ContactInfoService/</con:endpoint><con:request><![CDATA[<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:tem="http://tempuri.org/">
+   <soapenv:Header/>
+   <soapenv:Body>
+      <tem:GetAllContactInformations/>
+   </soapenv:Body>
+</soapenv:Envelope>]]></con:request><con:assertion type="SOAP Response" id="5dbcb7fe-f41d-46d2-9466-91755dd054b4"/><con:assertion type="XPath Match" name="XPath Match" disabled="true" id="874b6b9a-7118-4c08-a47c-c6d0b0fc3b02"><con:configuration/></con:assertion><con:credentials><con:authType>No Authorization</con:authType></con:credentials><con:jmsConfig JMSDeliveryMode="PERSISTENT"/><con:jmsPropertyConfig/><con:wsaConfig mustUnderstand="NONE" version="200508"/><con:wsrmConfig version="1.2"/></con:request></con:config></con:testStep><con:testStep type="goto" name="skipdelete" id="c269728a-7c74-4e06-bbe0-776013bb0d35"><con:settings/><con:config xsi:type="con:GotoStep" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"><con:condition><con:name>Condition 1</con:name><con:type>XPATH</con:type><con:expression>declare namespace a='http://schemas.datacontract.org/2004/07/SoapServiceLibrary.Definitions';
+declare namespace ns1='http://tempuri.org/';
+not(exists(//ns1:GetAllContactInformationsResponse[1]/ns1:GetAllContactInformationsResult[1]/a:ContactInformation))</con:expression><con:targetStep>Copy of GetallContacts</con:targetStep></con:condition></con:config></con:testStep><con:testStep type="transfer" name="Property Transfer" id="e3501d08-8e58-4f72-b75c-467424455e4a"><con:settings/><con:config xsi:type="con:PropertyTransfersStep" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"><con:transfers setNullOnMissingSource="true" transferTextContent="true" failOnError="true" ignoreEmpty="false" transferToAll="false" useXQuery="false" entitize="false" transferChildNodes="false"><con:name>email</con:name><con:sourceType>Response</con:sourceType><con:sourceStep>GetallContacts</con:sourceStep><con:sourcePath>declare namespace a='http://schemas.datacontract.org/2004/07/SoapServiceLibrary.Definitions';
+declare namespace ns1='http://tempuri.org/';
+//ns1:GetAllContactInformationsResponse[1]/ns1:GetAllContactInformationsResult[1]/a:ContactInformation[1]/a:EmailId[1]</con:sourcePath><con:targetType>Request</con:targetType><con:targetStep>Delete</con:targetStep><con:targetPath>declare namespace tem='http://tempuri.org/';
+//tem:DeleteContactsByEmailId[1]/tem:emailId[1]</con:targetPath><con:upgraded>true</con:upgraded></con:transfers></con:config></con:testStep><con:testStep type="request" name="Delete" id="7d76b05e-650f-4a33-b3c0-6b88beb5b4d5"><con:settings/><con:config xsi:type="con:RequestStep" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"><con:interface>BasicHttpBinding_IContactInfoService</con:interface><con:operation>DeleteContactsByEmailId</con:operation><con:request name="Delete" id="cfbfabed-6734-4b7d-8221-8fb4f1b5d37a"><con:settings><con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;xml-fragment/></con:setting></con:settings><con:encoding>UTF-8</con:encoding><con:endpoint>http://localhost:8733/SoapServiceLibrary/ContactInfoService/</con:endpoint><con:request><![CDATA[<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:tem="http://tempuri.org/">
+   <soapenv:Header/>
+   <soapenv:Body>
+      <tem:DeleteContactsByEmailId>
+         <!--Optional:-->
+         <tem:emailId xsi:nil="true" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"/>
+      </tem:DeleteContactsByEmailId>
+   </soapenv:Body>
+</soapenv:Envelope>]]></con:request><con:assertion type="SOAP Response" id="b9ed248c-daba-4e83-b656-a22f5dcc8624"/><con:credentials><con:authType>No Authorization</con:authType></con:credentials><con:jmsConfig JMSDeliveryMode="PERSISTENT"/><con:jmsPropertyConfig/><con:wsaConfig mustUnderstand="NONE" version="200508"/><con:wsrmConfig version="1.2"/></con:request></con:config></con:testStep><con:testStep type="request" name="Copy of GetallContacts" id="254b04f4-776c-4a96-995f-822aa3115ce7"><con:settings/><con:config xsi:type="con:RequestStep" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"><con:interface>BasicHttpBinding_IContactInfoService</con:interface><con:operation>GetAllContactInformations</con:operation><con:request name="Copy of GetallContacts" id="3fa8bb72-ce10-4d62-9cd1-741c4737c3f9"><con:settings><con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;xml-fragment/></con:setting></con:settings><con:encoding>UTF-8</con:encoding><con:endpoint>http://localhost:8733/SoapServiceLibrary/ContactInfoService/</con:endpoint><con:request><![CDATA[<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:tem="http://tempuri.org/">
+   <soapenv:Header/>
+   <soapenv:Body>
+      <tem:GetAllContactInformations/>
+   </soapenv:Body>
+</soapenv:Envelope>]]></con:request><con:assertion type="SOAP Response" id="38400e15-5d7e-4a03-8416-d8a2013d30d7"/><con:credentials><con:authType>No Authorization</con:authType></con:credentials><con:jmsConfig JMSDeliveryMode="PERSISTENT"/><con:jmsPropertyConfig/><con:wsaConfig mustUnderstand="NONE" version="200508"/><con:wsrmConfig version="1.2"/></con:request></con:config></con:testStep><con:testStep type="delay" name="Delay" id="2c418594-86cb-414b-910b-d1a77f32c6ee"><con:settings/><con:config><delay>500</delay></con:config></con:testStep><con:testStep type="manualTestStep" name="Manual TestStep" id="615dd352-475e-40db-b437-3b85b074c600"><con:settings/><con:config xsi:type="con:ManualTestStep" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"/></con:testStep><con:testStep type="goto" name="Conditional Goto" id="db27ef27-8c36-4c65-a930-de9ba4540e24"><con:settings/><con:config xsi:type="con:GotoStep" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"><con:condition><con:name>verifyexistance</con:name><con:type>XPATH</con:type><con:expression>declare namespace a='http://schemas.datacontract.org/2004/07/SoapServiceLibrary.Definitions';
+declare namespace ns1='http://tempuri.org/';
+exists(//ns1:GetAllContactInformationsResponse[1]/ns1:GetAllContactInformationsResult[1]/a:ContactInformation[1]/a:EmailId[1])</con:expression><con:targetStep>GetallContacts</con:targetStep></con:condition></con:config></con:testStep><con:properties/><con:reportParameters/><con:breakPoints><con:testStepId>2c418594-86cb-414b-910b-d1a77f32c6ee</con:testStepId><con:status>NONE</con:status><con:properties/></con:breakPoints></con:testCase><con:testCase failOnError="true" failTestCaseOnErrors="true" keepSession="false" maxResults="0" name="TestCase 3" searchProperties="true" id="711b212a-16be-42e9-a486-0bbb78fa346e"><con:settings/><con:testStep type="request" name="Getallcontacts" id="f02ef7dd-fa1d-4504-a7e8-968b2b7843ef"><con:settings/><con:config xsi:type="con:RequestStep" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"><con:interface>BasicHttpBinding_IContactInfoService</con:interface><con:operation>GetAllContactInformations</con:operation><con:request name="Getallcontacts" id="5c83547d-5fb0-4ac3-883a-3ecf3523b2b6"><con:settings><con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;xml-fragment/></con:setting></con:settings><con:encoding>UTF-8</con:encoding><con:endpoint>http://localhost:8733/SoapServiceLibrary/ContactInfoService/</con:endpoint><con:request><![CDATA[<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:tem="http://tempuri.org/">
+   <soapenv:Header/>
+   <soapenv:Body>
+      <tem:GetAllContactInformations/>
+   </soapenv:Body>
+</soapenv:Envelope>]]></con:request><con:assertion type="SOAP Response" id="aacffca0-259a-43f0-b2d0-3dbbcb884c1a"/><con:credentials><con:authType>No Authorization</con:authType></con:credentials><con:jmsConfig JMSDeliveryMode="PERSISTENT"/><con:jmsPropertyConfig/><con:wsaConfig mustUnderstand="NONE" version="200508"/><con:wsrmConfig version="1.2"/></con:request></con:config></con:testStep><con:testStep type="request" name="Test Request" disabled="true" id="f5a106d2-f87c-416a-84da-19df8f8b5225"><con:settings/><con:config xsi:type="con:RequestStep" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"><con:interface>BasicHttpBinding_IContactInfoService</con:interface><con:operation>AddContactInfo</con:operation><con:request name="Test Request" id="26212634-e41e-4441-a5e2-8e67aab981df"><con:settings><con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;xml-fragment/></con:setting></con:settings><con:encoding>UTF-8</con:encoding><con:endpoint>http://localhost:8733/SoapServiceLibrary/ContactInfoService/</con:endpoint><con:request><![CDATA[<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:tem="http://tempuri.org/" xmlns:soap="http://schemas.datacontract.org/2004/07/SoapServiceLibrary.Definitions">
+   <soapenv:Header/>
+   <soapenv:Body>
+      <tem:AddContactInfo>
+         <!--Optional:-->
+         <tem:contactInformation>
+            
+            <!--Optional:-->
+            <soap:EmailId>1111</soap:EmailId>
+            <!--Optional:-->
+            <soap:FacebookId>?</soap:FacebookId>
+            <!--Optional:-->
+            <soap:LinkedInId>?</soap:LinkedInId>
+            <!--Optional:-->
+            <soap:PrimaryContactNumber>1</soap:PrimaryContactNumber>
+            <!--Optional:-->
+            <soap:SecondaryContactNumber>?</soap:SecondaryContactNumber>
+            <!--Optional:-->
+            <soap:SkypeId>?</soap:SkypeId>
+         </tem:contactInformation>
+      </tem:AddContactInfo>
+   </soapenv:Body>
+</soapenv:Envelope>]]></con:request><con:assertion type="SOAP Response" id="2e9f788c-5134-4a8c-b91e-da05bd2584bf"/><con:credentials><con:authType>No Authorization</con:authType></con:credentials><con:jmsConfig JMSDeliveryMode="PERSISTENT"/><con:jmsPropertyConfig/><con:wsaConfig mustUnderstand="NONE" version="200508"/><con:wsrmConfig version="1.2"/></con:request></con:config></con:testStep><con:testStep type="datasource" name="DataSource" id="aac2fa68-fd22-4951-a85c-bfcc1366b99d"><con:settings/><con:config xsi:type="con:DataSourceStep" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"><con:dataSource type="XML"><con:configuration><sourceStep>Getallcontacts</sourceStep><sourceProperty>Response</sourceProperty><rowPath>declare namespace a='http://schemas.datacontract.org/2004/07/SoapServiceLibrary.Definitions';
+declare namespace ns1='http://tempuri.org/';
+//ns1:GetAllContactInformationsResponse[1]/ns1:GetAllContactInformationsResult[1]/a:ContactInformation</rowPath><columnPath>a:EmailId/text()</columnPath><columnPath>a:PrimaryContactNumber[1]</columnPath></con:configuration></con:dataSource><con:property>EmailId</con:property><con:property>pco</con:property><con:restartOnRun>true</con:restartOnRun></con:config></con:testStep><con:testStep type="request" name="GetSpecificcontact" id="c83438e6-85eb-4e72-9ab3-d608ad13ebf8"><con:settings/><con:config xsi:type="con:RequestStep" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"><con:interface>BasicHttpBinding_IContactInfoService</con:interface><con:operation>GetContactInformationByMail</con:operation><con:request name="GetSpecificcontact" id="73b0d46b-6824-4a08-a4f7-aa52068dee49"><con:settings><con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;xml-fragment/></con:setting></con:settings><con:encoding>UTF-8</con:encoding><con:endpoint>http://localhost:8733/SoapServiceLibrary/ContactInfoService/</con:endpoint><con:request><![CDATA[<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:tem="http://tempuri.org/">
+   <soapenv:Header/>
+   <soapenv:Body>
+      <tem:GetContactInformationByMail>
+         <!--Optional:-->
+         <tem:emailId>${DataSource#EmailId}</tem:emailId>
+      </tem:GetContactInformationByMail>
+   </soapenv:Body>
+</soapenv:Envelope>]]></con:request><con:assertion type="SOAP Response" id="a228e9f7-479f-42cd-b145-02955620c71e"/><con:credentials><con:authType>No Authorization</con:authType></con:credentials><con:jmsConfig JMSDeliveryMode="PERSISTENT"/><con:jmsPropertyConfig/><con:wsaConfig mustUnderstand="NONE" version="200508"/><con:wsrmConfig version="1.2"/></con:request></con:config></con:testStep><con:testStep type="datasourceloop" name="DataSource Loop" id="df38f241-4e32-48fc-af15-8d985fc57547"><con:settings/><con:config><dataSourceStep>DataSource</dataSourceStep><targetStep>GetSpecificcontact</targetStep></con:config></con:testStep><con:properties/><con:reportParameters/></con:testCase><con:testCase failOnError="true" failTestCaseOnErrors="true" keepSession="false" maxResults="0" name="JDBC" searchProperties="true" id="d5f17d69-9dc7-4e7c-8d26-9076c27f98f7"><con:settings/><con:testStep type="jdbc" name="JDBC Request" id="690acca1-0cc0-4976-94ed-2807458edc8f"><con:settings/><con:config xsi:type="con:JdbcRequestTestStep" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"><con:dbConnectionName>ContactsmYSQLDB</con:dbConnectionName><con:driver>com.mysql.jdbc.Driver</con:driver><con:connectionString>jdbc:mysql://127.0.0.1:3306/dbforwebservicetesting?user=root&amp;password=PASS_VALUE</con:connectionString><con:password>root</con:password><con:query>SELECT * FROM dbforwebservicetesting.contactinfo;</con:query><con:properties/></con:config></con:testStep><con:properties/><con:reportParameters/></con:testCase><con:testCase id="2b857c3c-670a-404a-84c8-bcdefafff264" failOnError="true" failTestCaseOnErrors="true" keepSession="false" maxResults="0" name="TestCase 5" searchProperties="true"><con:settings/><con:testStep type="jdbc" name="JDBC Request" id="fe5985f1-63d6-49aa-ade4-e2ff09721366"><con:settings/><con:config xsi:type="con:JdbcRequestTestStep" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"><con:driver>com.mysql.jdbc.Driver</con:driver><con:connectionString>jdbc:mysql://127.0.0.1:3306/?user=root&amp;password=root</con:connectionString><con:query>select count(*) from dbforwebservicetesting.contactinfo;</con:query><con:assertion type="JDBC Status" id="5d0f570e-845d-4728-856f-6041bf701b21" name="JDBC Status"/><con:assertion type="Response SLA Assertion" id="3fd474a2-13c2-4fc5-af00-26ae6555b45e" name="Response SLA"><con:configuration><SLA>10</SLA></con:configuration></con:assertion><con:properties/></con:config></con:testStep><con:testStep type="transfer" name="Property Transfer" id="2b2b47c1-5c1d-44ba-834b-fd843f801191"><con:settings/><con:config xsi:type="con:PropertyTransfersStep" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"><con:transfers setNullOnMissingSource="true" transferTextContent="true" failOnError="true" ignoreEmpty="false" transferToAll="false" entitize="false" transferChildNodes="false"><con:name>count</con:name><con:sourceType>ResponseAsXml</con:sourceType><con:sourceStep>JDBC Request</con:sourceStep><con:sourcePath>//COUNT</con:sourcePath><con:targetType>count</con:targetType><con:targetStep>#TestCase#</con:targetStep><con:upgraded>true</con:upgraded></con:transfers></con:config></con:testStep><con:testStep type="request" name="SOAP Request" id="672c3015-1f70-4a1b-b2bd-5b6147f6217b"><con:settings/><con:config xsi:type="con:RequestStep" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"><con:interface>BasicHttpBinding_IContactInfoService</con:interface><con:operation>GetAllContactInformations</con:operation><con:request name="SOAP Request" id="fb34fa0b-6bd7-43bc-a60b-490632c512e6"><con:settings><con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;xml-fragment/></con:setting></con:settings><con:encoding>UTF-8</con:encoding><con:endpoint>http://localhost:8733/SoapServiceLibrary/ContactInfoService/</con:endpoint><con:request><![CDATA[<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:tem="http://tempuri.org/">\r
+   <soapenv:Header/>\r
+   <soapenv:Body>\r
+      <tem:GetAllContactInformations/>\r
+   </soapenv:Body>\r
+</soapenv:Envelope>]]></con:request><con:assertion type="SOAP Response" id="d39a8c18-8c93-4b6f-9cd0-f24546a156c0"/><con:assertion type="XPath Match" id="5a1405db-58eb-4fee-9c8f-560566cfa259" name="XPath Match"><con:configuration><path>declare namespace a='http://schemas.datacontract.org/2004/07/SoapServiceLibrary.Definitions';
+declare namespace ns1='http://tempuri.org/';
+declare namespace i='http://www.w3.org/2001/XMLSchema-instance';
+declare namespace s='http://schemas.xmlsoap.org/soap/envelope/';
+count(//a:ContactInformation)</path><content>${#TestCase#count}</content><allowWildcards>false</allowWildcards><ignoreNamspaceDifferences>false</ignoreNamspaceDifferences><ignoreComments>false</ignoreComments></con:configuration></con:assertion><con:credentials><con:authType>No Authorization</con:authType></con:credentials><con:jmsConfig JMSDeliveryMode="PERSISTENT"/><con:jmsPropertyConfig/><con:wsaConfig mustUnderstand="NONE" version="200508"/><con:wsrmConfig version="1.2"/></con:request></con:config></con:testStep><con:testStep type="jdbc" name="JDBC Request1" id="28dafc24-a4ca-469d-9c11-e3a31ff30699"><con:settings/><con:config xsi:type="con:JdbcRequestTestStep" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"><con:properties/></con:config></con:testStep><con:properties><con:property><con:name>count</con:name><con:value>5</con:value></con:property></con:properties><con:reportParameters/></con:testCase><con:properties/><con:reportParameters/></con:testSuite><con:requirements/><con:properties/><con:wssContainer/><con:databaseConnectionContainer><con:databaseConnection><con:name>ContactsmYSQLDB</con:name><con:driver>com.mysql.jdbc.Driver</con:driver><con:connectionString>jdbc:mysql://127.0.0.1:3306/dbforwebservicetesting?user=root&amp;password=PASS_VALUE</con:connectionString><con:password>root</con:password></con:databaseConnection></con:databaseConnectionContainer><con:oAuth2ProfileContainer/><con:reporting><con:xmlTemplates/><con:parameters/></con:reporting></con:soapui-project>
