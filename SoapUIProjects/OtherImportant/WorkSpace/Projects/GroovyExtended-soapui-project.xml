@@ -448,14 +448,20 @@ testRunner.gotoStepByName('GetItemById')
    <soapenv:Header/>
    <soapenv:Body>
       <stor:getItemById>
-         <stor:id>1</stor:id>
+         <stor:id>9</stor:id>
       </stor:getItemById>
    </soapenv:Body>
-</soapenv:Envelope>]]></con:request><con:assertion type="SOAP Response" id="41afc8a2-6f48-4f8e-8408-3d841215be45"/><con:credentials><con:authType>No Authorization</con:authType></con:credentials><con:jmsConfig JMSDeliveryMode="PERSISTENT"/><con:jmsPropertyConfig/><con:wsaConfig mustUnderstand="NONE" version="200508"/><con:wsrmConfig version="1.2"/></con:request></con:config></con:testStep><con:testStep type="groovy" name="DataSourceLoop" id="9383940d-5dc4-48af-96bb-dd9c8f6b73f4"><con:settings/><con:config><script>def currentIteration=context.get('CurrentIteration')
+</soapenv:Envelope>]]></con:request><con:assertion type="SOAP Response" id="41afc8a2-6f48-4f8e-8408-3d841215be45"/><con:assertion type="GroovyScriptAssertion" id="e4ed74f5-bca5-41f3-b758-7a66660a1173" name="Script Assertion"><con:configuration><scriptText>import com.eviware.soapui.support.*;
+def xmlHolder=new XmlHolder(messageExchange.responseContentAsXml)
+def id=xmlHolder.getNodeValue('//n:Result/id')
+//get current id from context
+def idFromContext=context.get('CurrentIteration')
+def ids=context.get('Ids')
+assert id==ids[context.get('CurrentIteration')]</scriptText></con:configuration></con:assertion><con:credentials><con:authType>No Authorization</con:authType></con:credentials><con:jmsConfig JMSDeliveryMode="PERSISTENT"/><con:jmsPropertyConfig/><con:wsaConfig mustUnderstand="NONE" version="200508"/><con:wsrmConfig version="1.2"/></con:request></con:config></con:testStep><con:testStep type="groovy" name="DataSourceLoop" id="9383940d-5dc4-48af-96bb-dd9c8f6b73f4"><con:settings/><con:config><script>def currentIteration=context.get('CurrentIteration')
 currentIteration++
 context.put('CurrentIteration',currentIteration)
 if(currentIteration &lt;context.get('Ids').size())
 {
 	testRunner.gotoStepByName('IterateIds')
 }
-</script></con:config></con:testStep><con:properties/></con:testCase><con:properties/></con:testSuite><con:properties/><con:wssContainer/><con:oAuth2ProfileContainer/></con:soapui-project>
+</script></con:config></con:testStep><con:properties/></con:testCase><con:properties/></con:testSuite><con:properties/><con:wssContainer/><con:oAuth2ProfileContainer/><con:sensitiveInformation/></con:soapui-project>

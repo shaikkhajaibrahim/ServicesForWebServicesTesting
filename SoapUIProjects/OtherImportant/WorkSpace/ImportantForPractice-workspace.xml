@@ -3,5 +3,8 @@
   <con:settings/>
   <con:project name="XPathExtended">C:/Training/ServicesForWebServices/ServicesForWebServicesTesting/SoapUIProjects/OtherImportant/WorkSpace/Projects/XPathExtended-soapui-project.xml</con:project>
   <con:project name="GroovyExtended">C:/Training/ServicesForWebServices/ServicesForWebServicesTesting/SoapUIProjects/OtherImportant/WorkSpace/Projects/GroovyExtended-soapui-project.xml</con:project>
+  <con:project name="HTTPBasicSecurityInSoapService">C:/Training/ServicesForWebServices/ServicesForWebServicesTesting/SoapUIProjects/OtherImportant/WorkSpace/Projects/HTTPBasicSecurityInSoapService-soapui-project.xml</con:project>
+  <con:project name="SSLBasedSecuritySoap">C:/Training/ServicesForWebServices/ServicesForWebServicesTesting/SoapUIProjects/OtherImportant/WorkSpace/Projects/SSLBasedSecuritySoap-soapui-project.xml</con:project>
+  <con:project name="Wadl">C:/Training/ServicesForWebServices/ServicesForWebServicesTesting/SoapUIProjects/OtherImportant/WorkSpace/Projects/Wadl-soapui-project.xml</con:project>
   <con:collectInfoForSupport>false</con:collectInfoForSupport>
 </con:soapui-workspace>
