@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<con:soapui-workspace name="Batch4" soapui-version="5.2.1" xmlns:con="http://eviware.com/soapui/config">
+<con:soapui-workspace name="Batch4" soapui-version="5.0.0" xmlns:con="http://eviware.com/soapui/config">
   <con:settings/>
   <con:project name="ExploringWSDL">D:/ServicesForWebServiceTesting/ServicesForWebServicesTesting/SoapUIProjects/Batch4/WorksSpace/Projects/ExploringWSDL-soapui-project.xml</con:project>
   <con:project name="ManualSoap">D:/ServicesForWebServiceTesting/ServicesForWebServicesTesting/SoapUIProjects/Batch4/WorksSpace/Projects/ManualSoap-soapui-project.xml</con:project>
@@ -7,5 +7,10 @@
   <con:project name="StartedAssertions">D:/ServicesForWebServiceTesting/ServicesForWebServicesTesting/SoapUIProjects/Batch4/WorksSpace/Projects/StartedAssertions-soapui-project.xml</con:project>
   <con:project name="zipcode">D:/ServicesForWebServiceTesting/ServicesForWebServicesTesting/SoapUIProjects/Batch4/WorksSpace/zipcode-soapui-project.xml</con:project>
   <con:project name="XPath">C:/Users/sys/Documents/XPath-soapui-project.xml</con:project>
+  <con:project name="Calculater">D:/ServicesForWebServiceTesting/ServicesForWebServicesTesting/SoapUIProjects/Batch4/WorksSpace/Projects/Calculater-soapui-project.xml</con:project>
+  <con:project name="Contact">D:/ServicesForWebServiceTesting/ServicesForWebServicesTesting/SoapUIProjects/Batch4/WorksSpace/Projects/Contact-soapui-project.xml</con:project>
   <con:collectInfoForSupport>false</con:collectInfoForSupport>
+  <con:project name="MockServices">D:/ServicesForWebServiceTesting/ServicesForWebServicesTesting/SoapUIProjects/Batch4/WorksSpace/Projects/MockServices-soapui-project.xml</con:project>
+  <con:project name="Groovy">C:/Users/sys/Documents/ContactsService-soapui-project.xml</con:project>
+  <con:project name="Usa information">C:/Users/sys/Documents/Usa-information-soapui-project.xml</con:project>
 </con:soapui-workspace>
