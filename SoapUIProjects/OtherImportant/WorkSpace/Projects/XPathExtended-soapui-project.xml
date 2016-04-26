@@ -1,0 +1,801 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<con:soapui-project id="cee10537-add2-4693-a847-148280e5e761" activeEnvironment="Default" name="XPathExtended" resourceRoot="" soapui-version="5.2.1" abortOnError="false" runType="SEQUENTIAL" xmlns:con="http://eviware.com/soapui/config"><con:settings/><con:interface xsi:type="con:WsdlInterface" id="18877593-149d-40dd-a05a-1a0be57bbe83" wsaVersion="NONE" name="WeatherSoap12" type="wsdl" bindingName="{http://ws.cdyne.com/WeatherWS/}WeatherSoap12" soapVersion="1_2" anonymous="optional" definition="http://wsf.cdyne.com/WeatherWS/Weather.asmx?WSDL" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"><con:settings/><con:definitionCache/><con:endpoints><con:endpoint>http://wsf.cdyne.com/WeatherWS/Weather.asmx</con:endpoint></con:endpoints><con:operation id="b0c53ef5-90d3-4d1c-8094-81d01355eb55" isOneWay="false" action="http://ws.cdyne.com/WeatherWS/GetCityForecastByZIP" name="GetCityForecastByZIP" bindingOperationName="GetCityForecastByZIP" type="Request-Response" inputName="" receivesAttachments="false" sendsAttachments="false" anonymous="optional"><con:settings/><con:call id="8ad59c72-f468-4917-9047-ced7b07b5194" name="Request 1"><con:settings/><con:encoding>UTF-8</con:encoding><con:endpoint>http://wsf.cdyne.com/WeatherWS/Weather.asmx</con:endpoint><con:request><![CDATA[<soap:Envelope xmlns:soap="http://www.w3.org/2003/05/soap-envelope" xmlns:weat="http://ws.cdyne.com/WeatherWS/">\r
+   <soap:Header/>\r
+   <soap:Body>\r
+      <weat:GetCityForecastByZIP>\r
+         <!--Optional:-->\r
+         <weat:ZIP>?</weat:ZIP>\r
+      </weat:GetCityForecastByZIP>\r
+   </soap:Body>\r
+</soap:Envelope>]]></con:request><con:wsaConfig mustUnderstand="NONE" version="200508" action="http://ws.cdyne.com/WeatherWS/WeatherSoap/GetCityForecastByZIPRequest"/></con:call></con:operation><con:operation id="92390367-98e3-4722-989d-c347ed5311d4" isOneWay="false" action="http://ws.cdyne.com/WeatherWS/GetCityWeatherByZIP" name="GetCityWeatherByZIP" bindingOperationName="GetCityWeatherByZIP" type="Request-Response" inputName="" receivesAttachments="false" sendsAttachments="false" anonymous="optional"><con:settings/><con:call id="fd71096e-578e-4449-9857-5c9aeb5a282b" name="Request 1"><con:settings/><con:encoding>UTF-8</con:encoding><con:endpoint>http://wsf.cdyne.com/WeatherWS/Weather.asmx</con:endpoint><con:request><![CDATA[<soap:Envelope xmlns:soap="http://www.w3.org/2003/05/soap-envelope" xmlns:weat="http://ws.cdyne.com/WeatherWS/">\r
+   <soap:Header/>\r
+   <soap:Body>\r
+      <weat:GetCityWeatherByZIP>\r
+         <!--Optional:-->\r
+         <weat:ZIP>?</weat:ZIP>\r
+      </weat:GetCityWeatherByZIP>\r
+   </soap:Body>\r
+</soap:Envelope>]]></con:request><con:wsaConfig mustUnderstand="NONE" version="200508" action="http://ws.cdyne.com/WeatherWS/WeatherSoap/GetCityWeatherByZIPRequest"/></con:call></con:operation><con:operation id="3f5a1e20-5f51-44b7-a8c1-12607e3405dd" isOneWay="false" action="http://ws.cdyne.com/WeatherWS/GetWeatherInformation" name="GetWeatherInformation" bindingOperationName="GetWeatherInformation" type="Request-Response" inputName="" receivesAttachments="false" sendsAttachments="false" anonymous="optional"><con:settings/><con:call id="37e7f156-f169-457f-94eb-d32006004c37" name="Request 1"><con:settings/><con:encoding>UTF-8</con:encoding><con:endpoint>http://wsf.cdyne.com/WeatherWS/Weather.asmx</con:endpoint><con:request><![CDATA[<soap:Envelope xmlns:soap="http://www.w3.org/2003/05/soap-envelope" xmlns:weat="http://ws.cdyne.com/WeatherWS/">\r
+   <soap:Header/>\r
+   <soap:Body>\r
+      <weat:GetWeatherInformation/>\r
+   </soap:Body>\r
+</soap:Envelope>]]></con:request><con:wsaConfig mustUnderstand="NONE" version="200508" action="http://ws.cdyne.com/WeatherWS/WeatherSoap/GetWeatherInformationRequest"/></con:call></con:operation></con:interface><con:interface xsi:type="con:WsdlInterface" id="c326df2c-bcb4-425a-a12b-d32bc977677a" wsaVersion="NONE" name="WeatherSoap" type="wsdl" bindingName="{http://ws.cdyne.com/WeatherWS/}WeatherSoap" soapVersion="1_1" anonymous="optional" definition="http://wsf.cdyne.com/WeatherWS/Weather.asmx?WSDL" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"><con:settings/><con:definitionCache type="TEXT" rootPart="http://wsf.cdyne.com/WeatherWS/Weather.asmx?WSDL"><con:part><con:url>http://wsf.cdyne.com/WeatherWS/Weather.asmx?WSDL</con:url><con:content><![CDATA[<wsdl:definitions targetNamespace="http://ws.cdyne.com/WeatherWS/" xmlns:s="http://www.w3.org/2001/XMLSchema" xmlns:soap12="http://schemas.xmlsoap.org/wsdl/soap12/" xmlns:mime="http://schemas.xmlsoap.org/wsdl/mime/" xmlns:tns="http://ws.cdyne.com/WeatherWS/" xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" xmlns:tm="http://microsoft.com/wsdl/mime/textMatching/" xmlns:http="http://schemas.xmlsoap.org/wsdl/http/" xmlns:soapenc="http://schemas.xmlsoap.org/soap/encoding/" xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">
+  <wsdl:types>
+    <s:schema elementFormDefault="qualified" targetNamespace="http://ws.cdyne.com/WeatherWS/">
+      <s:element name="GetWeatherInformation">
+        <s:complexType/>
+      </s:element>
+      <s:element name="GetWeatherInformationResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="GetWeatherInformationResult" type="tns:ArrayOfWeatherDescription"/>
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:complexType name="ArrayOfWeatherDescription">
+        <s:sequence>
+          <s:element minOccurs="0" maxOccurs="unbounded" name="WeatherDescription" type="tns:WeatherDescription"/>
+        </s:sequence>
+      </s:complexType>
+      <s:complexType name="WeatherDescription">
+        <s:sequence>
+          <s:element minOccurs="1" maxOccurs="1" name="WeatherID" type="s:short"/>
+          <s:element minOccurs="0" maxOccurs="1" name="Description" type="s:string"/>
+          <s:element minOccurs="0" maxOccurs="1" name="PictureURL" type="s:string"/>
+        </s:sequence>
+      </s:complexType>
+      <s:element name="GetCityForecastByZIP">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="ZIP" type="s:string"/>
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GetCityForecastByZIPResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="GetCityForecastByZIPResult" type="tns:ForecastReturn"/>
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:complexType name="ForecastReturn">
+        <s:sequence>
+          <s:element minOccurs="1" maxOccurs="1" name="Success" type="s:boolean"/>
+          <s:element minOccurs="0" maxOccurs="1" name="ResponseText" type="s:string"/>
+          <s:element minOccurs="0" maxOccurs="1" name="State" type="s:string"/>
+          <s:element minOccurs="0" maxOccurs="1" name="City" type="s:string"/>
+          <s:element minOccurs="0" maxOccurs="1" name="WeatherStationCity" type="s:string"/>
+          <s:element minOccurs="0" maxOccurs="1" name="ForecastResult" type="tns:ArrayOfForecast"/>
+        </s:sequence>
+      </s:complexType>
+      <s:complexType name="ArrayOfForecast">
+        <s:sequence>
+          <s:element minOccurs="0" maxOccurs="unbounded" name="Forecast" nillable="true" type="tns:Forecast"/>
+        </s:sequence>
+      </s:complexType>
+      <s:complexType name="Forecast">
+        <s:sequence>
+          <s:element minOccurs="1" maxOccurs="1" name="Date" type="s:dateTime"/>
+          <s:element minOccurs="1" maxOccurs="1" name="WeatherID" type="s:short"/>
+          <s:element minOccurs="0" maxOccurs="1" name="Desciption" type="s:string"/>
+          <s:element minOccurs="1" maxOccurs="1" name="Temperatures" type="tns:temp"/>
+          <s:element minOccurs="1" maxOccurs="1" name="ProbabilityOfPrecipiation" type="tns:POP"/>
+        </s:sequence>
+      </s:complexType>
+      <s:complexType name="temp">
+        <s:sequence>
+          <s:element minOccurs="0" maxOccurs="1" name="MorningLow" type="s:string"/>
+          <s:element minOccurs="0" maxOccurs="1" name="DaytimeHigh" type="s:string"/>
+        </s:sequence>
+      </s:complexType>
+      <s:complexType name="POP">
+        <s:sequence>
+          <s:element minOccurs="0" maxOccurs="1" name="Nighttime" type="s:string"/>
+          <s:element minOccurs="0" maxOccurs="1" name="Daytime" type="s:string"/>
+        </s:sequence>
+      </s:complexType>
+      <s:element name="GetCityWeatherByZIP">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="ZIP" type="s:string"/>
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GetCityWeatherByZIPResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="GetCityWeatherByZIPResult" type="tns:WeatherReturn"/>
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:complexType name="WeatherReturn">
+        <s:sequence>
+          <s:element minOccurs="1" maxOccurs="1" name="Success" type="s:boolean"/>
+          <s:element minOccurs="0" maxOccurs="1" name="ResponseText" type="s:string"/>
+          <s:element minOccurs="0" maxOccurs="1" name="State" type="s:string"/>
+          <s:element minOccurs="0" maxOccurs="1" name="City" type="s:string"/>
+          <s:element minOccurs="0" maxOccurs="1" name="WeatherStationCity" type="s:string"/>
+          <s:element minOccurs="1" maxOccurs="1" name="WeatherID" type="s:short"/>
+          <s:element minOccurs="0" maxOccurs="1" name="Description" type="s:string"/>
+          <s:element minOccurs="0" maxOccurs="1" name="Temperature" type="s:string"/>
+          <s:element minOccurs="0" maxOccurs="1" name="RelativeHumidity" type="s:string"/>
+          <s:element minOccurs="0" maxOccurs="1" name="Wind" type="s:string"/>
+          <s:element minOccurs="0" maxOccurs="1" name="Pressure" type="s:string"/>
+          <s:element minOccurs="0" maxOccurs="1" name="Visibility" type="s:string"/>
+          <s:element minOccurs="0" maxOccurs="1" name="WindChill" type="s:string"/>
+          <s:element minOccurs="0" maxOccurs="1" name="Remarks" type="s:string"/>
+        </s:sequence>
+      </s:complexType>
+      <s:element name="ArrayOfWeatherDescription" nillable="true" type="tns:ArrayOfWeatherDescription"/>
+      <s:element name="ForecastReturn" nillable="true" type="tns:ForecastReturn"/>
+      <s:element name="WeatherReturn" type="tns:WeatherReturn"/>
+    </s:schema>
+  </wsdl:types>
+  <wsdl:message name="GetWeatherInformationSoapIn">
+    <wsdl:part name="parameters" element="tns:GetWeatherInformation"/>
+  </wsdl:message>
+  <wsdl:message name="GetWeatherInformationSoapOut">
+    <wsdl:part name="parameters" element="tns:GetWeatherInformationResponse"/>
+  </wsdl:message>
+  <wsdl:message name="GetCityForecastByZIPSoapIn">
+    <wsdl:part name="parameters" element="tns:GetCityForecastByZIP"/>
+  </wsdl:message>
+  <wsdl:message name="GetCityForecastByZIPSoapOut">
+    <wsdl:part name="parameters" element="tns:GetCityForecastByZIPResponse"/>
+  </wsdl:message>
+  <wsdl:message name="GetCityWeatherByZIPSoapIn">
+    <wsdl:part name="parameters" element="tns:GetCityWeatherByZIP"/>
+  </wsdl:message>
+  <wsdl:message name="GetCityWeatherByZIPSoapOut">
+    <wsdl:part name="parameters" element="tns:GetCityWeatherByZIPResponse"/>
+  </wsdl:message>
+  <wsdl:message name="GetWeatherInformationHttpGetIn"/>
+  <wsdl:message name="GetWeatherInformationHttpGetOut">
+    <wsdl:part name="Body" element="tns:ArrayOfWeatherDescription"/>
+  </wsdl:message>
+  <wsdl:message name="GetCityForecastByZIPHttpGetIn">
+    <wsdl:part name="ZIP" type="s:string"/>
+  </wsdl:message>
+  <wsdl:message name="GetCityForecastByZIPHttpGetOut">
+    <wsdl:part name="Body" element="tns:ForecastReturn"/>
+  </wsdl:message>
+  <wsdl:message name="GetCityWeatherByZIPHttpGetIn">
+    <wsdl:part name="ZIP" type="s:string"/>
+  </wsdl:message>
+  <wsdl:message name="GetCityWeatherByZIPHttpGetOut">
+    <wsdl:part name="Body" element="tns:WeatherReturn"/>
+  </wsdl:message>
+  <wsdl:message name="GetWeatherInformationHttpPostIn"/>
+  <wsdl:message name="GetWeatherInformationHttpPostOut">
+    <wsdl:part name="Body" element="tns:ArrayOfWeatherDescription"/>
+  </wsdl:message>
+  <wsdl:message name="GetCityForecastByZIPHttpPostIn">
+    <wsdl:part name="ZIP" type="s:string"/>
+  </wsdl:message>
+  <wsdl:message name="GetCityForecastByZIPHttpPostOut">
+    <wsdl:part name="Body" element="tns:ForecastReturn"/>
+  </wsdl:message>
+  <wsdl:message name="GetCityWeatherByZIPHttpPostIn">
+    <wsdl:part name="ZIP" type="s:string"/>
+  </wsdl:message>
+  <wsdl:message name="GetCityWeatherByZIPHttpPostOut">
+    <wsdl:part name="Body" element="tns:WeatherReturn"/>
+  </wsdl:message>
+  <wsdl:portType name="WeatherSoap">
+    <wsdl:operation name="GetWeatherInformation">
+      <wsdl:documentation>Gets Information for each WeatherID</wsdl:documentation>
+      <wsdl:input message="tns:GetWeatherInformationSoapIn"/>
+      <wsdl:output message="tns:GetWeatherInformationSoapOut"/>
+    </wsdl:operation>
+    <wsdl:operation name="GetCityForecastByZIP">
+      <wsdl:documentation>Allows you to get your City Forecast Over the Next 7 Days, which is updated hourly. U.S. Only</wsdl:documentation>
+      <wsdl:input message="tns:GetCityForecastByZIPSoapIn"/>
+      <wsdl:output message="tns:GetCityForecastByZIPSoapOut"/>
+    </wsdl:operation>
+    <wsdl:operation name="GetCityWeatherByZIP">
+      <wsdl:documentation>Allows you to get your City's Weather, which is updated hourly. U.S. Only</wsdl:documentation>
+      <wsdl:input message="tns:GetCityWeatherByZIPSoapIn"/>
+      <wsdl:output message="tns:GetCityWeatherByZIPSoapOut"/>
+    </wsdl:operation>
+  </wsdl:portType>
+  <wsdl:portType name="WeatherHttpGet">
+    <wsdl:operation name="GetWeatherInformation">
+      <wsdl:documentation>Gets Information for each WeatherID</wsdl:documentation>
+      <wsdl:input message="tns:GetWeatherInformationHttpGetIn"/>
+      <wsdl:output message="tns:GetWeatherInformationHttpGetOut"/>
+    </wsdl:operation>
+    <wsdl:operation name="GetCityForecastByZIP">
+      <wsdl:documentation>Allows you to get your City Forecast Over the Next 7 Days, which is updated hourly. U.S. Only</wsdl:documentation>
+      <wsdl:input message="tns:GetCityForecastByZIPHttpGetIn"/>
+      <wsdl:output message="tns:GetCityForecastByZIPHttpGetOut"/>
+    </wsdl:operation>
+    <wsdl:operation name="GetCityWeatherByZIP">
+      <wsdl:documentation>Allows you to get your City's Weather, which is updated hourly. U.S. Only</wsdl:documentation>
+      <wsdl:input message="tns:GetCityWeatherByZIPHttpGetIn"/>
+      <wsdl:output message="tns:GetCityWeatherByZIPHttpGetOut"/>
+    </wsdl:operation>
+  </wsdl:portType>
+  <wsdl:portType name="WeatherHttpPost">
+    <wsdl:operation name="GetWeatherInformation">
+      <wsdl:documentation>Gets Information for each WeatherID</wsdl:documentation>
+      <wsdl:input message="tns:GetWeatherInformationHttpPostIn"/>
+      <wsdl:output message="tns:GetWeatherInformationHttpPostOut"/>
+    </wsdl:operation>
+    <wsdl:operation name="GetCityForecastByZIP">
+      <wsdl:documentation>Allows you to get your City Forecast Over the Next 7 Days, which is updated hourly. U.S. Only</wsdl:documentation>
+      <wsdl:input message="tns:GetCityForecastByZIPHttpPostIn"/>
+      <wsdl:output message="tns:GetCityForecastByZIPHttpPostOut"/>
+    </wsdl:operation>
+    <wsdl:operation name="GetCityWeatherByZIP">
+      <wsdl:documentation>Allows you to get your City's Weather, which is updated hourly. U.S. Only</wsdl:documentation>
+      <wsdl:input message="tns:GetCityWeatherByZIPHttpPostIn"/>
+      <wsdl:output message="tns:GetCityWeatherByZIPHttpPostOut"/>
+    </wsdl:operation>
+  </wsdl:portType>
+  <wsdl:binding name="WeatherSoap" type="tns:WeatherSoap">
+    <soap:binding transport="http://schemas.xmlsoap.org/soap/http"/>
+    <wsdl:operation name="GetWeatherInformation">
+      <soap:operation soapAction="http://ws.cdyne.com/WeatherWS/GetWeatherInformation" style="document"/>
+      <wsdl:input>
+        <soap:body use="literal"/>
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal"/>
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetCityForecastByZIP">
+      <soap:operation soapAction="http://ws.cdyne.com/WeatherWS/GetCityForecastByZIP" style="document"/>
+      <wsdl:input>
+        <soap:body use="literal"/>
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal"/>
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetCityWeatherByZIP">
+      <soap:operation soapAction="http://ws.cdyne.com/WeatherWS/GetCityWeatherByZIP" style="document"/>
+      <wsdl:input>
+        <soap:body use="literal"/>
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal"/>
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:binding name="WeatherSoap12" type="tns:WeatherSoap">
+    <soap12:binding transport="http://schemas.xmlsoap.org/soap/http"/>
+    <wsdl:operation name="GetWeatherInformation">
+      <soap12:operation soapAction="http://ws.cdyne.com/WeatherWS/GetWeatherInformation" style="document"/>
+      <wsdl:input>
+        <soap12:body use="literal"/>
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal"/>
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetCityForecastByZIP">
+      <soap12:operation soapAction="http://ws.cdyne.com/WeatherWS/GetCityForecastByZIP" style="document"/>
+      <wsdl:input>
+        <soap12:body use="literal"/>
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal"/>
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetCityWeatherByZIP">
+      <soap12:operation soapAction="http://ws.cdyne.com/WeatherWS/GetCityWeatherByZIP" style="document"/>
+      <wsdl:input>
+        <soap12:body use="literal"/>
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal"/>
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:binding name="WeatherHttpGet" type="tns:WeatherHttpGet">
+    <http:binding verb="GET"/>
+    <wsdl:operation name="GetWeatherInformation">
+      <http:operation location="/GetWeatherInformation"/>
+      <wsdl:input>
+        <http:urlEncoded/>
+      </wsdl:input>
+      <wsdl:output>
+        <mime:mimeXml part="Body"/>
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetCityForecastByZIP">
+      <http:operation location="/GetCityForecastByZIP"/>
+      <wsdl:input>
+        <http:urlEncoded/>
+      </wsdl:input>
+      <wsdl:output>
+        <mime:mimeXml part="Body"/>
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetCityWeatherByZIP">
+      <http:operation location="/GetCityWeatherByZIP"/>
+      <wsdl:input>
+        <http:urlEncoded/>
+      </wsdl:input>
+      <wsdl:output>
+        <mime:mimeXml part="Body"/>
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:binding name="WeatherHttpPost" type="tns:WeatherHttpPost">
+    <http:binding verb="POST"/>
+    <wsdl:operation name="GetWeatherInformation">
+      <http:operation location="/GetWeatherInformation"/>
+      <wsdl:input>
+        <mime:content type="application/x-www-form-urlencoded"/>
+      </wsdl:input>
+      <wsdl:output>
+        <mime:mimeXml part="Body"/>
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetCityForecastByZIP">
+      <http:operation location="/GetCityForecastByZIP"/>
+      <wsdl:input>
+        <mime:content type="application/x-www-form-urlencoded"/>
+      </wsdl:input>
+      <wsdl:output>
+        <mime:mimeXml part="Body"/>
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetCityWeatherByZIP">
+      <http:operation location="/GetCityWeatherByZIP"/>
+      <wsdl:input>
+        <mime:content type="application/x-www-form-urlencoded"/>
+      </wsdl:input>
+      <wsdl:output>
+        <mime:mimeXml part="Body"/>
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:service name="Weather">
+    <wsdl:port name="WeatherSoap" binding="tns:WeatherSoap">
+      <soap:address location="http://wsf.cdyne.com/WeatherWS/Weather.asmx"/>
+    </wsdl:port>
+    <wsdl:port name="WeatherSoap12" binding="tns:WeatherSoap12">
+      <soap12:address location="http://wsf.cdyne.com/WeatherWS/Weather.asmx"/>
+    </wsdl:port>
+    <wsdl:port name="WeatherHttpGet" binding="tns:WeatherHttpGet">
+      <http:address location="http://wsf.cdyne.com/WeatherWS/Weather.asmx"/>
+    </wsdl:port>
+    <wsdl:port name="WeatherHttpPost" binding="tns:WeatherHttpPost">
+      <http:address location="http://wsf.cdyne.com/WeatherWS/Weather.asmx"/>
+    </wsdl:port>
+  </wsdl:service>
+</wsdl:definitions>]]></con:content><con:type>http://schemas.xmlsoap.org/wsdl/</con:type></con:part></con:definitionCache><con:endpoints><con:endpoint>http://wsf.cdyne.com/WeatherWS/Weather.asmx</con:endpoint></con:endpoints><con:operation id="29627ed2-beee-48d1-8ca3-b692937c6854" isOneWay="false" action="http://ws.cdyne.com/WeatherWS/GetCityForecastByZIP" name="GetCityForecastByZIP" bindingOperationName="GetCityForecastByZIP" type="Request-Response" inputName="" receivesAttachments="false" sendsAttachments="false" anonymous="optional"><con:settings/><con:call id="ddfcb6de-e75b-4c03-9a66-cf2515736ac0" name="Request 1"><con:settings/><con:encoding>UTF-8</con:encoding><con:endpoint>http://wsf.cdyne.com/WeatherWS/Weather.asmx</con:endpoint><con:request><![CDATA[<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:weat="http://ws.cdyne.com/WeatherWS/">\r
+   <soapenv:Header/>\r
+   <soapenv:Body>\r
+      <weat:GetCityForecastByZIP>\r
+         <!--Optional:-->\r
+         <weat:ZIP>?</weat:ZIP>\r
+      </weat:GetCityForecastByZIP>\r
+   </soapenv:Body>\r
+</soapenv:Envelope>]]></con:request><con:wsaConfig mustUnderstand="NONE" version="200508" action="http://ws.cdyne.com/WeatherWS/GetCityForecastByZIP"/></con:call></con:operation><con:operation id="53475cb0-b40f-4822-9bd9-a5b9ea809c2a" isOneWay="false" action="http://ws.cdyne.com/WeatherWS/GetCityWeatherByZIP" name="GetCityWeatherByZIP" bindingOperationName="GetCityWeatherByZIP" type="Request-Response" inputName="" receivesAttachments="false" sendsAttachments="false" anonymous="optional"><con:settings/><con:call id="b7fe7da5-463e-42c7-a87b-7ae397bfe5a5" name="Request 1"><con:settings/><con:encoding>UTF-8</con:encoding><con:endpoint>http://wsf.cdyne.com/WeatherWS/Weather.asmx</con:endpoint><con:request><![CDATA[<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:weat="http://ws.cdyne.com/WeatherWS/">\r
+   <soapenv:Header/>\r
+   <soapenv:Body>\r
+      <weat:GetCityWeatherByZIP>\r
+         <!--Optional:-->\r
+         <weat:ZIP>?</weat:ZIP>\r
+      </weat:GetCityWeatherByZIP>\r
+   </soapenv:Body>\r
+</soapenv:Envelope>]]></con:request><con:wsaConfig mustUnderstand="NONE" version="200508" action="http://ws.cdyne.com/WeatherWS/GetCityWeatherByZIP"/></con:call></con:operation><con:operation id="8c58fe07-6704-47a2-8133-b07a36ee9e8b" isOneWay="false" action="http://ws.cdyne.com/WeatherWS/GetWeatherInformation" name="GetWeatherInformation" bindingOperationName="GetWeatherInformation" type="Request-Response" inputName="" receivesAttachments="false" sendsAttachments="false" anonymous="optional"><con:settings/><con:call id="981793b5-da89-475a-ae58-9c14ea98ca4b" name="Request 1"><con:settings/><con:encoding>UTF-8</con:encoding><con:endpoint>http://wsf.cdyne.com/WeatherWS/Weather.asmx</con:endpoint><con:request><![CDATA[<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:weat="http://ws.cdyne.com/WeatherWS/">\r
+   <soapenv:Header/>\r
+   <soapenv:Body>\r
+      <weat:GetWeatherInformation/>\r
+   </soapenv:Body>\r
+</soapenv:Envelope>]]></con:request><con:wsaConfig mustUnderstand="NONE" version="200508" action="http://ws.cdyne.com/WeatherWS/GetWeatherInformation"/></con:call></con:operation></con:interface><con:interface xsi:type="con:WsdlInterface" id="0286e7d9-8608-4eac-a39c-3b610055537d" wsaVersion="NONE" name="ICart" type="wsdl" bindingName="{http://www.parasoft.com/wsdl/store-01/}ICart" soapVersion="1_1" anonymous="optional" definition="http://soaptest.parasoft.com/store-01.wsdl" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"><con:settings/><con:definitionCache type="TEXT" rootPart="http://soaptest.parasoft.com/store-01.wsdl"><con:part><con:url>http://soaptest.parasoft.com/store-01.wsdl</con:url><con:content><![CDATA[<!--getItemById(int) - returns the book entry with the given item id. Currently valid values are 1, 2, 3, 4, 5 and 6.
+
+getItemByTitle(String) - returns a list of Book objects that matched your title search query. The item price value which is returned by this operation increases by $1.00 every 5 invocations.
+Example keywords: linux, java, C++, program. Leave it blank to get ALL the books in the database.
+
+placeOrder(int, int) - takes an item id and a quantity, returns an "Order" object which includes a Book object, quantity and a unique order number.
+
+getPendingOrders() - returns a list of orders that have been submitted using placeOrder(int, int) so far.
+
+removeOrder(int) - takes an order number and removes it from the pending orders and returns a string with a result message (success or failure, etc.). As you might expect, the order numbers it takes successfuly are the same as the ones returned by placeOrder(int, int).
+
+confirm() - confirms the currently pending orders. subsequent calls to getPendingOrders(int, int) or removeOrder(int) will result in nothing.
+
+addNewItem(Book) - enables you to add new book entries into the database (virtually). Feel free add anything you want; it will not really add them to the permanent database. New entries will only live through out your session.-->
+<wsdl:definitions name="Cart" targetNamespace="http://www.parasoft.com/wsdl/store-01/" xmlns:http="http://schemas.xmlsoap.org/wsdl/http/" xmlns:mime="http://schemas.xmlsoap.org/wsdl/mime/" xmlns:n11="http://www.themindelectric.com/package/webtool.soap.examples.store/" xmlns:n12="http://www.themindelectric.com/package/java.sql/" xmlns:n13="http://www.themindelectric.com/exceptions/" xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" xmlns:soap12="http://schemas.xmlsoap.org/wsdl/soap12/" xmlns:soapenc="http://schemas.xmlsoap.org/soap/encoding/" xmlns:tme="http://www.themindelectric.com/" xmlns:tns="http://www.parasoft.com/wsdl/store-01/" xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <wsdl:types>
+    <xsd:schema targetNamespace="http://www.themindelectric.com/package/webtool.soap.examples.store/">
+      <xsd:import namespace="http://www.themindelectric.com/package/java.sql/"/>
+      <xsd:import namespace="http://www.w3.org/2001/XMLSchema"/>
+      <xsd:complexType name="Order">
+        <xsd:sequence>
+          <xsd:element name="item" nillable="true" type="n11:Book"/>
+          <xsd:element name="quantity" type="xsd:int"/>
+          <xsd:element name="order_number" type="xsd:int"/>
+        </xsd:sequence>
+      </xsd:complexType>
+      <xsd:complexType name="Book">
+        <xsd:complexContent>
+          <xsd:extension base="n11:Item">
+            <xsd:sequence>
+              <xsd:element name="isbn" nillable="true" type="xsd:string"/>
+              <xsd:element name="publication_date" nillable="true" type="n12:Date"/>
+              <xsd:element name="description" nillable="true" type="xsd:string"/>
+              <xsd:element name="authors" nillable="true" type="xsd:ArrayOfstring"/>
+              <xsd:element name="publisher" nillable="true" type="xsd:string"/>
+            </xsd:sequence>
+          </xsd:extension>
+        </xsd:complexContent>
+      </xsd:complexType>
+      <xsd:complexType name="Item">
+        <xsd:sequence>
+          <xsd:element name="id" type="xsd:int"/>
+          <xsd:element name="title" nillable="true" type="xsd:string"/>
+          <xsd:element name="quantity_in_stock" type="xsd:int"/>
+          <xsd:element name="price" type="xsd:float"/>
+        </xsd:sequence>
+      </xsd:complexType>
+      <xsd:complexType name="ArrayOfBook">
+        <xsd:sequence>
+          <xsd:element maxOccurs="unbounded" minOccurs="0" name="i" type="n11:Book"/>
+        </xsd:sequence>
+      </xsd:complexType>
+      <xsd:complexType name="ArrayOfOrder">
+        <xsd:sequence>
+          <xsd:element maxOccurs="unbounded" minOccurs="0" name="i" type="n11:Order"/>
+        </xsd:sequence>
+      </xsd:complexType>
+    </xsd:schema>
+    <xsd:schema targetNamespace="http://www.themindelectric.com/package/java.sql/">
+      <xsd:complexType name="Date">
+        <xsd:simpleContent>
+          <xsd:extension base="xsd:dateTime"/>
+        </xsd:simpleContent>
+      </xsd:complexType>
+    </xsd:schema>
+    <xsd:schema targetNamespace="http://www.w3.org/2001/XMLSchema">
+      <xsd:complexType name="ArrayOfstring">
+        <xsd:sequence>
+          <xsd:element maxOccurs="unbounded" minOccurs="0" name="i" type="xsd:string"/>
+        </xsd:sequence>
+      </xsd:complexType>
+    </xsd:schema>
+    <xsd:schema targetNamespace="http://www.themindelectric.com/exceptions/">
+      <xsd:element name="exception" type="xsd:string"/>
+    </xsd:schema>
+    <xsd:schema elementFormDefault="qualified" targetNamespace="http://www.parasoft.com/wsdl/store-01/">
+      <xsd:import namespace="http://www.themindelectric.com/package/webtool.soap.examples.store/"/>
+      <xsd:element name="placeOrder">
+        <xsd:complexType>
+          <xsd:sequence>
+            <xsd:element name="itemId" type="xsd:int"/>
+            <xsd:element name="quantity" type="xsd:int"/>
+          </xsd:sequence>
+        </xsd:complexType>
+      </xsd:element>
+      <xsd:element name="placeOrderResponse">
+        <xsd:complexType>
+          <xsd:sequence>
+            <xsd:element name="Result" type="n11:Order"/>
+          </xsd:sequence>
+        </xsd:complexType>
+      </xsd:element>
+      <xsd:element name="removeOrder">
+        <xsd:complexType>
+          <xsd:sequence>
+            <xsd:element name="orderNumber" type="xsd:int"/>
+          </xsd:sequence>
+        </xsd:complexType>
+      </xsd:element>
+      <xsd:element name="removeOrderResponse">
+        <xsd:complexType>
+          <xsd:sequence>
+            <xsd:element name="Result" type="xsd:string"/>
+          </xsd:sequence>
+        </xsd:complexType>
+      </xsd:element>
+      <xsd:element name="getItemByTitle">
+        <xsd:complexType>
+          <xsd:sequence>
+            <xsd:element name="titleKeyword" type="xsd:string"/>
+          </xsd:sequence>
+        </xsd:complexType>
+      </xsd:element>
+      <xsd:element name="getItemByTitleResponse">
+        <xsd:complexType>
+          <xsd:sequence>
+            <xsd:element name="Result" type="n11:ArrayOfBook"/>
+          </xsd:sequence>
+        </xsd:complexType>
+      </xsd:element>
+      <xsd:element name="getItemById">
+        <xsd:complexType>
+          <xsd:sequence>
+            <xsd:element name="id" type="xsd:int"/>
+          </xsd:sequence>
+        </xsd:complexType>
+      </xsd:element>
+      <xsd:element name="getItemByIdResponse">
+        <xsd:complexType>
+          <xsd:sequence>
+            <xsd:element name="Result" type="n11:Book"/>
+          </xsd:sequence>
+        </xsd:complexType>
+      </xsd:element>
+      <xsd:element name="getPendingOrders">
+        <xsd:complexType>
+          <xsd:sequence/>
+        </xsd:complexType>
+      </xsd:element>
+      <xsd:element name="getPendingOrdersResponse">
+        <xsd:complexType>
+          <xsd:sequence>
+            <xsd:element name="Result" type="n11:ArrayOfOrder"/>
+          </xsd:sequence>
+        </xsd:complexType>
+      </xsd:element>
+      <xsd:element name="addNewItem">
+        <xsd:complexType>
+          <xsd:sequence>
+            <xsd:element name="book" type="n11:Book"/>
+          </xsd:sequence>
+        </xsd:complexType>
+      </xsd:element>
+      <xsd:element name="addNewItemResponse">
+        <xsd:complexType>
+          <xsd:sequence>
+            <xsd:element name="Result" type="n11:Book"/>
+          </xsd:sequence>
+        </xsd:complexType>
+      </xsd:element>
+      <xsd:element name="confirm">
+        <xsd:complexType>
+          <xsd:sequence/>
+        </xsd:complexType>
+      </xsd:element>
+      <xsd:element name="confirmResponse">
+        <xsd:complexType>
+          <xsd:sequence>
+            <xsd:element name="Result" type="xsd:boolean"/>
+          </xsd:sequence>
+        </xsd:complexType>
+      </xsd:element>
+    </xsd:schema>
+  </wsdl:types>
+  <wsdl:message name="placeOrder0In">
+    <wsdl:part element="tns:placeOrder" name="parameters"/>
+  </wsdl:message>
+  <wsdl:message name="exception">
+    <wsdl:part name="exception" element="n13:exception"/>
+  </wsdl:message>
+  <wsdl:message name="placeOrder0Out">
+    <wsdl:part element="tns:placeOrderResponse" name="parameters"/>
+  </wsdl:message>
+  <wsdl:message name="removeOrder1In">
+    <wsdl:part element="tns:removeOrder" name="parameters"/>
+  </wsdl:message>
+  <wsdl:message name="removeOrder1Out">
+    <wsdl:part element="tns:removeOrderResponse" name="parameters"/>
+  </wsdl:message>
+  <wsdl:message name="getItemByTitle2In">
+    <wsdl:part element="tns:getItemByTitle" name="parameters"/>
+  </wsdl:message>
+  <wsdl:message name="getItemByTitle2Out">
+    <wsdl:part element="tns:getItemByTitleResponse" name="parameters"/>
+  </wsdl:message>
+  <wsdl:message name="getItemById3In">
+    <wsdl:part element="tns:getItemById" name="parameters"/>
+  </wsdl:message>
+  <wsdl:message name="getItemById3Out">
+    <wsdl:part element="tns:getItemByIdResponse" name="parameters"/>
+  </wsdl:message>
+  <wsdl:message name="getPendingOrders4In">
+    <wsdl:part element="tns:getPendingOrders" name="parameters"/>
+  </wsdl:message>
+  <wsdl:message name="getPendingOrders4Out">
+    <wsdl:part element="tns:getPendingOrdersResponse" name="parameters"/>
+  </wsdl:message>
+  <wsdl:message name="addNewItem5In">
+    <wsdl:part element="tns:addNewItem" name="parameters"/>
+  </wsdl:message>
+  <wsdl:message name="addNewItem5Out">
+    <wsdl:part element="tns:addNewItemResponse" name="parameters"/>
+  </wsdl:message>
+  <wsdl:message name="confirm6In">
+    <wsdl:part element="tns:confirm" name="parameters"/>
+  </wsdl:message>
+  <wsdl:message name="confirm6Out">
+    <wsdl:part element="tns:confirmResponse" name="parameters"/>
+  </wsdl:message>
+  <wsdl:portType name="ICart">
+    <wsdl:operation name="placeOrder" parameterOrder="itemId quantity">
+      <wsdl:input message="tns:placeOrder0In" name="placeOrder0In"/>
+      <wsdl:output message="tns:placeOrder0Out" name="placeOrder0Out"/>
+      <wsdl:fault message="tns:exception" name="exception"/>
+    </wsdl:operation>
+    <wsdl:operation name="removeOrder" parameterOrder="orderNumber">
+      <wsdl:input message="tns:removeOrder1In" name="removeOrder1In"/>
+      <wsdl:output message="tns:removeOrder1Out" name="removeOrder1Out"/>
+    </wsdl:operation>
+    <wsdl:operation name="getItemByTitle" parameterOrder="titleKeyword">
+      <wsdl:input message="tns:getItemByTitle2In" name="getItemByTitle2In"/>
+      <wsdl:output message="tns:getItemByTitle2Out" name="getItemByTitle2Out"/>
+      <wsdl:fault message="tns:exception" name="exception"/>
+    </wsdl:operation>
+    <wsdl:operation name="getItemById" parameterOrder="id">
+      <wsdl:input message="tns:getItemById3In" name="getItemById3In"/>
+      <wsdl:output message="tns:getItemById3Out" name="getItemById3Out"/>
+      <wsdl:fault message="tns:exception" name="exception"/>
+    </wsdl:operation>
+    <wsdl:operation name="getPendingOrders">
+      <wsdl:input message="tns:getPendingOrders4In" name="getPendingOrders4In"/>
+      <wsdl:output message="tns:getPendingOrders4Out" name="getPendingOrders4Out"/>
+    </wsdl:operation>
+    <wsdl:operation name="addNewItem" parameterOrder="book">
+      <wsdl:documentation>Order[] getConfirmedOrders();</wsdl:documentation>
+      <wsdl:input message="tns:addNewItem5In" name="addNewItem5In"/>
+      <wsdl:output message="tns:addNewItem5Out" name="addNewItem5Out"/>
+    </wsdl:operation>
+    <wsdl:operation name="confirm">
+      <wsdl:input message="tns:confirm6In" name="confirm6In"/>
+      <wsdl:output message="tns:confirm6Out" name="confirm6Out"/>
+    </wsdl:operation>
+  </wsdl:portType>
+  <wsdl:binding name="ICart" type="tns:ICart">
+    <soap:binding style="document" transport="http://schemas.xmlsoap.org/soap/http"/>
+    <wsdl:operation name="placeOrder">
+      <soap:operation soapAction="placeOrder" style="document"/>
+      <wsdl:input name="placeOrder0In">
+        <soap:body use="literal"/>
+      </wsdl:input>
+      <wsdl:output name="placeOrder0Out">
+        <soap:body use="literal"/>
+      </wsdl:output>
+      <wsdl:fault name="exception">
+        <soap:fault name="exception" use="literal"/>
+      </wsdl:fault>
+    </wsdl:operation>
+    <wsdl:operation name="removeOrder">
+      <soap:operation soapAction="removeOrder" style="document"/>
+      <wsdl:input name="removeOrder1In">
+        <soap:body use="literal"/>
+      </wsdl:input>
+      <wsdl:output name="removeOrder1Out">
+        <soap:body use="literal"/>
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="getItemByTitle">
+      <soap:operation soapAction="getItemByTitle" style="document"/>
+      <wsdl:input name="getItemByTitle2In">
+        <soap:body use="literal"/>
+      </wsdl:input>
+      <wsdl:output name="getItemByTitle2Out">
+        <soap:body use="literal"/>
+      </wsdl:output>
+      <wsdl:fault name="exception">
+        <soap:fault name="exception" use="literal"/>
+      </wsdl:fault>
+    </wsdl:operation>
+    <wsdl:operation name="getItemById">
+      <soap:operation soapAction="getItemById" style="document"/>
+      <wsdl:input name="getItemById3In">
+        <soap:body use="literal"/>
+      </wsdl:input>
+      <wsdl:output name="getItemById3Out">
+        <soap:body use="literal"/>
+      </wsdl:output>
+      <wsdl:fault name="exception">
+        <soap:fault name="exception" use="literal"/>
+      </wsdl:fault>
+    </wsdl:operation>
+    <wsdl:operation name="getPendingOrders">
+      <soap:operation soapAction="getPendingOrders" style="document"/>
+      <wsdl:input name="getPendingOrders4In">
+        <soap:body use="literal"/>
+      </wsdl:input>
+      <wsdl:output name="getPendingOrders4Out">
+        <soap:body use="literal"/>
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="addNewItem">
+      <soap:operation soapAction="addNewItem" style="document"/>
+      <wsdl:input name="addNewItem5In">
+        <soap:body use="literal"/>
+      </wsdl:input>
+      <wsdl:output name="addNewItem5Out">
+        <soap:body use="literal"/>
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="confirm">
+      <soap:operation soapAction="confirm" style="document"/>
+      <wsdl:input name="confirm6In">
+        <soap:body use="literal"/>
+      </wsdl:input>
+      <wsdl:output name="confirm6Out">
+        <soap:body use="literal"/>
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:service name="Cart">
+    <wsdl:documentation>The Parasoft Book Store service</wsdl:documentation>
+    <wsdl:port binding="tns:ICart" name="ICart">
+      <soap:address location="http://ws1.parasoft.com/glue/store-01"/>
+    </wsdl:port>
+  </wsdl:service>
+</wsdl:definitions>]]></con:content><con:type>http://schemas.xmlsoap.org/wsdl/</con:type></con:part></con:definitionCache><con:endpoints><con:endpoint>http://ws1.parasoft.com/glue/store-01</con:endpoint></con:endpoints><con:operation id="7e3e3b5a-1dd6-4fd7-8dfd-9efbb1be50f0" isOneWay="false" action="addNewItem" name="addNewItem" bindingOperationName="addNewItem" type="Request-Response" outputName="addNewItem5Out" inputName="addNewItem5In" receivesAttachments="false" sendsAttachments="false" anonymous="optional"><con:settings/><con:call id="3988f972-b968-4093-bc4e-6b7197377118" name="Request 1"><con:settings/><con:encoding>UTF-8</con:encoding><con:endpoint>http://ws1.parasoft.com/glue/store-01</con:endpoint><con:request><![CDATA[<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:stor="http://www.parasoft.com/wsdl/store-01/">\r
+   <soapenv:Header/>\r
+   <soapenv:Body>\r
+      <stor:addNewItem>\r
+         <stor:book>\r
+            <id>?</id>\r
+            <title>?</title>\r
+            <quantity_in_stock>?</quantity_in_stock>\r
+            <price>?</price>\r
+            <isbn>?</isbn>\r
+            <publication_date>?</publication_date>\r
+            <description>?</description>\r
+            <authors>\r
+               <!--Zero or more repetitions:-->\r
+               <i>?</i>\r
+            </authors>\r
+            <publisher>?</publisher>\r
+         </stor:book>\r
+      </stor:addNewItem>\r
+   </soapenv:Body>\r
+</soapenv:Envelope>]]></con:request><con:wsaConfig mustUnderstand="NONE" version="200508" action="addNewItem"/></con:call></con:operation><con:operation id="b6522f8e-35da-426c-bf39-cce8a3b2ba11" isOneWay="false" action="confirm" name="confirm" bindingOperationName="confirm" type="Request-Response" outputName="confirm6Out" inputName="confirm6In" receivesAttachments="false" sendsAttachments="false" anonymous="optional"><con:settings/><con:call id="7229bb6a-77fc-4c6d-b45e-f393f54ec53c" name="Request 1"><con:settings/><con:encoding>UTF-8</con:encoding><con:endpoint>http://ws1.parasoft.com/glue/store-01</con:endpoint><con:request><![CDATA[<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:stor="http://www.parasoft.com/wsdl/store-01/">\r
+   <soapenv:Header/>\r
+   <soapenv:Body>\r
+      <stor:confirm/>\r
+   </soapenv:Body>\r
+</soapenv:Envelope>]]></con:request><con:wsaConfig mustUnderstand="NONE" version="200508" action="confirm"/></con:call></con:operation><con:operation id="d8232955-64b8-4e2d-ac12-18f8302c9404" isOneWay="false" action="getItemById" name="getItemById" bindingOperationName="getItemById" type="Request-Response" outputName="getItemById3Out" inputName="getItemById3In" receivesAttachments="false" sendsAttachments="false" anonymous="optional"><con:settings/><con:call id="be76f627-0d2e-4717-802c-3dd9f316c8ab" name="Request 1"><con:settings/><con:encoding>UTF-8</con:encoding><con:endpoint>http://ws1.parasoft.com/glue/store-01</con:endpoint><con:request><![CDATA[<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:stor="http://www.parasoft.com/wsdl/store-01/">\r
+   <soapenv:Header/>\r
+   <soapenv:Body>\r
+      <stor:getItemById>\r
+         <stor:id>?</stor:id>\r
+      </stor:getItemById>\r
+   </soapenv:Body>\r
+</soapenv:Envelope>]]></con:request><con:wsaConfig mustUnderstand="NONE" version="200508" action="getItemById"/></con:call></con:operation><con:operation id="98a8e3f4-8fda-4040-a501-4e57e86e6c90" isOneWay="false" action="getItemByTitle" name="getItemByTitle" bindingOperationName="getItemByTitle" type="Request-Response" outputName="getItemByTitle2Out" inputName="getItemByTitle2In" receivesAttachments="false" sendsAttachments="false" anonymous="optional"><con:settings/><con:call id="8bad9a90-ead4-489e-996e-3cde7c4a302a" name="Request 1"><con:settings/><con:encoding>UTF-8</con:encoding><con:endpoint>http://ws1.parasoft.com/glue/store-01</con:endpoint><con:request><![CDATA[<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:stor="http://www.parasoft.com/wsdl/store-01/">\r
+   <soapenv:Header/>\r
+   <soapenv:Body>\r
+      <stor:getItemByTitle>\r
+         <stor:titleKeyword>?</stor:titleKeyword>\r
+      </stor:getItemByTitle>\r
+   </soapenv:Body>\r
+</soapenv:Envelope>]]></con:request><con:wsaConfig mustUnderstand="NONE" version="200508" action="getItemByTitle"/></con:call></con:operation><con:operation id="57ed928b-6783-469a-977a-b112c04545d5" isOneWay="false" action="getPendingOrders" name="getPendingOrders" bindingOperationName="getPendingOrders" type="Request-Response" outputName="getPendingOrders4Out" inputName="getPendingOrders4In" receivesAttachments="false" sendsAttachments="false" anonymous="optional"><con:settings/><con:call id="ada9550c-7b3e-4de1-ac8d-091b81899ff7" name="Request 1"><con:settings/><con:encoding>UTF-8</con:encoding><con:endpoint>http://ws1.parasoft.com/glue/store-01</con:endpoint><con:request><![CDATA[<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:stor="http://www.parasoft.com/wsdl/store-01/">\r
+   <soapenv:Header/>\r
+   <soapenv:Body>\r
+      <stor:getPendingOrders/>\r
+   </soapenv:Body>\r
+</soapenv:Envelope>]]></con:request><con:wsaConfig mustUnderstand="NONE" version="200508" action="getPendingOrders"/></con:call></con:operation><con:operation id="6e6f66b0-fc98-4d52-af6e-19cac983d05e" isOneWay="false" action="placeOrder" name="placeOrder" bindingOperationName="placeOrder" type="Request-Response" outputName="placeOrder0Out" inputName="placeOrder0In" receivesAttachments="false" sendsAttachments="false" anonymous="optional"><con:settings/><con:call id="77131808-9e2b-44e9-81b5-d93b2248c0ea" name="Request 1"><con:settings/><con:encoding>UTF-8</con:encoding><con:endpoint>http://ws1.parasoft.com/glue/store-01</con:endpoint><con:request><![CDATA[<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:stor="http://www.parasoft.com/wsdl/store-01/">\r
+   <soapenv:Header/>\r
+   <soapenv:Body>\r
+      <stor:placeOrder>\r
+         <stor:itemId>?</stor:itemId>\r
+         <stor:quantity>?</stor:quantity>\r
+      </stor:placeOrder>\r
+   </soapenv:Body>\r
+</soapenv:Envelope>]]></con:request><con:wsaConfig mustUnderstand="NONE" version="200508" action="placeOrder"/></con:call></con:operation><con:operation id="500518f6-3782-4fa5-a9f7-9fef3b3075e2" isOneWay="false" action="removeOrder" name="removeOrder" bindingOperationName="removeOrder" type="Request-Response" outputName="removeOrder1Out" inputName="removeOrder1In" receivesAttachments="false" sendsAttachments="false" anonymous="optional"><con:settings/><con:call id="546e8059-2a9d-4169-9511-a81ebff835dc" name="Request 1"><con:settings/><con:encoding>UTF-8</con:encoding><con:endpoint>http://ws1.parasoft.com/glue/store-01</con:endpoint><con:request><![CDATA[<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:stor="http://www.parasoft.com/wsdl/store-01/">\r
+   <soapenv:Header/>\r
+   <soapenv:Body>\r
+      <stor:removeOrder>\r
+         <stor:orderNumber>?</stor:orderNumber>\r
+      </stor:removeOrder>\r
+   </soapenv:Body>\r
+</soapenv:Envelope>]]></con:request><con:wsaConfig mustUnderstand="NONE" version="200508" action="removeOrder"/></con:call></con:operation></con:interface><con:testSuite id="4fbd290e-5107-4881-a98a-6728988527af" name="XPathFunctions"><con:settings/><con:runType>SEQUENTIAL</con:runType><con:testCase id="d132fdd3-ab32-4e44-b77a-2c3ac8b022f4" failOnError="true" failTestCaseOnErrors="true" keepSession="false" maxResults="0" name="XPathFunctions" searchProperties="true"><con:settings/><con:testStep type="request" name="getPendingOrders" id="196efa5d-9d91-4689-92da-805d941ab01f"><con:settings/><con:config xsi:type="con:RequestStep" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"><con:interface>ICart</con:interface><con:operation>getPendingOrders</con:operation><con:request name="getPendingOrders" id="3ae33432-47b8-4844-bbaa-a3d8336183f0"><con:settings><con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;xml-fragment/></con:setting></con:settings><con:encoding>UTF-8</con:encoding><con:endpoint>http://ws1.parasoft.com/glue/store-01</con:endpoint><con:request><![CDATA[<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:stor="http://www.parasoft.com/wsdl/store-01/">\r
+   <soapenv:Header/>\r
+   <soapenv:Body>\r
+      <stor:getPendingOrders/>\r
+   </soapenv:Body>\r
+</soapenv:Envelope>]]></con:request><con:assertion type="SOAP Response" id="12c7991d-6c0c-4a18-91d5-131d40123af2"/><con:credentials><con:authType>No Authorization</con:authType></con:credentials><con:jmsConfig JMSDeliveryMode="PERSISTENT"/><con:jmsPropertyConfig/><con:wsaConfig mustUnderstand="NONE" version="200508"/><con:wsrmConfig version="1.2"/></con:request></con:config></con:testStep><con:testStep type="request" name="GetItemById" id="ef1d8323-2599-48e8-815e-a5be71d5053a"><con:settings/><con:config xsi:type="con:RequestStep" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"><con:interface>ICart</con:interface><con:operation>getItemByTitle</con:operation><con:request name="GetItemById" id="3084be7b-2324-47a8-8e1b-6ffba7fbb068"><con:settings><con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;xml-fragment/></con:setting></con:settings><con:encoding>UTF-8</con:encoding><con:endpoint>http://ws1.parasoft.com/glue/store-01</con:endpoint><con:request><![CDATA[<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:stor="http://www.parasoft.com/wsdl/store-01/">\r
+   <soapenv:Header/>\r
+   <soapenv:Body>\r
+      <stor:getItemByTitle>\r
+         <stor:titleKeyword>a</stor:titleKeyword>\r
+      </stor:getItemByTitle>\r
+   </soapenv:Body>\r
+</soapenv:Envelope>]]></con:request><con:assertion type="SOAP Response" id="b188da26-e9eb-4bbc-baa4-1ba612160969"/><con:assertion type="XPath Match" id="9c49eb1a-89de-4f99-81c1-e1550402e060" name="Find the books title with price 29.99"><con:configuration><path>declare namespace soap='http://schemas.xmlsoap.org/soap/envelope/';
+declare namespace n='http://www.parasoft.com/wsdl/store-01/';
+declare namespace n3='http://www.themindelectric.com/package/webtool.soap.examples.store/';
+declare namespace soapenc='http://schemas.xmlsoap.org/soap/encoding/';
+declare namespace n5='http://www.themindelectric.com/package/java.sql/';
+//n:Result/i[price=29.99]/title</path><content>The Next Leap in Productivity: What Top Managers Really Need to Know about Information Technology</content><allowWildcards>false</allowWildcards><ignoreNamspaceDifferences>false</ignoreNamspaceDifferences><ignoreComments>false</ignoreComments></con:configuration></con:assertion><con:credentials><con:authType>No Authorization</con:authType></con:credentials><con:jmsConfig JMSDeliveryMode="PERSISTENT"/><con:jmsPropertyConfig/><con:wsaConfig mustUnderstand="NONE" version="200508"/><con:wsrmConfig version="1.2"/></con:request></con:config></con:testStep><con:properties/></con:testCase><con:properties/></con:testSuite><con:properties/><con:wssContainer/><con:oAuth2ProfileContainer/></con:soapui-project>
