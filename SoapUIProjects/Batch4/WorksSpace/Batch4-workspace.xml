@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<con:soapui-workspace name="Batch4" soapui-version="5.0.0" xmlns:con="http://eviware.com/soapui/config">
+<con:soapui-workspace name="Batch4" soapui-version="5.2.1" xmlns:con="http://eviware.com/soapui/config">
   <con:settings/>
   <con:project name="ExploringWSDL">D:/ServicesForWebServiceTesting/ServicesForWebServicesTesting/SoapUIProjects/Batch4/WorksSpace/Projects/ExploringWSDL-soapui-project.xml</con:project>
   <con:project name="ManualSoap">D:/ServicesForWebServiceTesting/ServicesForWebServicesTesting/SoapUIProjects/Batch4/WorksSpace/Projects/ManualSoap-soapui-project.xml</con:project>
