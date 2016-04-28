@@ -2,4 +2,5 @@
 <con:soapui-workspace name="Batch5" soapui-version="5.2.1" xmlns:con="http://eviware.com/soapui/config">
   <con:settings/>
   <con:project name="HelloWorld">D:/ServicesForWebServiceTesting/ServicesForWebServicesTesting/SoapUIProjects/Batch5/HelloWorld-soapui-project.xml</con:project>
+  <con:collectInfoForSupport>false</con:collectInfoForSupport>
 </con:soapui-workspace>
