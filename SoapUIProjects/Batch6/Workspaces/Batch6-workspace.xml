@@ -1,4 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<con:soapui-workspace name="Batch6" soapui-version="5.2.1" xmlns:con="http://eviware.com/soapui/config">
+<con:soapui-workspace name="Batch6" soapui-version="5.0.0" xmlns:con="http://eviware.com/soapui/config">
   <con:settings/>
+  <con:project name="HelloWorld">D:/ServicesForWebServiceTesting/ServicesForWebServicesTesting/SoapUIProjects/Batch6/Workspaces/Projects/HelloWorld-soapui-project.xml</con:project>
+  <con:project name="Store">D:/ServicesForWebServiceTesting/ServicesForWebServicesTesting/SoapUIProjects/Batch6/Workspaces/Projects/Store-soapui-project.xml</con:project>
+  <con:project name="PropertyTransfer">D:/ServicesForWebServiceTesting/ServicesForWebServicesTesting/SoapUIProjects/Batch6/Workspaces/Projects/PropertyTransfer-soapui-project.xml</con:project>
+  <con:collectInfoForSupport>false</con:collectInfoForSupport>
+  <con:project name="ContactInfo">D:/ServicesForWebServiceTesting/ServicesForWebServicesTesting/SoapUIProjects/Batch6/Workspaces/Projects/ContactInfo-soapui-project.xml</con:project>
 </con:soapui-workspace>

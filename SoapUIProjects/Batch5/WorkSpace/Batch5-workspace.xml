@@ -4,5 +4,8 @@
   <con:project name="HelloWorld">D:/ServicesForWebServiceTesting/ServicesForWebServicesTesting/SoapUIProjects/Batch5/HelloWorld-soapui-project.xml</con:project>
   <con:project name="Assertions">D:/ServicesForWebServiceTesting/ServicesForWebServicesTesting/SoapUIProjects/Batch5/WorkSpace/Projects/Assertions-soapui-project.xml</con:project>
   <con:project name="XPathTrails">D:/ServicesForWebServiceTesting/ServicesForWebServicesTesting/SoapUIProjects/Batch5/WorkSpace/Projects/XPathTrails-soapui-project.xml</con:project>
+  <con:project name="ContactsPro">D:/ServicesForWebServiceTesting/ServicesForWebServicesTesting/SoapUIProjects/Batch5/WorkSpace/Projects/ContactsPro-soapui-project.xml</con:project>
+  <con:project name="JDBC">D:/ServicesForWebServiceTesting/ServicesForWebServicesTesting/SoapUIProjects/Batch5/WorkSpace/Projects/JDBC-soapui-project.xml</con:project>
+  <con:project name="DataDriven">D:/ServicesForWebServiceTesting/ServicesForWebServicesTesting/SoapUIProjects/Batch5/WorkSpace/Projects/DataDriven-soapui-project.xml</con:project>
   <con:collectInfoForSupport>false</con:collectInfoForSupport>
 </con:soapui-workspace>
