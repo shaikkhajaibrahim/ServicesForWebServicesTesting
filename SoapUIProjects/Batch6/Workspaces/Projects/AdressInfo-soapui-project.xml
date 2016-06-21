@@ -1,0 +1,247 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<con:soapui-project id="2ef4161b-2c3c-43f1-95f1-9abf94ed1c4b" activeEnvironment="Default" name="AdressInfo" resourceRoot="" soapui-version="5.2.1" xmlns:con="http://eviware.com/soapui/config"><con:settings/><con:interface xsi:type="con:WsdlInterface" id="564b594f-526f-422e-9c01-78340a0d05da" wsaVersion="NONE" name="BasicHttpBinding_IAddressService" type="wsdl" bindingName="{http://tempuri.org/}BasicHttpBinding_IAddressService" soapVersion="1_1" anonymous="optional" definition="file:/D:/ServicesForWebServiceTesting/ServicesForWebServicesTesting/SoapUIProjects/Batch6/Workspaces/Projects/WSDL/AddressService.wsdl" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"><con:settings/><con:definitionCache type="TEXT" rootPart="file:\D:\ServicesForWebServiceTesting\ServicesForWebServicesTesting\SoapUIProjects\Batch6\Workspaces\Projects\WSDL\AddressService.wsdl"><con:part><con:url>file:\D:\ServicesForWebServiceTesting\ServicesForWebServicesTesting\SoapUIProjects\Batch6\Workspaces\Projects\WSDL\AddressService.wsdl</con:url><con:content><![CDATA[<wsdl:definitions name="AddressService" targetNamespace="http://tempuri.org/" xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/" xmlns:wsap="http://schemas.xmlsoap.org/ws/2004/08/addressing/policy" xmlns:wsa10="http://www.w3.org/2005/08/addressing" xmlns:tns="http://tempuri.org/" xmlns:msc="http://schemas.microsoft.com/ws/2005/12/wsdl/contract" xmlns:soapenc="http://schemas.xmlsoap.org/soap/encoding/" xmlns:wsx="http://schemas.xmlsoap.org/ws/2004/09/mex" xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" xmlns:wsam="http://www.w3.org/2007/05/addressing/metadata" xmlns:wsa="http://schemas.xmlsoap.org/ws/2004/08/addressing" xmlns:wsp="http://schemas.xmlsoap.org/ws/2004/09/policy" xmlns:wsaw="http://www.w3.org/2006/05/addressing/wsdl" xmlns:soap12="http://schemas.xmlsoap.org/wsdl/soap12/" xmlns:wsu="http://docs.oasis-open.org/wss/2004/01/oasis-200401-wss-wssecurity-utility-1.0.xsd" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <wsdl:types>
+    <xs:schema elementFormDefault="qualified" targetNamespace="http://tempuri.org/" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+      <xs:import namespace="http://schemas.datacontract.org/2004/07/SoapServiceLibrary.Definitions"/>
+      <xs:import namespace="http://schemas.microsoft.com/2003/10/Serialization/Arrays"/>
+      <xs:element name="AddAddress">
+        <xs:complexType>
+          <xs:sequence>
+            <xs:element minOccurs="0" name="address" nillable="true" type="q1:Address" xmlns:q1="http://schemas.datacontract.org/2004/07/SoapServiceLibrary.Definitions"/>
+          </xs:sequence>
+        </xs:complexType>
+      </xs:element>
+      <xs:element name="AddAddressResponse">
+        <xs:complexType>
+          <xs:sequence/>
+        </xs:complexType>
+      </xs:element>
+      <xs:element name="FindAllDistinctCities">
+        <xs:complexType>
+          <xs:sequence/>
+        </xs:complexType>
+      </xs:element>
+      <xs:element name="FindAllDistinctCitiesResponse">
+        <xs:complexType>
+          <xs:sequence>
+            <xs:element minOccurs="0" name="FindAllDistinctCitiesResult" nillable="true" type="q2:ArrayOfstring" xmlns:q2="http://schemas.microsoft.com/2003/10/Serialization/Arrays"/>
+          </xs:sequence>
+        </xs:complexType>
+      </xs:element>
+      <xs:element name="CountOfAddressesByCity">
+        <xs:complexType>
+          <xs:sequence>
+            <xs:element minOccurs="0" name="city" nillable="true" type="xs:string"/>
+          </xs:sequence>
+        </xs:complexType>
+      </xs:element>
+      <xs:element name="CountOfAddressesByCityResponse">
+        <xs:complexType>
+          <xs:sequence>
+            <xs:element minOccurs="0" name="CountOfAddressesByCityResult" type="xs:int"/>
+          </xs:sequence>
+        </xs:complexType>
+      </xs:element>
+    </xs:schema>
+    <xs:schema attributeFormDefault="qualified" elementFormDefault="qualified" targetNamespace="http://schemas.microsoft.com/2003/10/Serialization/" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:tns="http://schemas.microsoft.com/2003/10/Serialization/">
+      <xs:element name="anyType" nillable="true" type="xs:anyType"/>
+      <xs:element name="anyURI" nillable="true" type="xs:anyURI"/>
+      <xs:element name="base64Binary" nillable="true" type="xs:base64Binary"/>
+      <xs:element name="boolean" nillable="true" type="xs:boolean"/>
+      <xs:element name="byte" nillable="true" type="xs:byte"/>
+      <xs:element name="dateTime" nillable="true" type="xs:dateTime"/>
+      <xs:element name="decimal" nillable="true" type="xs:decimal"/>
+      <xs:element name="double" nillable="true" type="xs:double"/>
+      <xs:element name="float" nillable="true" type="xs:float"/>
+      <xs:element name="int" nillable="true" type="xs:int"/>
+      <xs:element name="long" nillable="true" type="xs:long"/>
+      <xs:element name="QName" nillable="true" type="xs:QName"/>
+      <xs:element name="short" nillable="true" type="xs:short"/>
+      <xs:element name="string" nillable="true" type="xs:string"/>
+      <xs:element name="unsignedByte" nillable="true" type="xs:unsignedByte"/>
+      <xs:element name="unsignedInt" nillable="true" type="xs:unsignedInt"/>
+      <xs:element name="unsignedLong" nillable="true" type="xs:unsignedLong"/>
+      <xs:element name="unsignedShort" nillable="true" type="xs:unsignedShort"/>
+      <xs:element name="char" nillable="true" type="tns:char"/>
+      <xs:simpleType name="char">
+        <xs:restriction base="xs:int"/>
+      </xs:simpleType>
+      <xs:element name="duration" nillable="true" type="tns:duration"/>
+      <xs:simpleType name="duration">
+        <xs:restriction base="xs:duration">
+          <xs:pattern value="\-?P(\d*D)?(T(\d*H)?(\d*M)?(\d*(\.\d*)?S)?)?"/>
+          <xs:minInclusive value="-P10675199DT2H48M5.4775808S"/>
+          <xs:maxInclusive value="P10675199DT2H48M5.4775807S"/>
+        </xs:restriction>
+      </xs:simpleType>
+      <xs:element name="guid" nillable="true" type="tns:guid"/>
+      <xs:simpleType name="guid">
+        <xs:restriction base="xs:string">
+          <xs:pattern value="[\da-fA-F]{8}-[\da-fA-F]{4}-[\da-fA-F]{4}-[\da-fA-F]{4}-[\da-fA-F]{12}"/>
+        </xs:restriction>
+      </xs:simpleType>
+      <xs:attribute name="FactoryType" type="xs:QName"/>
+      <xs:attribute name="Id" type="xs:ID"/>
+      <xs:attribute name="Ref" type="xs:IDREF"/>
+    </xs:schema>
+    <xs:schema elementFormDefault="qualified" targetNamespace="http://schemas.datacontract.org/2004/07/SoapServiceLibrary.Definitions" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:tns="http://schemas.datacontract.org/2004/07/SoapServiceLibrary.Definitions">
+      <xs:complexType name="Address">
+        <xs:sequence>
+          <xs:element minOccurs="0" name="City" nillable="true" type="xs:string"/>
+          <xs:element minOccurs="0" name="Country" nillable="true" type="xs:string"/>
+          <xs:element minOccurs="0" name="State" nillable="true" type="xs:string"/>
+          <xs:element minOccurs="0" name="StreetLine1" nillable="true" type="xs:string"/>
+          <xs:element minOccurs="0" name="StreetLine2" nillable="true" type="xs:string"/>
+        </xs:sequence>
+      </xs:complexType>
+      <xs:element name="Address" nillable="true" type="tns:Address"/>
+    </xs:schema>
+    <xs:schema elementFormDefault="qualified" targetNamespace="http://schemas.microsoft.com/2003/10/Serialization/Arrays" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:tns="http://schemas.microsoft.com/2003/10/Serialization/Arrays">
+      <xs:complexType name="ArrayOfstring">
+        <xs:sequence>
+          <xs:element minOccurs="0" maxOccurs="unbounded" name="string" nillable="true" type="xs:string"/>
+        </xs:sequence>
+      </xs:complexType>
+      <xs:element name="ArrayOfstring" nillable="true" type="tns:ArrayOfstring"/>
+    </xs:schema>
+  </wsdl:types>
+  <wsdl:message name="IAddressService_AddAddress_InputMessage">
+    <wsdl:part name="parameters" element="tns:AddAddress"/>
+  </wsdl:message>
+  <wsdl:message name="IAddressService_AddAddress_OutputMessage">
+    <wsdl:part name="parameters" element="tns:AddAddressResponse"/>
+  </wsdl:message>
+  <wsdl:message name="IAddressService_FindAllDistinctCities_InputMessage">
+    <wsdl:part name="parameters" element="tns:FindAllDistinctCities"/>
+  </wsdl:message>
+  <wsdl:message name="IAddressService_FindAllDistinctCities_OutputMessage">
+    <wsdl:part name="parameters" element="tns:FindAllDistinctCitiesResponse"/>
+  </wsdl:message>
+  <wsdl:message name="IAddressService_CountOfAddressesByCity_InputMessage">
+    <wsdl:part name="parameters" element="tns:CountOfAddressesByCity"/>
+  </wsdl:message>
+  <wsdl:message name="IAddressService_CountOfAddressesByCity_OutputMessage">
+    <wsdl:part name="parameters" element="tns:CountOfAddressesByCityResponse"/>
+  </wsdl:message>
+  <wsdl:portType name="IAddressService">
+    <wsdl:operation name="AddAddress">
+      <wsdl:input wsaw:Action="http://tempuri.org/IAddressService/AddAddress" message="tns:IAddressService_AddAddress_InputMessage"/>
+      <wsdl:output wsaw:Action="http://tempuri.org/IAddressService/AddAddressResponse" message="tns:IAddressService_AddAddress_OutputMessage"/>
+    </wsdl:operation>
+    <wsdl:operation name="FindAllDistinctCities">
+      <wsdl:input wsaw:Action="http://tempuri.org/IAddressService/FindAllDistinctCities" message="tns:IAddressService_FindAllDistinctCities_InputMessage"/>
+      <wsdl:output wsaw:Action="http://tempuri.org/IAddressService/FindAllDistinctCitiesResponse" message="tns:IAddressService_FindAllDistinctCities_OutputMessage"/>
+    </wsdl:operation>
+    <wsdl:operation name="CountOfAddressesByCity">
+      <wsdl:input wsaw:Action="http://tempuri.org/IAddressService/CountOfAddressesByCity" message="tns:IAddressService_CountOfAddressesByCity_InputMessage"/>
+      <wsdl:output wsaw:Action="http://tempuri.org/IAddressService/CountOfAddressesByCityResponse" message="tns:IAddressService_CountOfAddressesByCity_OutputMessage"/>
+    </wsdl:operation>
+  </wsdl:portType>
+  <wsdl:binding name="BasicHttpBinding_IAddressService" type="tns:IAddressService">
+    <soap:binding transport="http://schemas.xmlsoap.org/soap/http"/>
+    <wsdl:operation name="AddAddress">
+      <soap:operation soapAction="http://tempuri.org/IAddressService/AddAddress" style="document"/>
+      <wsdl:input>
+        <soap:body use="literal"/>
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal"/>
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="FindAllDistinctCities">
+      <soap:operation soapAction="http://tempuri.org/IAddressService/FindAllDistinctCities" style="document"/>
+      <wsdl:input>
+        <soap:body use="literal"/>
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal"/>
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="CountOfAddressesByCity">
+      <soap:operation soapAction="http://tempuri.org/IAddressService/CountOfAddressesByCity" style="document"/>
+      <wsdl:input>
+        <soap:body use="literal"/>
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal"/>
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:service name="AddressService">
+    <wsdl:port name="BasicHttpBinding_IAddressService" binding="tns:BasicHttpBinding_IAddressService">
+      <soap:address location="http://localhost:8733/SoapServiceLibrary/AddressService/"/>
+    </wsdl:port>
+  </wsdl:service>
+</wsdl:definitions>]]></con:content><con:type>http://schemas.xmlsoap.org/wsdl/</con:type></con:part></con:definitionCache><con:endpoints><con:endpoint>http://localhost:8733/SoapServiceLibrary/AddressService/</con:endpoint><con:endpoint>http://sys-PC:8088/mockBasicHttpBinding_IAddressService</con:endpoint></con:endpoints><con:operation id="542fde57-7287-4ba9-bb62-7892c84c3a13" isOneWay="false" action="http://tempuri.org/IAddressService/AddAddress" name="AddAddress" bindingOperationName="AddAddress" type="Request-Response" inputName="" receivesAttachments="false" sendsAttachments="false" anonymous="optional"><con:settings/><con:call id="2f1894ff-0c0f-4ddb-b15f-d4a41361f074" name="Request 1"><con:settings/><con:encoding>UTF-8</con:encoding><con:endpoint>http://localhost:8733/SoapServiceLibrary/AddressService/</con:endpoint><con:request><![CDATA[<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:tem="http://tempuri.org/" xmlns:soap="http://schemas.datacontract.org/2004/07/SoapServiceLibrary.Definitions">\r
+   <soapenv:Header/>\r
+   <soapenv:Body>\r
+      <tem:AddAddress>\r
+         <!--Optional:-->\r
+         <tem:address>\r
+            <!--Optional:-->\r
+            <soap:City>?</soap:City>\r
+            <!--Optional:-->\r
+            <soap:Country>?</soap:Country>\r
+            <!--Optional:-->\r
+            <soap:State>?</soap:State>\r
+            <!--Optional:-->\r
+            <soap:StreetLine1>?</soap:StreetLine1>\r
+            <!--Optional:-->\r
+            <soap:StreetLine2>?</soap:StreetLine2>\r
+         </tem:address>\r
+      </tem:AddAddress>\r
+   </soapenv:Body>\r
+</soapenv:Envelope>]]></con:request><con:wsaConfig mustUnderstand="NONE" version="200508" action="http://tempuri.org/IAddressService/AddAddress"/></con:call></con:operation><con:operation id="9a6a991b-9ab1-404f-8dd7-0f7f4f1f7593" isOneWay="false" action="http://tempuri.org/IAddressService/CountOfAddressesByCity" name="CountOfAddressesByCity" bindingOperationName="CountOfAddressesByCity" type="Request-Response" inputName="" receivesAttachments="false" sendsAttachments="false" anonymous="optional"><con:settings/><con:call id="08639df5-2233-46b5-a1b6-15de183f41cd" name="Request 1"><con:settings/><con:encoding>UTF-8</con:encoding><con:endpoint>http://localhost:8733/SoapServiceLibrary/AddressService/</con:endpoint><con:request><![CDATA[<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:tem="http://tempuri.org/">\r
+   <soapenv:Header/>\r
+   <soapenv:Body>\r
+      <tem:CountOfAddressesByCity>\r
+         <!--Optional:-->\r
+         <tem:city>?</tem:city>\r
+      </tem:CountOfAddressesByCity>\r
+   </soapenv:Body>\r
+</soapenv:Envelope>]]></con:request><con:wsaConfig mustUnderstand="NONE" version="200508" action="http://tempuri.org/IAddressService/CountOfAddressesByCity"/></con:call></con:operation><con:operation id="4ef44b2d-8fad-4d91-912a-7aa17c05cc5c" isOneWay="false" action="http://tempuri.org/IAddressService/FindAllDistinctCities" name="FindAllDistinctCities" bindingOperationName="FindAllDistinctCities" type="Request-Response" inputName="" receivesAttachments="false" sendsAttachments="false" anonymous="optional"><con:settings/><con:call id="52cf4486-5fef-4173-b71e-465bed9f3421" name="Request 1"><con:settings/><con:encoding>UTF-8</con:encoding><con:endpoint>http://localhost:8733/SoapServiceLibrary/AddressService/</con:endpoint><con:request><![CDATA[<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:tem="http://tempuri.org/">\r
+   <soapenv:Header/>\r
+   <soapenv:Body>\r
+      <tem:FindAllDistinctCities/>\r
+   </soapenv:Body>\r
+</soapenv:Envelope>]]></con:request><con:wsaConfig mustUnderstand="NONE" version="200508" action="http://tempuri.org/IAddressService/FindAllDistinctCities"/></con:call></con:operation></con:interface><con:testSuite id="de02d24d-eedd-4a0c-b236-2c8a55e1f643" name="TestSuite 1"><con:settings/><con:runType>SEQUENTIAL</con:runType><con:testCase id="4b35ffff-a4a7-4e92-905f-26407e90a8c2" failOnError="true" failTestCaseOnErrors="true" keepSession="false" maxResults="0" name="TestCase 1" searchProperties="true"><con:settings/><con:testStep type="request" name="SOAP Request" id="e2a62ee0-3101-42c8-b542-47dac06b79ad"><con:settings/><con:config xsi:type="con:RequestStep" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"><con:interface>BasicHttpBinding_IAddressService</con:interface><con:operation>CountOfAddressesByCity</con:operation><con:request name="SOAP Request" id="f6a32f6d-f213-4e68-8347-86eeabf077be"><con:settings><con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;xml-fragment/></con:setting></con:settings><con:encoding>UTF-8</con:encoding><con:endpoint>http://sys-PC:8088/mockBasicHttpBinding_IAddressService</con:endpoint><con:request><![CDATA[<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:tem="http://tempuri.org/">\r
+   <soapenv:Header/>\r
+   <soapenv:Body>\r
+      <tem:CountOfAddressesByCity>\r
+         <!--Optional:-->\r
+         <tem:city>ytr</tem:city>\r
+      </tem:CountOfAddressesByCity>\r
+   </soapenv:Body>\r
+</soapenv:Envelope>]]></con:request><con:assertion type="SOAP Response" id="a0ef2fe5-da5c-4308-8549-f859939f4258"/><con:credentials><con:authType>No Authorization</con:authType></con:credentials><con:jmsConfig JMSDeliveryMode="PERSISTENT"/><con:jmsPropertyConfig/><con:wsaConfig mustUnderstand="NONE" version="200508"/><con:wsrmConfig version="1.2"/></con:request></con:config></con:testStep><con:properties/></con:testCase><con:properties/></con:testSuite><con:mockService id="771ab181-0e15-44da-88b1-efd2c8125829" port="8088" path="/mockBasicHttpBinding_IAddressService" host="sys-PC" name="BasicHttpBinding_IAddressService MockService"><con:settings><con:setting id="com.eviware.soapui.impl.wsdl.mock.WsdlMockService@require-soap-action">false</con:setting></con:settings><con:properties/><con:mockOperation name="AddAddress" id="fab63fb6-defa-428f-846e-bf0edc0aa041" interface="BasicHttpBinding_IAddressService" operation="AddAddress"><con:settings/><con:defaultResponse>Response 1</con:defaultResponse><con:dispatchStyle>SEQUENCE</con:dispatchStyle><con:response name="Response 1" id="5cb53e0f-0c61-426e-9c5f-077b2a9443d4" httpResponseStatus="200" encoding="UTF-8"><con:settings/><con:responseContent><![CDATA[<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:tem="http://tempuri.org/">
+   <soapenv:Header/>
+   <soapenv:Body>
+      <tem:AddAddressResponse/>
+   </soapenv:Body>
+</soapenv:Envelope>]]></con:responseContent><con:wsaConfig mustUnderstand="NONE" version="200508" action="http://tempuri.org/IAddressService/AddAddress"/></con:response><con:dispatchConfig/></con:mockOperation><con:mockOperation name="CountOfAddressesByCity" id="665ba47e-f229-4825-bec7-6d28efcd95e5" interface="BasicHttpBinding_IAddressService" operation="CountOfAddressesByCity"><con:settings/><con:defaultResponse>Response 1</con:defaultResponse><con:dispatchStyle>XPATH</con:dispatchStyle><con:response name="Response 1" id="74869cd8-45ac-460f-9280-bc840d5facbb" httpResponseStatus="200" encoding="UTF-8"><con:settings/><con:responseContent><![CDATA[<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:tem="http://tempuri.org/">
+   <soapenv:Header/>
+   <soapenv:Body>
+      <tem:CountOfAddressesByCityResponse>
+         <!--Optional:-->
+         <tem:CountOfAddressesByCityResult>10</tem:CountOfAddressesByCityResult>
+      </tem:CountOfAddressesByCityResponse>
+   </soapenv:Body>
+</soapenv:Envelope>]]></con:responseContent><con:wsaConfig mustUnderstand="NONE" version="200508" action="http://tempuri.org/IAddressService/CountOfAddressesByCity"/></con:response><con:response name="Response 2" id="acd3f93a-abad-41de-b8c2-24bd628f3f51" httpResponseStatus="200" encoding="UTF-8"><con:settings/><con:responseContent><![CDATA[<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:tem="http://tempuri.org/">
+   <soapenv:Header/>
+   <soapenv:Body>
+      <tem:CountOfAddressesByCityResponse>
+         <!--Optional:-->
+         <tem:CountOfAddressesByCityResult>11</tem:CountOfAddressesByCityResult>
+      </tem:CountOfAddressesByCityResponse>
+   </soapenv:Body>
+</soapenv:Envelope>]]></con:responseContent><con:wsaConfig mustUnderstand="NONE" version="200508" action="http://tempuri.org/IAddressService/CountOfAddressesByCity"/></con:response><con:dispatchConfig/></con:mockOperation><con:mockOperation name="FindAllDistinctCities" id="5ddddbbf-5812-4d10-8b5b-108b52c00fcc" interface="BasicHttpBinding_IAddressService" operation="FindAllDistinctCities"><con:settings/><con:defaultResponse>Response 1</con:defaultResponse><con:dispatchStyle>SEQUENCE</con:dispatchStyle><con:response name="Response 1" id="64e742f7-cbad-4e1d-916f-cc81dbbb8c1d" httpResponseStatus="200" encoding="UTF-8"><con:settings/><con:responseContent><![CDATA[<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:tem="http://tempuri.org/" xmlns:arr="http://schemas.microsoft.com/2003/10/Serialization/Arrays">
+   <soapenv:Header/>
+   <soapenv:Body>
+      <tem:FindAllDistinctCitiesResponse>
+         <!--Optional:-->
+         <tem:FindAllDistinctCitiesResult>
+            <!--Zero or more repetitions:-->
+            <arr:string>?</arr:string>
+         </tem:FindAllDistinctCitiesResult>
+      </tem:FindAllDistinctCitiesResponse>
+   </soapenv:Body>
+</soapenv:Envelope>]]></con:responseContent><con:wsaConfig mustUnderstand="NONE" version="200508" action="http://tempuri.org/IAddressService/FindAllDistinctCities"/></con:response><con:dispatchConfig/></con:mockOperation></con:mockService><con:properties/><con:wssContainer/><con:oAuth2ProfileContainer/></con:soapui-project>
