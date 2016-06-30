@@ -5,5 +5,6 @@
   <con:project name="Xpath Extended">D:/ServicesForWebServiceTesting/ServicesForWebServicesTesting/SoapUIProjects/Batch7/Workspaces/Projects/Xpath-Extended-soapui-project.xml</con:project>
   <con:project name="Groovy Samples">D:/ServicesForWebServiceTesting/ServicesForWebServicesTesting/SoapUIProjects/Batch7/Workspaces/Projects/Groovy-Samples-soapui-project.xml</con:project>
   <con:project name="ContactInfoServices">D:/ServicesForWebServiceTesting/ServicesForWebServicesTesting/SoapUIProjects/Batch7/Workspaces/Projects/ContactInfoServices-soapui-project.xml</con:project>
+  <con:project name="store-01">D:/ServicesForWebServiceTesting/ServicesForWebServicesTesting/SoapUIProjects/Batch7/Workspaces/Projects/store-01-soapui-project.xml</con:project>
   <con:collectInfoForSupport>false</con:collectInfoForSupport>
 </con:soapui-workspace>

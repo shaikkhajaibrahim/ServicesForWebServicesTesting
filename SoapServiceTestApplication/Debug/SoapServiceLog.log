@@ -1,0 +1,2426 @@
+2016-06-17 09:08:57,259 [3] DEBUG SoapServices.DAL.EducationalInstitution.EducationalInstitutionDbContext 
+
+2016-06-17 09:08:57,278 [3] DEBUG SoapServices.DAL.EducationalInstitution.EducationalInstitutionDbContext -- p__linq__0: 'test2@testme.com' (Type = String, Size = 16)
+
+2016-06-17 09:08:57,279 [3] DEBUG SoapServices.DAL.EducationalInstitution.EducationalInstitutionDbContext -- Executing at 6/17/2016 9:08:57 AM +05:30
+
+2016-06-17 09:08:57,281 [3] DEBUG SoapServices.DAL.EducationalInstitution.EducationalInstitutionDbContext -- Completed in 1 ms with result: EFMySqlDataReader
+
+2016-06-17 09:08:57,283 [3] DEBUG SoapServices.DAL.EducationalInstitution.EducationalInstitutionDbContext 
+
+2016-06-17 09:08:57,283 [3] DEBUG SoapServiceLibrary.ServiceImpl.ContactInfoService Removing record with contactInformation SoapServices.DAL.EducationalInstitution.ContactInformation
+2016-06-17 09:08:57,284 [4] DEBUG SoapServices.DAL.EducationalInstitution.EducationalInstitutionDbContext Closed connection at 6/17/2016 9:08:57 AM +05:30
+
+2016-06-17 09:08:57,290 [3] DEBUG SoapServices.DAL.EducationalInstitution.EducationalInstitutionDbContext Opened connection at 6/17/2016 9:08:57 AM +05:30
+
+2016-06-17 09:08:57,291 [3] DEBUG SoapServices.DAL.EducationalInstitution.EducationalInstitutionDbContext SELECT
+`GroupBy1`.`A1` AS `C1`
+FROM (SELECT
+COUNT(1) AS `A1`
+FROM `ContactInfo` AS `Extent1`
+ WHERE `Extent1`.`EmailId` = @p__linq__0) AS `GroupBy1`
+2016-06-17 09:08:57,292 [3] DEBUG SoapServices.DAL.EducationalInstitution.EducationalInstitutionDbContext 
+
+2016-06-17 09:08:57,293 [3] DEBUG SoapServices.DAL.EducationalInstitution.EducationalInstitutionDbContext -- p__linq__0: 'test2@testme.com' (Type = String, Size = 16)
+
+2016-06-17 09:08:57,293 [3] DEBUG SoapServices.DAL.EducationalInstitution.EducationalInstitutionDbContext -- Executing at 6/17/2016 9:08:57 AM +05:30
+
+2016-06-17 09:08:57,294 [3] DEBUG SoapServices.DAL.EducationalInstitution.EducationalInstitutionDbContext -- Completed in 0 ms with result: EFMySqlDataReader
+
+2016-06-17 09:08:57,295 [3] DEBUG SoapServices.DAL.EducationalInstitution.EducationalInstitutionDbContext 
+
+2016-06-17 09:08:57,295 [3] DEBUG SoapServices.DAL.EducationalInstitution.EducationalInstitutionDbContext Closed connection at 6/17/2016 9:08:57 AM +05:30
+
+2016-06-17 09:08:57,296 [3] DEBUG SoapServices.DAL.EducationalInstitution.EducationalInstitutionDbContext Opened connection at 6/17/2016 9:08:57 AM +05:30
+
+2016-06-17 09:08:57,297 [3] DEBUG SoapServices.DAL.EducationalInstitution.EducationalInstitutionDbContext SELECT
+`Extent1`.`Id`, 
+`Extent1`.`PrimaryContactNumber`, 
+`Extent1`.`SecondaryContactNumber`, 
+`Extent1`.`EmailId`, 
+`Extent1`.`SkypeId`, 
+`Extent1`.`LinkedInId`, 
+`Extent1`.`FacebookId`
+FROM `ContactInfo` AS `Extent1`
+ WHERE `Extent1`.`EmailId` = @p__linq__0
+2016-06-17 09:08:57,298 [3] DEBUG SoapServices.DAL.EducationalInstitution.EducationalInstitutionDbContext 
+
+2016-06-17 09:08:57,299 [3] DEBUG SoapServices.DAL.EducationalInstitution.EducationalInstitutionDbContext -- p__linq__0: 'test2@testme.com' (Type = String, Size = 16)
+
+2016-06-17 09:08:57,300 [3] DEBUG SoapServices.DAL.EducationalInstitution.EducationalInstitutionDbContext -- Executing at 6/17/2016 9:08:57 AM +05:30
+
+2016-06-17 09:08:57,301 [3] DEBUG SoapServices.DAL.EducationalInstitution.EducationalInstitutionDbContext -- Completed in 0 ms with result: EFMySqlDataReader
+
+2016-06-17 09:08:57,301 [3] DEBUG SoapServices.DAL.EducationalInstitution.EducationalInstitutionDbContext 
+
+2016-06-17 09:08:57,302 [3] DEBUG SoapServices.DAL.EducationalInstitution.EducationalInstitutionDbContext Closed connection at 6/17/2016 9:08:57 AM +05:30
+
+2016-06-17 09:08:57,303 [3] DEBUG SoapServices.DAL.EducationalInstitution.EducationalInstitutionDbContext Opened connection at 6/17/2016 9:08:57 AM +05:30
+
+2016-06-17 09:08:57,304 [3] DEBUG SoapServices.DAL.EducationalInstitution.EducationalInstitutionDbContext Started transaction at 6/17/2016 9:08:57 AM +05:30
+
+2016-06-17 09:08:57,305 [3] DEBUG SoapServices.DAL.EducationalInstitution.EducationalInstitutionDbContext DELETE FROM `ContactInfo` WHERE `Id` = 13
+2016-06-17 09:08:57,305 [3] DEBUG SoapServices.DAL.EducationalInstitution.EducationalInstitutionDbContext 
+
+2016-06-17 09:08:57,305 [3] DEBUG SoapServices.DAL.EducationalInstitution.EducationalInstitutionDbContext -- Executing at 6/17/2016 9:08:57 AM +05:30
+
+2016-06-17 09:08:57,307 [3] DEBUG SoapServices.DAL.EducationalInstitution.EducationalInstitutionDbContext -- Completed in 0 ms with result: 1
+
+2016-06-17 09:08:57,307 [3] DEBUG SoapServices.DAL.EducationalInstitution.EducationalInstitutionDbContext 
+
+2016-06-17 09:08:57,335 [3] DEBUG SoapServices.DAL.EducationalInstitution.EducationalInstitutionDbContext Committed transaction at 6/17/2016 9:08:57 AM +05:30
+
+2016-06-17 09:08:57,336 [3] DEBUG SoapServices.DAL.EducationalInstitution.EducationalInstitutionDbContext Closed connection at 6/17/2016 9:08:57 AM +05:30
+
+2016-06-17 09:08:57,337 [3] DEBUG SoapServices.DAL.EducationalInstitution.EducationalInstitutionDbContext Disposed transaction at 6/17/2016 9:08:57 AM +05:30
+
+2016-06-17 09:08:57,339 [3] DEBUG SoapServiceLibrary.ServiceImpl.ContactInfoService Processed Request DeleteContactsByEmailId
+2016-06-17 09:08:57,369 [3] DEBUG SoapServiceLibrary.ServiceImpl.ContactInfoService  Received Request to DeleteContactsByEmailId with emailid: test3@testme.com
+2016-06-17 09:08:57,371 [3] DEBUG SoapServices.DAL.EducationalInstitution.EducationalInstitutionDbContext Opened connection at 6/17/2016 9:08:57 AM +05:30
+
+2016-06-17 09:08:57,372 [3] DEBUG SoapServices.DAL.EducationalInstitution.EducationalInstitutionDbContext SELECT
+`Extent1`.`Id`, 
+`Extent1`.`PrimaryContactNumber`, 
+`Extent1`.`SecondaryContactNumber`, 
+`Extent1`.`EmailId`, 
+`Extent1`.`SkypeId`, 
+`Extent1`.`LinkedInId`, 
+`Extent1`.`FacebookId`
+FROM `ContactInfo` AS `Extent1`
+ WHERE `Extent1`.`EmailId` = @p__linq__0
+2016-06-17 09:08:57,373 [3] DEBUG SoapServices.DAL.EducationalInstitution.EducationalInstitutionDbContext 
+
+2016-06-17 09:08:57,374 [3] DEBUG SoapServices.DAL.EducationalInstitution.EducationalInstitutionDbContext -- p__linq__0: 'test3@testme.com' (Type = String, Size = 16)
+
+2016-06-17 09:08:57,374 [3] DEBUG SoapServices.DAL.EducationalInstitution.EducationalInstitutionDbContext -- Executing at 6/17/2016 9:08:57 AM +05:30
+
+2016-06-17 09:08:57,376 [3] DEBUG SoapServices.DAL.EducationalInstitution.EducationalInstitutionDbContext -- Completed in 1 ms with result: EFMySqlDataReader
+
+2016-06-17 09:08:57,378 [3] DEBUG SoapServices.DAL.EducationalInstitution.EducationalInstitutionDbContext 
+
+2016-06-17 09:08:57,380 [3] DEBUG SoapServiceLibrary.ServiceImpl.ContactInfoService Removing record with contactInformation SoapServices.DAL.EducationalInstitution.ContactInformation
+2016-06-17 09:08:57,380 [12] DEBUG SoapServices.DAL.EducationalInstitution.EducationalInstitutionDbContext Closed connection at 6/17/2016 9:08:57 AM +05:30
+
+2016-06-17 09:08:57,382 [3] DEBUG SoapServices.DAL.EducationalInstitution.EducationalInstitutionDbContext Opened connection at 6/17/2016 9:08:57 AM +05:30
+
+2016-06-17 09:08:57,384 [3] DEBUG SoapServices.DAL.EducationalInstitution.EducationalInstitutionDbContext SELECT
+`GroupBy1`.`A1` AS `C1`
+FROM (SELECT
+COUNT(1) AS `A1`
+FROM `ContactInfo` AS `Extent1`
+ WHERE `Extent1`.`EmailId` = @p__linq__0) AS `GroupBy1`
+2016-06-17 09:08:57,386 [3] DEBUG SoapServices.DAL.EducationalInstitution.EducationalInstitutionDbContext 
+
+2016-06-17 09:08:57,387 [3] DEBUG SoapServices.DAL.EducationalInstitution.EducationalInstitutionDbContext -- p__linq__0: 'test3@testme.com' (Type = String, Size = 16)
+
+2016-06-17 09:08:57,387 [3] DEBUG SoapServices.DAL.EducationalInstitution.EducationalInstitutionDbContext -- Executing at 6/17/2016 9:08:57 AM +05:30
+
+2016-06-17 09:08:57,389 [3] DEBUG SoapServices.DAL.EducationalInstitution.EducationalInstitutionDbContext -- Completed in 0 ms with result: EFMySqlDataReader
+
+2016-06-17 09:08:57,390 [3] DEBUG SoapServices.DAL.EducationalInstitution.EducationalInstitutionDbContext 
+
+2016-06-17 09:08:57,391 [3] DEBUG SoapServices.DAL.EducationalInstitution.EducationalInstitutionDbContext Closed connection at 6/17/2016 9:08:57 AM +05:30
+
+2016-06-17 09:08:57,393 [3] DEBUG SoapServices.DAL.EducationalInstitution.EducationalInstitutionDbContext Opened connection at 6/17/2016 9:08:57 AM +05:30
+
+2016-06-17 09:08:57,394 [3] DEBUG SoapServices.DAL.EducationalInstitution.EducationalInstitutionDbContext SELECT
+`Extent1`.`Id`, 
+`Extent1`.`PrimaryContactNumber`, 
+`Extent1`.`SecondaryContactNumber`, 
+`Extent1`.`EmailId`, 
+`Extent1`.`SkypeId`, 
+`Extent1`.`LinkedInId`, 
+`Extent1`.`FacebookId`
+FROM `ContactInfo` AS `Extent1`
+ WHERE `Extent1`.`EmailId` = @p__linq__0
+2016-06-17 09:08:57,396 [3] DEBUG SoapServices.DAL.EducationalInstitution.EducationalInstitutionDbContext 
+
+2016-06-17 09:08:57,396 [3] DEBUG SoapServices.DAL.EducationalInstitution.EducationalInstitutionDbContext -- p__linq__0: 'test3@testme.com' (Type = String, Size = 16)
+
+2016-06-17 09:08:57,397 [3] DEBUG SoapServices.DAL.EducationalInstitution.EducationalInstitutionDbContext -- Executing at 6/17/2016 9:08:57 AM +05:30
+
+2016-06-17 09:08:57,398 [3] DEBUG SoapServices.DAL.EducationalInstitution.EducationalInstitutionDbContext -- Completed in 0 ms with result: EFMySqlDataReader
+
+2016-06-17 09:08:57,399 [3] DEBUG SoapServices.DAL.EducationalInstitution.EducationalInstitutionDbContext 
+
+2016-06-17 09:08:57,400 [3] DEBUG SoapServices.DAL.EducationalInstitution.EducationalInstitutionDbContext Closed connection at 6/17/2016 9:08:57 AM +05:30
+
+2016-06-17 09:08:57,402 [3] DEBUG SoapServices.DAL.EducationalInstitution.EducationalInstitutionDbContext Opened connection at 6/17/2016 9:08:57 AM +05:30
+
+2016-06-17 09:08:57,403 [3] DEBUG SoapServices.DAL.EducationalInstitution.EducationalInstitutionDbContext Started transaction at 6/17/2016 9:08:57 AM +05:30
+
+2016-06-17 09:08:57,404 [3] DEBUG SoapServices.DAL.EducationalInstitution.EducationalInstitutionDbContext DELETE FROM `ContactInfo` WHERE `Id` = 14
+2016-06-17 09:08:57,405 [3] DEBUG SoapServices.DAL.EducationalInstitution.EducationalInstitutionDbContext 
+
+2016-06-17 09:08:57,406 [3] DEBUG SoapServices.DAL.EducationalInstitution.EducationalInstitutionDbContext -- Executing at 6/17/2016 9:08:57 AM +05:30
+
+2016-06-17 09:08:57,422 [3] DEBUG SoapServices.DAL.EducationalInstitution.EducationalInstitutionDbContext -- Completed in 15 ms with result: 1
+
+2016-06-17 09:08:57,422 [3] DEBUG SoapServices.DAL.EducationalInstitution.EducationalInstitutionDbContext 
+
+2016-06-17 09:08:57,470 [3] DEBUG SoapServices.DAL.EducationalInstitution.EducationalInstitutionDbContext Committed transaction at 6/17/2016 9:08:57 AM +05:30
+
+2016-06-17 09:08:57,470 [3] DEBUG SoapServices.DAL.EducationalInstitution.EducationalInstitutionDbContext Closed connection at 6/17/2016 9:08:57 AM +05:30
+
+2016-06-17 09:08:57,471 [3] DEBUG SoapServices.DAL.EducationalInstitution.EducationalInstitutionDbContext Disposed transaction at 6/17/2016 9:08:57 AM +05:30
+
+2016-06-17 09:08:57,471 [3] DEBUG SoapServiceLibrary.ServiceImpl.ContactInfoService Processed Request DeleteContactsByEmailId
+2016-06-17 09:08:57,482 [3] DEBUG SoapServiceLibrary.ServiceImpl.ContactInfoService Received Request for the GetAllContactInformations
+2016-06-17 09:08:57,484 [3] DEBUG SoapServices.DAL.EducationalInstitution.EducationalInstitutionDbContext Opened connection at 6/17/2016 9:08:57 AM +05:30
+
+2016-06-17 09:08:57,485 [3] DEBUG SoapServices.DAL.EducationalInstitution.EducationalInstitutionDbContext SELECT
+1 AS `C1`, 
+`Extent1`.`EmailId`, 
+`Extent1`.`FacebookId`, 
+`Extent1`.`LinkedInId`, 
+`Extent1`.`SecondaryContactNumber`, 
+`Extent1`.`SkypeId`
+FROM `ContactInfo` AS `Extent1`
+2016-06-17 09:08:57,486 [3] DEBUG SoapServices.DAL.EducationalInstitution.EducationalInstitutionDbContext 
+
+2016-06-17 09:08:57,487 [3] DEBUG SoapServices.DAL.EducationalInstitution.EducationalInstitutionDbContext -- Executing at 6/17/2016 9:08:57 AM +05:30
+
+2016-06-17 09:08:57,488 [3] DEBUG SoapServices.DAL.EducationalInstitution.EducationalInstitutionDbContext -- Completed in 0 ms with result: EFMySqlDataReader
+
+2016-06-17 09:08:57,489 [3] DEBUG SoapServices.DAL.EducationalInstitution.EducationalInstitutionDbContext 
+
+2016-06-17 09:08:57,490 [3] DEBUG SoapServices.DAL.EducationalInstitution.EducationalInstitutionDbContext Closed connection at 6/17/2016 9:08:57 AM +05:30
+
+2016-06-17 09:08:57,491 [3] DEBUG SoapServiceLibrary.ServiceImpl.ContactInfoService Processed Request for the GetAllContactInformations
+2016-06-17 09:10:14,475 [3] DEBUG SoapServiceLibrary.ServiceImpl.ContactInfoService Recived Request to AddContactInfo with ContactInformation:
+ PrimaryContactNumber: 987654321, SecondaryContactNumber: , EmailId: test1@tetme.com, SkypeId: test1, LinkedInId: test1, FacebookId: test1
+2016-06-17 09:10:14,478 [3] DEBUG SoapServices.DAL.EducationalInstitution.EducationalInstitutionDbContext Opened connection at 6/17/2016 9:10:14 AM +05:30
+
+2016-06-17 09:10:14,479 [3] DEBUG SoapServices.DAL.EducationalInstitution.EducationalInstitutionDbContext Started transaction at 6/17/2016 9:10:14 AM +05:30
+
+2016-06-17 09:10:14,480 [3] DEBUG SoapServices.DAL.EducationalInstitution.EducationalInstitutionDbContext SET SESSION sql_mode='ANSI';INSERT INTO `ContactInfo`(
+`PrimaryContactNumber`, 
+`SecondaryContactNumber`, 
+`EmailId`, 
+`SkypeId`, 
+`LinkedInId`, 
+`FacebookId`) VALUES (
+@gp1, 
+@gp2, 
+@gp3, 
+@gp4, 
+@gp5, 
+@gp6);
+SELECT
+`Id`
+FROM `ContactInfo`
+ WHERE  row_count() > 0 AND `Id`=last_insert_id()
+2016-06-17 09:10:14,482 [3] DEBUG SoapServices.DAL.EducationalInstitution.EducationalInstitutionDbContext 
+
+2016-06-17 09:10:14,483 [3] DEBUG SoapServices.DAL.EducationalInstitution.EducationalInstitutionDbContext -- @gp1: '987654321' (Type = String, IsNullable = false, Size = 9)
+
+2016-06-17 09:10:14,485 [3] DEBUG SoapServices.DAL.EducationalInstitution.EducationalInstitutionDbContext -- @gp2: '' (Type = String, IsNullable = false)
+
+2016-06-17 09:10:14,487 [3] DEBUG SoapServices.DAL.EducationalInstitution.EducationalInstitutionDbContext -- @gp3: 'test1@tetme.com' (Type = String, IsNullable = false, Size = 15)
+
+2016-06-17 09:10:14,495 [3] DEBUG SoapServices.DAL.EducationalInstitution.EducationalInstitutionDbContext -- @gp4: 'test1' (Type = String, IsNullable = false, Size = 5)
+
+2016-06-17 09:10:14,496 [3] DEBUG SoapServices.DAL.EducationalInstitution.EducationalInstitutionDbContext -- @gp5: 'test1' (Type = String, IsNullable = false, Size = 5)
+
+2016-06-17 09:10:14,496 [3] DEBUG SoapServices.DAL.EducationalInstitution.EducationalInstitutionDbContext -- @gp6: 'test1' (Type = String, IsNullable = false, Size = 5)
+
+2016-06-17 09:10:14,496 [3] DEBUG SoapServices.DAL.EducationalInstitution.EducationalInstitutionDbContext -- Executing at 6/17/2016 9:10:14 AM +05:30
+
+2016-06-17 09:10:14,521 [3] DEBUG SoapServices.DAL.EducationalInstitution.EducationalInstitutionDbContext -- Completed in 24 ms with result: EFMySqlDataReader
+
+2016-06-17 09:10:14,522 [3] DEBUG SoapServices.DAL.EducationalInstitution.EducationalInstitutionDbContext 
+
+2016-06-17 09:10:14,547 [3] DEBUG SoapServices.DAL.EducationalInstitution.EducationalInstitutionDbContext Committed transaction at 6/17/2016 9:10:14 AM +05:30
+
+2016-06-17 09:10:14,550 [3] DEBUG SoapServices.DAL.EducationalInstitution.EducationalInstitutionDbContext Closed connection at 6/17/2016 9:10:14 AM +05:30
+
+2016-06-17 09:10:14,551 [3] DEBUG SoapServices.DAL.EducationalInstitution.EducationalInstitutionDbContext Disposed transaction at 6/17/2016 9:10:14 AM +05:30
+
+2016-06-17 09:10:14,562 [3] DEBUG SoapServiceLibrary.ServiceImpl.ContactInfoService Addition Succesful & sending response as true
+2016-06-17 09:10:14,575 [3] DEBUG SoapServiceLibrary.ServiceImpl.ContactInfoService Received Request for GetContactInformationByMail with email id test1@tetme.com
+2016-06-17 09:10:14,578 [3] DEBUG SoapServices.DAL.EducationalInstitution.EducationalInstitutionDbContext Opened connection at 6/17/2016 9:10:14 AM +05:30
+
+2016-06-17 09:10:14,579 [3] DEBUG SoapServices.DAL.EducationalInstitution.EducationalInstitutionDbContext SELECT
+1 AS `C1`, 
+`Extent1`.`EmailId`, 
+`Extent1`.`FacebookId`, 
+`Extent1`.`LinkedInId`, 
+`Extent1`.`PrimaryContactNumber`, 
+`Extent1`.`SecondaryContactNumber`, 
+`Extent1`.`SkypeId`
+FROM `ContactInfo` AS `Extent1`
+ WHERE `Extent1`.`EmailId` = @p__linq__0
+2016-06-17 09:10:14,581 [3] DEBUG SoapServices.DAL.EducationalInstitution.EducationalInstitutionDbContext 
+
+2016-06-17 09:10:14,581 [3] DEBUG SoapServices.DAL.EducationalInstitution.EducationalInstitutionDbContext -- p__linq__0: 'test1@tetme.com' (Type = String, Size = 15)
+
+2016-06-17 09:10:14,582 [3] DEBUG SoapServices.DAL.EducationalInstitution.EducationalInstitutionDbContext -- Executing at 6/17/2016 9:10:14 AM +05:30
+
+2016-06-17 09:10:14,583 [3] DEBUG SoapServices.DAL.EducationalInstitution.EducationalInstitutionDbContext -- Completed in 0 ms with result: EFMySqlDataReader
+
+2016-06-17 09:10:14,584 [3] DEBUG SoapServices.DAL.EducationalInstitution.EducationalInstitutionDbContext 
+
+2016-06-17 09:10:14,585 [3] DEBUG SoapServices.DAL.EducationalInstitution.EducationalInstitutionDbContext Closed connection at 6/17/2016 9:10:14 AM +05:30
+
+2016-06-17 09:10:14,587 [3] DEBUG SoapServiceLibrary.ServiceImpl.ContactInfoService 
+ PrimaryContactNumber: 987654321, SecondaryContactNumber: , EmailId: test1@tetme.com, SkypeId: test1, LinkedInId: test1, FacebookId: test1
+2016-06-17 09:10:14,587 [3] DEBUG SoapServiceLibrary.ServiceImpl.ContactInfoService Processed Request for GetContactInformationByMail with email id test1@tetme.com
+2016-06-17 09:10:14,606 [3] DEBUG SoapServiceLibrary.ServiceImpl.ContactInfoService Recived Request to AddContactInfo with ContactInformation:
+ PrimaryContactNumber: 876543219, SecondaryContactNumber: , EmailId: test2@testme.com, SkypeId: test1, LinkedInId: test1, FacebookId: test1
+2016-06-17 09:10:14,609 [3] DEBUG SoapServices.DAL.EducationalInstitution.EducationalInstitutionDbContext Opened connection at 6/17/2016 9:10:14 AM +05:30
+
+2016-06-17 09:10:14,611 [3] DEBUG SoapServices.DAL.EducationalInstitution.EducationalInstitutionDbContext Started transaction at 6/17/2016 9:10:14 AM +05:30
+
+2016-06-17 09:10:14,612 [3] DEBUG SoapServices.DAL.EducationalInstitution.EducationalInstitutionDbContext SET SESSION sql_mode='ANSI';INSERT INTO `ContactInfo`(
+`PrimaryContactNumber`, 
+`SecondaryContactNumber`, 
+`EmailId`, 
+`SkypeId`, 
+`LinkedInId`, 
+`FacebookId`) VALUES (
+@gp1, 
+@gp2, 
+@gp3, 
+@gp4, 
+@gp5, 
+@gp6);
+SELECT
+`Id`
+FROM `ContactInfo`
+ WHERE  row_count() > 0 AND `Id`=last_insert_id()
+2016-06-17 09:10:14,614 [3] DEBUG SoapServices.DAL.EducationalInstitution.EducationalInstitutionDbContext 
+
+2016-06-17 09:10:14,615 [3] DEBUG SoapServices.DAL.EducationalInstitution.EducationalInstitutionDbContext -- @gp1: '876543219' (Type = String, IsNullable = false, Size = 9)
+
+2016-06-17 09:10:14,616 [3] DEBUG SoapServices.DAL.EducationalInstitution.EducationalInstitutionDbContext -- @gp2: '' (Type = String, IsNullable = false)
+
+2016-06-17 09:10:14,618 [3] DEBUG SoapServices.DAL.EducationalInstitution.EducationalInstitutionDbContext -- @gp3: 'test2@testme.com' (Type = String, IsNullable = false, Size = 16)
+
+2016-06-17 09:10:14,618 [3] DEBUG SoapServices.DAL.EducationalInstitution.EducationalInstitutionDbContext -- @gp4: 'test1' (Type = String, IsNullable = false, Size = 5)
+
+2016-06-17 09:10:14,619 [3] DEBUG SoapServices.DAL.EducationalInstitution.EducationalInstitutionDbContext -- @gp5: 'test1' (Type = String, IsNullable = false, Size = 5)
+
+2016-06-17 09:10:14,621 [3] DEBUG SoapServices.DAL.EducationalInstitution.EducationalInstitutionDbContext -- @gp6: 'test1' (Type = String, IsNullable = false, Size = 5)
+
+2016-06-17 09:10:14,622 [3] DEBUG SoapServices.DAL.EducationalInstitution.EducationalInstitutionDbContext -- Executing at 6/17/2016 9:10:14 AM +05:30
+
+2016-06-17 09:10:14,624 [3] DEBUG SoapServices.DAL.EducationalInstitution.EducationalInstitutionDbContext -- Completed in 1 ms with result: EFMySqlDataReader
+
+2016-06-17 09:10:14,625 [3] DEBUG SoapServices.DAL.EducationalInstitution.EducationalInstitutionDbContext 
+
+2016-06-17 09:10:14,664 [3] DEBUG SoapServices.DAL.EducationalInstitution.EducationalInstitutionDbContext Committed transaction at 6/17/2016 9:10:14 AM +05:30
+
+2016-06-17 09:10:14,665 [3] DEBUG SoapServices.DAL.EducationalInstitution.EducationalInstitutionDbContext Closed connection at 6/17/2016 9:10:14 AM +05:30
+
+2016-06-17 09:10:14,666 [3] DEBUG SoapServices.DAL.EducationalInstitution.EducationalInstitutionDbContext Disposed transaction at 6/17/2016 9:10:14 AM +05:30
+
+2016-06-17 09:10:14,666 [3] DEBUG SoapServiceLibrary.ServiceImpl.ContactInfoService Addition Succesful & sending response as true
+2016-06-17 09:10:14,679 [3] DEBUG SoapServiceLibrary.ServiceImpl.ContactInfoService Received Request for GetContactInformationByMail with email id test2@testme.com
+2016-06-17 09:10:14,681 [3] DEBUG SoapServices.DAL.EducationalInstitution.EducationalInstitutionDbContext Opened connection at 6/17/2016 9:10:14 AM +05:30
+
+2016-06-17 09:10:14,683 [3] DEBUG SoapServices.DAL.EducationalInstitution.EducationalInstitutionDbContext SELECT
+1 AS `C1`, 
+`Extent1`.`EmailId`, 
+`Extent1`.`FacebookId`, 
+`Extent1`.`LinkedInId`, 
+`Extent1`.`PrimaryContactNumber`, 
+`Extent1`.`SecondaryContactNumber`, 
+`Extent1`.`SkypeId`
+FROM `ContactInfo` AS `Extent1`
+ WHERE `Extent1`.`EmailId` = @p__linq__0
+2016-06-17 09:10:14,691 [3] DEBUG SoapServices.DAL.EducationalInstitution.EducationalInstitutionDbContext 
+
+2016-06-17 09:10:14,692 [3] DEBUG SoapServices.DAL.EducationalInstitution.EducationalInstitutionDbContext -- p__linq__0: 'test2@testme.com' (Type = String, Size = 16)
+
+2016-06-17 09:10:14,692 [3] DEBUG SoapServices.DAL.EducationalInstitution.EducationalInstitutionDbContext -- Executing at 6/17/2016 9:10:14 AM +05:30
+
+2016-06-17 09:10:14,731 [3] DEBUG SoapServices.DAL.EducationalInstitution.EducationalInstitutionDbContext -- Completed in 38 ms with result: EFMySqlDataReader
+
+2016-06-17 09:10:14,732 [3] DEBUG SoapServices.DAL.EducationalInstitution.EducationalInstitutionDbContext 
+
+2016-06-17 09:10:14,732 [3] DEBUG SoapServices.DAL.EducationalInstitution.EducationalInstitutionDbContext Closed connection at 6/17/2016 9:10:14 AM +05:30
+
+2016-06-17 09:10:14,732 [3] DEBUG SoapServiceLibrary.ServiceImpl.ContactInfoService 
+ PrimaryContactNumber: 876543219, SecondaryContactNumber: , EmailId: test2@testme.com, SkypeId: test1, LinkedInId: test1, FacebookId: test1
+2016-06-17 09:10:14,733 [3] DEBUG SoapServiceLibrary.ServiceImpl.ContactInfoService Processed Request for GetContactInformationByMail with email id test2@testme.com
+2016-06-17 09:10:14,744 [6] DEBUG SoapServiceLibrary.ServiceImpl.ContactInfoService Recived Request to AddContactInfo with ContactInformation:
+ PrimaryContactNumber: 765432198, SecondaryContactNumber: , EmailId: test3@testme.com, SkypeId: test1, LinkedInId: test1, FacebookId: test1
+2016-06-17 09:10:14,747 [6] DEBUG SoapServices.DAL.EducationalInstitution.EducationalInstitutionDbContext Opened connection at 6/17/2016 9:10:14 AM +05:30
+
+2016-06-17 09:10:14,748 [6] DEBUG SoapServices.DAL.EducationalInstitution.EducationalInstitutionDbContext Started transaction at 6/17/2016 9:10:14 AM +05:30
+
+2016-06-17 09:10:14,749 [6] DEBUG SoapServices.DAL.EducationalInstitution.EducationalInstitutionDbContext SET SESSION sql_mode='ANSI';INSERT INTO `ContactInfo`(
+`PrimaryContactNumber`, 
+`SecondaryContactNumber`, 
+`EmailId`, 
+`SkypeId`, 
+`LinkedInId`, 
+`FacebookId`) VALUES (
+@gp1, 
+@gp2, 
+@gp3, 
+@gp4, 
+@gp5, 
+@gp6);
+SELECT
+`Id`
+FROM `ContactInfo`
+ WHERE  row_count() > 0 AND `Id`=last_insert_id()
+2016-06-17 09:10:14,750 [6] DEBUG SoapServices.DAL.EducationalInstitution.EducationalInstitutionDbContext 
+
+2016-06-17 09:10:14,751 [6] DEBUG SoapServices.DAL.EducationalInstitution.EducationalInstitutionDbContext -- @gp1: '765432198' (Type = String, IsNullable = false, Size = 9)
+
+2016-06-17 09:10:14,752 [6] DEBUG SoapServices.DAL.EducationalInstitution.EducationalInstitutionDbContext -- @gp2: '' (Type = String, IsNullable = false)
+
+2016-06-17 09:10:14,753 [6] DEBUG SoapServices.DAL.EducationalInstitution.EducationalInstitutionDbContext -- @gp3: 'test3@testme.com' (Type = String, IsNullable = false, Size = 16)
+
+2016-06-17 09:10:14,754 [6] DEBUG SoapServices.DAL.EducationalInstitution.EducationalInstitutionDbContext -- @gp4: 'test1' (Type = String, IsNullable = false, Size = 5)
+
+2016-06-17 09:10:14,754 [6] DEBUG SoapServices.DAL.EducationalInstitution.EducationalInstitutionDbContext -- @gp5: 'test1' (Type = String, IsNullable = false, Size = 5)
+
+2016-06-17 09:10:14,755 [6] DEBUG SoapServices.DAL.EducationalInstitution.EducationalInstitutionDbContext -- @gp6: 'test1' (Type = String, IsNullable = false, Size = 5)
+
+2016-06-17 09:10:14,755 [6] DEBUG SoapServices.DAL.EducationalInstitution.EducationalInstitutionDbContext -- Executing at 6/17/2016 9:10:14 AM +05:30
+
+2016-06-17 09:10:14,758 [6] DEBUG SoapServices.DAL.EducationalInstitution.EducationalInstitutionDbContext -- Completed in 2 ms with result: EFMySqlDataReader
+
+2016-06-17 09:10:14,759 [6] DEBUG SoapServices.DAL.EducationalInstitution.EducationalInstitutionDbContext 
+
+2016-06-17 09:10:14,776 [6] DEBUG SoapServices.DAL.EducationalInstitution.EducationalInstitutionDbContext Committed transaction at 6/17/2016 9:10:14 AM +05:30
+
+2016-06-17 09:10:14,777 [6] DEBUG SoapServices.DAL.EducationalInstitution.EducationalInstitutionDbContext Closed connection at 6/17/2016 9:10:14 AM +05:30
+
+2016-06-17 09:10:14,777 [6] DEBUG SoapServices.DAL.EducationalInstitution.EducationalInstitutionDbContext Disposed transaction at 6/17/2016 9:10:14 AM +05:30
+
+2016-06-17 09:10:14,778 [6] DEBUG SoapServiceLibrary.ServiceImpl.ContactInfoService Addition Succesful & sending response as true
+2016-06-17 09:10:14,791 [6] DEBUG SoapServiceLibrary.ServiceImpl.ContactInfoService Received Request for GetContactInformationByMail with email id test3@testme.com
+2016-06-17 09:10:14,792 [6] DEBUG SoapServices.DAL.EducationalInstitution.EducationalInstitutionDbContext Opened connection at 6/17/2016 9:10:14 AM +05:30
+
+2016-06-17 09:10:14,794 [6] DEBUG SoapServices.DAL.EducationalInstitution.EducationalInstitutionDbContext SELECT
+1 AS `C1`, 
+`Extent1`.`EmailId`, 
+`Extent1`.`FacebookId`, 
+`Extent1`.`LinkedInId`, 
+`Extent1`.`PrimaryContactNumber`, 
+`Extent1`.`SecondaryContactNumber`, 
+`Extent1`.`SkypeId`
+FROM `ContactInfo` AS `Extent1`
+ WHERE `Extent1`.`EmailId` = @p__linq__0
+2016-06-17 09:10:14,795 [6] DEBUG SoapServices.DAL.EducationalInstitution.EducationalInstitutionDbContext 
+
+2016-06-17 09:10:14,796 [6] DEBUG SoapServices.DAL.EducationalInstitution.EducationalInstitutionDbContext -- p__linq__0: 'test3@testme.com' (Type = String, Size = 16)
+
+2016-06-17 09:10:14,797 [6] DEBUG SoapServices.DAL.EducationalInstitution.EducationalInstitutionDbContext -- Executing at 6/17/2016 9:10:14 AM +05:30
+
+2016-06-17 09:10:14,798 [6] DEBUG SoapServices.DAL.EducationalInstitution.EducationalInstitutionDbContext -- Completed in 0 ms with result: EFMySqlDataReader
+
+2016-06-17 09:10:14,799 [6] DEBUG SoapServices.DAL.EducationalInstitution.EducationalInstitutionDbContext 
+
+2016-06-17 09:10:14,800 [6] DEBUG SoapServices.DAL.EducationalInstitution.EducationalInstitutionDbContext Closed connection at 6/17/2016 9:10:14 AM +05:30
+
+2016-06-17 09:10:14,801 [6] DEBUG SoapServiceLibrary.ServiceImpl.ContactInfoService 
+ PrimaryContactNumber: 765432198, SecondaryContactNumber: , EmailId: test3@testme.com, SkypeId: test1, LinkedInId: test1, FacebookId: test1
+2016-06-17 09:10:14,802 [6] DEBUG SoapServiceLibrary.ServiceImpl.ContactInfoService Processed Request for GetContactInformationByMail with email id test3@testme.com
+2016-06-17 09:20:34,326 [6] DEBUG SoapServiceLibrary.ServiceImpl.ContactInfoService Received Request for the GetAllContactInformations
+2016-06-17 09:20:34,433 [6] DEBUG SoapServices.DAL.EducationalInstitution.EducationalInstitutionDbContext Opened connection at 6/17/2016 9:20:34 AM +05:30
+
+2016-06-17 09:20:34,434 [6] DEBUG SoapServices.DAL.EducationalInstitution.EducationalInstitutionDbContext SELECT
+1 AS `C1`, 
+`Extent1`.`EmailId`, 
+`Extent1`.`FacebookId`, 
+`Extent1`.`LinkedInId`, 
+`Extent1`.`SecondaryContactNumber`, 
+`Extent1`.`SkypeId`
+FROM `ContactInfo` AS `Extent1`
+2016-06-17 09:20:34,435 [6] DEBUG SoapServices.DAL.EducationalInstitution.EducationalInstitutionDbContext 
+
+2016-06-17 09:20:34,436 [6] DEBUG SoapServices.DAL.EducationalInstitution.EducationalInstitutionDbContext -- Executing at 6/17/2016 9:20:34 AM +05:30
+
+2016-06-17 09:20:34,438 [6] DEBUG SoapServices.DAL.EducationalInstitution.EducationalInstitutionDbContext -- Completed in 1 ms with result: EFMySqlDataReader
+
+2016-06-17 09:20:34,438 [6] DEBUG SoapServices.DAL.EducationalInstitution.EducationalInstitutionDbContext 
+
+2016-06-17 09:20:34,439 [6] DEBUG SoapServices.DAL.EducationalInstitution.EducationalInstitutionDbContext Closed connection at 6/17/2016 9:20:34 AM +05:30
+
+2016-06-17 09:20:34,440 [6] DEBUG SoapServiceLibrary.ServiceImpl.ContactInfoService 
+ PrimaryContactNumber: test1, SecondaryContactNumber: , EmailId: test1@tetme.com, SkypeId: test1, LinkedInId: test1, FacebookId: test1
+2016-06-17 09:20:34,440 [6] DEBUG SoapServiceLibrary.ServiceImpl.ContactInfoService 
+ PrimaryContactNumber: test1, SecondaryContactNumber: , EmailId: test2@testme.com, SkypeId: test1, LinkedInId: test1, FacebookId: test1
+2016-06-17 09:20:34,441 [18] DEBUG SoapServiceLibrary.ServiceImpl.ContactInfoService 
+ PrimaryContactNumber: test1, SecondaryContactNumber: , EmailId: test3@testme.com, SkypeId: test1, LinkedInId: test1, FacebookId: test1
+2016-06-17 09:20:34,442 [6] DEBUG SoapServiceLibrary.ServiceImpl.ContactInfoService Processed Request for the GetAllContactInformations
+2016-06-17 09:20:34,464 [6] DEBUG SoapServiceLibrary.ServiceImpl.ContactInfoService  Received Request to DeleteContactsByEmailId with emailid: test1@tetme.com
+2016-06-17 09:20:34,466 [6] DEBUG SoapServices.DAL.EducationalInstitution.EducationalInstitutionDbContext Opened connection at 6/17/2016 9:20:34 AM +05:30
+
+2016-06-17 09:20:34,469 [6] DEBUG SoapServices.DAL.EducationalInstitution.EducationalInstitutionDbContext SELECT
+`Extent1`.`Id`, 
+`Extent1`.`PrimaryContactNumber`, 
+`Extent1`.`SecondaryContactNumber`, 
+`Extent1`.`EmailId`, 
+`Extent1`.`SkypeId`, 
+`Extent1`.`LinkedInId`, 
+`Extent1`.`FacebookId`
+FROM `ContactInfo` AS `Extent1`
+ WHERE `Extent1`.`EmailId` = @p__linq__0
+2016-06-17 09:20:34,470 [6] DEBUG SoapServices.DAL.EducationalInstitution.EducationalInstitutionDbContext 
+
+2016-06-17 09:20:34,470 [6] DEBUG SoapServices.DAL.EducationalInstitution.EducationalInstitutionDbContext -- p__linq__0: 'test1@tetme.com' (Type = String, Size = 15)
+
+2016-06-17 09:20:34,471 [6] DEBUG SoapServices.DAL.EducationalInstitution.EducationalInstitutionDbContext -- Executing at 6/17/2016 9:20:34 AM +05:30
+
+2016-06-17 09:20:34,473 [6] DEBUG SoapServices.DAL.EducationalInstitution.EducationalInstitutionDbContext -- Completed in 0 ms with result: EFMySqlDataReader
+
+2016-06-17 09:20:34,473 [6] DEBUG SoapServices.DAL.EducationalInstitution.EducationalInstitutionDbContext 
+
+2016-06-17 09:20:34,474 [6] DEBUG SoapServiceLibrary.ServiceImpl.ContactInfoService Removing record with contactInformation SoapServices.DAL.EducationalInstitution.ContactInformation
+2016-06-17 09:20:34,475 [18] DEBUG SoapServices.DAL.EducationalInstitution.EducationalInstitutionDbContext Closed connection at 6/17/2016 9:20:34 AM +05:30
+
+2016-06-17 09:20:34,478 [6] DEBUG SoapServices.DAL.EducationalInstitution.EducationalInstitutionDbContext Opened connection at 6/17/2016 9:20:34 AM +05:30
+
+2016-06-17 09:20:34,480 [6] DEBUG SoapServices.DAL.EducationalInstitution.EducationalInstitutionDbContext SELECT
+`GroupBy1`.`A1` AS `C1`
+FROM (SELECT
+COUNT(1) AS `A1`
+FROM `ContactInfo` AS `Extent1`
+ WHERE `Extent1`.`EmailId` = @p__linq__0) AS `GroupBy1`
+2016-06-17 09:20:34,480 [6] DEBUG SoapServices.DAL.EducationalInstitution.EducationalInstitutionDbContext 
+
+2016-06-17 09:20:34,481 [6] DEBUG SoapServices.DAL.EducationalInstitution.EducationalInstitutionDbContext -- p__linq__0: 'test1@tetme.com' (Type = String, Size = 15)
+
+2016-06-17 09:20:34,482 [6] DEBUG SoapServices.DAL.EducationalInstitution.EducationalInstitutionDbContext -- Executing at 6/17/2016 9:20:34 AM +05:30
+
+2016-06-17 09:20:34,484 [6] DEBUG SoapServices.DAL.EducationalInstitution.EducationalInstitutionDbContext -- Completed in 0 ms with result: EFMySqlDataReader
+
+2016-06-17 09:20:34,484 [6] DEBUG SoapServices.DAL.EducationalInstitution.EducationalInstitutionDbContext 
+
+2016-06-17 09:20:34,485 [6] DEBUG SoapServices.DAL.EducationalInstitution.EducationalInstitutionDbContext Closed connection at 6/17/2016 9:20:34 AM +05:30
+
+2016-06-17 09:20:34,488 [6] DEBUG SoapServices.DAL.EducationalInstitution.EducationalInstitutionDbContext Opened connection at 6/17/2016 9:20:34 AM +05:30
+
+2016-06-17 09:20:34,489 [6] DEBUG SoapServices.DAL.EducationalInstitution.EducationalInstitutionDbContext SELECT
+`Extent1`.`Id`, 
+`Extent1`.`PrimaryContactNumber`, 
+`Extent1`.`SecondaryContactNumber`, 
+`Extent1`.`EmailId`, 
+`Extent1`.`SkypeId`, 
+`Extent1`.`LinkedInId`, 
+`Extent1`.`FacebookId`
+FROM `ContactInfo` AS `Extent1`
+ WHERE `Extent1`.`EmailId` = @p__linq__0
+2016-06-17 09:20:34,490 [6] DEBUG SoapServices.DAL.EducationalInstitution.EducationalInstitutionDbContext 
+
+2016-06-17 09:20:34,492 [6] DEBUG SoapServices.DAL.EducationalInstitution.EducationalInstitutionDbContext -- p__linq__0: 'test1@tetme.com' (Type = String, Size = 15)
+
+2016-06-17 09:20:34,493 [6] DEBUG SoapServices.DAL.EducationalInstitution.EducationalInstitutionDbContext -- Executing at 6/17/2016 9:20:34 AM +05:30
+
+2016-06-17 09:20:34,494 [6] DEBUG SoapServices.DAL.EducationalInstitution.EducationalInstitutionDbContext -- Completed in 0 ms with result: EFMySqlDataReader
+
+2016-06-17 09:20:34,495 [6] DEBUG SoapServices.DAL.EducationalInstitution.EducationalInstitutionDbContext 
+
+2016-06-17 09:20:34,497 [6] DEBUG SoapServices.DAL.EducationalInstitution.EducationalInstitutionDbContext Closed connection at 6/17/2016 9:20:34 AM +05:30
+
+2016-06-17 09:20:34,498 [6] DEBUG SoapServices.DAL.EducationalInstitution.EducationalInstitutionDbContext Opened connection at 6/17/2016 9:20:34 AM +05:30
+
+2016-06-17 09:20:34,500 [6] DEBUG SoapServices.DAL.EducationalInstitution.EducationalInstitutionDbContext Started transaction at 6/17/2016 9:20:34 AM +05:30
+
+2016-06-17 09:20:34,501 [6] DEBUG SoapServices.DAL.EducationalInstitution.EducationalInstitutionDbContext DELETE FROM `ContactInfo` WHERE `Id` = 15
+2016-06-17 09:20:34,502 [6] DEBUG SoapServices.DAL.EducationalInstitution.EducationalInstitutionDbContext 
+
+2016-06-17 09:20:34,503 [6] DEBUG SoapServices.DAL.EducationalInstitution.EducationalInstitutionDbContext -- Executing at 6/17/2016 9:20:34 AM +05:30
+
+2016-06-17 09:20:34,527 [6] DEBUG SoapServices.DAL.EducationalInstitution.EducationalInstitutionDbContext -- Completed in 22 ms with result: 1
+
+2016-06-17 09:20:34,528 [6] DEBUG SoapServices.DAL.EducationalInstitution.EducationalInstitutionDbContext 
+
+2016-06-17 09:20:34,568 [6] DEBUG SoapServices.DAL.EducationalInstitution.EducationalInstitutionDbContext Committed transaction at 6/17/2016 9:20:34 AM +05:30
+
+2016-06-17 09:20:34,568 [6] DEBUG SoapServices.DAL.EducationalInstitution.EducationalInstitutionDbContext Closed connection at 6/17/2016 9:20:34 AM +05:30
+
+2016-06-17 09:20:34,569 [6] DEBUG SoapServices.DAL.EducationalInstitution.EducationalInstitutionDbContext Disposed transaction at 6/17/2016 9:20:34 AM +05:30
+
+2016-06-17 09:20:34,569 [6] DEBUG SoapServiceLibrary.ServiceImpl.ContactInfoService Processed Request DeleteContactsByEmailId
+2016-06-17 09:20:34,604 [6] DEBUG SoapServiceLibrary.ServiceImpl.ContactInfoService  Received Request to DeleteContactsByEmailId with emailid: test2@testme.com
+2016-06-17 09:20:34,606 [6] DEBUG SoapServices.DAL.EducationalInstitution.EducationalInstitutionDbContext Opened connection at 6/17/2016 9:20:34 AM +05:30
+
+2016-06-17 09:20:34,607 [6] DEBUG SoapServices.DAL.EducationalInstitution.EducationalInstitutionDbContext SELECT
+`Extent1`.`Id`, 
+`Extent1`.`PrimaryContactNumber`, 
+`Extent1`.`SecondaryContactNumber`, 
+`Extent1`.`EmailId`, 
+`Extent1`.`SkypeId`, 
+`Extent1`.`LinkedInId`, 
+`Extent1`.`FacebookId`
+FROM `ContactInfo` AS `Extent1`
+ WHERE `Extent1`.`EmailId` = @p__linq__0
+2016-06-17 09:20:34,608 [6] DEBUG SoapServices.DAL.EducationalInstitution.EducationalInstitutionDbContext 
+
+2016-06-17 09:20:34,609 [6] DEBUG SoapServices.DAL.EducationalInstitution.EducationalInstitutionDbContext -- p__linq__0: 'test2@testme.com' (Type = String, Size = 16)
+
+2016-06-17 09:20:34,610 [6] DEBUG SoapServices.DAL.EducationalInstitution.EducationalInstitutionDbContext -- Executing at 6/17/2016 9:20:34 AM +05:30
+
+2016-06-17 09:20:34,617 [6] DEBUG SoapServices.DAL.EducationalInstitution.EducationalInstitutionDbContext -- Completed in 6 ms with result: EFMySqlDataReader
+
+2016-06-17 09:20:34,618 [6] DEBUG SoapServices.DAL.EducationalInstitution.EducationalInstitutionDbContext 
+
+2016-06-17 09:20:34,619 [6] DEBUG SoapServiceLibrary.ServiceImpl.ContactInfoService Removing record with contactInformation SoapServices.DAL.EducationalInstitution.ContactInformation
+2016-06-17 09:20:34,619 [18] DEBUG SoapServices.DAL.EducationalInstitution.EducationalInstitutionDbContext Closed connection at 6/17/2016 9:20:34 AM +05:30
+
+2016-06-17 09:20:34,621 [6] DEBUG SoapServices.DAL.EducationalInstitution.EducationalInstitutionDbContext Opened connection at 6/17/2016 9:20:34 AM +05:30
+
+2016-06-17 09:20:34,622 [6] DEBUG SoapServices.DAL.EducationalInstitution.EducationalInstitutionDbContext SELECT
+`GroupBy1`.`A1` AS `C1`
+FROM (SELECT
+COUNT(1) AS `A1`
+FROM `ContactInfo` AS `Extent1`
+ WHERE `Extent1`.`EmailId` = @p__linq__0) AS `GroupBy1`
+2016-06-17 09:20:34,624 [6] DEBUG SoapServices.DAL.EducationalInstitution.EducationalInstitutionDbContext 
+
+2016-06-17 09:20:34,625 [6] DEBUG SoapServices.DAL.EducationalInstitution.EducationalInstitutionDbContext -- p__linq__0: 'test2@testme.com' (Type = String, Size = 16)
+
+2016-06-17 09:20:34,625 [6] DEBUG SoapServices.DAL.EducationalInstitution.EducationalInstitutionDbContext -- Executing at 6/17/2016 9:20:34 AM +05:30
+
+2016-06-17 09:20:34,626 [6] DEBUG SoapServices.DAL.EducationalInstitution.EducationalInstitutionDbContext -- Completed in 0 ms with result: EFMySqlDataReader
+
+2016-06-17 09:20:34,628 [6] DEBUG SoapServices.DAL.EducationalInstitution.EducationalInstitutionDbContext 
+
+2016-06-17 09:20:34,629 [6] DEBUG SoapServices.DAL.EducationalInstitution.EducationalInstitutionDbContext Closed connection at 6/17/2016 9:20:34 AM +05:30
+
+2016-06-17 09:20:34,632 [6] DEBUG SoapServices.DAL.EducationalInstitution.EducationalInstitutionDbContext Opened connection at 6/17/2016 9:20:34 AM +05:30
+
+2016-06-17 09:20:34,633 [6] DEBUG SoapServices.DAL.EducationalInstitution.EducationalInstitutionDbContext SELECT
+`Extent1`.`Id`, 
+`Extent1`.`PrimaryContactNumber`, 
+`Extent1`.`SecondaryContactNumber`, 
+`Extent1`.`EmailId`, 
+`Extent1`.`SkypeId`, 
+`Extent1`.`LinkedInId`, 
+`Extent1`.`FacebookId`
+FROM `ContactInfo` AS `Extent1`
+ WHERE `Extent1`.`EmailId` = @p__linq__0
+2016-06-17 09:20:34,634 [6] DEBUG SoapServices.DAL.EducationalInstitution.EducationalInstitutionDbContext 
+
+2016-06-17 09:20:34,634 [6] DEBUG SoapServices.DAL.EducationalInstitution.EducationalInstitutionDbContext -- p__linq__0: 'test2@testme.com' (Type = String, Size = 16)
+
+2016-06-17 09:20:34,635 [6] DEBUG SoapServices.DAL.EducationalInstitution.EducationalInstitutionDbContext -- Executing at 6/17/2016 9:20:34 AM +05:30
+
+2016-06-17 09:20:34,635 [6] DEBUG SoapServices.DAL.EducationalInstitution.EducationalInstitutionDbContext -- Completed in 0 ms with result: EFMySqlDataReader
+
+2016-06-17 09:20:34,637 [6] DEBUG SoapServices.DAL.EducationalInstitution.EducationalInstitutionDbContext 
+
+2016-06-17 09:20:34,637 [6] DEBUG SoapServices.DAL.EducationalInstitution.EducationalInstitutionDbContext Closed connection at 6/17/2016 9:20:34 AM +05:30
+
+2016-06-17 09:20:34,639 [6] DEBUG SoapServices.DAL.EducationalInstitution.EducationalInstitutionDbContext Opened connection at 6/17/2016 9:20:34 AM +05:30
+
+2016-06-17 09:20:34,641 [6] DEBUG SoapServices.DAL.EducationalInstitution.EducationalInstitutionDbContext Started transaction at 6/17/2016 9:20:34 AM +05:30
+
+2016-06-17 09:20:34,642 [6] DEBUG SoapServices.DAL.EducationalInstitution.EducationalInstitutionDbContext DELETE FROM `ContactInfo` WHERE `Id` = 16
+2016-06-17 09:20:34,643 [6] DEBUG SoapServices.DAL.EducationalInstitution.EducationalInstitutionDbContext 
+
+2016-06-17 09:20:34,643 [6] DEBUG SoapServices.DAL.EducationalInstitution.EducationalInstitutionDbContext -- Executing at 6/17/2016 9:20:34 AM +05:30
+
+2016-06-17 09:20:34,644 [6] DEBUG SoapServices.DAL.EducationalInstitution.EducationalInstitutionDbContext -- Completed in 0 ms with result: 1
+
+2016-06-17 09:20:34,644 [6] DEBUG SoapServices.DAL.EducationalInstitution.EducationalInstitutionDbContext 
+
+2016-06-17 09:20:34,690 [6] DEBUG SoapServices.DAL.EducationalInstitution.EducationalInstitutionDbContext Committed transaction at 6/17/2016 9:20:34 AM +05:30
+
+2016-06-17 09:20:34,691 [6] DEBUG SoapServices.DAL.EducationalInstitution.EducationalInstitutionDbContext Closed connection at 6/17/2016 9:20:34 AM +05:30
+
+2016-06-17 09:20:34,691 [6] DEBUG SoapServices.DAL.EducationalInstitution.EducationalInstitutionDbContext Disposed transaction at 6/17/2016 9:20:34 AM +05:30
+
+2016-06-17 09:20:34,692 [6] DEBUG SoapServiceLibrary.ServiceImpl.ContactInfoService Processed Request DeleteContactsByEmailId
+2016-06-17 09:20:34,708 [6] DEBUG SoapServiceLibrary.ServiceImpl.ContactInfoService  Received Request to DeleteContactsByEmailId with emailid: test3@testme.com
+2016-06-17 09:20:34,711 [6] DEBUG SoapServices.DAL.EducationalInstitution.EducationalInstitutionDbContext Opened connection at 6/17/2016 9:20:34 AM +05:30
+
+2016-06-17 09:20:34,715 [6] DEBUG SoapServices.DAL.EducationalInstitution.EducationalInstitutionDbContext SELECT
+`Extent1`.`Id`, 
+`Extent1`.`PrimaryContactNumber`, 
+`Extent1`.`SecondaryContactNumber`, 
+`Extent1`.`EmailId`, 
+`Extent1`.`SkypeId`, 
+`Extent1`.`LinkedInId`, 
+`Extent1`.`FacebookId`
+FROM `ContactInfo` AS `Extent1`
+ WHERE `Extent1`.`EmailId` = @p__linq__0
+2016-06-17 09:20:34,716 [6] DEBUG SoapServices.DAL.EducationalInstitution.EducationalInstitutionDbContext 
+
+2016-06-17 09:20:34,716 [6] DEBUG SoapServices.DAL.EducationalInstitution.EducationalInstitutionDbContext -- p__linq__0: 'test3@testme.com' (Type = String, Size = 16)
+
+2016-06-17 09:20:34,717 [6] DEBUG SoapServices.DAL.EducationalInstitution.EducationalInstitutionDbContext -- Executing at 6/17/2016 9:20:34 AM +05:30
+
+2016-06-17 09:20:34,718 [6] DEBUG SoapServices.DAL.EducationalInstitution.EducationalInstitutionDbContext -- Completed in 0 ms with result: EFMySqlDataReader
+
+2016-06-17 09:20:34,719 [6] DEBUG SoapServices.DAL.EducationalInstitution.EducationalInstitutionDbContext 
+
+2016-06-17 09:20:34,720 [6] DEBUG SoapServiceLibrary.ServiceImpl.ContactInfoService Removing record with contactInformation SoapServices.DAL.EducationalInstitution.ContactInformation
+2016-06-17 09:20:34,720 [18] DEBUG SoapServices.DAL.EducationalInstitution.EducationalInstitutionDbContext Closed connection at 6/17/2016 9:20:34 AM +05:30
+
+2016-06-17 09:20:34,723 [6] DEBUG SoapServices.DAL.EducationalInstitution.EducationalInstitutionDbContext Opened connection at 6/17/2016 9:20:34 AM +05:30
+
+2016-06-17 09:20:34,724 [6] DEBUG SoapServices.DAL.EducationalInstitution.EducationalInstitutionDbContext SELECT
+`GroupBy1`.`A1` AS `C1`
+FROM (SELECT
+COUNT(1) AS `A1`
+FROM `ContactInfo` AS `Extent1`
+ WHERE `Extent1`.`EmailId` = @p__linq__0) AS `GroupBy1`
+2016-06-17 09:20:34,725 [6] DEBUG SoapServices.DAL.EducationalInstitution.EducationalInstitutionDbContext 
+
+2016-06-17 09:20:34,726 [6] DEBUG SoapServices.DAL.EducationalInstitution.EducationalInstitutionDbContext -- p__linq__0: 'test3@testme.com' (Type = String, Size = 16)
+
+2016-06-17 09:20:34,726 [6] DEBUG SoapServices.DAL.EducationalInstitution.EducationalInstitutionDbContext -- Executing at 6/17/2016 9:20:34 AM +05:30
+
+2016-06-17 09:20:34,727 [6] DEBUG SoapServices.DAL.EducationalInstitution.EducationalInstitutionDbContext -- Completed in 0 ms with result: EFMySqlDataReader
+
+2016-06-17 09:20:34,729 [6] DEBUG SoapServices.DAL.EducationalInstitution.EducationalInstitutionDbContext 
+
+2016-06-17 09:20:34,735 [6] DEBUG SoapServices.DAL.EducationalInstitution.EducationalInstitutionDbContext Closed connection at 6/17/2016 9:20:34 AM +05:30
+
+2016-06-17 09:20:34,737 [6] DEBUG SoapServices.DAL.EducationalInstitution.EducationalInstitutionDbContext Opened connection at 6/17/2016 9:20:34 AM +05:30
+
+2016-06-17 09:20:34,738 [6] DEBUG SoapServices.DAL.EducationalInstitution.EducationalInstitutionDbContext SELECT
+`Extent1`.`Id`, 
+`Extent1`.`PrimaryContactNumber`, 
+`Extent1`.`SecondaryContactNumber`, 
+`Extent1`.`EmailId`, 
+`Extent1`.`SkypeId`, 
+`Extent1`.`LinkedInId`, 
+`Extent1`.`FacebookId`
+FROM `ContactInfo` AS `Extent1`
+ WHERE `Extent1`.`EmailId` = @p__linq__0
+2016-06-17 09:20:34,739 [6] DEBUG SoapServices.DAL.EducationalInstitution.EducationalInstitutionDbContext 
+
+2016-06-17 09:20:34,740 [6] DEBUG SoapServices.DAL.EducationalInstitution.EducationalInstitutionDbContext -- p__linq__0: 'test3@testme.com' (Type = String, Size = 16)
+
+2016-06-17 09:20:34,741 [6] DEBUG SoapServices.DAL.EducationalInstitution.EducationalInstitutionDbContext -- Executing at 6/17/2016 9:20:34 AM +05:30
+
+2016-06-17 09:20:34,743 [6] DEBUG SoapServices.DAL.EducationalInstitution.EducationalInstitutionDbContext -- Completed in 0 ms with result: EFMySqlDataReader
+
+2016-06-17 09:20:34,744 [6] DEBUG SoapServices.DAL.EducationalInstitution.EducationalInstitutionDbContext 
+
+2016-06-17 09:20:34,745 [6] DEBUG SoapServices.DAL.EducationalInstitution.EducationalInstitutionDbContext Closed connection at 6/17/2016 9:20:34 AM +05:30
+
+2016-06-17 09:20:34,748 [6] DEBUG SoapServices.DAL.EducationalInstitution.EducationalInstitutionDbContext Opened connection at 6/17/2016 9:20:34 AM +05:30
+
+2016-06-17 09:20:34,749 [6] DEBUG SoapServices.DAL.EducationalInstitution.EducationalInstitutionDbContext Started transaction at 6/17/2016 9:20:34 AM +05:30
+
+2016-06-17 09:20:34,750 [6] DEBUG SoapServices.DAL.EducationalInstitution.EducationalInstitutionDbContext DELETE FROM `ContactInfo` WHERE `Id` = 17
+2016-06-17 09:20:34,750 [6] DEBUG SoapServices.DAL.EducationalInstitution.EducationalInstitutionDbContext 
+
+2016-06-17 09:20:34,750 [6] DEBUG SoapServices.DAL.EducationalInstitution.EducationalInstitutionDbContext -- Executing at 6/17/2016 9:20:34 AM +05:30
+
+2016-06-17 09:20:34,751 [6] DEBUG SoapServices.DAL.EducationalInstitution.EducationalInstitutionDbContext -- Completed in 0 ms with result: 1
+
+2016-06-17 09:20:34,751 [6] DEBUG SoapServices.DAL.EducationalInstitution.EducationalInstitutionDbContext 
+
+2016-06-17 09:20:34,777 [6] DEBUG SoapServices.DAL.EducationalInstitution.EducationalInstitutionDbContext Committed transaction at 6/17/2016 9:20:34 AM +05:30
+
+2016-06-17 09:20:34,777 [6] DEBUG SoapServices.DAL.EducationalInstitution.EducationalInstitutionDbContext Closed connection at 6/17/2016 9:20:34 AM +05:30
+
+2016-06-17 09:20:34,778 [6] DEBUG SoapServices.DAL.EducationalInstitution.EducationalInstitutionDbContext Disposed transaction at 6/17/2016 9:20:34 AM +05:30
+
+2016-06-17 09:20:34,778 [6] DEBUG SoapServiceLibrary.ServiceImpl.ContactInfoService Processed Request DeleteContactsByEmailId
+2016-06-17 09:20:34,791 [6] DEBUG SoapServiceLibrary.ServiceImpl.ContactInfoService Received Request for the GetAllContactInformations
+2016-06-17 09:20:34,792 [6] DEBUG SoapServices.DAL.EducationalInstitution.EducationalInstitutionDbContext Opened connection at 6/17/2016 9:20:34 AM +05:30
+
+2016-06-17 09:20:34,793 [6] DEBUG SoapServices.DAL.EducationalInstitution.EducationalInstitutionDbContext SELECT
+1 AS `C1`, 
+`Extent1`.`EmailId`, 
+`Extent1`.`FacebookId`, 
+`Extent1`.`LinkedInId`, 
+`Extent1`.`SecondaryContactNumber`, 
+`Extent1`.`SkypeId`
+FROM `ContactInfo` AS `Extent1`
+2016-06-17 09:20:34,794 [6] DEBUG SoapServices.DAL.EducationalInstitution.EducationalInstitutionDbContext 
+
+2016-06-17 09:20:34,796 [6] DEBUG SoapServices.DAL.EducationalInstitution.EducationalInstitutionDbContext -- Executing at 6/17/2016 9:20:34 AM +05:30
+
+2016-06-17 09:20:34,798 [6] DEBUG SoapServices.DAL.EducationalInstitution.EducationalInstitutionDbContext -- Completed in 0 ms with result: EFMySqlDataReader
+
+2016-06-17 09:20:34,799 [6] DEBUG SoapServices.DAL.EducationalInstitution.EducationalInstitutionDbContext 
+
+2016-06-17 09:20:34,799 [6] DEBUG SoapServices.DAL.EducationalInstitution.EducationalInstitutionDbContext Closed connection at 6/17/2016 9:20:34 AM +05:30
+
+2016-06-17 09:20:34,800 [6] DEBUG SoapServiceLibrary.ServiceImpl.ContactInfoService Processed Request for the GetAllContactInformations
+2016-06-17 09:20:40,348 [17] DEBUG SoapServiceLibrary.ServiceImpl.ContactInfoService Recived Request to AddContactInfo with ContactInformation:
+ PrimaryContactNumber: 987654321, SecondaryContactNumber: , EmailId: test1@tetme.com, SkypeId: test3, LinkedInId: test3, FacebookId: test3
+2016-06-17 09:20:40,351 [17] DEBUG SoapServices.DAL.EducationalInstitution.EducationalInstitutionDbContext Opened connection at 6/17/2016 9:20:40 AM +05:30
+
+2016-06-17 09:20:40,354 [17] DEBUG SoapServices.DAL.EducationalInstitution.EducationalInstitutionDbContext Started transaction at 6/17/2016 9:20:40 AM +05:30
+
+2016-06-17 09:20:40,356 [17] DEBUG SoapServices.DAL.EducationalInstitution.EducationalInstitutionDbContext SET SESSION sql_mode='ANSI';INSERT INTO `ContactInfo`(
+`PrimaryContactNumber`, 
+`SecondaryContactNumber`, 
+`EmailId`, 
+`SkypeId`, 
+`LinkedInId`, 
+`FacebookId`) VALUES (
+@gp1, 
+NULL, 
+@gp2, 
+@gp3, 
+@gp4, 
+@gp5);
+SELECT
+`Id`
+FROM `ContactInfo`
+ WHERE  row_count() > 0 AND `Id`=last_insert_id()
+2016-06-17 09:20:40,358 [17] DEBUG SoapServices.DAL.EducationalInstitution.EducationalInstitutionDbContext 
+
+2016-06-17 09:20:40,359 [17] DEBUG SoapServices.DAL.EducationalInstitution.EducationalInstitutionDbContext -- @gp1: '987654321' (Type = String, IsNullable = false, Size = 9)
+
+2016-06-17 09:20:40,359 [17] DEBUG SoapServices.DAL.EducationalInstitution.EducationalInstitutionDbContext -- @gp2: 'test1@tetme.com' (Type = String, IsNullable = false, Size = 15)
+
+2016-06-17 09:20:40,361 [17] DEBUG SoapServices.DAL.EducationalInstitution.EducationalInstitutionDbContext -- @gp3: 'test3' (Type = String, IsNullable = false, Size = 5)
+
+2016-06-17 09:20:40,362 [17] DEBUG SoapServices.DAL.EducationalInstitution.EducationalInstitutionDbContext -- @gp4: 'test3' (Type = String, IsNullable = false, Size = 5)
+
+2016-06-17 09:20:40,364 [17] DEBUG SoapServices.DAL.EducationalInstitution.EducationalInstitutionDbContext -- @gp5: 'test3' (Type = String, IsNullable = false, Size = 5)
+
+2016-06-17 09:20:40,365 [17] DEBUG SoapServices.DAL.EducationalInstitution.EducationalInstitutionDbContext -- Executing at 6/17/2016 9:20:40 AM +05:30
+
+2016-06-17 09:20:40,385 [17] DEBUG SoapServices.DAL.EducationalInstitution.EducationalInstitutionDbContext -- Completed in 19 ms with result: EFMySqlDataReader
+
+2016-06-17 09:20:40,386 [17] DEBUG SoapServices.DAL.EducationalInstitution.EducationalInstitutionDbContext 
+
+2016-06-17 09:20:40,414 [17] DEBUG SoapServices.DAL.EducationalInstitution.EducationalInstitutionDbContext Committed transaction at 6/17/2016 9:20:40 AM +05:30
+
+2016-06-17 09:20:40,416 [17] DEBUG SoapServices.DAL.EducationalInstitution.EducationalInstitutionDbContext Closed connection at 6/17/2016 9:20:40 AM +05:30
+
+2016-06-17 09:20:40,416 [17] DEBUG SoapServices.DAL.EducationalInstitution.EducationalInstitutionDbContext Disposed transaction at 6/17/2016 9:20:40 AM +05:30
+
+2016-06-17 09:20:40,416 [17] DEBUG SoapServiceLibrary.ServiceImpl.ContactInfoService Addition Succesful & sending response as true
+2016-06-17 09:20:40,449 [17] DEBUG SoapServiceLibrary.ServiceImpl.ContactInfoService Received Request for GetContactInformationByMail with email id test1@tetme.com
+2016-06-17 09:20:40,451 [17] DEBUG SoapServices.DAL.EducationalInstitution.EducationalInstitutionDbContext Opened connection at 6/17/2016 9:20:40 AM +05:30
+
+2016-06-17 09:20:40,452 [17] DEBUG SoapServices.DAL.EducationalInstitution.EducationalInstitutionDbContext SELECT
+1 AS `C1`, 
+`Extent1`.`EmailId`, 
+`Extent1`.`FacebookId`, 
+`Extent1`.`LinkedInId`, 
+`Extent1`.`PrimaryContactNumber`, 
+`Extent1`.`SecondaryContactNumber`, 
+`Extent1`.`SkypeId`
+FROM `ContactInfo` AS `Extent1`
+ WHERE `Extent1`.`EmailId` = @p__linq__0
+2016-06-17 09:20:40,453 [17] DEBUG SoapServices.DAL.EducationalInstitution.EducationalInstitutionDbContext 
+
+2016-06-17 09:20:40,454 [17] DEBUG SoapServices.DAL.EducationalInstitution.EducationalInstitutionDbContext -- p__linq__0: 'test1@tetme.com' (Type = String, Size = 15)
+
+2016-06-17 09:20:40,455 [17] DEBUG SoapServices.DAL.EducationalInstitution.EducationalInstitutionDbContext -- Executing at 6/17/2016 9:20:40 AM +05:30
+
+2016-06-17 09:20:40,456 [17] DEBUG SoapServices.DAL.EducationalInstitution.EducationalInstitutionDbContext -- Completed in 0 ms with result: EFMySqlDataReader
+
+2016-06-17 09:20:40,457 [17] DEBUG SoapServices.DAL.EducationalInstitution.EducationalInstitutionDbContext 
+
+2016-06-17 09:20:40,458 [17] DEBUG SoapServices.DAL.EducationalInstitution.EducationalInstitutionDbContext Closed connection at 6/17/2016 9:20:40 AM +05:30
+
+2016-06-17 09:20:40,458 [17] DEBUG SoapServiceLibrary.ServiceImpl.ContactInfoService 
+ PrimaryContactNumber: 987654321, SecondaryContactNumber: , EmailId: test1@tetme.com, SkypeId: test3, LinkedInId: test3, FacebookId: test3
+2016-06-17 09:20:40,459 [17] DEBUG SoapServiceLibrary.ServiceImpl.ContactInfoService Processed Request for GetContactInformationByMail with email id test1@tetme.com
+2016-06-17 09:20:40,491 [6] DEBUG SoapServiceLibrary.ServiceImpl.ContactInfoService Recived Request to AddContactInfo with ContactInformation:
+ PrimaryContactNumber: 876543219, SecondaryContactNumber: , EmailId: test2@testme.com, SkypeId: test3, LinkedInId: test3, FacebookId: test3
+2016-06-17 09:20:40,493 [6] DEBUG SoapServices.DAL.EducationalInstitution.EducationalInstitutionDbContext Opened connection at 6/17/2016 9:20:40 AM +05:30
+
+2016-06-17 09:20:40,494 [6] DEBUG SoapServices.DAL.EducationalInstitution.EducationalInstitutionDbContext Started transaction at 6/17/2016 9:20:40 AM +05:30
+
+2016-06-17 09:20:40,496 [6] DEBUG SoapServices.DAL.EducationalInstitution.EducationalInstitutionDbContext SET SESSION sql_mode='ANSI';INSERT INTO `ContactInfo`(
+`PrimaryContactNumber`, 
+`SecondaryContactNumber`, 
+`EmailId`, 
+`SkypeId`, 
+`LinkedInId`, 
+`FacebookId`) VALUES (
+@gp1, 
+NULL, 
+@gp2, 
+@gp3, 
+@gp4, 
+@gp5);
+SELECT
+`Id`
+FROM `ContactInfo`
+ WHERE  row_count() > 0 AND `Id`=last_insert_id()
+2016-06-17 09:20:40,498 [6] DEBUG SoapServices.DAL.EducationalInstitution.EducationalInstitutionDbContext 
+
+2016-06-17 09:20:40,499 [6] DEBUG SoapServices.DAL.EducationalInstitution.EducationalInstitutionDbContext -- @gp1: '876543219' (Type = String, IsNullable = false, Size = 9)
+
+2016-06-17 09:20:40,500 [6] DEBUG SoapServices.DAL.EducationalInstitution.EducationalInstitutionDbContext -- @gp2: 'test2@testme.com' (Type = String, IsNullable = false, Size = 16)
+
+2016-06-17 09:20:40,500 [6] DEBUG SoapServices.DAL.EducationalInstitution.EducationalInstitutionDbContext -- @gp3: 'test3' (Type = String, IsNullable = false, Size = 5)
+
+2016-06-17 09:20:40,501 [6] DEBUG SoapServices.DAL.EducationalInstitution.EducationalInstitutionDbContext -- @gp4: 'test3' (Type = String, IsNullable = false, Size = 5)
+
+2016-06-17 09:20:40,501 [6] DEBUG SoapServices.DAL.EducationalInstitution.EducationalInstitutionDbContext -- @gp5: 'test3' (Type = String, IsNullable = false, Size = 5)
+
+2016-06-17 09:20:40,502 [6] DEBUG SoapServices.DAL.EducationalInstitution.EducationalInstitutionDbContext -- Executing at 6/17/2016 9:20:40 AM +05:30
+
+2016-06-17 09:20:40,504 [6] DEBUG SoapServices.DAL.EducationalInstitution.EducationalInstitutionDbContext -- Completed in 1 ms with result: EFMySqlDataReader
+
+2016-06-17 09:20:40,506 [6] DEBUG SoapServices.DAL.EducationalInstitution.EducationalInstitutionDbContext 
+
+2016-06-17 09:20:40,535 [6] DEBUG SoapServices.DAL.EducationalInstitution.EducationalInstitutionDbContext Committed transaction at 6/17/2016 9:20:40 AM +05:30
+
+2016-06-17 09:20:40,536 [6] DEBUG SoapServices.DAL.EducationalInstitution.EducationalInstitutionDbContext Closed connection at 6/17/2016 9:20:40 AM +05:30
+
+2016-06-17 09:20:40,537 [6] DEBUG SoapServices.DAL.EducationalInstitution.EducationalInstitutionDbContext Disposed transaction at 6/17/2016 9:20:40 AM +05:30
+
+2016-06-17 09:20:40,537 [6] DEBUG SoapServiceLibrary.ServiceImpl.ContactInfoService Addition Succesful & sending response as true
+2016-06-17 09:20:40,560 [6] DEBUG SoapServiceLibrary.ServiceImpl.ContactInfoService Received Request for GetContactInformationByMail with email id test2@testme.com
+2016-06-17 09:20:40,562 [6] DEBUG SoapServices.DAL.EducationalInstitution.EducationalInstitutionDbContext Opened connection at 6/17/2016 9:20:40 AM +05:30
+
+2016-06-17 09:20:40,565 [6] DEBUG SoapServices.DAL.EducationalInstitution.EducationalInstitutionDbContext SELECT
+1 AS `C1`, 
+`Extent1`.`EmailId`, 
+`Extent1`.`FacebookId`, 
+`Extent1`.`LinkedInId`, 
+`Extent1`.`PrimaryContactNumber`, 
+`Extent1`.`SecondaryContactNumber`, 
+`Extent1`.`SkypeId`
+FROM `ContactInfo` AS `Extent1`
+ WHERE `Extent1`.`EmailId` = @p__linq__0
+2016-06-17 09:20:40,566 [6] DEBUG SoapServices.DAL.EducationalInstitution.EducationalInstitutionDbContext 
+
+2016-06-17 09:20:40,569 [6] DEBUG SoapServices.DAL.EducationalInstitution.EducationalInstitutionDbContext -- p__linq__0: 'test2@testme.com' (Type = String, Size = 16)
+
+2016-06-17 09:20:40,570 [6] DEBUG SoapServices.DAL.EducationalInstitution.EducationalInstitutionDbContext -- Executing at 6/17/2016 9:20:40 AM +05:30
+
+2016-06-17 09:20:40,571 [6] DEBUG SoapServices.DAL.EducationalInstitution.EducationalInstitutionDbContext -- Completed in 0 ms with result: EFMySqlDataReader
+
+2016-06-17 09:20:40,572 [6] DEBUG SoapServices.DAL.EducationalInstitution.EducationalInstitutionDbContext 
+
+2016-06-17 09:20:40,573 [6] DEBUG SoapServices.DAL.EducationalInstitution.EducationalInstitutionDbContext Closed connection at 6/17/2016 9:20:40 AM +05:30
+
+2016-06-17 09:20:40,573 [6] DEBUG SoapServiceLibrary.ServiceImpl.ContactInfoService 
+ PrimaryContactNumber: 876543219, SecondaryContactNumber: , EmailId: test2@testme.com, SkypeId: test3, LinkedInId: test3, FacebookId: test3
+2016-06-17 09:20:40,574 [6] DEBUG SoapServiceLibrary.ServiceImpl.ContactInfoService Processed Request for GetContactInformationByMail with email id test2@testme.com
+2016-06-17 09:20:40,594 [17] DEBUG SoapServiceLibrary.ServiceImpl.ContactInfoService Recived Request to AddContactInfo with ContactInformation:
+ PrimaryContactNumber: 765432198, SecondaryContactNumber: , EmailId: test3@testme.com, SkypeId: test3, LinkedInId: test3, FacebookId: test3
+2016-06-17 09:20:40,596 [17] DEBUG SoapServices.DAL.EducationalInstitution.EducationalInstitutionDbContext Opened connection at 6/17/2016 9:20:40 AM +05:30
+
+2016-06-17 09:20:40,598 [17] DEBUG SoapServices.DAL.EducationalInstitution.EducationalInstitutionDbContext Started transaction at 6/17/2016 9:20:40 AM +05:30
+
+2016-06-17 09:20:40,600 [17] DEBUG SoapServices.DAL.EducationalInstitution.EducationalInstitutionDbContext SET SESSION sql_mode='ANSI';INSERT INTO `ContactInfo`(
+`PrimaryContactNumber`, 
+`SecondaryContactNumber`, 
+`EmailId`, 
+`SkypeId`, 
+`LinkedInId`, 
+`FacebookId`) VALUES (
+@gp1, 
+NULL, 
+@gp2, 
+@gp3, 
+@gp4, 
+@gp5);
+SELECT
+`Id`
+FROM `ContactInfo`
+ WHERE  row_count() > 0 AND `Id`=last_insert_id()
+2016-06-17 09:20:40,601 [17] DEBUG SoapServices.DAL.EducationalInstitution.EducationalInstitutionDbContext 
+
+2016-06-17 09:20:40,602 [17] DEBUG SoapServices.DAL.EducationalInstitution.EducationalInstitutionDbContext -- @gp1: '765432198' (Type = String, IsNullable = false, Size = 9)
+
+2016-06-17 09:20:40,603 [17] DEBUG SoapServices.DAL.EducationalInstitution.EducationalInstitutionDbContext -- @gp2: 'test3@testme.com' (Type = String, IsNullable = false, Size = 16)
+
+2016-06-17 09:20:40,603 [17] DEBUG SoapServices.DAL.EducationalInstitution.EducationalInstitutionDbContext -- @gp3: 'test3' (Type = String, IsNullable = false, Size = 5)
+
+2016-06-17 09:20:40,604 [17] DEBUG SoapServices.DAL.EducationalInstitution.EducationalInstitutionDbContext -- @gp4: 'test3' (Type = String, IsNullable = false, Size = 5)
+
+2016-06-17 09:20:40,605 [17] DEBUG SoapServices.DAL.EducationalInstitution.EducationalInstitutionDbContext -- @gp5: 'test3' (Type = String, IsNullable = false, Size = 5)
+
+2016-06-17 09:20:40,605 [17] DEBUG SoapServices.DAL.EducationalInstitution.EducationalInstitutionDbContext -- Executing at 6/17/2016 9:20:40 AM +05:30
+
+2016-06-17 09:20:40,607 [17] DEBUG SoapServices.DAL.EducationalInstitution.EducationalInstitutionDbContext -- Completed in 1 ms with result: EFMySqlDataReader
+
+2016-06-17 09:20:40,608 [17] DEBUG SoapServices.DAL.EducationalInstitution.EducationalInstitutionDbContext 
+
+2016-06-17 09:20:40,632 [17] DEBUG SoapServices.DAL.EducationalInstitution.EducationalInstitutionDbContext Committed transaction at 6/17/2016 9:20:40 AM +05:30
+
+2016-06-17 09:20:40,633 [17] DEBUG SoapServices.DAL.EducationalInstitution.EducationalInstitutionDbContext Closed connection at 6/17/2016 9:20:40 AM +05:30
+
+2016-06-17 09:20:40,634 [17] DEBUG SoapServices.DAL.EducationalInstitution.EducationalInstitutionDbContext Disposed transaction at 6/17/2016 9:20:40 AM +05:30
+
+2016-06-17 09:20:40,635 [17] DEBUG SoapServiceLibrary.ServiceImpl.ContactInfoService Addition Succesful & sending response as true
+2016-06-17 09:20:40,650 [17] DEBUG SoapServiceLibrary.ServiceImpl.ContactInfoService Received Request for GetContactInformationByMail with email id test3@testme.com
+2016-06-17 09:20:40,652 [17] DEBUG SoapServices.DAL.EducationalInstitution.EducationalInstitutionDbContext Opened connection at 6/17/2016 9:20:40 AM +05:30
+
+2016-06-17 09:20:40,654 [17] DEBUG SoapServices.DAL.EducationalInstitution.EducationalInstitutionDbContext SELECT
+1 AS `C1`, 
+`Extent1`.`EmailId`, 
+`Extent1`.`FacebookId`, 
+`Extent1`.`LinkedInId`, 
+`Extent1`.`PrimaryContactNumber`, 
+`Extent1`.`SecondaryContactNumber`, 
+`Extent1`.`SkypeId`
+FROM `ContactInfo` AS `Extent1`
+ WHERE `Extent1`.`EmailId` = @p__linq__0
+2016-06-17 09:20:40,655 [17] DEBUG SoapServices.DAL.EducationalInstitution.EducationalInstitutionDbContext 
+
+2016-06-17 09:20:40,656 [17] DEBUG SoapServices.DAL.EducationalInstitution.EducationalInstitutionDbContext -- p__linq__0: 'test3@testme.com' (Type = String, Size = 16)
+
+2016-06-17 09:20:40,657 [17] DEBUG SoapServices.DAL.EducationalInstitution.EducationalInstitutionDbContext -- Executing at 6/17/2016 9:20:40 AM +05:30
+
+2016-06-17 09:20:40,658 [17] DEBUG SoapServices.DAL.EducationalInstitution.EducationalInstitutionDbContext -- Completed in 0 ms with result: EFMySqlDataReader
+
+2016-06-17 09:20:40,660 [17] DEBUG SoapServices.DAL.EducationalInstitution.EducationalInstitutionDbContext 
+
+2016-06-17 09:20:40,660 [17] DEBUG SoapServices.DAL.EducationalInstitution.EducationalInstitutionDbContext Closed connection at 6/17/2016 9:20:40 AM +05:30
+
+2016-06-17 09:20:40,661 [17] DEBUG SoapServiceLibrary.ServiceImpl.ContactInfoService 
+ PrimaryContactNumber: 765432198, SecondaryContactNumber: , EmailId: test3@testme.com, SkypeId: test3, LinkedInId: test3, FacebookId: test3
+2016-06-17 09:20:40,662 [17] DEBUG SoapServiceLibrary.ServiceImpl.ContactInfoService Processed Request for GetContactInformationByMail with email id test3@testme.com
+2016-06-17 09:24:13,441 [17] DEBUG SoapServiceLibrary.ServiceImpl.ContactInfoService Received Request for the GetAllContactInformations
+2016-06-17 09:24:13,444 [17] DEBUG SoapServices.DAL.EducationalInstitution.EducationalInstitutionDbContext Opened connection at 6/17/2016 9:24:13 AM +05:30
+
+2016-06-17 09:24:13,446 [17] DEBUG SoapServices.DAL.EducationalInstitution.EducationalInstitutionDbContext SELECT
+1 AS `C1`, 
+`Extent1`.`EmailId`, 
+`Extent1`.`FacebookId`, 
+`Extent1`.`LinkedInId`, 
+`Extent1`.`SecondaryContactNumber`, 
+`Extent1`.`SkypeId`
+FROM `ContactInfo` AS `Extent1`
+2016-06-17 09:24:13,449 [17] DEBUG SoapServices.DAL.EducationalInstitution.EducationalInstitutionDbContext 
+
+2016-06-17 09:24:13,450 [17] DEBUG SoapServices.DAL.EducationalInstitution.EducationalInstitutionDbContext -- Executing at 6/17/2016 9:24:13 AM +05:30
+
+2016-06-17 09:24:13,451 [17] DEBUG SoapServices.DAL.EducationalInstitution.EducationalInstitutionDbContext -- Completed in 0 ms with result: EFMySqlDataReader
+
+2016-06-17 09:24:13,451 [17] DEBUG SoapServices.DAL.EducationalInstitution.EducationalInstitutionDbContext 
+
+2016-06-17 09:24:13,452 [17] DEBUG SoapServices.DAL.EducationalInstitution.EducationalInstitutionDbContext Closed connection at 6/17/2016 9:24:13 AM +05:30
+
+2016-06-17 09:24:13,454 [17] DEBUG SoapServiceLibrary.ServiceImpl.ContactInfoService 
+ PrimaryContactNumber: test3, SecondaryContactNumber: , EmailId: test1@tetme.com, SkypeId: test3, LinkedInId: test3, FacebookId: test3
+2016-06-17 09:24:13,457 [17] DEBUG SoapServiceLibrary.ServiceImpl.ContactInfoService 
+ PrimaryContactNumber: test3, SecondaryContactNumber: , EmailId: test2@testme.com, SkypeId: test3, LinkedInId: test3, FacebookId: test3
+2016-06-17 09:24:13,458 [8] DEBUG SoapServiceLibrary.ServiceImpl.ContactInfoService 
+ PrimaryContactNumber: test3, SecondaryContactNumber: , EmailId: test3@testme.com, SkypeId: test3, LinkedInId: test3, FacebookId: test3
+2016-06-17 09:24:13,465 [17] DEBUG SoapServiceLibrary.ServiceImpl.ContactInfoService Processed Request for the GetAllContactInformations
+2016-06-17 09:24:13,489 [17] DEBUG SoapServiceLibrary.ServiceImpl.ContactInfoService  Received Request to DeleteContactsByEmailId with emailid: test1@tetme.com
+2016-06-17 09:24:13,493 [17] DEBUG SoapServices.DAL.EducationalInstitution.EducationalInstitutionDbContext Opened connection at 6/17/2016 9:24:13 AM +05:30
+
+2016-06-17 09:24:13,500 [17] DEBUG SoapServices.DAL.EducationalInstitution.EducationalInstitutionDbContext SELECT
+`Extent1`.`Id`, 
+`Extent1`.`PrimaryContactNumber`, 
+`Extent1`.`SecondaryContactNumber`, 
+`Extent1`.`EmailId`, 
+`Extent1`.`SkypeId`, 
+`Extent1`.`LinkedInId`, 
+`Extent1`.`FacebookId`
+FROM `ContactInfo` AS `Extent1`
+ WHERE `Extent1`.`EmailId` = @p__linq__0
+2016-06-17 09:24:13,500 [17] DEBUG SoapServices.DAL.EducationalInstitution.EducationalInstitutionDbContext 
+
+2016-06-17 09:24:13,501 [17] DEBUG SoapServices.DAL.EducationalInstitution.EducationalInstitutionDbContext -- p__linq__0: 'test1@tetme.com' (Type = String, Size = 15)
+
+2016-06-17 09:24:13,501 [17] DEBUG SoapServices.DAL.EducationalInstitution.EducationalInstitutionDbContext -- Executing at 6/17/2016 9:24:13 AM +05:30
+
+2016-06-17 09:24:13,503 [17] DEBUG SoapServices.DAL.EducationalInstitution.EducationalInstitutionDbContext -- Completed in 1 ms with result: EFMySqlDataReader
+
+2016-06-17 09:24:13,504 [17] DEBUG SoapServices.DAL.EducationalInstitution.EducationalInstitutionDbContext 
+
+2016-06-17 09:24:13,504 [17] DEBUG SoapServiceLibrary.ServiceImpl.ContactInfoService Removing record with contactInformation SoapServices.DAL.EducationalInstitution.ContactInformation
+2016-06-17 09:24:13,504 [11] DEBUG SoapServices.DAL.EducationalInstitution.EducationalInstitutionDbContext Closed connection at 6/17/2016 9:24:13 AM +05:30
+
+2016-06-17 09:24:13,512 [17] DEBUG SoapServices.DAL.EducationalInstitution.EducationalInstitutionDbContext Opened connection at 6/17/2016 9:24:13 AM +05:30
+
+2016-06-17 09:24:13,514 [17] DEBUG SoapServices.DAL.EducationalInstitution.EducationalInstitutionDbContext SELECT
+`GroupBy1`.`A1` AS `C1`
+FROM (SELECT
+COUNT(1) AS `A1`
+FROM `ContactInfo` AS `Extent1`
+ WHERE `Extent1`.`EmailId` = @p__linq__0) AS `GroupBy1`
+2016-06-17 09:24:13,515 [17] DEBUG SoapServices.DAL.EducationalInstitution.EducationalInstitutionDbContext 
+
+2016-06-17 09:24:13,515 [17] DEBUG SoapServices.DAL.EducationalInstitution.EducationalInstitutionDbContext -- p__linq__0: 'test1@tetme.com' (Type = String, Size = 15)
+
+2016-06-17 09:24:13,516 [17] DEBUG SoapServices.DAL.EducationalInstitution.EducationalInstitutionDbContext -- Executing at 6/17/2016 9:24:13 AM +05:30
+
+2016-06-17 09:24:13,516 [17] DEBUG SoapServices.DAL.EducationalInstitution.EducationalInstitutionDbContext -- Completed in 0 ms with result: EFMySqlDataReader
+
+2016-06-17 09:24:13,518 [17] DEBUG SoapServices.DAL.EducationalInstitution.EducationalInstitutionDbContext 
+
+2016-06-17 09:24:13,519 [17] DEBUG SoapServices.DAL.EducationalInstitution.EducationalInstitutionDbContext Closed connection at 6/17/2016 9:24:13 AM +05:30
+
+2016-06-17 09:24:13,521 [17] DEBUG SoapServices.DAL.EducationalInstitution.EducationalInstitutionDbContext Opened connection at 6/17/2016 9:24:13 AM +05:30
+
+2016-06-17 09:24:13,522 [17] DEBUG SoapServices.DAL.EducationalInstitution.EducationalInstitutionDbContext SELECT
+`Extent1`.`Id`, 
+`Extent1`.`PrimaryContactNumber`, 
+`Extent1`.`SecondaryContactNumber`, 
+`Extent1`.`EmailId`, 
+`Extent1`.`SkypeId`, 
+`Extent1`.`LinkedInId`, 
+`Extent1`.`FacebookId`
+FROM `ContactInfo` AS `Extent1`
+ WHERE `Extent1`.`EmailId` = @p__linq__0
+2016-06-17 09:24:13,544 [17] DEBUG SoapServices.DAL.EducationalInstitution.EducationalInstitutionDbContext 
+
+2016-06-17 09:24:13,549 [17] DEBUG SoapServices.DAL.EducationalInstitution.EducationalInstitutionDbContext -- p__linq__0: 'test1@tetme.com' (Type = String, Size = 15)
+
+2016-06-17 09:24:13,550 [17] DEBUG SoapServices.DAL.EducationalInstitution.EducationalInstitutionDbContext -- Executing at 6/17/2016 9:24:13 AM +05:30
+
+2016-06-17 09:24:13,551 [17] DEBUG SoapServices.DAL.EducationalInstitution.EducationalInstitutionDbContext -- Completed in 0 ms with result: EFMySqlDataReader
+
+2016-06-17 09:24:13,552 [17] DEBUG SoapServices.DAL.EducationalInstitution.EducationalInstitutionDbContext 
+
+2016-06-17 09:24:13,553 [17] DEBUG SoapServices.DAL.EducationalInstitution.EducationalInstitutionDbContext Closed connection at 6/17/2016 9:24:13 AM +05:30
+
+2016-06-17 09:24:13,564 [17] DEBUG SoapServices.DAL.EducationalInstitution.EducationalInstitutionDbContext Opened connection at 6/17/2016 9:24:13 AM +05:30
+
+2016-06-17 09:24:13,565 [17] DEBUG SoapServices.DAL.EducationalInstitution.EducationalInstitutionDbContext Started transaction at 6/17/2016 9:24:13 AM +05:30
+
+2016-06-17 09:24:13,566 [17] DEBUG SoapServices.DAL.EducationalInstitution.EducationalInstitutionDbContext DELETE FROM `ContactInfo` WHERE `Id` = 18
+2016-06-17 09:24:13,566 [17] DEBUG SoapServices.DAL.EducationalInstitution.EducationalInstitutionDbContext 
+
+2016-06-17 09:24:13,567 [17] DEBUG SoapServices.DAL.EducationalInstitution.EducationalInstitutionDbContext -- Executing at 6/17/2016 9:24:13 AM +05:30
+
+2016-06-17 09:24:13,568 [17] DEBUG SoapServices.DAL.EducationalInstitution.EducationalInstitutionDbContext -- Completed in 0 ms with result: 1
+
+2016-06-17 09:24:13,569 [17] DEBUG SoapServices.DAL.EducationalInstitution.EducationalInstitutionDbContext 
+
+2016-06-17 09:24:13,612 [17] DEBUG SoapServices.DAL.EducationalInstitution.EducationalInstitutionDbContext Committed transaction at 6/17/2016 9:24:13 AM +05:30
+
+2016-06-17 09:24:13,613 [17] DEBUG SoapServices.DAL.EducationalInstitution.EducationalInstitutionDbContext Closed connection at 6/17/2016 9:24:13 AM +05:30
+
+2016-06-17 09:24:13,613 [17] DEBUG SoapServices.DAL.EducationalInstitution.EducationalInstitutionDbContext Disposed transaction at 6/17/2016 9:24:13 AM +05:30
+
+2016-06-17 09:24:13,614 [17] DEBUG SoapServiceLibrary.ServiceImpl.ContactInfoService Processed Request DeleteContactsByEmailId
+2016-06-17 09:24:13,635 [17] DEBUG SoapServiceLibrary.ServiceImpl.ContactInfoService  Received Request to DeleteContactsByEmailId with emailid: test2@testme.com
+2016-06-17 09:24:13,638 [17] DEBUG SoapServices.DAL.EducationalInstitution.EducationalInstitutionDbContext Opened connection at 6/17/2016 9:24:13 AM +05:30
+
+2016-06-17 09:24:13,639 [17] DEBUG SoapServices.DAL.EducationalInstitution.EducationalInstitutionDbContext SELECT
+`Extent1`.`Id`, 
+`Extent1`.`PrimaryContactNumber`, 
+`Extent1`.`SecondaryContactNumber`, 
+`Extent1`.`EmailId`, 
+`Extent1`.`SkypeId`, 
+`Extent1`.`LinkedInId`, 
+`Extent1`.`FacebookId`
+FROM `ContactInfo` AS `Extent1`
+ WHERE `Extent1`.`EmailId` = @p__linq__0
+2016-06-17 09:24:13,641 [17] DEBUG SoapServices.DAL.EducationalInstitution.EducationalInstitutionDbContext 
+
+2016-06-17 09:24:13,641 [17] DEBUG SoapServices.DAL.EducationalInstitution.EducationalInstitutionDbContext -- p__linq__0: 'test2@testme.com' (Type = String, Size = 16)
+
+2016-06-17 09:24:13,642 [17] DEBUG SoapServices.DAL.EducationalInstitution.EducationalInstitutionDbContext -- Executing at 6/17/2016 9:24:13 AM +05:30
+
+2016-06-17 09:24:13,643 [17] DEBUG SoapServices.DAL.EducationalInstitution.EducationalInstitutionDbContext -- Completed in 0 ms with result: EFMySqlDataReader
+
+2016-06-17 09:24:13,644 [17] DEBUG SoapServices.DAL.EducationalInstitution.EducationalInstitutionDbContext 
+
+2016-06-17 09:24:13,645 [17] DEBUG SoapServiceLibrary.ServiceImpl.ContactInfoService Removing record with contactInformation SoapServices.DAL.EducationalInstitution.ContactInformation
+2016-06-17 09:24:13,646 [11] DEBUG SoapServices.DAL.EducationalInstitution.EducationalInstitutionDbContext Closed connection at 6/17/2016 9:24:13 AM +05:30
+
+2016-06-17 09:24:13,652 [17] DEBUG SoapServices.DAL.EducationalInstitution.EducationalInstitutionDbContext Opened connection at 6/17/2016 9:24:13 AM +05:30
+
+2016-06-17 09:24:13,654 [17] DEBUG SoapServices.DAL.EducationalInstitution.EducationalInstitutionDbContext SELECT
+`GroupBy1`.`A1` AS `C1`
+FROM (SELECT
+COUNT(1) AS `A1`
+FROM `ContactInfo` AS `Extent1`
+ WHERE `Extent1`.`EmailId` = @p__linq__0) AS `GroupBy1`
+2016-06-17 09:24:13,655 [17] DEBUG SoapServices.DAL.EducationalInstitution.EducationalInstitutionDbContext 
+
+2016-06-17 09:24:13,656 [17] DEBUG SoapServices.DAL.EducationalInstitution.EducationalInstitutionDbContext -- p__linq__0: 'test2@testme.com' (Type = String, Size = 16)
+
+2016-06-17 09:24:13,657 [17] DEBUG SoapServices.DAL.EducationalInstitution.EducationalInstitutionDbContext -- Executing at 6/17/2016 9:24:13 AM +05:30
+
+2016-06-17 09:24:13,659 [17] DEBUG SoapServices.DAL.EducationalInstitution.EducationalInstitutionDbContext -- Completed in 0 ms with result: EFMySqlDataReader
+
+2016-06-17 09:24:13,660 [17] DEBUG SoapServices.DAL.EducationalInstitution.EducationalInstitutionDbContext 
+
+2016-06-17 09:24:13,661 [17] DEBUG SoapServices.DAL.EducationalInstitution.EducationalInstitutionDbContext Closed connection at 6/17/2016 9:24:13 AM +05:30
+
+2016-06-17 09:24:13,663 [17] DEBUG SoapServices.DAL.EducationalInstitution.EducationalInstitutionDbContext Opened connection at 6/17/2016 9:24:13 AM +05:30
+
+2016-06-17 09:24:13,663 [17] DEBUG SoapServices.DAL.EducationalInstitution.EducationalInstitutionDbContext SELECT
+`Extent1`.`Id`, 
+`Extent1`.`PrimaryContactNumber`, 
+`Extent1`.`SecondaryContactNumber`, 
+`Extent1`.`EmailId`, 
+`Extent1`.`SkypeId`, 
+`Extent1`.`LinkedInId`, 
+`Extent1`.`FacebookId`
+FROM `ContactInfo` AS `Extent1`
+ WHERE `Extent1`.`EmailId` = @p__linq__0
+2016-06-17 09:24:13,665 [17] DEBUG SoapServices.DAL.EducationalInstitution.EducationalInstitutionDbContext 
+
+2016-06-17 09:24:13,666 [17] DEBUG SoapServices.DAL.EducationalInstitution.EducationalInstitutionDbContext -- p__linq__0: 'test2@testme.com' (Type = String, Size = 16)
+
+2016-06-17 09:24:13,666 [17] DEBUG SoapServices.DAL.EducationalInstitution.EducationalInstitutionDbContext -- Executing at 6/17/2016 9:24:13 AM +05:30
+
+2016-06-17 09:24:13,667 [17] DEBUG SoapServices.DAL.EducationalInstitution.EducationalInstitutionDbContext -- Completed in 0 ms with result: EFMySqlDataReader
+
+2016-06-17 09:24:13,669 [17] DEBUG SoapServices.DAL.EducationalInstitution.EducationalInstitutionDbContext 
+
+2016-06-17 09:24:13,670 [17] DEBUG SoapServices.DAL.EducationalInstitution.EducationalInstitutionDbContext Closed connection at 6/17/2016 9:24:13 AM +05:30
+
+2016-06-17 09:24:13,672 [17] DEBUG SoapServices.DAL.EducationalInstitution.EducationalInstitutionDbContext Opened connection at 6/17/2016 9:24:13 AM +05:30
+
+2016-06-17 09:24:13,674 [17] DEBUG SoapServices.DAL.EducationalInstitution.EducationalInstitutionDbContext Started transaction at 6/17/2016 9:24:13 AM +05:30
+
+2016-06-17 09:24:13,675 [17] DEBUG SoapServices.DAL.EducationalInstitution.EducationalInstitutionDbContext DELETE FROM `ContactInfo` WHERE `Id` = 19
+2016-06-17 09:24:13,675 [17] DEBUG SoapServices.DAL.EducationalInstitution.EducationalInstitutionDbContext 
+
+2016-06-17 09:24:13,676 [17] DEBUG SoapServices.DAL.EducationalInstitution.EducationalInstitutionDbContext -- Executing at 6/17/2016 9:24:13 AM +05:30
+
+2016-06-17 09:24:13,677 [17] DEBUG SoapServices.DAL.EducationalInstitution.EducationalInstitutionDbContext -- Completed in 0 ms with result: 1
+
+2016-06-17 09:24:13,678 [17] DEBUG SoapServices.DAL.EducationalInstitution.EducationalInstitutionDbContext 
+
+2016-06-17 09:24:13,758 [17] DEBUG SoapServices.DAL.EducationalInstitution.EducationalInstitutionDbContext Committed transaction at 6/17/2016 9:24:13 AM +05:30
+
+2016-06-17 09:24:13,759 [17] DEBUG SoapServices.DAL.EducationalInstitution.EducationalInstitutionDbContext Closed connection at 6/17/2016 9:24:13 AM +05:30
+
+2016-06-17 09:24:13,759 [17] DEBUG SoapServices.DAL.EducationalInstitution.EducationalInstitutionDbContext Disposed transaction at 6/17/2016 9:24:13 AM +05:30
+
+2016-06-17 09:24:13,759 [17] DEBUG SoapServiceLibrary.ServiceImpl.ContactInfoService Processed Request DeleteContactsByEmailId
+2016-06-17 09:24:13,778 [17] DEBUG SoapServiceLibrary.ServiceImpl.ContactInfoService  Received Request to DeleteContactsByEmailId with emailid: test3@testme.com
+2016-06-17 09:24:13,780 [17] DEBUG SoapServices.DAL.EducationalInstitution.EducationalInstitutionDbContext Opened connection at 6/17/2016 9:24:13 AM +05:30
+
+2016-06-17 09:24:13,781 [17] DEBUG SoapServices.DAL.EducationalInstitution.EducationalInstitutionDbContext SELECT
+`Extent1`.`Id`, 
+`Extent1`.`PrimaryContactNumber`, 
+`Extent1`.`SecondaryContactNumber`, 
+`Extent1`.`EmailId`, 
+`Extent1`.`SkypeId`, 
+`Extent1`.`LinkedInId`, 
+`Extent1`.`FacebookId`
+FROM `ContactInfo` AS `Extent1`
+ WHERE `Extent1`.`EmailId` = @p__linq__0
+2016-06-17 09:24:13,781 [17] DEBUG SoapServices.DAL.EducationalInstitution.EducationalInstitutionDbContext 
+
+2016-06-17 09:24:13,782 [17] DEBUG SoapServices.DAL.EducationalInstitution.EducationalInstitutionDbContext -- p__linq__0: 'test3@testme.com' (Type = String, Size = 16)
+
+2016-06-17 09:24:13,782 [17] DEBUG SoapServices.DAL.EducationalInstitution.EducationalInstitutionDbContext -- Executing at 6/17/2016 9:24:13 AM +05:30
+
+2016-06-17 09:24:13,805 [17] DEBUG SoapServices.DAL.EducationalInstitution.EducationalInstitutionDbContext -- Completed in 22 ms with result: EFMySqlDataReader
+
+2016-06-17 09:24:13,806 [17] DEBUG SoapServices.DAL.EducationalInstitution.EducationalInstitutionDbContext 
+
+2016-06-17 09:24:13,808 [17] DEBUG SoapServiceLibrary.ServiceImpl.ContactInfoService Removing record with contactInformation SoapServices.DAL.EducationalInstitution.ContactInformation
+2016-06-17 09:24:13,809 [11] DEBUG SoapServices.DAL.EducationalInstitution.EducationalInstitutionDbContext Closed connection at 6/17/2016 9:24:13 AM +05:30
+
+2016-06-17 09:24:13,812 [17] DEBUG SoapServices.DAL.EducationalInstitution.EducationalInstitutionDbContext Opened connection at 6/17/2016 9:24:13 AM +05:30
+
+2016-06-17 09:24:13,814 [17] DEBUG SoapServices.DAL.EducationalInstitution.EducationalInstitutionDbContext SELECT
+`GroupBy1`.`A1` AS `C1`
+FROM (SELECT
+COUNT(1) AS `A1`
+FROM `ContactInfo` AS `Extent1`
+ WHERE `Extent1`.`EmailId` = @p__linq__0) AS `GroupBy1`
+2016-06-17 09:24:13,815 [17] DEBUG SoapServices.DAL.EducationalInstitution.EducationalInstitutionDbContext 
+
+2016-06-17 09:24:13,815 [17] DEBUG SoapServices.DAL.EducationalInstitution.EducationalInstitutionDbContext -- p__linq__0: 'test3@testme.com' (Type = String, Size = 16)
+
+2016-06-17 09:24:13,816 [17] DEBUG SoapServices.DAL.EducationalInstitution.EducationalInstitutionDbContext -- Executing at 6/17/2016 9:24:13 AM +05:30
+
+2016-06-17 09:24:13,817 [17] DEBUG SoapServices.DAL.EducationalInstitution.EducationalInstitutionDbContext -- Completed in 0 ms with result: EFMySqlDataReader
+
+2016-06-17 09:24:13,818 [17] DEBUG SoapServices.DAL.EducationalInstitution.EducationalInstitutionDbContext 
+
+2016-06-17 09:24:13,819 [17] DEBUG SoapServices.DAL.EducationalInstitution.EducationalInstitutionDbContext Closed connection at 6/17/2016 9:24:13 AM +05:30
+
+2016-06-17 09:24:13,820 [17] DEBUG SoapServices.DAL.EducationalInstitution.EducationalInstitutionDbContext Opened connection at 6/17/2016 9:24:13 AM +05:30
+
+2016-06-17 09:24:13,822 [17] DEBUG SoapServices.DAL.EducationalInstitution.EducationalInstitutionDbContext SELECT
+`Extent1`.`Id`, 
+`Extent1`.`PrimaryContactNumber`, 
+`Extent1`.`SecondaryContactNumber`, 
+`Extent1`.`EmailId`, 
+`Extent1`.`SkypeId`, 
+`Extent1`.`LinkedInId`, 
+`Extent1`.`FacebookId`
+FROM `ContactInfo` AS `Extent1`
+ WHERE `Extent1`.`EmailId` = @p__linq__0
+2016-06-17 09:24:13,823 [17] DEBUG SoapServices.DAL.EducationalInstitution.EducationalInstitutionDbContext 
+
+2016-06-17 09:24:13,824 [17] DEBUG SoapServices.DAL.EducationalInstitution.EducationalInstitutionDbContext -- p__linq__0: 'test3@testme.com' (Type = String, Size = 16)
+
+2016-06-17 09:24:13,825 [17] DEBUG SoapServices.DAL.EducationalInstitution.EducationalInstitutionDbContext -- Executing at 6/17/2016 9:24:13 AM +05:30
+
+2016-06-17 09:24:13,826 [17] DEBUG SoapServices.DAL.EducationalInstitution.EducationalInstitutionDbContext -- Completed in 0 ms with result: EFMySqlDataReader
+
+2016-06-17 09:24:13,826 [17] DEBUG SoapServices.DAL.EducationalInstitution.EducationalInstitutionDbContext 
+
+2016-06-17 09:24:13,827 [17] DEBUG SoapServices.DAL.EducationalInstitution.EducationalInstitutionDbContext Closed connection at 6/17/2016 9:24:13 AM +05:30
+
+2016-06-17 09:24:13,827 [17] DEBUG SoapServices.DAL.EducationalInstitution.EducationalInstitutionDbContext Opened connection at 6/17/2016 9:24:13 AM +05:30
+
+2016-06-17 09:24:13,828 [17] DEBUG SoapServices.DAL.EducationalInstitution.EducationalInstitutionDbContext Started transaction at 6/17/2016 9:24:13 AM +05:30
+
+2016-06-17 09:24:13,829 [17] DEBUG SoapServices.DAL.EducationalInstitution.EducationalInstitutionDbContext DELETE FROM `ContactInfo` WHERE `Id` = 20
+2016-06-17 09:24:13,830 [17] DEBUG SoapServices.DAL.EducationalInstitution.EducationalInstitutionDbContext 
+
+2016-06-17 09:24:13,830 [17] DEBUG SoapServices.DAL.EducationalInstitution.EducationalInstitutionDbContext -- Executing at 6/17/2016 9:24:13 AM +05:30
+
+2016-06-17 09:24:13,842 [17] DEBUG SoapServices.DAL.EducationalInstitution.EducationalInstitutionDbContext -- Completed in 12 ms with result: 1
+
+2016-06-17 09:24:13,843 [17] DEBUG SoapServices.DAL.EducationalInstitution.EducationalInstitutionDbContext 
+
+2016-06-17 09:24:13,871 [17] DEBUG SoapServices.DAL.EducationalInstitution.EducationalInstitutionDbContext Committed transaction at 6/17/2016 9:24:13 AM +05:30
+
+2016-06-17 09:24:13,872 [17] DEBUG SoapServices.DAL.EducationalInstitution.EducationalInstitutionDbContext Closed connection at 6/17/2016 9:24:13 AM +05:30
+
+2016-06-17 09:24:13,872 [17] DEBUG SoapServices.DAL.EducationalInstitution.EducationalInstitutionDbContext Disposed transaction at 6/17/2016 9:24:13 AM +05:30
+
+2016-06-17 09:24:13,872 [17] DEBUG SoapServiceLibrary.ServiceImpl.ContactInfoService Processed Request DeleteContactsByEmailId
+2016-06-17 09:24:13,884 [17] DEBUG SoapServiceLibrary.ServiceImpl.ContactInfoService Received Request for the GetAllContactInformations
+2016-06-17 09:24:13,886 [17] DEBUG SoapServices.DAL.EducationalInstitution.EducationalInstitutionDbContext Opened connection at 6/17/2016 9:24:13 AM +05:30
+
+2016-06-17 09:24:13,887 [17] DEBUG SoapServices.DAL.EducationalInstitution.EducationalInstitutionDbContext SELECT
+1 AS `C1`, 
+`Extent1`.`EmailId`, 
+`Extent1`.`FacebookId`, 
+`Extent1`.`LinkedInId`, 
+`Extent1`.`SecondaryContactNumber`, 
+`Extent1`.`SkypeId`
+FROM `ContactInfo` AS `Extent1`
+2016-06-17 09:24:13,889 [17] DEBUG SoapServices.DAL.EducationalInstitution.EducationalInstitutionDbContext 
+
+2016-06-17 09:24:13,890 [17] DEBUG SoapServices.DAL.EducationalInstitution.EducationalInstitutionDbContext -- Executing at 6/17/2016 9:24:13 AM +05:30
+
+2016-06-17 09:24:13,892 [17] DEBUG SoapServices.DAL.EducationalInstitution.EducationalInstitutionDbContext -- Completed in 0 ms with result: EFMySqlDataReader
+
+2016-06-17 09:24:13,893 [17] DEBUG SoapServices.DAL.EducationalInstitution.EducationalInstitutionDbContext 
+
+2016-06-17 09:24:13,894 [17] DEBUG SoapServices.DAL.EducationalInstitution.EducationalInstitutionDbContext Closed connection at 6/17/2016 9:24:13 AM +05:30
+
+2016-06-17 09:24:13,894 [17] DEBUG SoapServiceLibrary.ServiceImpl.ContactInfoService Processed Request for the GetAllContactInformations
+2016-06-17 09:24:17,828 [7] DEBUG SoapServiceLibrary.ServiceImpl.ContactInfoService Recived Request to AddContactInfo with ContactInformation:
+ PrimaryContactNumber: 987654321, SecondaryContactNumber: , EmailId: test1@tetme.com, SkypeId: test2, LinkedInId: test2, FacebookId: test2
+2016-06-17 09:24:17,831 [7] DEBUG SoapServices.DAL.EducationalInstitution.EducationalInstitutionDbContext Opened connection at 6/17/2016 9:24:17 AM +05:30
+
+2016-06-17 09:24:17,833 [7] DEBUG SoapServices.DAL.EducationalInstitution.EducationalInstitutionDbContext Started transaction at 6/17/2016 9:24:17 AM +05:30
+
+2016-06-17 09:24:17,835 [7] DEBUG SoapServices.DAL.EducationalInstitution.EducationalInstitutionDbContext SET SESSION sql_mode='ANSI';INSERT INTO `ContactInfo`(
+`PrimaryContactNumber`, 
+`SecondaryContactNumber`, 
+`EmailId`, 
+`SkypeId`, 
+`LinkedInId`, 
+`FacebookId`) VALUES (
+@gp1, 
+NULL, 
+@gp2, 
+@gp3, 
+@gp4, 
+@gp5);
+SELECT
+`Id`
+FROM `ContactInfo`
+ WHERE  row_count() > 0 AND `Id`=last_insert_id()
+2016-06-17 09:24:17,836 [7] DEBUG SoapServices.DAL.EducationalInstitution.EducationalInstitutionDbContext 
+
+2016-06-17 09:24:17,836 [7] DEBUG SoapServices.DAL.EducationalInstitution.EducationalInstitutionDbContext -- @gp1: '987654321' (Type = String, IsNullable = false, Size = 9)
+
+2016-06-17 09:24:17,837 [7] DEBUG SoapServices.DAL.EducationalInstitution.EducationalInstitutionDbContext -- @gp2: 'test1@tetme.com' (Type = String, IsNullable = false, Size = 15)
+
+2016-06-17 09:24:17,837 [7] DEBUG SoapServices.DAL.EducationalInstitution.EducationalInstitutionDbContext -- @gp3: 'test2' (Type = String, IsNullable = false, Size = 5)
+
+2016-06-17 09:24:17,838 [7] DEBUG SoapServices.DAL.EducationalInstitution.EducationalInstitutionDbContext -- @gp4: 'test2' (Type = String, IsNullable = false, Size = 5)
+
+2016-06-17 09:24:17,838 [7] DEBUG SoapServices.DAL.EducationalInstitution.EducationalInstitutionDbContext -- @gp5: 'test2' (Type = String, IsNullable = false, Size = 5)
+
+2016-06-17 09:24:17,840 [7] DEBUG SoapServices.DAL.EducationalInstitution.EducationalInstitutionDbContext -- Executing at 6/17/2016 9:24:17 AM +05:30
+
+2016-06-17 09:24:17,868 [7] DEBUG SoapServices.DAL.EducationalInstitution.EducationalInstitutionDbContext -- Completed in 25 ms with result: EFMySqlDataReader
+
+2016-06-17 09:24:17,869 [7] DEBUG SoapServices.DAL.EducationalInstitution.EducationalInstitutionDbContext 
+
+2016-06-17 09:24:17,910 [7] DEBUG SoapServices.DAL.EducationalInstitution.EducationalInstitutionDbContext Committed transaction at 6/17/2016 9:24:17 AM +05:30
+
+2016-06-17 09:24:17,910 [7] DEBUG SoapServices.DAL.EducationalInstitution.EducationalInstitutionDbContext Closed connection at 6/17/2016 9:24:17 AM +05:30
+
+2016-06-17 09:24:17,911 [7] DEBUG SoapServices.DAL.EducationalInstitution.EducationalInstitutionDbContext Disposed transaction at 6/17/2016 9:24:17 AM +05:30
+
+2016-06-17 09:24:17,911 [7] DEBUG SoapServiceLibrary.ServiceImpl.ContactInfoService Addition Succesful & sending response as true
+2016-06-17 09:24:17,936 [7] DEBUG SoapServiceLibrary.ServiceImpl.ContactInfoService Received Request for GetContactInformationByMail with email id test1@tetme.com
+2016-06-17 09:24:17,938 [7] DEBUG SoapServices.DAL.EducationalInstitution.EducationalInstitutionDbContext Opened connection at 6/17/2016 9:24:17 AM +05:30
+
+2016-06-17 09:24:17,939 [7] DEBUG SoapServices.DAL.EducationalInstitution.EducationalInstitutionDbContext SELECT
+1 AS `C1`, 
+`Extent1`.`EmailId`, 
+`Extent1`.`FacebookId`, 
+`Extent1`.`LinkedInId`, 
+`Extent1`.`PrimaryContactNumber`, 
+`Extent1`.`SecondaryContactNumber`, 
+`Extent1`.`SkypeId`
+FROM `ContactInfo` AS `Extent1`
+ WHERE `Extent1`.`EmailId` = @p__linq__0
+2016-06-17 09:24:17,940 [7] DEBUG SoapServices.DAL.EducationalInstitution.EducationalInstitutionDbContext 
+
+2016-06-17 09:24:17,941 [7] DEBUG SoapServices.DAL.EducationalInstitution.EducationalInstitutionDbContext -- p__linq__0: 'test1@tetme.com' (Type = String, Size = 15)
+
+2016-06-17 09:24:17,942 [7] DEBUG SoapServices.DAL.EducationalInstitution.EducationalInstitutionDbContext -- Executing at 6/17/2016 9:24:17 AM +05:30
+
+2016-06-17 09:24:17,944 [7] DEBUG SoapServices.DAL.EducationalInstitution.EducationalInstitutionDbContext -- Completed in 0 ms with result: EFMySqlDataReader
+
+2016-06-17 09:24:17,944 [7] DEBUG SoapServices.DAL.EducationalInstitution.EducationalInstitutionDbContext 
+
+2016-06-17 09:24:17,945 [7] DEBUG SoapServices.DAL.EducationalInstitution.EducationalInstitutionDbContext Closed connection at 6/17/2016 9:24:17 AM +05:30
+
+2016-06-17 09:24:17,946 [7] DEBUG SoapServiceLibrary.ServiceImpl.ContactInfoService 
+ PrimaryContactNumber: 987654321, SecondaryContactNumber: , EmailId: test1@tetme.com, SkypeId: test2, LinkedInId: test2, FacebookId: test2
+2016-06-17 09:24:17,947 [7] DEBUG SoapServiceLibrary.ServiceImpl.ContactInfoService Processed Request for GetContactInformationByMail with email id test1@tetme.com
+2016-06-17 09:24:17,961 [17] DEBUG SoapServiceLibrary.ServiceImpl.ContactInfoService Recived Request to AddContactInfo with ContactInformation:
+ PrimaryContactNumber: 876543219, SecondaryContactNumber: , EmailId: test2@testme.com, SkypeId: test2, LinkedInId: test2, FacebookId: test2
+2016-06-17 09:24:17,963 [17] DEBUG SoapServices.DAL.EducationalInstitution.EducationalInstitutionDbContext Opened connection at 6/17/2016 9:24:17 AM +05:30
+
+2016-06-17 09:24:17,964 [17] DEBUG SoapServices.DAL.EducationalInstitution.EducationalInstitutionDbContext Started transaction at 6/17/2016 9:24:17 AM +05:30
+
+2016-06-17 09:24:17,966 [17] DEBUG SoapServices.DAL.EducationalInstitution.EducationalInstitutionDbContext SET SESSION sql_mode='ANSI';INSERT INTO `ContactInfo`(
+`PrimaryContactNumber`, 
+`SecondaryContactNumber`, 
+`EmailId`, 
+`SkypeId`, 
+`LinkedInId`, 
+`FacebookId`) VALUES (
+@gp1, 
+NULL, 
+@gp2, 
+@gp3, 
+@gp4, 
+@gp5);
+SELECT
+`Id`
+FROM `ContactInfo`
+ WHERE  row_count() > 0 AND `Id`=last_insert_id()
+2016-06-17 09:24:17,972 [17] DEBUG SoapServices.DAL.EducationalInstitution.EducationalInstitutionDbContext 
+
+2016-06-17 09:24:17,973 [17] DEBUG SoapServices.DAL.EducationalInstitution.EducationalInstitutionDbContext -- @gp1: '876543219' (Type = String, IsNullable = false, Size = 9)
+
+2016-06-17 09:24:17,974 [17] DEBUG SoapServices.DAL.EducationalInstitution.EducationalInstitutionDbContext -- @gp2: 'test2@testme.com' (Type = String, IsNullable = false, Size = 16)
+
+2016-06-17 09:24:17,975 [17] DEBUG SoapServices.DAL.EducationalInstitution.EducationalInstitutionDbContext -- @gp3: 'test2' (Type = String, IsNullable = false, Size = 5)
+
+2016-06-17 09:24:17,976 [17] DEBUG SoapServices.DAL.EducationalInstitution.EducationalInstitutionDbContext -- @gp4: 'test2' (Type = String, IsNullable = false, Size = 5)
+
+2016-06-17 09:24:17,977 [17] DEBUG SoapServices.DAL.EducationalInstitution.EducationalInstitutionDbContext -- @gp5: 'test2' (Type = String, IsNullable = false, Size = 5)
+
+2016-06-17 09:24:17,978 [17] DEBUG SoapServices.DAL.EducationalInstitution.EducationalInstitutionDbContext -- Executing at 6/17/2016 9:24:17 AM +05:30
+
+2016-06-17 09:24:17,980 [17] DEBUG SoapServices.DAL.EducationalInstitution.EducationalInstitutionDbContext -- Completed in 1 ms with result: EFMySqlDataReader
+
+2016-06-17 09:24:17,982 [17] DEBUG SoapServices.DAL.EducationalInstitution.EducationalInstitutionDbContext 
+
+2016-06-17 09:24:18,009 [17] DEBUG SoapServices.DAL.EducationalInstitution.EducationalInstitutionDbContext Committed transaction at 6/17/2016 9:24:18 AM +05:30
+
+2016-06-17 09:24:18,010 [17] DEBUG SoapServices.DAL.EducationalInstitution.EducationalInstitutionDbContext Closed connection at 6/17/2016 9:24:18 AM +05:30
+
+2016-06-17 09:24:18,011 [17] DEBUG SoapServices.DAL.EducationalInstitution.EducationalInstitutionDbContext Disposed transaction at 6/17/2016 9:24:18 AM +05:30
+
+2016-06-17 09:24:18,012 [17] DEBUG SoapServiceLibrary.ServiceImpl.ContactInfoService Addition Succesful & sending response as true
+2016-06-17 09:24:18,032 [17] DEBUG SoapServiceLibrary.ServiceImpl.ContactInfoService Received Request for GetContactInformationByMail with email id test2@testme.com
+2016-06-17 09:24:18,035 [17] DEBUG SoapServices.DAL.EducationalInstitution.EducationalInstitutionDbContext Opened connection at 6/17/2016 9:24:18 AM +05:30
+
+2016-06-17 09:24:18,037 [17] DEBUG SoapServices.DAL.EducationalInstitution.EducationalInstitutionDbContext SELECT
+1 AS `C1`, 
+`Extent1`.`EmailId`, 
+`Extent1`.`FacebookId`, 
+`Extent1`.`LinkedInId`, 
+`Extent1`.`PrimaryContactNumber`, 
+`Extent1`.`SecondaryContactNumber`, 
+`Extent1`.`SkypeId`
+FROM `ContactInfo` AS `Extent1`
+ WHERE `Extent1`.`EmailId` = @p__linq__0
+2016-06-17 09:24:18,038 [17] DEBUG SoapServices.DAL.EducationalInstitution.EducationalInstitutionDbContext 
+
+2016-06-17 09:24:18,039 [17] DEBUG SoapServices.DAL.EducationalInstitution.EducationalInstitutionDbContext -- p__linq__0: 'test2@testme.com' (Type = String, Size = 16)
+
+2016-06-17 09:24:18,039 [17] DEBUG SoapServices.DAL.EducationalInstitution.EducationalInstitutionDbContext -- Executing at 6/17/2016 9:24:18 AM +05:30
+
+2016-06-17 09:24:18,041 [17] DEBUG SoapServices.DAL.EducationalInstitution.EducationalInstitutionDbContext -- Completed in 0 ms with result: EFMySqlDataReader
+
+2016-06-17 09:24:18,041 [17] DEBUG SoapServices.DAL.EducationalInstitution.EducationalInstitutionDbContext 
+
+2016-06-17 09:24:18,042 [17] DEBUG SoapServices.DAL.EducationalInstitution.EducationalInstitutionDbContext Closed connection at 6/17/2016 9:24:18 AM +05:30
+
+2016-06-17 09:24:18,043 [17] DEBUG SoapServiceLibrary.ServiceImpl.ContactInfoService 
+ PrimaryContactNumber: 876543219, SecondaryContactNumber: , EmailId: test2@testme.com, SkypeId: test2, LinkedInId: test2, FacebookId: test2
+2016-06-17 09:24:18,045 [17] DEBUG SoapServiceLibrary.ServiceImpl.ContactInfoService Processed Request for GetContactInformationByMail with email id test2@testme.com
+2016-06-17 09:24:18,059 [7] DEBUG SoapServiceLibrary.ServiceImpl.ContactInfoService Recived Request to AddContactInfo with ContactInformation:
+ PrimaryContactNumber: 765432198, SecondaryContactNumber: , EmailId: test3@testme.com, SkypeId: test2, LinkedInId: test2, FacebookId: test2
+2016-06-17 09:24:18,061 [7] DEBUG SoapServices.DAL.EducationalInstitution.EducationalInstitutionDbContext Opened connection at 6/17/2016 9:24:18 AM +05:30
+
+2016-06-17 09:24:18,062 [7] DEBUG SoapServices.DAL.EducationalInstitution.EducationalInstitutionDbContext Started transaction at 6/17/2016 9:24:18 AM +05:30
+
+2016-06-17 09:24:18,064 [7] DEBUG SoapServices.DAL.EducationalInstitution.EducationalInstitutionDbContext SET SESSION sql_mode='ANSI';INSERT INTO `ContactInfo`(
+`PrimaryContactNumber`, 
+`SecondaryContactNumber`, 
+`EmailId`, 
+`SkypeId`, 
+`LinkedInId`, 
+`FacebookId`) VALUES (
+@gp1, 
+NULL, 
+@gp2, 
+@gp3, 
+@gp4, 
+@gp5);
+SELECT
+`Id`
+FROM `ContactInfo`
+ WHERE  row_count() > 0 AND `Id`=last_insert_id()
+2016-06-17 09:24:18,065 [7] DEBUG SoapServices.DAL.EducationalInstitution.EducationalInstitutionDbContext 
+
+2016-06-17 09:24:18,066 [7] DEBUG SoapServices.DAL.EducationalInstitution.EducationalInstitutionDbContext -- @gp1: '765432198' (Type = String, IsNullable = false, Size = 9)
+
+2016-06-17 09:24:18,067 [7] DEBUG SoapServices.DAL.EducationalInstitution.EducationalInstitutionDbContext -- @gp2: 'test3@testme.com' (Type = String, IsNullable = false, Size = 16)
+
+2016-06-17 09:24:18,069 [7] DEBUG SoapServices.DAL.EducationalInstitution.EducationalInstitutionDbContext -- @gp3: 'test2' (Type = String, IsNullable = false, Size = 5)
+
+2016-06-17 09:24:18,070 [7] DEBUG SoapServices.DAL.EducationalInstitution.EducationalInstitutionDbContext -- @gp4: 'test2' (Type = String, IsNullable = false, Size = 5)
+
+2016-06-17 09:24:18,071 [7] DEBUG SoapServices.DAL.EducationalInstitution.EducationalInstitutionDbContext -- @gp5: 'test2' (Type = String, IsNullable = false, Size = 5)
+
+2016-06-17 09:24:18,072 [7] DEBUG SoapServices.DAL.EducationalInstitution.EducationalInstitutionDbContext -- Executing at 6/17/2016 9:24:18 AM +05:30
+
+2016-06-17 09:24:18,074 [7] DEBUG SoapServices.DAL.EducationalInstitution.EducationalInstitutionDbContext -- Completed in 1 ms with result: EFMySqlDataReader
+
+2016-06-17 09:24:18,075 [7] DEBUG SoapServices.DAL.EducationalInstitution.EducationalInstitutionDbContext 
+
+2016-06-17 09:24:18,108 [7] DEBUG SoapServices.DAL.EducationalInstitution.EducationalInstitutionDbContext Committed transaction at 6/17/2016 9:24:18 AM +05:30
+
+2016-06-17 09:24:18,109 [7] DEBUG SoapServices.DAL.EducationalInstitution.EducationalInstitutionDbContext Closed connection at 6/17/2016 9:24:18 AM +05:30
+
+2016-06-17 09:24:18,111 [7] DEBUG SoapServices.DAL.EducationalInstitution.EducationalInstitutionDbContext Disposed transaction at 6/17/2016 9:24:18 AM +05:30
+
+2016-06-17 09:24:18,112 [7] DEBUG SoapServiceLibrary.ServiceImpl.ContactInfoService Addition Succesful & sending response as true
+2016-06-17 09:24:18,130 [7] DEBUG SoapServiceLibrary.ServiceImpl.ContactInfoService Received Request for GetContactInformationByMail with email id test3@testme.com
+2016-06-17 09:24:18,132 [7] DEBUG SoapServices.DAL.EducationalInstitution.EducationalInstitutionDbContext Opened connection at 6/17/2016 9:24:18 AM +05:30
+
+2016-06-17 09:24:18,134 [7] DEBUG SoapServices.DAL.EducationalInstitution.EducationalInstitutionDbContext SELECT
+1 AS `C1`, 
+`Extent1`.`EmailId`, 
+`Extent1`.`FacebookId`, 
+`Extent1`.`LinkedInId`, 
+`Extent1`.`PrimaryContactNumber`, 
+`Extent1`.`SecondaryContactNumber`, 
+`Extent1`.`SkypeId`
+FROM `ContactInfo` AS `Extent1`
+ WHERE `Extent1`.`EmailId` = @p__linq__0
+2016-06-17 09:24:18,137 [7] DEBUG SoapServices.DAL.EducationalInstitution.EducationalInstitutionDbContext 
+
+2016-06-17 09:24:18,138 [7] DEBUG SoapServices.DAL.EducationalInstitution.EducationalInstitutionDbContext -- p__linq__0: 'test3@testme.com' (Type = String, Size = 16)
+
+2016-06-17 09:24:18,139 [7] DEBUG SoapServices.DAL.EducationalInstitution.EducationalInstitutionDbContext -- Executing at 6/17/2016 9:24:18 AM +05:30
+
+2016-06-17 09:24:18,140 [7] DEBUG SoapServices.DAL.EducationalInstitution.EducationalInstitutionDbContext -- Completed in 0 ms with result: EFMySqlDataReader
+
+2016-06-17 09:24:18,141 [7] DEBUG SoapServices.DAL.EducationalInstitution.EducationalInstitutionDbContext 
+
+2016-06-17 09:24:18,142 [7] DEBUG SoapServices.DAL.EducationalInstitution.EducationalInstitutionDbContext Closed connection at 6/17/2016 9:24:18 AM +05:30
+
+2016-06-17 09:24:18,147 [7] DEBUG SoapServiceLibrary.ServiceImpl.ContactInfoService 
+ PrimaryContactNumber: 765432198, SecondaryContactNumber: , EmailId: test3@testme.com, SkypeId: test2, LinkedInId: test2, FacebookId: test2
+2016-06-17 09:24:18,148 [7] DEBUG SoapServiceLibrary.ServiceImpl.ContactInfoService Processed Request for GetContactInformationByMail with email id test3@testme.com
+2016-06-20 09:09:58,173 [1] INFO  SoapServiceBootStrapper.Program Starting the Soap Services
+2016-06-20 09:09:58,248 [1] INFO  SoapServiceBootStrapper.Program Service is started & running at http://localhost:8733/SoapServiceLibrary/AddressService/
+2016-06-20 09:09:58,254 [1] INFO  SoapServiceBootStrapper.Program Service is started & running at http://localhost:8733/SoapServiceLibrary/ContactInfoService/
+2016-06-20 09:10:04,533 [4] DEBUG SoapServiceLibrary.ServiceImpl.ContactInfoService Received Request for GetContactInformationByMail with email id 
+2016-06-20 09:10:08,801 [4] DEBUG SoapServices.DAL.EducationalInstitution.EducationalInstitutionDbContext Opened connection at 6/20/2016 9:10:08 AM +05:30
+
+2016-06-20 09:10:09,897 [4] DEBUG SoapServices.DAL.EducationalInstitution.EducationalInstitutionDbContext SELECT
+`GroupBy1`.`A1` AS `C1`
+FROM (SELECT
+COUNT(1) AS `A1`
+FROM `__MigrationHistory` AS `Extent1`
+ WHERE `Extent1`.`ContextKey` = @p__linq__0) AS `GroupBy1`
+2016-06-20 09:10:09,898 [4] DEBUG SoapServices.DAL.EducationalInstitution.EducationalInstitutionDbContext 
+
+2016-06-20 09:10:09,900 [4] DEBUG SoapServices.DAL.EducationalInstitution.EducationalInstitutionDbContext -- p__linq__0: 'SoapServices.DAL.Migrations.Configuration' (Type = String, Size = 41)
+
+2016-06-20 09:10:09,909 [4] DEBUG SoapServices.DAL.EducationalInstitution.EducationalInstitutionDbContext -- Executing at 6/20/2016 9:10:09 AM +05:30
+
+2016-06-20 09:10:09,926 [4] DEBUG SoapServices.DAL.EducationalInstitution.EducationalInstitutionDbContext -- Completed in 14 ms with result: EFMySqlDataReader
+
+2016-06-20 09:10:09,927 [4] DEBUG SoapServices.DAL.EducationalInstitution.EducationalInstitutionDbContext 
+
+2016-06-20 09:10:09,945 [4] DEBUG SoapServices.DAL.EducationalInstitution.EducationalInstitutionDbContext Closed connection at 6/20/2016 9:10:09 AM +05:30
+
+2016-06-20 09:10:09,978 [4] DEBUG SoapServices.DAL.EducationalInstitution.EducationalInstitutionDbContext Opened connection at 6/20/2016 9:10:09 AM +05:30
+
+2016-06-20 09:10:10,038 [4] DEBUG SoapServices.DAL.EducationalInstitution.EducationalInstitutionDbContext SELECT
+`Project1`.`C1`, 
+`Project1`.`MigrationId`, 
+`Project1`.`Model`, 
+`Project1`.`ProductVersion`
+FROM (SELECT
+`Extent1`.`MigrationId`, 
+`Extent1`.`Model`, 
+`Extent1`.`ProductVersion`, 
+1 AS `C1`
+FROM `__MigrationHistory` AS `Extent1`
+ WHERE `Extent1`.`ContextKey` = @p__linq__0) AS `Project1`
+ ORDER BY 
+`Project1`.`MigrationId` DESC LIMIT 1
+2016-06-20 09:10:10,040 [4] DEBUG SoapServices.DAL.EducationalInstitution.EducationalInstitutionDbContext 
+
+2016-06-20 09:10:10,041 [4] DEBUG SoapServices.DAL.EducationalInstitution.EducationalInstitutionDbContext -- p__linq__0: 'SoapServices.DAL.Migrations.Configuration' (Type = String, Size = 41)
+
+2016-06-20 09:10:10,042 [4] DEBUG SoapServices.DAL.EducationalInstitution.EducationalInstitutionDbContext -- Executing at 6/20/2016 9:10:10 AM +05:30
+
+2016-06-20 09:10:10,043 [4] DEBUG SoapServices.DAL.EducationalInstitution.EducationalInstitutionDbContext -- Completed in 1 ms with result: EFMySqlDataReader
+
+2016-06-20 09:10:10,044 [4] DEBUG SoapServices.DAL.EducationalInstitution.EducationalInstitutionDbContext 
+
+2016-06-20 09:10:10,050 [4] DEBUG SoapServices.DAL.EducationalInstitution.EducationalInstitutionDbContext Closed connection at 6/20/2016 9:10:10 AM +05:30
+
+2016-06-20 09:10:10,122 [4] DEBUG SoapServices.DAL.EducationalInstitution.EducationalInstitutionDbContext Opened connection at 6/20/2016 9:10:10 AM +05:30
+
+2016-06-20 09:10:10,178 [4] DEBUG SoapServices.DAL.EducationalInstitution.EducationalInstitutionDbContext SELECT
+1 AS `C1`, 
+`Extent1`.`EmailId`, 
+`Extent1`.`FacebookId`, 
+`Extent1`.`LinkedInId`, 
+`Extent1`.`PrimaryContactNumber`, 
+`Extent1`.`SecondaryContactNumber`, 
+`Extent1`.`SkypeId`
+FROM `ContactInfo` AS `Extent1`
+ WHERE `Extent1`.`EmailId` = @p__linq__0
+2016-06-20 09:10:10,179 [4] DEBUG SoapServices.DAL.EducationalInstitution.EducationalInstitutionDbContext 
+
+2016-06-20 09:10:10,180 [4] DEBUG SoapServices.DAL.EducationalInstitution.EducationalInstitutionDbContext -- p__linq__0: '' (Type = String)
+
+2016-06-20 09:10:10,181 [4] DEBUG SoapServices.DAL.EducationalInstitution.EducationalInstitutionDbContext -- Executing at 6/20/2016 9:10:10 AM +05:30
+
+2016-06-20 09:10:10,182 [4] DEBUG SoapServices.DAL.EducationalInstitution.EducationalInstitutionDbContext -- Completed in 1 ms with result: EFMySqlDataReader
+
+2016-06-20 09:10:10,182 [4] DEBUG SoapServices.DAL.EducationalInstitution.EducationalInstitutionDbContext 
+
+2016-06-20 09:10:10,183 [4] DEBUG SoapServices.DAL.EducationalInstitution.EducationalInstitutionDbContext Closed connection at 6/20/2016 9:10:10 AM +05:30
+
+2016-06-20 09:10:10,209 [4] DEBUG SoapServiceLibrary.ServiceImpl.ContactInfoService Processed Request for GetContactInformationByMail with email id 
+2016-06-20 09:10:35,137 [4] DEBUG SoapServiceLibrary.ServiceImpl.ContactInfoService Received Request for the GetAllContactInformations
+2016-06-20 09:10:35,140 [4] DEBUG SoapServices.DAL.EducationalInstitution.EducationalInstitutionDbContext Opened connection at 6/20/2016 9:10:35 AM +05:30
+
+2016-06-20 09:10:35,151 [4] DEBUG SoapServices.DAL.EducationalInstitution.EducationalInstitutionDbContext SELECT
+1 AS `C1`, 
+`Extent1`.`EmailId`, 
+`Extent1`.`FacebookId`, 
+`Extent1`.`LinkedInId`, 
+`Extent1`.`SecondaryContactNumber`, 
+`Extent1`.`SkypeId`
+FROM `ContactInfo` AS `Extent1`
+2016-06-20 09:10:35,153 [4] DEBUG SoapServices.DAL.EducationalInstitution.EducationalInstitutionDbContext 
+
+2016-06-20 09:10:35,154 [4] DEBUG SoapServices.DAL.EducationalInstitution.EducationalInstitutionDbContext -- Executing at 6/20/2016 9:10:35 AM +05:30
+
+2016-06-20 09:10:35,156 [4] DEBUG SoapServices.DAL.EducationalInstitution.EducationalInstitutionDbContext -- Completed in 0 ms with result: EFMySqlDataReader
+
+2016-06-20 09:10:35,157 [4] DEBUG SoapServices.DAL.EducationalInstitution.EducationalInstitutionDbContext 
+
+2016-06-20 09:10:35,159 [4] DEBUG SoapServices.DAL.EducationalInstitution.EducationalInstitutionDbContext Closed connection at 6/20/2016 9:10:35 AM +05:30
+
+2016-06-20 09:10:35,160 [4] DEBUG SoapServiceLibrary.ServiceImpl.ContactInfoService 
+ PrimaryContactNumber: test2, SecondaryContactNumber: , EmailId: test1@tetme.com, SkypeId: test2, LinkedInId: test2, FacebookId: test2
+2016-06-20 09:10:35,162 [4] DEBUG SoapServiceLibrary.ServiceImpl.ContactInfoService 
+ PrimaryContactNumber: test2, SecondaryContactNumber: , EmailId: test2@testme.com, SkypeId: test2, LinkedInId: test2, FacebookId: test2
+2016-06-20 09:10:35,163 [4] DEBUG SoapServiceLibrary.ServiceImpl.ContactInfoService 
+ PrimaryContactNumber: test2, SecondaryContactNumber: , EmailId: test3@testme.com, SkypeId: test2, LinkedInId: test2, FacebookId: test2
+2016-06-20 09:10:35,170 [4] DEBUG SoapServiceLibrary.ServiceImpl.ContactInfoService Processed Request for the GetAllContactInformations
+2016-06-21 08:52:21,620 [1] INFO  SoapServiceBootStrapper.Program Starting the Soap Services
+2016-06-21 08:52:21,686 [1] INFO  SoapServiceBootStrapper.Program Service is started & running at http://localhost:8733/SoapServiceLibrary/AddressService/
+2016-06-21 08:52:21,690 [1] INFO  SoapServiceBootStrapper.Program Service is started & running at http://localhost:8733/SoapServiceLibrary/ContactInfoService/
+2016-07-01 00:39:00,420 [1] INFO  SoapServiceBootStrapper.Program Starting the Soap Services
+2016-07-01 00:39:00,497 [1] INFO  SoapServiceBootStrapper.Program Service is started & running at http://localhost:8733/SoapServiceLibrary/AddressService/
+2016-07-01 00:39:00,519 [1] INFO  SoapServiceBootStrapper.Program Service is started & running at http://localhost:8733/SoapServiceLibrary/ContactInfoService/
+2016-07-01 00:39:56,193 [3] DEBUG SoapServiceLibrary.ServiceImpl.ContactInfoService Received Request for the GetAllContactInformations
+2016-07-01 00:39:59,255 [3] DEBUG SoapServices.DAL.EducationalInstitution.EducationalInstitutionDbContext Opened connection at 7/1/2016 12:39:59 AM +05:30
+
+2016-07-01 00:40:00,319 [3] DEBUG SoapServices.DAL.EducationalInstitution.EducationalInstitutionDbContext SELECT
+`GroupBy1`.`A1` AS `C1`
+FROM (SELECT
+COUNT(1) AS `A1`
+FROM `__MigrationHistory` AS `Extent1`
+ WHERE `Extent1`.`ContextKey` = @p__linq__0) AS `GroupBy1`
+2016-07-01 00:40:00,319 [3] DEBUG SoapServices.DAL.EducationalInstitution.EducationalInstitutionDbContext 
+
+2016-07-01 00:40:00,322 [3] DEBUG SoapServices.DAL.EducationalInstitution.EducationalInstitutionDbContext -- p__linq__0: 'SoapServices.DAL.Migrations.Configuration' (Type = String, Size = 41)
+
+2016-07-01 00:40:00,323 [3] DEBUG SoapServices.DAL.EducationalInstitution.EducationalInstitutionDbContext -- Executing at 7/1/2016 12:40:00 AM +05:30
+
+2016-07-01 00:40:00,352 [3] DEBUG SoapServices.DAL.EducationalInstitution.EducationalInstitutionDbContext -- Completed in 26 ms with result: EFMySqlDataReader
+
+2016-07-01 00:40:00,352 [3] DEBUG SoapServices.DAL.EducationalInstitution.EducationalInstitutionDbContext 
+
+2016-07-01 00:40:00,361 [3] DEBUG SoapServices.DAL.EducationalInstitution.EducationalInstitutionDbContext Closed connection at 7/1/2016 12:40:00 AM +05:30
+
+2016-07-01 00:40:00,382 [3] DEBUG SoapServices.DAL.EducationalInstitution.EducationalInstitutionDbContext Opened connection at 7/1/2016 12:40:00 AM +05:30
+
+2016-07-01 00:40:00,452 [3] DEBUG SoapServices.DAL.EducationalInstitution.EducationalInstitutionDbContext SELECT
+`Project1`.`C1`, 
+`Project1`.`MigrationId`, 
+`Project1`.`Model`, 
+`Project1`.`ProductVersion`
+FROM (SELECT
+`Extent1`.`MigrationId`, 
+`Extent1`.`Model`, 
+`Extent1`.`ProductVersion`, 
+1 AS `C1`
+FROM `__MigrationHistory` AS `Extent1`
+ WHERE `Extent1`.`ContextKey` = @p__linq__0) AS `Project1`
+ ORDER BY 
+`Project1`.`MigrationId` DESC LIMIT 1
+2016-07-01 00:40:00,453 [3] DEBUG SoapServices.DAL.EducationalInstitution.EducationalInstitutionDbContext 
+
+2016-07-01 00:40:00,454 [3] DEBUG SoapServices.DAL.EducationalInstitution.EducationalInstitutionDbContext -- p__linq__0: 'SoapServices.DAL.Migrations.Configuration' (Type = String, Size = 41)
+
+2016-07-01 00:40:00,454 [3] DEBUG SoapServices.DAL.EducationalInstitution.EducationalInstitutionDbContext -- Executing at 7/1/2016 12:40:00 AM +05:30
+
+2016-07-01 00:40:00,457 [3] DEBUG SoapServices.DAL.EducationalInstitution.EducationalInstitutionDbContext -- Completed in 1 ms with result: EFMySqlDataReader
+
+2016-07-01 00:40:00,458 [3] DEBUG SoapServices.DAL.EducationalInstitution.EducationalInstitutionDbContext 
+
+2016-07-01 00:40:00,464 [3] DEBUG SoapServices.DAL.EducationalInstitution.EducationalInstitutionDbContext Closed connection at 7/1/2016 12:40:00 AM +05:30
+
+2016-07-01 00:40:00,523 [3] DEBUG SoapServices.DAL.EducationalInstitution.EducationalInstitutionDbContext Opened connection at 7/1/2016 12:40:00 AM +05:30
+
+2016-07-01 00:40:00,560 [3] DEBUG SoapServices.DAL.EducationalInstitution.EducationalInstitutionDbContext SELECT
+1 AS `C1`, 
+`Extent1`.`EmailId`, 
+`Extent1`.`FacebookId`, 
+`Extent1`.`LinkedInId`, 
+`Extent1`.`SecondaryContactNumber`, 
+`Extent1`.`SkypeId`
+FROM `ContactInfo` AS `Extent1`
+2016-07-01 00:40:00,561 [3] DEBUG SoapServices.DAL.EducationalInstitution.EducationalInstitutionDbContext 
+
+2016-07-01 00:40:00,562 [3] DEBUG SoapServices.DAL.EducationalInstitution.EducationalInstitutionDbContext -- Executing at 7/1/2016 12:40:00 AM +05:30
+
+2016-07-01 00:40:00,567 [3] DEBUG SoapServices.DAL.EducationalInstitution.EducationalInstitutionDbContext -- Completed in 5 ms with result: EFMySqlDataReader
+
+2016-07-01 00:40:00,568 [3] DEBUG SoapServices.DAL.EducationalInstitution.EducationalInstitutionDbContext 
+
+2016-07-01 00:40:00,569 [3] DEBUG SoapServices.DAL.EducationalInstitution.EducationalInstitutionDbContext Closed connection at 7/1/2016 12:40:00 AM +05:30
+
+2016-07-01 00:40:00,580 [3] DEBUG SoapServiceLibrary.ServiceImpl.ContactInfoService 
+ PrimaryContactNumber: test2, SecondaryContactNumber: , EmailId: test1@tetme.com, SkypeId: test2, LinkedInId: test2, FacebookId: test2
+2016-07-01 00:40:00,581 [7] DEBUG SoapServiceLibrary.ServiceImpl.ContactInfoService 
+ PrimaryContactNumber: test2, SecondaryContactNumber: , EmailId: test2@testme.com, SkypeId: test2, LinkedInId: test2, FacebookId: test2
+2016-07-01 00:40:00,581 [8] DEBUG SoapServiceLibrary.ServiceImpl.ContactInfoService 
+ PrimaryContactNumber: test2, SecondaryContactNumber: , EmailId: test3@testme.com, SkypeId: test2, LinkedInId: test2, FacebookId: test2
+2016-07-01 00:40:00,584 [3] DEBUG SoapServiceLibrary.ServiceImpl.ContactInfoService Processed Request for the GetAllContactInformations
+2016-07-01 01:13:23,075 [1] INFO  SoapServiceBootStrapper.Program Starting the Soap Services
+2016-07-01 01:13:23,145 [1] INFO  SoapServiceBootStrapper.Program Service is started & running at http://localhost:8733/SoapServiceLibrary/AddressService/
+2016-07-01 01:13:23,163 [1] INFO  SoapServiceBootStrapper.Program Service is started & running at http://localhost:8733/SoapServiceLibrary/ContactInfoService/
+2016-07-01 01:16:12,445 [4] DEBUG SoapServiceLibrary.ServiceImpl.ContactInfoService Received Request for the GetAllContactInformations
+2016-07-01 01:16:13,960 [4] DEBUG SoapServices.DAL.EducationalInstitution.EducationalInstitutionDbContext Opened connection at 7/1/2016 1:16:13 AM +05:30
+
+2016-07-01 01:16:14,829 [4] DEBUG SoapServices.DAL.EducationalInstitution.EducationalInstitutionDbContext SELECT
+`GroupBy1`.`A1` AS `C1`
+FROM (SELECT
+COUNT(1) AS `A1`
+FROM `__MigrationHistory` AS `Extent1`
+ WHERE `Extent1`.`ContextKey` = @p__linq__0) AS `GroupBy1`
+2016-07-01 01:16:14,830 [4] DEBUG SoapServices.DAL.EducationalInstitution.EducationalInstitutionDbContext 
+
+2016-07-01 01:16:14,832 [4] DEBUG SoapServices.DAL.EducationalInstitution.EducationalInstitutionDbContext -- p__linq__0: 'SoapServices.DAL.Migrations.Configuration' (Type = String, Size = 41)
+
+2016-07-01 01:16:14,834 [4] DEBUG SoapServices.DAL.EducationalInstitution.EducationalInstitutionDbContext -- Executing at 7/1/2016 1:16:14 AM +05:30
+
+2016-07-01 01:16:14,842 [4] DEBUG SoapServices.DAL.EducationalInstitution.EducationalInstitutionDbContext -- Completed in 5 ms with result: EFMySqlDataReader
+
+2016-07-01 01:16:14,843 [4] DEBUG SoapServices.DAL.EducationalInstitution.EducationalInstitutionDbContext 
+
+2016-07-01 01:16:14,854 [4] DEBUG SoapServices.DAL.EducationalInstitution.EducationalInstitutionDbContext Closed connection at 7/1/2016 1:16:14 AM +05:30
+
+2016-07-01 01:16:14,865 [4] DEBUG SoapServices.DAL.EducationalInstitution.EducationalInstitutionDbContext Opened connection at 7/1/2016 1:16:14 AM +05:30
+
+2016-07-01 01:16:14,928 [4] DEBUG SoapServices.DAL.EducationalInstitution.EducationalInstitutionDbContext SELECT
+`Project1`.`C1`, 
+`Project1`.`MigrationId`, 
+`Project1`.`Model`, 
+`Project1`.`ProductVersion`
+FROM (SELECT
+`Extent1`.`MigrationId`, 
+`Extent1`.`Model`, 
+`Extent1`.`ProductVersion`, 
+1 AS `C1`
+FROM `__MigrationHistory` AS `Extent1`
+ WHERE `Extent1`.`ContextKey` = @p__linq__0) AS `Project1`
+ ORDER BY 
+`Project1`.`MigrationId` DESC LIMIT 1
+2016-07-01 01:16:14,929 [4] DEBUG SoapServices.DAL.EducationalInstitution.EducationalInstitutionDbContext 
+
+2016-07-01 01:16:14,930 [4] DEBUG SoapServices.DAL.EducationalInstitution.EducationalInstitutionDbContext -- p__linq__0: 'SoapServices.DAL.Migrations.Configuration' (Type = String, Size = 41)
+
+2016-07-01 01:16:14,931 [4] DEBUG SoapServices.DAL.EducationalInstitution.EducationalInstitutionDbContext -- Executing at 7/1/2016 1:16:14 AM +05:30
+
+2016-07-01 01:16:14,934 [4] DEBUG SoapServices.DAL.EducationalInstitution.EducationalInstitutionDbContext -- Completed in 1 ms with result: EFMySqlDataReader
+
+2016-07-01 01:16:14,935 [4] DEBUG SoapServices.DAL.EducationalInstitution.EducationalInstitutionDbContext 
+
+2016-07-01 01:16:14,942 [4] DEBUG SoapServices.DAL.EducationalInstitution.EducationalInstitutionDbContext Closed connection at 7/1/2016 1:16:14 AM +05:30
+
+2016-07-01 01:16:14,996 [4] DEBUG SoapServices.DAL.EducationalInstitution.EducationalInstitutionDbContext Opened connection at 7/1/2016 1:16:14 AM +05:30
+
+2016-07-01 01:16:15,033 [4] DEBUG SoapServices.DAL.EducationalInstitution.EducationalInstitutionDbContext SELECT
+1 AS `C1`, 
+`Extent1`.`EmailId`, 
+`Extent1`.`FacebookId`, 
+`Extent1`.`LinkedInId`, 
+`Extent1`.`SecondaryContactNumber`, 
+`Extent1`.`SkypeId`
+FROM `ContactInfo` AS `Extent1`
+2016-07-01 01:16:15,034 [4] DEBUG SoapServices.DAL.EducationalInstitution.EducationalInstitutionDbContext 
+
+2016-07-01 01:16:15,035 [4] DEBUG SoapServices.DAL.EducationalInstitution.EducationalInstitutionDbContext -- Executing at 7/1/2016 1:16:15 AM +05:30
+
+2016-07-01 01:16:15,037 [4] DEBUG SoapServices.DAL.EducationalInstitution.EducationalInstitutionDbContext -- Completed in 1 ms with result: EFMySqlDataReader
+
+2016-07-01 01:16:15,038 [4] DEBUG SoapServices.DAL.EducationalInstitution.EducationalInstitutionDbContext 
+
+2016-07-01 01:16:15,040 [4] DEBUG SoapServices.DAL.EducationalInstitution.EducationalInstitutionDbContext Closed connection at 7/1/2016 1:16:15 AM +05:30
+
+2016-07-01 01:16:15,041 [4] DEBUG SoapServiceLibrary.ServiceImpl.ContactInfoService 
+ PrimaryContactNumber: test2, SecondaryContactNumber: , EmailId: test1@tetme.com, SkypeId: test2, LinkedInId: test2, FacebookId: test2
+2016-07-01 01:16:15,041 [6] DEBUG SoapServiceLibrary.ServiceImpl.ContactInfoService 
+ PrimaryContactNumber: test2, SecondaryContactNumber: , EmailId: test2@testme.com, SkypeId: test2, LinkedInId: test2, FacebookId: test2
+2016-07-01 01:16:15,042 [7] DEBUG SoapServiceLibrary.ServiceImpl.ContactInfoService 
+ PrimaryContactNumber: test2, SecondaryContactNumber: , EmailId: test3@testme.com, SkypeId: test2, LinkedInId: test2, FacebookId: test2
+2016-07-01 01:16:15,046 [4] DEBUG SoapServiceLibrary.ServiceImpl.ContactInfoService Processed Request for the GetAllContactInformations
+2016-07-01 01:18:27,638 [4] DEBUG SoapServiceLibrary.ServiceImpl.ContactInfoService Received Request for the GetAllContactInformations
+2016-07-01 01:18:27,641 [4] DEBUG SoapServices.DAL.EducationalInstitution.EducationalInstitutionDbContext Opened connection at 7/1/2016 1:18:27 AM +05:30
+
+2016-07-01 01:18:27,645 [4] DEBUG SoapServices.DAL.EducationalInstitution.EducationalInstitutionDbContext SELECT
+1 AS `C1`, 
+`Extent1`.`EmailId`, 
+`Extent1`.`FacebookId`, 
+`Extent1`.`LinkedInId`, 
+`Extent1`.`SecondaryContactNumber`, 
+`Extent1`.`SkypeId`
+FROM `ContactInfo` AS `Extent1`
+2016-07-01 01:18:27,647 [4] DEBUG SoapServices.DAL.EducationalInstitution.EducationalInstitutionDbContext 
+
+2016-07-01 01:18:27,649 [4] DEBUG SoapServices.DAL.EducationalInstitution.EducationalInstitutionDbContext -- Executing at 7/1/2016 1:18:27 AM +05:30
+
+2016-07-01 01:18:27,651 [4] DEBUG SoapServices.DAL.EducationalInstitution.EducationalInstitutionDbContext -- Completed in 0 ms with result: EFMySqlDataReader
+
+2016-07-01 01:18:27,652 [4] DEBUG SoapServices.DAL.EducationalInstitution.EducationalInstitutionDbContext 
+
+2016-07-01 01:18:27,654 [4] DEBUG SoapServices.DAL.EducationalInstitution.EducationalInstitutionDbContext Closed connection at 7/1/2016 1:18:27 AM +05:30
+
+2016-07-01 01:18:27,656 [4] DEBUG SoapServiceLibrary.ServiceImpl.ContactInfoService 
+ PrimaryContactNumber: test2, SecondaryContactNumber: , EmailId: test1@tetme.com, SkypeId: test2, LinkedInId: test2, FacebookId: test2
+2016-07-01 01:18:27,657 [4] DEBUG SoapServiceLibrary.ServiceImpl.ContactInfoService 
+ PrimaryContactNumber: test2, SecondaryContactNumber: , EmailId: test2@testme.com, SkypeId: test2, LinkedInId: test2, FacebookId: test2
+2016-07-01 01:18:27,658 [4] DEBUG SoapServiceLibrary.ServiceImpl.ContactInfoService 
+ PrimaryContactNumber: test2, SecondaryContactNumber: , EmailId: test3@testme.com, SkypeId: test2, LinkedInId: test2, FacebookId: test2
+2016-07-01 01:18:27,675 [4] DEBUG SoapServiceLibrary.ServiceImpl.ContactInfoService Processed Request for the GetAllContactInformations
+2016-07-01 01:21:19,051 [4] DEBUG SoapServiceLibrary.ServiceImpl.ContactInfoService Received Request for the GetAllContactInformations
+2016-07-01 01:21:19,067 [4] DEBUG SoapServices.DAL.EducationalInstitution.EducationalInstitutionDbContext Opened connection at 7/1/2016 1:21:19 AM +05:30
+
+2016-07-01 01:21:19,075 [4] DEBUG SoapServices.DAL.EducationalInstitution.EducationalInstitutionDbContext SELECT
+1 AS `C1`, 
+`Extent1`.`EmailId`, 
+`Extent1`.`FacebookId`, 
+`Extent1`.`LinkedInId`, 
+`Extent1`.`SecondaryContactNumber`, 
+`Extent1`.`SkypeId`
+FROM `ContactInfo` AS `Extent1`
+2016-07-01 01:21:19,077 [4] DEBUG SoapServices.DAL.EducationalInstitution.EducationalInstitutionDbContext 
+
+2016-07-01 01:21:19,078 [4] DEBUG SoapServices.DAL.EducationalInstitution.EducationalInstitutionDbContext -- Executing at 7/1/2016 1:21:19 AM +05:30
+
+2016-07-01 01:21:19,079 [4] DEBUG SoapServices.DAL.EducationalInstitution.EducationalInstitutionDbContext -- Completed in 0 ms with result: EFMySqlDataReader
+
+2016-07-01 01:21:19,082 [4] DEBUG SoapServices.DAL.EducationalInstitution.EducationalInstitutionDbContext 
+
+2016-07-01 01:21:19,083 [4] DEBUG SoapServices.DAL.EducationalInstitution.EducationalInstitutionDbContext Closed connection at 7/1/2016 1:21:19 AM +05:30
+
+2016-07-01 01:21:19,085 [4] DEBUG SoapServiceLibrary.ServiceImpl.ContactInfoService 
+ PrimaryContactNumber: test2, SecondaryContactNumber: , EmailId: test1@tetme.com, SkypeId: test2, LinkedInId: test2, FacebookId: test2
+2016-07-01 01:21:19,087 [4] DEBUG SoapServiceLibrary.ServiceImpl.ContactInfoService 
+ PrimaryContactNumber: test2, SecondaryContactNumber: , EmailId: test2@testme.com, SkypeId: test2, LinkedInId: test2, FacebookId: test2
+2016-07-01 01:21:19,088 [4] DEBUG SoapServiceLibrary.ServiceImpl.ContactInfoService 
+ PrimaryContactNumber: test2, SecondaryContactNumber: , EmailId: test3@testme.com, SkypeId: test2, LinkedInId: test2, FacebookId: test2
+2016-07-01 01:21:19,089 [4] DEBUG SoapServiceLibrary.ServiceImpl.ContactInfoService Processed Request for the GetAllContactInformations
+2016-07-01 01:24:42,819 [4] DEBUG SoapServiceLibrary.ServiceImpl.ContactInfoService Received Request for the GetAllContactInformations
+2016-07-01 01:24:42,822 [4] DEBUG SoapServices.DAL.EducationalInstitution.EducationalInstitutionDbContext Opened connection at 7/1/2016 1:24:42 AM +05:30
+
+2016-07-01 01:24:42,825 [4] DEBUG SoapServices.DAL.EducationalInstitution.EducationalInstitutionDbContext SELECT
+1 AS `C1`, 
+`Extent1`.`EmailId`, 
+`Extent1`.`FacebookId`, 
+`Extent1`.`LinkedInId`, 
+`Extent1`.`SecondaryContactNumber`, 
+`Extent1`.`SkypeId`
+FROM `ContactInfo` AS `Extent1`
+2016-07-01 01:24:42,828 [4] DEBUG SoapServices.DAL.EducationalInstitution.EducationalInstitutionDbContext 
+
+2016-07-01 01:24:42,830 [4] DEBUG SoapServices.DAL.EducationalInstitution.EducationalInstitutionDbContext -- Executing at 7/1/2016 1:24:42 AM +05:30
+
+2016-07-01 01:24:42,832 [4] DEBUG SoapServices.DAL.EducationalInstitution.EducationalInstitutionDbContext -- Completed in 0 ms with result: EFMySqlDataReader
+
+2016-07-01 01:24:42,834 [4] DEBUG SoapServices.DAL.EducationalInstitution.EducationalInstitutionDbContext 
+
+2016-07-01 01:24:42,835 [4] DEBUG SoapServices.DAL.EducationalInstitution.EducationalInstitutionDbContext Closed connection at 7/1/2016 1:24:42 AM +05:30
+
+2016-07-01 01:24:42,837 [4] DEBUG SoapServiceLibrary.ServiceImpl.ContactInfoService 
+ PrimaryContactNumber: test2, SecondaryContactNumber: , EmailId: test1@tetme.com, SkypeId: test2, LinkedInId: test2, FacebookId: test2
+2016-07-01 01:24:42,839 [4] DEBUG SoapServiceLibrary.ServiceImpl.ContactInfoService 
+ PrimaryContactNumber: test2, SecondaryContactNumber: , EmailId: test2@testme.com, SkypeId: test2, LinkedInId: test2, FacebookId: test2
+2016-07-01 01:24:42,840 [4] DEBUG SoapServiceLibrary.ServiceImpl.ContactInfoService 
+ PrimaryContactNumber: test2, SecondaryContactNumber: , EmailId: test3@testme.com, SkypeId: test2, LinkedInId: test2, FacebookId: test2
+2016-07-01 01:24:42,842 [4] DEBUG SoapServiceLibrary.ServiceImpl.ContactInfoService Processed Request for the GetAllContactInformations
+2016-07-01 01:24:42,917 [6] DEBUG SoapServiceLibrary.ServiceImpl.ContactInfoService Recived Request to AddContactInfo with ContactInformation:
+ PrimaryContactNumber: 9999999, SecondaryContactNumber: 888888, EmailId: test1@testqt.com, SkypeId: test1, LinkedInId: test1, FacebookId: test1
+2016-07-01 01:24:43,031 [6] DEBUG SoapServices.DAL.EducationalInstitution.EducationalInstitutionDbContext Opened connection at 7/1/2016 1:24:43 AM +05:30
+
+2016-07-01 01:24:43,046 [6] DEBUG SoapServices.DAL.EducationalInstitution.EducationalInstitutionDbContext Started transaction at 7/1/2016 1:24:43 AM +05:30
+
+2016-07-01 01:24:43,252 [6] DEBUG SoapServices.DAL.EducationalInstitution.EducationalInstitutionDbContext SET SESSION sql_mode='ANSI';INSERT INTO `ContactInfo`(
+`PrimaryContactNumber`, 
+`SecondaryContactNumber`, 
+`EmailId`, 
+`SkypeId`, 
+`LinkedInId`, 
+`FacebookId`) VALUES (
+@gp1, 
+@gp2, 
+@gp3, 
+@gp4, 
+@gp5, 
+@gp6);
+SELECT
+`Id`
+FROM `ContactInfo`
+ WHERE  row_count() > 0 AND `Id`=last_insert_id()
+2016-07-01 01:24:43,254 [6] DEBUG SoapServices.DAL.EducationalInstitution.EducationalInstitutionDbContext 
+
+2016-07-01 01:24:43,255 [6] DEBUG SoapServices.DAL.EducationalInstitution.EducationalInstitutionDbContext -- @gp1: '9999999' (Type = String, IsNullable = false, Size = 7)
+
+2016-07-01 01:24:43,255 [6] DEBUG SoapServices.DAL.EducationalInstitution.EducationalInstitutionDbContext -- @gp2: '888888' (Type = String, IsNullable = false, Size = 6)
+
+2016-07-01 01:24:43,256 [6] DEBUG SoapServices.DAL.EducationalInstitution.EducationalInstitutionDbContext -- @gp3: 'test1@testqt.com' (Type = String, IsNullable = false, Size = 16)
+
+2016-07-01 01:24:43,257 [6] DEBUG SoapServices.DAL.EducationalInstitution.EducationalInstitutionDbContext -- @gp4: 'test1' (Type = String, IsNullable = false, Size = 5)
+
+2016-07-01 01:24:43,258 [6] DEBUG SoapServices.DAL.EducationalInstitution.EducationalInstitutionDbContext -- @gp5: 'test1' (Type = String, IsNullable = false, Size = 5)
+
+2016-07-01 01:24:43,258 [6] DEBUG SoapServices.DAL.EducationalInstitution.EducationalInstitutionDbContext -- @gp6: 'test1' (Type = String, IsNullable = false, Size = 5)
+
+2016-07-01 01:24:43,259 [6] DEBUG SoapServices.DAL.EducationalInstitution.EducationalInstitutionDbContext -- Executing at 7/1/2016 1:24:43 AM +05:30
+
+2016-07-01 01:24:43,276 [6] DEBUG SoapServices.DAL.EducationalInstitution.EducationalInstitutionDbContext -- Completed in 16 ms with result: EFMySqlDataReader
+
+2016-07-01 01:24:43,276 [6] DEBUG SoapServices.DAL.EducationalInstitution.EducationalInstitutionDbContext 
+
+2016-07-01 01:24:43,369 [6] DEBUG SoapServices.DAL.EducationalInstitution.EducationalInstitutionDbContext Committed transaction at 7/1/2016 1:24:43 AM +05:30
+
+2016-07-01 01:24:43,371 [6] DEBUG SoapServices.DAL.EducationalInstitution.EducationalInstitutionDbContext Closed connection at 7/1/2016 1:24:43 AM +05:30
+
+2016-07-01 01:24:43,373 [6] DEBUG SoapServices.DAL.EducationalInstitution.EducationalInstitutionDbContext Disposed transaction at 7/1/2016 1:24:43 AM +05:30
+
+2016-07-01 01:24:43,432 [6] DEBUG SoapServiceLibrary.ServiceImpl.ContactInfoService Addition Succesful & sending response as true
+2016-07-01 01:24:43,449 [6] DEBUG SoapServiceLibrary.ServiceImpl.ContactInfoService Received Request for the GetAllContactInformations
+2016-07-01 01:24:43,451 [6] DEBUG SoapServices.DAL.EducationalInstitution.EducationalInstitutionDbContext Opened connection at 7/1/2016 1:24:43 AM +05:30
+
+2016-07-01 01:24:43,454 [6] DEBUG SoapServices.DAL.EducationalInstitution.EducationalInstitutionDbContext SELECT
+1 AS `C1`, 
+`Extent1`.`EmailId`, 
+`Extent1`.`FacebookId`, 
+`Extent1`.`LinkedInId`, 
+`Extent1`.`SecondaryContactNumber`, 
+`Extent1`.`SkypeId`
+FROM `ContactInfo` AS `Extent1`
+2016-07-01 01:24:43,456 [6] DEBUG SoapServices.DAL.EducationalInstitution.EducationalInstitutionDbContext 
+
+2016-07-01 01:24:43,456 [6] DEBUG SoapServices.DAL.EducationalInstitution.EducationalInstitutionDbContext -- Executing at 7/1/2016 1:24:43 AM +05:30
+
+2016-07-01 01:24:43,461 [6] DEBUG SoapServices.DAL.EducationalInstitution.EducationalInstitutionDbContext -- Completed in 3 ms with result: EFMySqlDataReader
+
+2016-07-01 01:24:43,462 [6] DEBUG SoapServices.DAL.EducationalInstitution.EducationalInstitutionDbContext 
+
+2016-07-01 01:24:43,464 [6] DEBUG SoapServices.DAL.EducationalInstitution.EducationalInstitutionDbContext Closed connection at 7/1/2016 1:24:43 AM +05:30
+
+2016-07-01 01:24:43,466 [6] DEBUG SoapServiceLibrary.ServiceImpl.ContactInfoService 
+ PrimaryContactNumber: test2, SecondaryContactNumber: , EmailId: test1@tetme.com, SkypeId: test2, LinkedInId: test2, FacebookId: test2
+2016-07-01 01:24:43,468 [9] DEBUG SoapServiceLibrary.ServiceImpl.ContactInfoService 
+ PrimaryContactNumber: test1, SecondaryContactNumber: 888888, EmailId: test1@testqt.com, SkypeId: test1, LinkedInId: test1, FacebookId: test1
+2016-07-01 01:24:43,467 [10] DEBUG SoapServiceLibrary.ServiceImpl.ContactInfoService 
+ PrimaryContactNumber: test2, SecondaryContactNumber: , EmailId: test2@testme.com, SkypeId: test2, LinkedInId: test2, FacebookId: test2
+2016-07-01 01:24:43,466 [8] DEBUG SoapServiceLibrary.ServiceImpl.ContactInfoService 
+ PrimaryContactNumber: test2, SecondaryContactNumber: , EmailId: test3@testme.com, SkypeId: test2, LinkedInId: test2, FacebookId: test2
+2016-07-01 01:24:43,475 [6] DEBUG SoapServiceLibrary.ServiceImpl.ContactInfoService Processed Request for the GetAllContactInformations
+2016-07-01 01:25:22,794 [6] DEBUG SoapServiceLibrary.ServiceImpl.ContactInfoService Received Request for the GetAllContactInformations
+2016-07-01 01:25:22,796 [6] DEBUG SoapServices.DAL.EducationalInstitution.EducationalInstitutionDbContext Opened connection at 7/1/2016 1:25:22 AM +05:30
+
+2016-07-01 01:25:22,798 [6] DEBUG SoapServices.DAL.EducationalInstitution.EducationalInstitutionDbContext SELECT
+1 AS `C1`, 
+`Extent1`.`EmailId`, 
+`Extent1`.`FacebookId`, 
+`Extent1`.`LinkedInId`, 
+`Extent1`.`SecondaryContactNumber`, 
+`Extent1`.`SkypeId`
+FROM `ContactInfo` AS `Extent1`
+2016-07-01 01:25:22,825 [6] DEBUG SoapServices.DAL.EducationalInstitution.EducationalInstitutionDbContext 
+
+2016-07-01 01:25:22,826 [6] DEBUG SoapServices.DAL.EducationalInstitution.EducationalInstitutionDbContext -- Executing at 7/1/2016 1:25:22 AM +05:30
+
+2016-07-01 01:25:22,826 [6] DEBUG SoapServices.DAL.EducationalInstitution.EducationalInstitutionDbContext -- Completed in 0 ms with result: EFMySqlDataReader
+
+2016-07-01 01:25:22,827 [6] DEBUG SoapServices.DAL.EducationalInstitution.EducationalInstitutionDbContext 
+
+2016-07-01 01:25:22,827 [6] DEBUG SoapServices.DAL.EducationalInstitution.EducationalInstitutionDbContext Closed connection at 7/1/2016 1:25:22 AM +05:30
+
+2016-07-01 01:25:22,828 [6] DEBUG SoapServiceLibrary.ServiceImpl.ContactInfoService 
+ PrimaryContactNumber: test2, SecondaryContactNumber: , EmailId: test1@tetme.com, SkypeId: test2, LinkedInId: test2, FacebookId: test2
+2016-07-01 01:25:22,828 [6] DEBUG SoapServiceLibrary.ServiceImpl.ContactInfoService 
+ PrimaryContactNumber: test2, SecondaryContactNumber: , EmailId: test2@testme.com, SkypeId: test2, LinkedInId: test2, FacebookId: test2
+2016-07-01 01:25:22,828 [6] DEBUG SoapServiceLibrary.ServiceImpl.ContactInfoService 
+ PrimaryContactNumber: test1, SecondaryContactNumber: 888888, EmailId: test1@testqt.com, SkypeId: test1, LinkedInId: test1, FacebookId: test1
+2016-07-01 01:25:22,828 [11] DEBUG SoapServiceLibrary.ServiceImpl.ContactInfoService 
+ PrimaryContactNumber: test2, SecondaryContactNumber: , EmailId: test3@testme.com, SkypeId: test2, LinkedInId: test2, FacebookId: test2
+2016-07-01 01:25:22,829 [6] DEBUG SoapServiceLibrary.ServiceImpl.ContactInfoService Processed Request for the GetAllContactInformations
+2016-07-01 01:25:22,860 [12] DEBUG SoapServiceLibrary.ServiceImpl.ContactInfoService Recived Request to AddContactInfo with ContactInformation:
+ PrimaryContactNumber: 9999999, SecondaryContactNumber: 888888, EmailId: test1@testqt.com, SkypeId: test1, LinkedInId: test1, FacebookId: test1
+2016-07-01 01:25:22,862 [12] DEBUG SoapServices.DAL.EducationalInstitution.EducationalInstitutionDbContext Opened connection at 7/1/2016 1:25:22 AM +05:30
+
+2016-07-01 01:25:22,864 [12] DEBUG SoapServices.DAL.EducationalInstitution.EducationalInstitutionDbContext Started transaction at 7/1/2016 1:25:22 AM +05:30
+
+2016-07-01 01:25:22,865 [12] DEBUG SoapServices.DAL.EducationalInstitution.EducationalInstitutionDbContext SET SESSION sql_mode='ANSI';INSERT INTO `ContactInfo`(
+`PrimaryContactNumber`, 
+`SecondaryContactNumber`, 
+`EmailId`, 
+`SkypeId`, 
+`LinkedInId`, 
+`FacebookId`) VALUES (
+@gp1, 
+@gp2, 
+@gp3, 
+@gp4, 
+@gp5, 
+@gp6);
+SELECT
+`Id`
+FROM `ContactInfo`
+ WHERE  row_count() > 0 AND `Id`=last_insert_id()
+2016-07-01 01:25:22,867 [12] DEBUG SoapServices.DAL.EducationalInstitution.EducationalInstitutionDbContext 
+
+2016-07-01 01:25:22,867 [12] DEBUG SoapServices.DAL.EducationalInstitution.EducationalInstitutionDbContext -- @gp1: '9999999' (Type = String, IsNullable = false, Size = 7)
+
+2016-07-01 01:25:22,868 [12] DEBUG SoapServices.DAL.EducationalInstitution.EducationalInstitutionDbContext -- @gp2: '888888' (Type = String, IsNullable = false, Size = 6)
+
+2016-07-01 01:25:22,870 [12] DEBUG SoapServices.DAL.EducationalInstitution.EducationalInstitutionDbContext -- @gp3: 'test1@testqt.com' (Type = String, IsNullable = false, Size = 16)
+
+2016-07-01 01:25:22,871 [12] DEBUG SoapServices.DAL.EducationalInstitution.EducationalInstitutionDbContext -- @gp4: 'test1' (Type = String, IsNullable = false, Size = 5)
+
+2016-07-01 01:25:22,872 [12] DEBUG SoapServices.DAL.EducationalInstitution.EducationalInstitutionDbContext -- @gp5: 'test1' (Type = String, IsNullable = false, Size = 5)
+
+2016-07-01 01:25:22,873 [12] DEBUG SoapServices.DAL.EducationalInstitution.EducationalInstitutionDbContext -- @gp6: 'test1' (Type = String, IsNullable = false, Size = 5)
+
+2016-07-01 01:25:22,875 [12] DEBUG SoapServices.DAL.EducationalInstitution.EducationalInstitutionDbContext -- Executing at 7/1/2016 1:25:22 AM +05:30
+
+2016-07-01 01:25:22,889 [12] DEBUG SoapServices.DAL.EducationalInstitution.EducationalInstitutionDbContext -- Completed in 13 ms with result: EFMySqlDataReader
+
+2016-07-01 01:25:22,890 [12] DEBUG SoapServices.DAL.EducationalInstitution.EducationalInstitutionDbContext 
+
+2016-07-01 01:25:22,945 [12] DEBUG SoapServices.DAL.EducationalInstitution.EducationalInstitutionDbContext Committed transaction at 7/1/2016 1:25:22 AM +05:30
+
+2016-07-01 01:25:22,946 [12] DEBUG SoapServices.DAL.EducationalInstitution.EducationalInstitutionDbContext Closed connection at 7/1/2016 1:25:22 AM +05:30
+
+2016-07-01 01:25:22,947 [12] DEBUG SoapServices.DAL.EducationalInstitution.EducationalInstitutionDbContext Disposed transaction at 7/1/2016 1:25:22 AM +05:30
+
+2016-07-01 01:25:22,947 [12] DEBUG SoapServiceLibrary.ServiceImpl.ContactInfoService Addition Succesful & sending response as true
+2016-07-01 01:25:22,963 [12] DEBUG SoapServiceLibrary.ServiceImpl.ContactInfoService Received Request for the GetAllContactInformations
+2016-07-01 01:25:22,965 [12] DEBUG SoapServices.DAL.EducationalInstitution.EducationalInstitutionDbContext Opened connection at 7/1/2016 1:25:22 AM +05:30
+
+2016-07-01 01:25:22,966 [12] DEBUG SoapServices.DAL.EducationalInstitution.EducationalInstitutionDbContext SELECT
+1 AS `C1`, 
+`Extent1`.`EmailId`, 
+`Extent1`.`FacebookId`, 
+`Extent1`.`LinkedInId`, 
+`Extent1`.`SecondaryContactNumber`, 
+`Extent1`.`SkypeId`
+FROM `ContactInfo` AS `Extent1`
+2016-07-01 01:25:22,968 [12] DEBUG SoapServices.DAL.EducationalInstitution.EducationalInstitutionDbContext 
+
+2016-07-01 01:25:22,968 [12] DEBUG SoapServices.DAL.EducationalInstitution.EducationalInstitutionDbContext -- Executing at 7/1/2016 1:25:22 AM +05:30
+
+2016-07-01 01:25:23,004 [12] DEBUG SoapServices.DAL.EducationalInstitution.EducationalInstitutionDbContext -- Completed in 35 ms with result: EFMySqlDataReader
+
+2016-07-01 01:25:23,005 [12] DEBUG SoapServices.DAL.EducationalInstitution.EducationalInstitutionDbContext 
+
+2016-07-01 01:25:23,006 [12] DEBUG SoapServices.DAL.EducationalInstitution.EducationalInstitutionDbContext Closed connection at 7/1/2016 1:25:23 AM +05:30
+
+2016-07-01 01:25:23,007 [12] DEBUG SoapServiceLibrary.ServiceImpl.ContactInfoService 
+ PrimaryContactNumber: test2, SecondaryContactNumber: , EmailId: test1@tetme.com, SkypeId: test2, LinkedInId: test2, FacebookId: test2
+2016-07-01 01:25:23,007 [10] DEBUG SoapServiceLibrary.ServiceImpl.ContactInfoService 
+ PrimaryContactNumber: test2, SecondaryContactNumber: , EmailId: test3@testme.com, SkypeId: test2, LinkedInId: test2, FacebookId: test2
+2016-07-01 01:25:23,008 [11] DEBUG SoapServiceLibrary.ServiceImpl.ContactInfoService 
+ PrimaryContactNumber: test1, SecondaryContactNumber: 888888, EmailId: test1@testqt.com, SkypeId: test1, LinkedInId: test1, FacebookId: test1
+2016-07-01 01:25:23,008 [12] DEBUG SoapServiceLibrary.ServiceImpl.ContactInfoService 
+ PrimaryContactNumber: test2, SecondaryContactNumber: , EmailId: test2@testme.com, SkypeId: test2, LinkedInId: test2, FacebookId: test2
+2016-07-01 01:25:23,010 [10] DEBUG SoapServiceLibrary.ServiceImpl.ContactInfoService 
+ PrimaryContactNumber: test1, SecondaryContactNumber: 888888, EmailId: test1@testqt.com, SkypeId: test1, LinkedInId: test1, FacebookId: test1
+2016-07-01 01:25:23,011 [12] DEBUG SoapServiceLibrary.ServiceImpl.ContactInfoService Processed Request for the GetAllContactInformations
+2016-07-01 01:34:19,443 [12] DEBUG SoapServiceLibrary.ServiceImpl.ContactInfoService Received Request for the GetAllContactInformations
+2016-07-01 01:34:19,559 [12] DEBUG SoapServices.DAL.EducationalInstitution.EducationalInstitutionDbContext Opened connection at 7/1/2016 1:34:19 AM +05:30
+
+2016-07-01 01:34:19,560 [12] DEBUG SoapServices.DAL.EducationalInstitution.EducationalInstitutionDbContext SELECT
+1 AS `C1`, 
+`Extent1`.`EmailId`, 
+`Extent1`.`FacebookId`, 
+`Extent1`.`LinkedInId`, 
+`Extent1`.`SecondaryContactNumber`, 
+`Extent1`.`SkypeId`
+FROM `ContactInfo` AS `Extent1`
+2016-07-01 01:34:19,561 [12] DEBUG SoapServices.DAL.EducationalInstitution.EducationalInstitutionDbContext 
+
+2016-07-01 01:34:19,563 [12] DEBUG SoapServices.DAL.EducationalInstitution.EducationalInstitutionDbContext -- Executing at 7/1/2016 1:34:19 AM +05:30
+
+2016-07-01 01:34:19,565 [12] DEBUG SoapServices.DAL.EducationalInstitution.EducationalInstitutionDbContext -- Completed in 1 ms with result: EFMySqlDataReader
+
+2016-07-01 01:34:19,565 [12] DEBUG SoapServices.DAL.EducationalInstitution.EducationalInstitutionDbContext 
+
+2016-07-01 01:34:19,566 [12] DEBUG SoapServices.DAL.EducationalInstitution.EducationalInstitutionDbContext Closed connection at 7/1/2016 1:34:19 AM +05:30
+
+2016-07-01 01:34:19,566 [12] DEBUG SoapServiceLibrary.ServiceImpl.ContactInfoService 
+ PrimaryContactNumber: test2, SecondaryContactNumber: , EmailId: test1@tetme.com, SkypeId: test2, LinkedInId: test2, FacebookId: test2
+2016-07-01 01:34:19,567 [8] DEBUG SoapServiceLibrary.ServiceImpl.ContactInfoService 
+ PrimaryContactNumber: test2, SecondaryContactNumber: , EmailId: test3@testme.com, SkypeId: test2, LinkedInId: test2, FacebookId: test2
+2016-07-01 01:34:19,567 [12] DEBUG SoapServiceLibrary.ServiceImpl.ContactInfoService 
+ PrimaryContactNumber: test2, SecondaryContactNumber: , EmailId: test2@testme.com, SkypeId: test2, LinkedInId: test2, FacebookId: test2
+2016-07-01 01:34:19,568 [8] DEBUG SoapServiceLibrary.ServiceImpl.ContactInfoService 
+ PrimaryContactNumber: test1, SecondaryContactNumber: 888888, EmailId: test1@testqt.com, SkypeId: test1, LinkedInId: test1, FacebookId: test1
+2016-07-01 01:34:19,568 [12] DEBUG SoapServiceLibrary.ServiceImpl.ContactInfoService 
+ PrimaryContactNumber: test1, SecondaryContactNumber: 888888, EmailId: test1@testqt.com, SkypeId: test1, LinkedInId: test1, FacebookId: test1
+2016-07-01 01:34:19,569 [12] DEBUG SoapServiceLibrary.ServiceImpl.ContactInfoService Processed Request for the GetAllContactInformations
+2016-07-01 01:34:19,594 [7] DEBUG SoapServiceLibrary.ServiceImpl.ContactInfoService Recived Request to AddContactInfo with ContactInformation:
+ PrimaryContactNumber: 9999999, SecondaryContactNumber: 888888, EmailId: test3@testqt.com, SkypeId: test1, LinkedInId: test1, FacebookId: test1
+2016-07-01 01:34:19,597 [7] DEBUG SoapServices.DAL.EducationalInstitution.EducationalInstitutionDbContext Opened connection at 7/1/2016 1:34:19 AM +05:30
+
+2016-07-01 01:34:19,598 [7] DEBUG SoapServices.DAL.EducationalInstitution.EducationalInstitutionDbContext Started transaction at 7/1/2016 1:34:19 AM +05:30
+
+2016-07-01 01:34:19,636 [7] DEBUG SoapServices.DAL.EducationalInstitution.EducationalInstitutionDbContext SET SESSION sql_mode='ANSI';INSERT INTO `ContactInfo`(
+`PrimaryContactNumber`, 
+`SecondaryContactNumber`, 
+`EmailId`, 
+`SkypeId`, 
+`LinkedInId`, 
+`FacebookId`) VALUES (
+@gp1, 
+@gp2, 
+@gp3, 
+@gp4, 
+@gp5, 
+@gp6);
+SELECT
+`Id`
+FROM `ContactInfo`
+ WHERE  row_count() > 0 AND `Id`=last_insert_id()
+2016-07-01 01:34:19,638 [7] DEBUG SoapServices.DAL.EducationalInstitution.EducationalInstitutionDbContext 
+
+2016-07-01 01:34:19,639 [7] DEBUG SoapServices.DAL.EducationalInstitution.EducationalInstitutionDbContext -- @gp1: '9999999' (Type = String, IsNullable = false, Size = 7)
+
+2016-07-01 01:34:19,640 [7] DEBUG SoapServices.DAL.EducationalInstitution.EducationalInstitutionDbContext -- @gp2: '888888' (Type = String, IsNullable = false, Size = 6)
+
+2016-07-01 01:34:19,640 [7] DEBUG SoapServices.DAL.EducationalInstitution.EducationalInstitutionDbContext -- @gp3: 'test3@testqt.com' (Type = String, IsNullable = false, Size = 16)
+
+2016-07-01 01:34:19,641 [7] DEBUG SoapServices.DAL.EducationalInstitution.EducationalInstitutionDbContext -- @gp4: 'test1' (Type = String, IsNullable = false, Size = 5)
+
+2016-07-01 01:34:19,641 [7] DEBUG SoapServices.DAL.EducationalInstitution.EducationalInstitutionDbContext -- @gp5: 'test1' (Type = String, IsNullable = false, Size = 5)
+
+2016-07-01 01:34:19,641 [7] DEBUG SoapServices.DAL.EducationalInstitution.EducationalInstitutionDbContext -- @gp6: 'test1' (Type = String, IsNullable = false, Size = 5)
+
+2016-07-01 01:34:19,642 [7] DEBUG SoapServices.DAL.EducationalInstitution.EducationalInstitutionDbContext -- Executing at 7/1/2016 1:34:19 AM +05:30
+
+2016-07-01 01:34:19,652 [7] DEBUG SoapServices.DAL.EducationalInstitution.EducationalInstitutionDbContext -- Completed in 9 ms with result: EFMySqlDataReader
+
+2016-07-01 01:34:19,653 [7] DEBUG SoapServices.DAL.EducationalInstitution.EducationalInstitutionDbContext 
+
+2016-07-01 01:34:19,675 [7] DEBUG SoapServices.DAL.EducationalInstitution.EducationalInstitutionDbContext Committed transaction at 7/1/2016 1:34:19 AM +05:30
+
+2016-07-01 01:34:19,676 [7] DEBUG SoapServices.DAL.EducationalInstitution.EducationalInstitutionDbContext Closed connection at 7/1/2016 1:34:19 AM +05:30
+
+2016-07-01 01:34:19,676 [7] DEBUG SoapServices.DAL.EducationalInstitution.EducationalInstitutionDbContext Disposed transaction at 7/1/2016 1:34:19 AM +05:30
+
+2016-07-01 01:34:19,677 [7] DEBUG SoapServiceLibrary.ServiceImpl.ContactInfoService Addition Succesful & sending response as true
+2016-07-01 01:34:19,691 [7] DEBUG SoapServiceLibrary.ServiceImpl.ContactInfoService Received Request for the GetAllContactInformations
+2016-07-01 01:34:19,693 [7] DEBUG SoapServices.DAL.EducationalInstitution.EducationalInstitutionDbContext Opened connection at 7/1/2016 1:34:19 AM +05:30
+
+2016-07-01 01:34:19,694 [7] DEBUG SoapServices.DAL.EducationalInstitution.EducationalInstitutionDbContext SELECT
+1 AS `C1`, 
+`Extent1`.`EmailId`, 
+`Extent1`.`FacebookId`, 
+`Extent1`.`LinkedInId`, 
+`Extent1`.`SecondaryContactNumber`, 
+`Extent1`.`SkypeId`
+FROM `ContactInfo` AS `Extent1`
+2016-07-01 01:34:19,695 [7] DEBUG SoapServices.DAL.EducationalInstitution.EducationalInstitutionDbContext 
+
+2016-07-01 01:34:19,696 [7] DEBUG SoapServices.DAL.EducationalInstitution.EducationalInstitutionDbContext -- Executing at 7/1/2016 1:34:19 AM +05:30
+
+2016-07-01 01:34:19,698 [7] DEBUG SoapServices.DAL.EducationalInstitution.EducationalInstitutionDbContext -- Completed in 0 ms with result: EFMySqlDataReader
+
+2016-07-01 01:34:19,699 [7] DEBUG SoapServices.DAL.EducationalInstitution.EducationalInstitutionDbContext 
+
+2016-07-01 01:34:19,699 [7] DEBUG SoapServices.DAL.EducationalInstitution.EducationalInstitutionDbContext Closed connection at 7/1/2016 1:34:19 AM +05:30
+
+2016-07-01 01:34:19,700 [7] DEBUG SoapServiceLibrary.ServiceImpl.ContactInfoService 
+ PrimaryContactNumber: test2, SecondaryContactNumber: , EmailId: test1@tetme.com, SkypeId: test2, LinkedInId: test2, FacebookId: test2
+2016-07-01 01:34:19,701 [9] DEBUG SoapServiceLibrary.ServiceImpl.ContactInfoService 
+ PrimaryContactNumber: test2, SecondaryContactNumber: , EmailId: test2@testme.com, SkypeId: test2, LinkedInId: test2, FacebookId: test2
+2016-07-01 01:34:19,702 [7] DEBUG SoapServiceLibrary.ServiceImpl.ContactInfoService 
+ PrimaryContactNumber: test2, SecondaryContactNumber: , EmailId: test3@testme.com, SkypeId: test2, LinkedInId: test2, FacebookId: test2
+2016-07-01 01:34:19,700 [8] DEBUG SoapServiceLibrary.ServiceImpl.ContactInfoService 
+ PrimaryContactNumber: test1, SecondaryContactNumber: 888888, EmailId: test1@testqt.com, SkypeId: test1, LinkedInId: test1, FacebookId: test1
+2016-07-01 01:34:19,702 [7] DEBUG SoapServiceLibrary.ServiceImpl.ContactInfoService 
+ PrimaryContactNumber: test1, SecondaryContactNumber: 888888, EmailId: test1@testqt.com, SkypeId: test1, LinkedInId: test1, FacebookId: test1
+2016-07-01 01:34:19,704 [7] DEBUG SoapServiceLibrary.ServiceImpl.ContactInfoService 
+ PrimaryContactNumber: test1, SecondaryContactNumber: 888888, EmailId: test3@testqt.com, SkypeId: test1, LinkedInId: test1, FacebookId: test1
+2016-07-01 01:34:19,705 [7] DEBUG SoapServiceLibrary.ServiceImpl.ContactInfoService Processed Request for the GetAllContactInformations
+2016-07-01 01:34:35,357 [7] DEBUG SoapServiceLibrary.ServiceImpl.ContactInfoService Received Request for the GetAllContactInformations
+2016-07-01 01:34:35,363 [7] DEBUG SoapServices.DAL.EducationalInstitution.EducationalInstitutionDbContext Opened connection at 7/1/2016 1:34:35 AM +05:30
+
+2016-07-01 01:34:35,365 [7] DEBUG SoapServices.DAL.EducationalInstitution.EducationalInstitutionDbContext SELECT
+1 AS `C1`, 
+`Extent1`.`EmailId`, 
+`Extent1`.`FacebookId`, 
+`Extent1`.`LinkedInId`, 
+`Extent1`.`SecondaryContactNumber`, 
+`Extent1`.`SkypeId`
+FROM `ContactInfo` AS `Extent1`
+2016-07-01 01:34:35,380 [7] DEBUG SoapServices.DAL.EducationalInstitution.EducationalInstitutionDbContext 
+
+2016-07-01 01:34:35,381 [7] DEBUG SoapServices.DAL.EducationalInstitution.EducationalInstitutionDbContext -- Executing at 7/1/2016 1:34:35 AM +05:30
+
+2016-07-01 01:34:35,383 [7] DEBUG SoapServices.DAL.EducationalInstitution.EducationalInstitutionDbContext -- Completed in 0 ms with result: EFMySqlDataReader
+
+2016-07-01 01:34:35,383 [7] DEBUG SoapServices.DAL.EducationalInstitution.EducationalInstitutionDbContext 
+
+2016-07-01 01:34:35,386 [7] DEBUG SoapServices.DAL.EducationalInstitution.EducationalInstitutionDbContext Closed connection at 7/1/2016 1:34:35 AM +05:30
+
+2016-07-01 01:34:35,393 [7] DEBUG SoapServiceLibrary.ServiceImpl.ContactInfoService 
+ PrimaryContactNumber: test2, SecondaryContactNumber: , EmailId: test1@tetme.com, SkypeId: test2, LinkedInId: test2, FacebookId: test2
+2016-07-01 01:34:35,394 [8] DEBUG SoapServiceLibrary.ServiceImpl.ContactInfoService 
+ PrimaryContactNumber: test1, SecondaryContactNumber: 888888, EmailId: test1@testqt.com, SkypeId: test1, LinkedInId: test1, FacebookId: test1
+2016-07-01 01:34:35,455 [9] DEBUG SoapServiceLibrary.ServiceImpl.ContactInfoService 
+ PrimaryContactNumber: test2, SecondaryContactNumber: , EmailId: test2@testme.com, SkypeId: test2, LinkedInId: test2, FacebookId: test2
+2016-07-01 01:34:35,511 [7] DEBUG SoapServiceLibrary.ServiceImpl.ContactInfoService 
+ PrimaryContactNumber: test2, SecondaryContactNumber: , EmailId: test3@testme.com, SkypeId: test2, LinkedInId: test2, FacebookId: test2
+2016-07-01 01:34:35,526 [8] DEBUG SoapServiceLibrary.ServiceImpl.ContactInfoService 
+ PrimaryContactNumber: test1, SecondaryContactNumber: 888888, EmailId: test1@testqt.com, SkypeId: test1, LinkedInId: test1, FacebookId: test1
+2016-07-01 01:34:35,541 [8] DEBUG SoapServiceLibrary.ServiceImpl.ContactInfoService 
+ PrimaryContactNumber: test1, SecondaryContactNumber: 888888, EmailId: test3@testqt.com, SkypeId: test1, LinkedInId: test1, FacebookId: test1
+2016-07-01 01:34:35,547 [7] DEBUG SoapServiceLibrary.ServiceImpl.ContactInfoService Processed Request for the GetAllContactInformations
+2016-07-01 01:34:35,763 [10] DEBUG SoapServiceLibrary.ServiceImpl.ContactInfoService Recived Request to AddContactInfo with ContactInformation:
+ PrimaryContactNumber: 9999999, SecondaryContactNumber: 888888, EmailId: test4@testqt.com, SkypeId: test1, LinkedInId: test1, FacebookId: test1
+2016-07-01 01:34:35,768 [10] DEBUG SoapServices.DAL.EducationalInstitution.EducationalInstitutionDbContext Opened connection at 7/1/2016 1:34:35 AM +05:30
+
+2016-07-01 01:34:35,772 [10] DEBUG SoapServices.DAL.EducationalInstitution.EducationalInstitutionDbContext Started transaction at 7/1/2016 1:34:35 AM +05:30
+
+2016-07-01 01:34:35,773 [10] DEBUG SoapServices.DAL.EducationalInstitution.EducationalInstitutionDbContext SET SESSION sql_mode='ANSI';INSERT INTO `ContactInfo`(
+`PrimaryContactNumber`, 
+`SecondaryContactNumber`, 
+`EmailId`, 
+`SkypeId`, 
+`LinkedInId`, 
+`FacebookId`) VALUES (
+@gp1, 
+@gp2, 
+@gp3, 
+@gp4, 
+@gp5, 
+@gp6);
+SELECT
+`Id`
+FROM `ContactInfo`
+ WHERE  row_count() > 0 AND `Id`=last_insert_id()
+2016-07-01 01:34:35,775 [10] DEBUG SoapServices.DAL.EducationalInstitution.EducationalInstitutionDbContext 
+
+2016-07-01 01:34:35,775 [10] DEBUG SoapServices.DAL.EducationalInstitution.EducationalInstitutionDbContext -- @gp1: '9999999' (Type = String, IsNullable = false, Size = 7)
+
+2016-07-01 01:34:35,777 [10] DEBUG SoapServices.DAL.EducationalInstitution.EducationalInstitutionDbContext -- @gp2: '888888' (Type = String, IsNullable = false, Size = 6)
+
+2016-07-01 01:34:35,778 [10] DEBUG SoapServices.DAL.EducationalInstitution.EducationalInstitutionDbContext -- @gp3: 'test4@testqt.com' (Type = String, IsNullable = false, Size = 16)
+
+2016-07-01 01:34:35,778 [10] DEBUG SoapServices.DAL.EducationalInstitution.EducationalInstitutionDbContext -- @gp4: 'test1' (Type = String, IsNullable = false, Size = 5)
+
+2016-07-01 01:34:35,780 [10] DEBUG SoapServices.DAL.EducationalInstitution.EducationalInstitutionDbContext -- @gp5: 'test1' (Type = String, IsNullable = false, Size = 5)
+
+2016-07-01 01:34:35,781 [10] DEBUG SoapServices.DAL.EducationalInstitution.EducationalInstitutionDbContext -- @gp6: 'test1' (Type = String, IsNullable = false, Size = 5)
+
+2016-07-01 01:34:35,782 [10] DEBUG SoapServices.DAL.EducationalInstitution.EducationalInstitutionDbContext -- Executing at 7/1/2016 1:34:35 AM +05:30
+
+2016-07-01 01:34:35,784 [10] DEBUG SoapServices.DAL.EducationalInstitution.EducationalInstitutionDbContext -- Completed in 1 ms with result: EFMySqlDataReader
+
+2016-07-01 01:34:35,785 [10] DEBUG SoapServices.DAL.EducationalInstitution.EducationalInstitutionDbContext 
+
+2016-07-01 01:34:35,849 [10] DEBUG SoapServices.DAL.EducationalInstitution.EducationalInstitutionDbContext Committed transaction at 7/1/2016 1:34:35 AM +05:30
+
+2016-07-01 01:34:35,851 [10] DEBUG SoapServices.DAL.EducationalInstitution.EducationalInstitutionDbContext Closed connection at 7/1/2016 1:34:35 AM +05:30
+
+2016-07-01 01:34:35,853 [10] DEBUG SoapServices.DAL.EducationalInstitution.EducationalInstitutionDbContext Disposed transaction at 7/1/2016 1:34:35 AM +05:30
+
+2016-07-01 01:34:35,853 [10] DEBUG SoapServiceLibrary.ServiceImpl.ContactInfoService Addition Succesful & sending response as true
+2016-07-01 01:34:35,901 [10] DEBUG SoapServiceLibrary.ServiceImpl.ContactInfoService Received Request for the GetAllContactInformations
+2016-07-01 01:34:35,908 [10] DEBUG SoapServices.DAL.EducationalInstitution.EducationalInstitutionDbContext Opened connection at 7/1/2016 1:34:35 AM +05:30
+
+2016-07-01 01:34:35,914 [10] DEBUG SoapServices.DAL.EducationalInstitution.EducationalInstitutionDbContext SELECT
+1 AS `C1`, 
+`Extent1`.`EmailId`, 
+`Extent1`.`FacebookId`, 
+`Extent1`.`LinkedInId`, 
+`Extent1`.`SecondaryContactNumber`, 
+`Extent1`.`SkypeId`
+FROM `ContactInfo` AS `Extent1`
+2016-07-01 01:34:35,916 [10] DEBUG SoapServices.DAL.EducationalInstitution.EducationalInstitutionDbContext 
+
+2016-07-01 01:34:35,917 [10] DEBUG SoapServices.DAL.EducationalInstitution.EducationalInstitutionDbContext -- Executing at 7/1/2016 1:34:35 AM +05:30
+
+2016-07-01 01:34:35,919 [10] DEBUG SoapServices.DAL.EducationalInstitution.EducationalInstitutionDbContext -- Completed in 0 ms with result: EFMySqlDataReader
+
+2016-07-01 01:34:35,920 [10] DEBUG SoapServices.DAL.EducationalInstitution.EducationalInstitutionDbContext 
+
+2016-07-01 01:34:35,922 [10] DEBUG SoapServices.DAL.EducationalInstitution.EducationalInstitutionDbContext Closed connection at 7/1/2016 1:34:35 AM +05:30
+
+2016-07-01 01:34:35,923 [10] DEBUG SoapServiceLibrary.ServiceImpl.ContactInfoService 
+ PrimaryContactNumber: test2, SecondaryContactNumber: , EmailId: test1@tetme.com, SkypeId: test2, LinkedInId: test2, FacebookId: test2
+2016-07-01 01:34:35,923 [8] DEBUG SoapServiceLibrary.ServiceImpl.ContactInfoService 
+ PrimaryContactNumber: test1, SecondaryContactNumber: 888888, EmailId: test1@testqt.com, SkypeId: test1, LinkedInId: test1, FacebookId: test1
+2016-07-01 01:34:35,923 [9] DEBUG SoapServiceLibrary.ServiceImpl.ContactInfoService 
+ PrimaryContactNumber: test1, SecondaryContactNumber: 888888, EmailId: test4@testqt.com, SkypeId: test1, LinkedInId: test1, FacebookId: test1
+2016-07-01 01:34:35,924 [10] DEBUG SoapServiceLibrary.ServiceImpl.ContactInfoService 
+ PrimaryContactNumber: test2, SecondaryContactNumber: , EmailId: test2@testme.com, SkypeId: test2, LinkedInId: test2, FacebookId: test2
+2016-07-01 01:34:35,926 [8] DEBUG SoapServiceLibrary.ServiceImpl.ContactInfoService 
+ PrimaryContactNumber: test1, SecondaryContactNumber: 888888, EmailId: test1@testqt.com, SkypeId: test1, LinkedInId: test1, FacebookId: test1
+2016-07-01 01:34:35,926 [8] DEBUG SoapServiceLibrary.ServiceImpl.ContactInfoService 
+ PrimaryContactNumber: test1, SecondaryContactNumber: 888888, EmailId: test3@testqt.com, SkypeId: test1, LinkedInId: test1, FacebookId: test1
+2016-07-01 01:34:35,929 [10] DEBUG SoapServiceLibrary.ServiceImpl.ContactInfoService 
+ PrimaryContactNumber: test2, SecondaryContactNumber: , EmailId: test3@testme.com, SkypeId: test2, LinkedInId: test2, FacebookId: test2
+2016-07-01 01:34:35,930 [10] DEBUG SoapServiceLibrary.ServiceImpl.ContactInfoService Processed Request for the GetAllContactInformations
+2002-01-01 00:19:37,252 [1] INFO  SoapServiceBootStrapper.Program Starting the Soap Services
+2002-01-01 00:19:37,642 [1] ERROR SoapServiceBootStrapper.Program Cannot Start Server due to HTTP could not register URL http://+:8733/SoapServiceLibrary/AddressService/. Your process does not have access rights to this namespace (see http://go.microsoft.com/fwlink/?LinkId=70353 for details).
+System.ServiceModel.AddressAccessDeniedException: HTTP could not register URL http://+:8733/SoapServiceLibrary/AddressService/. Your process does not have access rights to this namespace (see http://go.microsoft.com/fwlink/?LinkId=70353 for details). ---> System.Net.HttpListenerException: Access is denied
+   at System.Net.HttpListener.AddAllPrefixes()
+   at System.Net.HttpListener.Start()
+   at System.ServiceModel.Channels.SharedHttpTransportManager.OnOpen()
+   --- End of inner exception stack trace ---
+   at System.ServiceModel.Channels.SharedHttpTransportManager.OnOpen()
+   at System.ServiceModel.Channels.TransportManager.Open(TransportChannelListener channelListener)
+   at System.ServiceModel.Channels.TransportManagerContainer.Open(SelectTransportManagersCallback selectTransportManagerCallback)
+   at System.ServiceModel.Channels.TransportChannelListener.OnOpen(TimeSpan timeout)
+   at System.ServiceModel.Channels.HttpChannelListener`1.OnOpen(TimeSpan timeout)
+   at System.ServiceModel.Channels.CommunicationObject.Open(TimeSpan timeout)
+   at System.ServiceModel.Dispatcher.ChannelDispatcher.OnOpen(TimeSpan timeout)
+   at System.ServiceModel.Channels.CommunicationObject.Open(TimeSpan timeout)
+   at System.ServiceModel.ServiceHostBase.OnOpen(TimeSpan timeout)
+   at System.ServiceModel.Channels.CommunicationObject.Open(TimeSpan timeout)
+   at System.ServiceModel.Channels.CommunicationObject.Open()
+   at SoapServiceBootStrapper.Program.StartServiceHost(String serviceAddress, Type serviceType) in C:\Users\khajasha\Source\Repos\ServicesForWebServicesTesting\SoapServices\SoapServiceLibrary\SoapServiceBootStrapper\Program.cs:line 62
+2002-01-01 00:19:37,763 [1] ERROR SoapServiceBootStrapper.Program Cannot Start Server due to HTTP could not register URL http://+:8733/SoapServiceLibrary/ContactInfoService/. Your process does not have access rights to this namespace (see http://go.microsoft.com/fwlink/?LinkId=70353 for details).
+System.ServiceModel.AddressAccessDeniedException: HTTP could not register URL http://+:8733/SoapServiceLibrary/ContactInfoService/. Your process does not have access rights to this namespace (see http://go.microsoft.com/fwlink/?LinkId=70353 for details). ---> System.Net.HttpListenerException: Access is denied
+   at System.Net.HttpListener.AddAllPrefixes()
+   at System.Net.HttpListener.Start()
+   at System.ServiceModel.Channels.SharedHttpTransportManager.OnOpen()
+   --- End of inner exception stack trace ---
+   at System.ServiceModel.Channels.SharedHttpTransportManager.OnOpen()
+   at System.ServiceModel.Channels.TransportManager.Open(TransportChannelListener channelListener)
+   at System.ServiceModel.Channels.TransportManagerContainer.Open(SelectTransportManagersCallback selectTransportManagerCallback)
+   at System.ServiceModel.Channels.TransportChannelListener.OnOpen(TimeSpan timeout)
+   at System.ServiceModel.Channels.HttpChannelListener`1.OnOpen(TimeSpan timeout)
+   at System.ServiceModel.Channels.CommunicationObject.Open(TimeSpan timeout)
+   at System.ServiceModel.Dispatcher.ChannelDispatcher.OnOpen(TimeSpan timeout)
+   at System.ServiceModel.Channels.CommunicationObject.Open(TimeSpan timeout)
+   at System.ServiceModel.ServiceHostBase.OnOpen(TimeSpan timeout)
+   at System.ServiceModel.Channels.CommunicationObject.Open(TimeSpan timeout)
+   at System.ServiceModel.Channels.CommunicationObject.Open()
+   at SoapServiceBootStrapper.Program.StartServiceHost(String serviceAddress, Type serviceType) in C:\Users\khajasha\Source\Repos\ServicesForWebServicesTesting\SoapServices\SoapServiceLibrary\SoapServiceBootStrapper\Program.cs:line 62
+2016-07-01 01:01:32,070 [1] INFO  SoapServiceBootStrapper.Program Starting the Soap Services
+2016-07-01 01:01:32,137 [1] INFO  SoapServiceBootStrapper.Program Service is started & running at http://localhost:8733/SoapServiceLibrary/AddressService/
+2016-07-01 01:01:32,141 [1] INFO  SoapServiceBootStrapper.Program Service is started & running at http://localhost:8733/SoapServiceLibrary/ContactInfoService/
+2016-07-01 01:03:54,142 [3] DEBUG SoapServiceLibrary.ServiceImpl.ContactInfoService Received Request for GetContactInformationByMail with email id ?
+2016-07-01 01:03:59,710 [3] DEBUG SoapServices.DAL.EducationalInstitution.EducationalInstitutionDbContext Opened connection at 7/1/2016 1:03:59 AM +05:30
+
+2016-07-01 01:03:59,717 [3] DEBUG SoapServices.DAL.EducationalInstitution.EducationalInstitutionDbContext Started transaction at 7/1/2016 1:03:59 AM +05:30
+
+2016-07-01 01:03:59,732 [3] DEBUG SoapServices.DAL.EducationalInstitution.EducationalInstitutionDbContext -- MySql script
+-- Created on 7/1/2016 1:03:59 AM
+CREATE TABLE `__MigrationHistory`(
+	`MigrationId` nvarchar (150) NOT NULL, 
+	`ContextKey` nvarchar (300) NOT NULL, 
+	`Model` longblob NOT NULL, 
+	`ProductVersion` nvarchar (32) NOT NULL);
+
+ALTER TABLE `__MigrationHistory` ADD PRIMARY KEY (MigrationId, ContextKey);
+
+
+
+2016-07-01 01:03:59,733 [3] DEBUG SoapServices.DAL.EducationalInstitution.EducationalInstitutionDbContext -- Executing at 7/1/2016 1:03:59 AM +05:30
+
+2016-07-01 01:04:00,350 [3] DEBUG SoapServices.DAL.EducationalInstitution.EducationalInstitutionDbContext -- Completed in 614 ms with result: 0
+
+2016-07-01 01:04:00,351 [3] DEBUG SoapServices.DAL.EducationalInstitution.EducationalInstitutionDbContext 
+
+2016-07-01 01:04:00,355 [3] DEBUG SoapServices.DAL.EducationalInstitution.EducationalInstitutionDbContext Committed transaction at 7/1/2016 1:04:00 AM +05:30
+
+2016-07-01 01:04:00,358 [3] DEBUG SoapServices.DAL.EducationalInstitution.EducationalInstitutionDbContext Closed connection at 7/1/2016 1:04:00 AM +05:30
+
+2016-07-01 01:04:00,360 [3] DEBUG SoapServices.DAL.EducationalInstitution.EducationalInstitutionDbContext Disposed transaction at 7/1/2016 1:04:00 AM +05:30
+
+2016-07-01 01:04:00,632 [3] DEBUG SoapServices.DAL.EducationalInstitution.EducationalInstitutionDbContext Opened connection at 7/1/2016 1:04:00 AM +05:30
+
+2016-07-01 01:04:00,633 [3] DEBUG SoapServices.DAL.EducationalInstitution.EducationalInstitutionDbContext Started transaction at 7/1/2016 1:04:00 AM +05:30
+
+2016-07-01 01:04:01,220 [3] DEBUG SoapServices.DAL.EducationalInstitution.EducationalInstitutionDbContext INSERT INTO `__MigrationHistory`(
+`MigrationId`, 
+`ContextKey`, 
+`Model`, 
+`ProductVersion`) VALUES (
+@gp1, 
+@gp2, 
+@gp3, 
+@gp4)
+2016-07-01 01:04:01,221 [3] DEBUG SoapServices.DAL.EducationalInstitution.EducationalInstitutionDbContext 
+
+2016-07-01 01:04:01,223 [3] DEBUG SoapServices.DAL.EducationalInstitution.EducationalInstitutionDbContext -- @gp1: '201606301934005_InitialCreate' (Type = String, IsNullable = false, Size = 29)
+
+2016-07-01 01:04:01,224 [3] DEBUG SoapServices.DAL.EducationalInstitution.EducationalInstitutionDbContext -- @gp2: 'SoapServices.DAL.Migrations.Configuration' (Type = String, IsNullable = false, Size = 41)
+
+2016-07-01 01:04:01,225 [3] DEBUG SoapServices.DAL.EducationalInstitution.EducationalInstitutionDbContext -- @gp3: 'System.Byte[]' (Type = Object, IsNullable = false, Size = 1974)
+
+2016-07-01 01:04:01,226 [3] DEBUG SoapServices.DAL.EducationalInstitution.EducationalInstitutionDbContext -- @gp4: '6.1.3-40302' (Type = String, IsNullable = false, Size = 11)
+
+2016-07-01 01:04:01,226 [3] DEBUG SoapServices.DAL.EducationalInstitution.EducationalInstitutionDbContext -- Executing at 7/1/2016 1:04:01 AM +05:30
+
+2016-07-01 01:04:01,239 [3] DEBUG SoapServices.DAL.EducationalInstitution.EducationalInstitutionDbContext -- Completed in 11 ms with result: 1
+
+2016-07-01 01:04:01,239 [3] DEBUG SoapServices.DAL.EducationalInstitution.EducationalInstitutionDbContext 
+
+2016-07-01 01:04:01,272 [3] DEBUG SoapServices.DAL.EducationalInstitution.EducationalInstitutionDbContext Committed transaction at 7/1/2016 1:04:01 AM +05:30
+
+2016-07-01 01:04:01,273 [3] DEBUG SoapServices.DAL.EducationalInstitution.EducationalInstitutionDbContext Closed connection at 7/1/2016 1:04:01 AM +05:30
+
+2016-07-01 01:04:01,274 [3] DEBUG SoapServices.DAL.EducationalInstitution.EducationalInstitutionDbContext Disposed transaction at 7/1/2016 1:04:01 AM +05:30
+
+2016-07-01 01:04:01,343 [3] DEBUG SoapServices.DAL.EducationalInstitution.EducationalInstitutionDbContext Opened connection at 7/1/2016 1:04:01 AM +05:30
+
+2016-07-01 01:04:01,889 [3] DEBUG SoapServices.DAL.EducationalInstitution.EducationalInstitutionDbContext SELECT
+1 AS `C1`, 
+`Extent1`.`EmailId`, 
+`Extent1`.`FacebookId`, 
+`Extent1`.`LinkedInId`, 
+`Extent1`.`PrimaryContactNumber`, 
+`Extent1`.`SecondaryContactNumber`, 
+`Extent1`.`SkypeId`
+FROM `ContactInfo` AS `Extent1`
+ WHERE `Extent1`.`EmailId` = @p__linq__0
+2016-07-01 01:04:01,891 [3] DEBUG SoapServices.DAL.EducationalInstitution.EducationalInstitutionDbContext 
+
+2016-07-01 01:04:01,893 [3] DEBUG SoapServices.DAL.EducationalInstitution.EducationalInstitutionDbContext -- p__linq__0: '?' (Type = String, Size = 1)
+
+2016-07-01 01:04:01,893 [3] DEBUG SoapServices.DAL.EducationalInstitution.EducationalInstitutionDbContext -- Executing at 7/1/2016 1:04:01 AM +05:30
+
+2016-07-01 01:04:01,898 [3] DEBUG SoapServices.DAL.EducationalInstitution.EducationalInstitutionDbContext -- Completed in 2 ms with result: EFMySqlDataReader
+
+2016-07-01 01:04:01,899 [3] DEBUG SoapServices.DAL.EducationalInstitution.EducationalInstitutionDbContext 
+
+2016-07-01 01:04:01,905 [3] DEBUG SoapServices.DAL.EducationalInstitution.EducationalInstitutionDbContext Closed connection at 7/1/2016 1:04:01 AM +05:30
+
+2016-07-01 01:04:01,906 [3] DEBUG SoapServiceLibrary.ServiceImpl.ContactInfoService Processed Request for GetContactInformationByMail with email id ?
