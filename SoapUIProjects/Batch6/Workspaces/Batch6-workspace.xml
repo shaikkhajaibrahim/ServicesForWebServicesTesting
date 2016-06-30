@@ -9,4 +9,8 @@
   <con:project name="AdressInfo">D:/ServicesForWebServiceTesting/ServicesForWebServicesTesting/SoapUIProjects/Batch6/Workspaces/Projects/AdressInfo-soapui-project.xml</con:project>
   <con:project name="calculator">C:/Users/sys/Documents/calculator-soapui-project.xml</con:project>
   <con:project name="Rest Hello World">D:/ServicesForWebServiceTesting/ServicesForWebServicesTesting/SoapUIProjects/Batch6/Workspaces/Projects/Rest-Hello-World-soapui-project.xml</con:project>
+  <con:project name="Google Maps">D:/Google-Maps-soapui-project.xml</con:project>
+  <con:project name="REST Project 1">D:/ServicesForWebServiceTesting/ServicesForWebServicesTesting/SoapUIProjects/Batch6/Workspaces/Projects/OData-soapui-project.xml</con:project>
+  <con:project name="Facebook">C:/Users/sys/Desktop/Facebook-soapui-project[1].xml</con:project>
+  <con:project name="Google Maps">C:/Users/sys/Desktop/Google-Maps-soapui-project[1].xml</con:project>
 </con:soapui-workspace>
