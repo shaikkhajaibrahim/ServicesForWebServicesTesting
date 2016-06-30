@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<con:soapui-workspace name="Batch7" soapui-version="5.2.1" xmlns:con="http://eviware.com/soapui/config">
+<con:soapui-workspace name="Batch7" soapui-version="5.0.0" xmlns:con="http://eviware.com/soapui/config">
   <con:settings/>
   <con:project name="HelloWorldCalculator">D:/ServicesForWebServiceTesting/ServicesForWebServicesTesting/SoapUIProjects/Batch7/Workspaces/Projects/HelloWorldCalculator-soapui-project.xml</con:project>
   <con:project name="Xpath Extended">D:/ServicesForWebServiceTesting/ServicesForWebServicesTesting/SoapUIProjects/Batch7/Workspaces/Projects/Xpath-Extended-soapui-project.xml</con:project>
@@ -7,4 +7,5 @@
   <con:project name="ContactInfoServices">D:/ServicesForWebServiceTesting/ServicesForWebServicesTesting/SoapUIProjects/Batch7/Workspaces/Projects/ContactInfoServices-soapui-project.xml</con:project>
   <con:project name="store-01">D:/ServicesForWebServiceTesting/ServicesForWebServicesTesting/SoapUIProjects/Batch7/Workspaces/Projects/store-01-soapui-project.xml</con:project>
   <con:collectInfoForSupport>false</con:collectInfoForSupport>
+  <con:project name="Contacts FromPro">D:/ServicesForWebServiceTesting/ServicesForWebServicesTesting/SoapUIProjects/Batch7/Workspaces/Projects/Contacts-FromPro-soapui-project.xml</con:project>
 </con:soapui-workspace>
