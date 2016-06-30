@@ -13,4 +13,5 @@
   <con:project name="REST Project 1">D:/ServicesForWebServiceTesting/ServicesForWebServicesTesting/SoapUIProjects/Batch6/Workspaces/Projects/OData-soapui-project.xml</con:project>
   <con:project name="Facebook">C:/Users/sys/Desktop/Facebook-soapui-project[1].xml</con:project>
   <con:project name="Google Maps">C:/Users/sys/Desktop/Google-Maps-soapui-project[1].xml</con:project>
+  <con:project name="SoapuiSpecificGroovy">D:/ServicesForWebServiceTesting/ServicesForWebServicesTesting/SoapUIProjects/Batch6/Workspaces/Projects/SoapuiSpecificGroovy-soapui-project.xml</con:project>
 </con:soapui-workspace>

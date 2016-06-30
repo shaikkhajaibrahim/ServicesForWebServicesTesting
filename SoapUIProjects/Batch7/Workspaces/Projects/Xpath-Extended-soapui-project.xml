@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<con:soapui-project id="d8aff142-d75f-411c-94d0-93c8d3721f87" activeEnvironment="Default" name="Xpath Extended" resourceRoot="" soapui-version="5.2.1" xmlns:con="http://eviware.com/soapui/config"><con:settings/><con:interface xsi:type="con:WsdlInterface" id="06be503d-df9f-4f00-b393-b2b3e3aa6e1e" wsaVersion="NONE" name="ICart" type="wsdl" bindingName="{http://www.parasoft.com/wsdl/store-01/}ICart" soapVersion="1_1" anonymous="optional" definition="http://soaptest.parasoft.com/store-01.wsdl" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"><con:settings/><con:definitionCache type="TEXT" rootPart="http://soaptest.parasoft.com/store-01.wsdl"><con:part><con:url>http://soaptest.parasoft.com/store-01.wsdl</con:url><con:content><![CDATA[<!--getItemById(int) - returns the book entry with the given item id. Currently valid values are 1, 2, 3, 4, 5 and 6.
+<con:soapui-project id="d8aff142-d75f-411c-94d0-93c8d3721f87" activeEnvironment="Default" name="Xpath Extended" resourceRoot="" soapui-version="5.2.1" abortOnError="false" runType="SEQUENTIAL" xmlns:con="http://eviware.com/soapui/config"><con:settings/><con:interface xsi:type="con:WsdlInterface" id="06be503d-df9f-4f00-b393-b2b3e3aa6e1e" wsaVersion="NONE" name="ICart" type="wsdl" bindingName="{http://www.parasoft.com/wsdl/store-01/}ICart" soapVersion="1_1" anonymous="optional" definition="http://soaptest.parasoft.com/store-01.wsdl" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"><con:settings/><con:definitionCache type="TEXT" rootPart="http://soaptest.parasoft.com/store-01.wsdl"><con:part><con:url>http://soaptest.parasoft.com/store-01.wsdl</con:url><con:content><![CDATA[<!--getItemById(int) - returns the book entry with the given item id. Currently valid values are 1, 2, 3, 4, 5 and 6.
 
 getItemByTitle(String) - returns a list of Book objects that matched your title search query. The item price value which is returned by this operation increases by $1.00 every 5 invocations.
 Example keywords: linux, java, C++, program. Leave it blank to get ALL the books in the database.
@@ -353,19 +353,19 @@ addNewItem(Book) - enables you to add new book entries into the database (virtua
          </stor:book>\r
       </stor:addNewItem>\r
    </soapenv:Body>\r
-</soapenv:Envelope>]]></con:request><con:wsaConfig mustUnderstand="NONE" version="200508" action="addNewItem"/></con:call></con:operation><con:operation id="566e19d9-1963-48ac-a0b8-1b40cf5efb16" isOneWay="false" action="confirm" name="confirm" bindingOperationName="confirm" type="Request-Response" outputName="confirm6Out" inputName="confirm6In" receivesAttachments="false" sendsAttachments="false" anonymous="optional"><con:settings/><con:call id="59f52e1e-4612-4c6b-ac1a-76a7144828a5" name="Request 1"><con:settings/><con:encoding>UTF-8</con:encoding><con:endpoint>http://ws1.parasoft.com/glue/store-01</con:endpoint><con:request><![CDATA[<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:stor="http://www.parasoft.com/wsdl/store-01/">\r
+</soapenv:Envelope>]]></con:request><con:jmsConfig JMSDeliveryMode="PERSISTENT"/><con:wsaConfig mustUnderstand="NONE" version="200508" action="addNewItem"/></con:call></con:operation><con:operation id="566e19d9-1963-48ac-a0b8-1b40cf5efb16" isOneWay="false" action="confirm" name="confirm" bindingOperationName="confirm" type="Request-Response" outputName="confirm6Out" inputName="confirm6In" receivesAttachments="false" sendsAttachments="false" anonymous="optional"><con:settings/><con:call id="59f52e1e-4612-4c6b-ac1a-76a7144828a5" name="Request 1"><con:settings/><con:encoding>UTF-8</con:encoding><con:endpoint>http://ws1.parasoft.com/glue/store-01</con:endpoint><con:request><![CDATA[<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:stor="http://www.parasoft.com/wsdl/store-01/">\r
    <soapenv:Header/>\r
    <soapenv:Body>\r
       <stor:confirm/>\r
    </soapenv:Body>\r
-</soapenv:Envelope>]]></con:request><con:wsaConfig mustUnderstand="NONE" version="200508" action="confirm"/></con:call></con:operation><con:operation id="65d945da-8ac5-4c4e-8ce6-364ac6c5c129" isOneWay="false" action="getItemById" name="getItemById" bindingOperationName="getItemById" type="Request-Response" outputName="getItemById3Out" inputName="getItemById3In" receivesAttachments="false" sendsAttachments="false" anonymous="optional"><con:settings/><con:call id="fa9fca07-8fe5-434d-ac33-f9a5004151ae" name="Request 1"><con:settings/><con:encoding>UTF-8</con:encoding><con:endpoint>http://ws1.parasoft.com/glue/store-01</con:endpoint><con:request><![CDATA[<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:stor="http://www.parasoft.com/wsdl/store-01/">\r
+</soapenv:Envelope>]]></con:request><con:jmsConfig JMSDeliveryMode="PERSISTENT"/><con:wsaConfig mustUnderstand="NONE" version="200508" action="confirm"/></con:call></con:operation><con:operation id="65d945da-8ac5-4c4e-8ce6-364ac6c5c129" isOneWay="false" action="getItemById" name="getItemById" bindingOperationName="getItemById" type="Request-Response" outputName="getItemById3Out" inputName="getItemById3In" receivesAttachments="false" sendsAttachments="false" anonymous="optional"><con:settings/><con:call id="fa9fca07-8fe5-434d-ac33-f9a5004151ae" name="Request 1"><con:settings/><con:encoding>UTF-8</con:encoding><con:endpoint>http://ws1.parasoft.com/glue/store-01</con:endpoint><con:request><![CDATA[<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:stor="http://www.parasoft.com/wsdl/store-01/">\r
    <soapenv:Header/>\r
    <soapenv:Body>\r
       <stor:getItemById>\r
          <stor:id>?</stor:id>\r
       </stor:getItemById>\r
    </soapenv:Body>\r
-</soapenv:Envelope>]]></con:request><con:wsaConfig mustUnderstand="NONE" version="200508" action="getItemById"/></con:call></con:operation><con:operation id="50cf22ad-a149-4921-8944-28916984cfa6" isOneWay="false" action="getItemByTitle" name="getItemByTitle" bindingOperationName="getItemByTitle" type="Request-Response" outputName="getItemByTitle2Out" inputName="getItemByTitle2In" receivesAttachments="false" sendsAttachments="false" anonymous="optional"><con:settings/><con:call id="97b10541-5dcb-48bf-97ca-f09248cb2632" name="Request 1"><con:settings><con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;xml-fragment/></con:setting></con:settings><con:encoding>UTF-8</con:encoding><con:endpoint>http://ws1.parasoft.com/glue/store-01</con:endpoint><con:request><![CDATA[<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:stor="http://www.parasoft.com/wsdl/store-01/">\r
+</soapenv:Envelope>]]></con:request><con:jmsConfig JMSDeliveryMode="PERSISTENT"/><con:wsaConfig mustUnderstand="NONE" version="200508" action="getItemById"/></con:call></con:operation><con:operation id="50cf22ad-a149-4921-8944-28916984cfa6" isOneWay="false" action="getItemByTitle" name="getItemByTitle" bindingOperationName="getItemByTitle" type="Request-Response" outputName="getItemByTitle2Out" inputName="getItemByTitle2In" receivesAttachments="false" sendsAttachments="false" anonymous="optional"><con:settings/><con:call id="97b10541-5dcb-48bf-97ca-f09248cb2632" name="Request 1"><con:settings><con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;xml-fragment/></con:setting></con:settings><con:encoding>UTF-8</con:encoding><con:endpoint>http://ws1.parasoft.com/glue/store-01</con:endpoint><con:request><![CDATA[<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:stor="http://www.parasoft.com/wsdl/store-01/">\r
    <soapenv:Header/>\r
    <soapenv:Body>\r
       <stor:getItemByTitle>\r
@@ -377,7 +377,7 @@ addNewItem(Book) - enables you to add new book entries into the database (virtua
    <soapenv:Body>\r
       <stor:getPendingOrders/>\r
    </soapenv:Body>\r
-</soapenv:Envelope>]]></con:request><con:wsaConfig mustUnderstand="NONE" version="200508" action="getPendingOrders"/></con:call></con:operation><con:operation id="8666f3b3-fec8-4e57-ad50-b06c33006b42" isOneWay="false" action="placeOrder" name="placeOrder" bindingOperationName="placeOrder" type="Request-Response" outputName="placeOrder0Out" inputName="placeOrder0In" receivesAttachments="false" sendsAttachments="false" anonymous="optional"><con:settings/><con:call id="ae8c16b1-4b4a-4e42-875c-c86d883b8d47" name="Request 1"><con:settings/><con:encoding>UTF-8</con:encoding><con:endpoint>http://ws1.parasoft.com/glue/store-01</con:endpoint><con:request><![CDATA[<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:stor="http://www.parasoft.com/wsdl/store-01/">\r
+</soapenv:Envelope>]]></con:request><con:jmsConfig JMSDeliveryMode="PERSISTENT"/><con:wsaConfig mustUnderstand="NONE" version="200508" action="getPendingOrders"/></con:call></con:operation><con:operation id="8666f3b3-fec8-4e57-ad50-b06c33006b42" isOneWay="false" action="placeOrder" name="placeOrder" bindingOperationName="placeOrder" type="Request-Response" outputName="placeOrder0Out" inputName="placeOrder0In" receivesAttachments="false" sendsAttachments="false" anonymous="optional"><con:settings/><con:call id="ae8c16b1-4b4a-4e42-875c-c86d883b8d47" name="Request 1"><con:settings/><con:encoding>UTF-8</con:encoding><con:endpoint>http://ws1.parasoft.com/glue/store-01</con:endpoint><con:request><![CDATA[<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:stor="http://www.parasoft.com/wsdl/store-01/">\r
    <soapenv:Header/>\r
    <soapenv:Body>\r
       <stor:placeOrder>\r
@@ -385,14 +385,14 @@ addNewItem(Book) - enables you to add new book entries into the database (virtua
          <stor:quantity>?</stor:quantity>\r
       </stor:placeOrder>\r
    </soapenv:Body>\r
-</soapenv:Envelope>]]></con:request><con:wsaConfig mustUnderstand="NONE" version="200508" action="placeOrder"/></con:call></con:operation><con:operation id="2684c2d7-bd4f-40b3-bd66-0a77f356d38d" isOneWay="false" action="removeOrder" name="removeOrder" bindingOperationName="removeOrder" type="Request-Response" outputName="removeOrder1Out" inputName="removeOrder1In" receivesAttachments="false" sendsAttachments="false" anonymous="optional"><con:settings/><con:call id="a971600b-97f7-40f8-889a-a199e7ead85a" name="Request 1"><con:settings/><con:encoding>UTF-8</con:encoding><con:endpoint>http://ws1.parasoft.com/glue/store-01</con:endpoint><con:request><![CDATA[<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:stor="http://www.parasoft.com/wsdl/store-01/">\r
+</soapenv:Envelope>]]></con:request><con:jmsConfig JMSDeliveryMode="PERSISTENT"/><con:wsaConfig mustUnderstand="NONE" version="200508" action="placeOrder"/></con:call></con:operation><con:operation id="2684c2d7-bd4f-40b3-bd66-0a77f356d38d" isOneWay="false" action="removeOrder" name="removeOrder" bindingOperationName="removeOrder" type="Request-Response" outputName="removeOrder1Out" inputName="removeOrder1In" receivesAttachments="false" sendsAttachments="false" anonymous="optional"><con:settings/><con:call id="a971600b-97f7-40f8-889a-a199e7ead85a" name="Request 1"><con:settings/><con:encoding>UTF-8</con:encoding><con:endpoint>http://ws1.parasoft.com/glue/store-01</con:endpoint><con:request><![CDATA[<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:stor="http://www.parasoft.com/wsdl/store-01/">\r
    <soapenv:Header/>\r
    <soapenv:Body>\r
       <stor:removeOrder>\r
          <stor:orderNumber>?</stor:orderNumber>\r
       </stor:removeOrder>\r
    </soapenv:Body>\r
-</soapenv:Envelope>]]></con:request><con:wsaConfig mustUnderstand="NONE" version="200508" action="removeOrder"/></con:call></con:operation></con:interface><con:testSuite id="a868dcce-ba8d-4010-8fa5-01ecd3dee2dd" name="Smoke"><con:settings/><con:runType>SEQUENTIAL</con:runType><con:testCase id="7faf7526-7322-4f20-b543-c22b5b434acd" failOnError="true" failTestCaseOnErrors="true" keepSession="false" maxResults="0" name="GetItems_TestCase" searchProperties="true"><con:settings/><con:testStep type="request" id="4c7aa77d-4161-4164-8e7e-1e15f69d59c6" name="GetAllItems"><con:settings/><con:config xsi:type="con:RequestStep" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"><con:interface>ICart</con:interface><con:operation>getItemByTitle</con:operation><con:request name="GetAllItems" outgoingWss="" incomingWss="" timeout="" sslKeystore="" useWsAddressing="false" useWsReliableMessaging="false" wssPasswordType="" id="cd658efa-bd3a-4148-9bbe-4d171bb8a633"><con:settings><con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;xml-fragment/></con:setting></con:settings><con:encoding>UTF-8</con:encoding><con:endpoint>http://ws1.parasoft.com/glue/store-01</con:endpoint><con:request><![CDATA[<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:stor="http://www.parasoft.com/wsdl/store-01/">\r
+</soapenv:Envelope>]]></con:request><con:jmsConfig JMSDeliveryMode="PERSISTENT"/><con:wsaConfig mustUnderstand="NONE" version="200508" action="removeOrder"/></con:call></con:operation></con:interface><con:testSuite id="a868dcce-ba8d-4010-8fa5-01ecd3dee2dd" name="Smoke"><con:settings/><con:runType>SEQUENTIAL</con:runType><con:testCase id="7faf7526-7322-4f20-b543-c22b5b434acd" failOnError="true" failTestCaseOnErrors="true" keepSession="false" maxResults="0" name="GetItems_TestCase" searchProperties="true"><con:settings/><con:testStep type="request" id="4c7aa77d-4161-4164-8e7e-1e15f69d59c6" name="GetAllItems"><con:settings/><con:config xsi:type="con:RequestStep" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"><con:interface>ICart</con:interface><con:operation>getItemByTitle</con:operation><con:request name="GetAllItems" outgoingWss="" incomingWss="" timeout="" sslKeystore="" useWsAddressing="false" useWsReliableMessaging="false" wssPasswordType="" id="cd658efa-bd3a-4148-9bbe-4d171bb8a633"><con:settings><con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;xml-fragment/></con:setting></con:settings><con:encoding>UTF-8</con:encoding><con:endpoint>http://ws1.parasoft.com/glue/store-01</con:endpoint><con:request><![CDATA[<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:stor="http://www.parasoft.com/wsdl/store-01/">\r
    <soapenv:Header/>\r
    <soapenv:Body>\r
       <stor:getItemByTitle>\r
@@ -427,4 +427,201 @@ declare namespace n5='http://www.themindelectric.com/package/java.sql/';
     <i>*</i>
   </authors>
   <publisher xsi:type="xsd:string">*</publisher>
-</i>]]></content><allowWildcards>true</allowWildcards><ignoreNamspaceDifferences>false</ignoreNamspaceDifferences><ignoreComments>false</ignoreComments></con:configuration></con:assertion><con:credentials><con:authType>No Authorization</con:authType></con:credentials><con:jmsConfig JMSDeliveryMode="PERSISTENT"/><con:jmsPropertyConfig/><con:wsaConfig mustUnderstand="NONE" version="200508" action="getItemByTitle"/><con:wsrmConfig version="1.2"/></con:request></con:config></con:testStep><con:properties/></con:testCase><con:properties/></con:testSuite><con:properties/><con:wssContainer/><con:oAuth2ProfileContainer/></con:soapui-project>
+</i>]]></content><allowWildcards>true</allowWildcards><ignoreNamspaceDifferences>false</ignoreNamspaceDifferences><ignoreComments>false</ignoreComments></con:configuration></con:assertion><con:assertion type="Simple Contains" id="657501e0-00b7-479b-93a1-84358c7b0be9" name="Contains" disabled="true"><con:configuration><token><![CDATA[<n:getItemByTitleResponse xmlns:n="http://www.parasoft.com/wsdl/store-01/">
+         <n:Result xsi:type="n3:ArrayOfBook" soapenc:arrayType="n3:Book[]">
+            <i xsi:type="n3:Book">
+               <id xsi:type="xsd:int">1</id>
+               <title xsi:type="xsd:string">C++ How to Program (4th Edition)</title>
+               <quantity_in_stock xsi:type="xsd:int">20</quantity_in_stock>
+               <price xsi:type="xsd:float">99.99</price>
+               <isbn xsi:type="xsd:string">0130384747</isbn>
+               <publication_date xsi:type="n5:Date">2002-08-12T07:00:00.000Z</publication_date>
+               <description xsi:type="xsd:string">One of the best C++ books</description>
+               <authors xsi:type="xsd:ArrayOfstring" soapenc:arrayType="xsd:string[]">
+                  <i>Harvey M. Deitel</i>
+                  <i>Paul J. Deitel</i>
+               </authors>
+               <publisher xsi:type="xsd:string">Prentice Hall</publisher>
+            </i>
+            <i xsi:type="n3:Book">
+               <id xsi:type="xsd:int">2</id>
+               <title xsi:type="xsd:string">Java How to Program (4th Edition)</title>
+               <quantity_in_stock xsi:type="xsd:int">10</quantity_in_stock>
+               <price xsi:type="xsd:float">76.0</price>
+               <isbn xsi:type="xsd:string">0130341517</isbn>
+               <publication_date xsi:type="n5:Date">2001-08-08T07:00:00.000Z</publication_date>
+               <description xsi:type="xsd:string">Great for Java beginners</description>
+               <authors xsi:type="xsd:ArrayOfstring" soapenc:arrayType="xsd:string[]">
+                  <i>Harvey M. Deitel</i>
+                  <i>Paul J. Deitel</i>
+               </authors>
+               <publisher xsi:type="xsd:string">Prentice Hall</publisher>
+            </i>
+            <i xsi:type="n3:Book">
+               <id xsi:type="xsd:int">4</id>
+               <title xsi:type="xsd:string">Linux Administration Handbook</title>
+               <quantity_in_stock xsi:type="xsd:int">3</quantity_in_stock>
+               <price xsi:type="xsd:float">49.99</price>
+               <isbn xsi:type="xsd:string">0130084662</isbn>
+               <publication_date xsi:type="n5:Date">2002-03-25T08:00:00.000Z</publication_date>
+               <description xsi:type="xsd:string">Provides techniques and advice for administering three representative distributions Linux: Red Hat 7.2, SuSE 7.3, and Debian 3.0</description>
+               <authors xsi:type="xsd:ArrayOfstring" soapenc:arrayType="xsd:string[]">
+                  <i>Evi Nemeth</i>
+                  <i>Garth Snyder</i>
+                  <i>Trent R. Hein</i>
+                  <i>Adam Boggs</i>
+               </authors>
+               <publisher xsi:type="xsd:string">Prentice Hall</publisher>
+            </i>
+            <i xsi:type="n3:Book">
+               <id xsi:type="xsd:int">3</id>
+               <title xsi:type="xsd:string">Java in a Nutshell, Fourth Edition</title>
+               <quantity_in_stock xsi:type="xsd:int">5</quantity_in_stock>
+               <price xsi:type="xsd:float">27.97</price>
+               <isbn xsi:type="xsd:string">0596002831</isbn>
+               <publication_date xsi:type="n5:Date">2002-03-01T08:00:00.000Z</publication_date>
+               <description xsi:type="xsd:string">contains an accelerated introduction to the Java programming language and its key APIs so you can start writing code right away. Covers Java 1.4</description>
+               <authors xsi:type="xsd:ArrayOfstring" soapenc:arrayType="xsd:string[]">
+                  <i>David Flanagan</i>
+               </authors>
+               <publisher xsi:type="xsd:string">O'Reilly &amp; Associates</publisher>
+            </i>
+            <i xsi:type="n3:Book">
+               <id xsi:type="xsd:int">5</id>
+               <title xsi:type="xsd:string">Oracle PL/SQL Programming, 3rd Edition</title>
+               <quantity_in_stock xsi:type="xsd:int">4</quantity_in_stock>
+               <price xsi:type="xsd:float">38.47</price>
+               <isbn xsi:type="xsd:string">0596003811</isbn>
+               <publication_date xsi:type="n5:Date">2002-09-01T07:00:00.000Z</publication_date>
+               <description xsi:type="xsd:string">An indispensable reference for both novice and experienced PL/SQL developers</description>
+               <authors xsi:type="xsd:ArrayOfstring" soapenc:arrayType="xsd:string[]">
+                  <i>Steven Feuerstein</i>
+                  <i>Bill Pribyl</i>
+               </authors>
+               <publisher xsi:type="xsd:string">O'Reilly &amp; Associates</publisher>
+            </i>
+            <i xsi:type="n3:Book">
+               <id xsi:type="xsd:int">6</id>
+               <title xsi:type="xsd:string">PowerBuilder 7.0 Unleashed</title>
+               <quantity_in_stock xsi:type="xsd:int">0</quantity_in_stock>
+               <price xsi:type="xsd:float">34.99</price>
+               <isbn xsi:type="xsd:string">0672317826</isbn>
+               <publication_date xsi:type="n5:Date">1999-12-09T08:00:00.000Z</publication_date>
+               <description xsi:type="xsd:string">excellent one-volume reference to new features in Sybase's well-known programming tool, with good coverage of its support for distributed and Internet-based computing</description>
+               <authors xsi:type="xsd:ArrayOfstring" soapenc:arrayType="xsd:string[]">
+                  <i>Chetney Heiber</i>
+               </authors>
+               <publisher xsi:type="xsd:string">Sams</publisher>
+            </i>
+            <i xsi:type="n3:Book">
+               <id xsi:type="xsd:int">7</id>
+               <title xsi:type="xsd:string">The Next Leap in Productivity: What Top Managers Really Need to Know about Information Technology</title>
+               <quantity_in_stock xsi:type="xsd:int">20</quantity_in_stock>
+               <price xsi:type="xsd:float">29.99</price>
+               <isbn xsi:type="xsd:string">9780470398</isbn>
+               <publication_date xsi:type="n5:Date">2009-02-01T08:00:00.000Z</publication_date>
+               <description xsi:type="xsd:string">How much should top management really care about IT? That's the question Adam Kolawa bluntly poses in this feisty and compelling book going far beyond traditional business books written for the CIO community.</description>
+               <authors xsi:type="xsd:ArrayOfstring" soapenc:arrayType="xsd:string[]">
+                  <i>Adam Kolawa</i>
+               </authors>
+               <publisher xsi:type="xsd:string">Wiley</publisher>
+            </i>
+            <i xsi:type="n3:Book">
+               <id xsi:type="xsd:int">8</id>
+               <title xsi:type="xsd:string">Automated Defect Prevention: Best Practices in Software Management</title>
+               <quantity_in_stock xsi:type="xsd:int">12</quantity_in_stock>
+               <price xsi:type="xsd:float">13.24</price>
+               <isbn xsi:type="xsd:string">0470042125</isbn>
+               <publication_date xsi:type="n5:Date">2007-09-01T07:00:00.000Z</publication_date>
+               <description xsi:type="xsd:string">This book describes an approach to software management based on establishing an infrastructure that serves as the foundation for the project.</description>
+               <authors xsi:type="xsd:ArrayOfstring" soapenc:arrayType="xsd:string[]">
+                  <i>Adam Kolawa</i>
+                  <i>Dorota Huizinga</i>
+               </authors>
+               <publisher xsi:type="xsd:string">Wiley</publisher>
+            </i>
+ <i xsi:type="n3:Book">
+               <id xsi:type="xsd:int">9</id>
+               <title xsi:type="xsd:string">Bulletproofing Web Applications</title>
+               <quantity_in_stock xsi:type="xsd:int">3</quantity_in_stock>
+               <price xsi:type="xsd:float">9.99</price>
+               <isbn xsi:type="xsd:string">0764548662</isbn>
+               <publication_date xsi:type="n5:Date">2001-06-01T07:00:00.000Z</publication_date>
+               <description xsi:type="xsd:string">A road map for how to integrate error prevention and detection into the development process to ensure that Web applications are robust, scalable, efficient and reliable.</description>
+               <authors xsi:type="xsd:ArrayOfstring" soapenc:arrayType="xsd:string[]">
+                  <i>Adam Kolawa</i>
+                  <i>Wendell Hicken</i>
+                  <i>Cynthia Dunlop</i>
+               </authors>
+               <publisher xsi:type="xsd:string">Wiley</publisher>
+            </i>
+         </n:Result>
+]]></token><ignoreCase>false</ignoreCase><useRegEx>false</useRegEx></con:configuration></con:assertion><con:credentials><con:authType>No Authorization</con:authType></con:credentials><con:jmsConfig JMSDeliveryMode="PERSISTENT"/><con:jmsPropertyConfig/><con:wsaConfig mustUnderstand="NONE" version="200508" action="getItemByTitle"/><con:wsrmConfig version="1.2"/></con:request></con:config></con:testStep><con:testStep type="request" id="90b69040-023a-4e92-ada9-7b0fbfcb9205" name="GetSpecificItemByTitle"><con:settings/><con:config xsi:type="con:RequestStep" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"><con:interface>ICart</con:interface><con:operation>getItemByTitle</con:operation><con:request name="GetSpecificItemByTitle" outgoingWss="" incomingWss="" timeout="" sslKeystore="" useWsAddressing="false" useWsReliableMessaging="false" wssPasswordType="" id="4f82c898-ee3f-482a-a932-58ac69afcf23"><con:settings><con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;xml-fragment/></con:setting></con:settings><con:encoding>UTF-8</con:encoding><con:endpoint>http://ws1.parasoft.com/glue/store-01</con:endpoint><con:request><![CDATA[<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:stor="http://www.parasoft.com/wsdl/store-01/">\r
+   <soapenv:Header/>\r
+   <soapenv:Body>\r
+      <stor:getItemByTitle>\r
+         <stor:titleKeyword>C++</stor:titleKeyword>\r
+      </stor:getItemByTitle>\r
+   </soapenv:Body>\r
+</soapenv:Envelope>]]></con:request><con:assertion type="SOAP Response" id="0d37d876-2a99-4fd9-bb71-fb4b80c007e2" name="SOAP Response"/><con:assertion type="XPath Match" id="8a893274-bf83-4e4f-9377-87b36275d4aa" name="XPath Match"><con:configuration><path>declare namespace soap='http://schemas.xmlsoap.org/soap/envelope/';
+declare namespace n='http://www.parasoft.com/wsdl/store-01/';
+declare namespace n3='http://www.themindelectric.com/package/webtool.soap.examples.store/';
+declare namespace soapenc='http://schemas.xmlsoap.org/soap/encoding/';
+declare namespace n5='http://www.themindelectric.com/package/java.sql/';
+count(//n:Result/i)</path><content>1</content><allowWildcards>false</allowWildcards><ignoreNamspaceDifferences>false</ignoreNamspaceDifferences><ignoreComments>false</ignoreComments></con:configuration></con:assertion><con:assertion type="XPath Match" id="416b25ca-9c01-4728-97b2-c4ad50227559" name="XPath Match 1"><con:configuration><path>declare namespace soap='http://schemas.xmlsoap.org/soap/envelope/';
+declare namespace n='http://www.parasoft.com/wsdl/store-01/';
+declare namespace n3='http://www.themindelectric.com/package/webtool.soap.examples.store/';
+declare namespace soapenc='http://schemas.xmlsoap.org/soap/encoding/';
+declare namespace n5='http://www.themindelectric.com/package/java.sql/';
+//price</path><content>99.99</content><allowWildcards>false</allowWildcards><ignoreNamspaceDifferences>false</ignoreNamspaceDifferences><ignoreComments>false</ignoreComments></con:configuration></con:assertion><con:assertion type="XPath Match" id="21f66589-df13-44cc-8ecc-f0bfacde689a" name="XPath Match 2"><con:configuration/></con:assertion><con:assertion type="XPath Match" id="64831147-1b67-428f-8c01-d99a1d185677" name="XPath Match 3"><con:configuration/></con:assertion><con:credentials><con:authType>No Authorization</con:authType></con:credentials><con:jmsConfig JMSDeliveryMode="PERSISTENT"/><con:jmsPropertyConfig/><con:wsaConfig mustUnderstand="NONE" version="200508" action="getItemByTitle"/><con:wsrmConfig version="1.2"/></con:request></con:config></con:testStep><con:testStep type="request" name="SOAP Request" id="03080434-07f3-41b1-8c32-62e445f86fba"><con:settings/><con:config xsi:type="con:RequestStep" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"><con:interface>ICart</con:interface><con:operation>getItemById</con:operation><con:request name="SOAP Request" id="4ae82926-64a1-47c9-996e-5187df11f2b6"><con:settings/><con:encoding>UTF-8</con:encoding><con:endpoint>http://ws1.parasoft.com/glue/store-01</con:endpoint><con:request><![CDATA[<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:stor="http://www.parasoft.com/wsdl/store-01/">\r
+   <soapenv:Header/>\r
+   <soapenv:Body>\r
+      <stor:getItemById>\r
+         <stor:id>?</stor:id>\r
+      </stor:getItemById>\r
+   </soapenv:Body>\r
+</soapenv:Envelope>]]></con:request><con:assertion type="SOAP Response" id="0d5211df-ff8b-40b9-8720-9196a826ced2"/><con:credentials><con:authType>No Authorization</con:authType></con:credentials><con:jmsConfig JMSDeliveryMode="PERSISTENT"/><con:jmsPropertyConfig/><con:wsaConfig mustUnderstand="NONE" version="200508"/><con:wsrmConfig version="1.2"/></con:request></con:config></con:testStep><con:properties/></con:testCase><con:testCase id="efc6add1-bdb3-4f2c-9897-aa083f67e182" failOnError="true" failTestCaseOnErrors="true" keepSession="false" maxResults="0" name="Xpath_qty" searchProperties="true"><con:settings/><con:testStep type="request" name="GetItemById" id="295bf52c-f980-4ab9-a8f2-8a8e047e572c"><con:settings/><con:config xsi:type="con:RequestStep" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"><con:interface>ICart</con:interface><con:operation>getItemById</con:operation><con:request name="GetItemById" id="818514a4-6c07-4794-9fa4-26814df99428"><con:settings><con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;xml-fragment/></con:setting></con:settings><con:encoding>UTF-8</con:encoding><con:endpoint>http://ws1.parasoft.com/glue/store-01</con:endpoint><con:request><![CDATA[<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:stor="http://www.parasoft.com/wsdl/store-01/">\r
+   <soapenv:Header/>\r
+   <soapenv:Body>\r
+      <stor:getItemById>\r
+         <stor:id>${#TestCase#Id}</stor:id>\r
+      </stor:getItemById>\r
+   </soapenv:Body>\r
+</soapenv:Envelope>]]></con:request><con:assertion type="SOAP Response" id="7c9b801f-2e0e-44eb-9c38-c177bce12ff2"/><con:assertion type="XPath Match" id="1c5fc85f-0a30-47f3-bd06-8bf3afb8f1ac" name="XPath Match"><con:configuration><path>declare namespace soap='http://schemas.xmlsoap.org/soap/envelope/';
+declare namespace n='http://www.parasoft.com/wsdl/store-01/';
+declare namespace n3='http://www.themindelectric.com/package/webtool.soap.examples.store/';
+declare namespace soapenc='http://schemas.xmlsoap.org/soap/encoding/';
+declare namespace n4='http://www.themindelectric.com/package/java.sql/';
+//quantity_in_stock</path><content>20</content><allowWildcards>false</allowWildcards><ignoreNamspaceDifferences>false</ignoreNamspaceDifferences><ignoreComments>false</ignoreComments></con:configuration></con:assertion><con:assertion type="XPath Match" id="9b502c61-1c59-4b85-9613-4146ce2833de" name="Result-> qty"><con:configuration><path>declare namespace soap='http://schemas.xmlsoap.org/soap/envelope/';
+declare namespace n='http://www.parasoft.com/wsdl/store-01/';
+declare namespace n3='http://www.themindelectric.com/package/webtool.soap.examples.store/';
+declare namespace soapenc='http://schemas.xmlsoap.org/soap/encoding/';
+declare namespace n4='http://www.themindelectric.com/package/java.sql/';
+//n:Result/quantity_in_stock</path><content>20</content><allowWildcards>false</allowWildcards><ignoreNamspaceDifferences>false</ignoreNamspaceDifferences><ignoreComments>false</ignoreComments></con:configuration></con:assertion><con:assertion type="XPath Match" id="9b502c61-1c59-4b85-9613-4146ce2833de" name="Resp->Result-> qty"><con:configuration><path>declare namespace soap='http://schemas.xmlsoap.org/soap/envelope/';
+declare namespace n='http://www.parasoft.com/wsdl/store-01/';
+declare namespace n3='http://www.themindelectric.com/package/webtool.soap.examples.store/';
+declare namespace soapenc='http://schemas.xmlsoap.org/soap/encoding/';
+declare namespace n4='http://www.themindelectric.com/package/java.sql/';
+//n:getItemByIdResponse/n:Result/quantity_in_stock</path><content>20</content><allowWildcards>false</allowWildcards><ignoreNamspaceDifferences>false</ignoreNamspaceDifferences><ignoreComments>false</ignoreComments></con:configuration></con:assertion><con:credentials><con:authType>No Authorization</con:authType></con:credentials><con:jmsConfig JMSDeliveryMode="PERSISTENT"/><con:jmsPropertyConfig/><con:wsaConfig mustUnderstand="NONE" version="200508"/><con:wsrmConfig version="1.2"/></con:request></con:config></con:testStep><con:properties><con:property><con:name>Id</con:name><con:value>1</con:value></con:property></con:properties></con:testCase><con:testCase id="f947c94d-15a5-4bfb-8ca8-36635352b591" failOnError="true" failTestCaseOnErrors="true" keepSession="false" maxResults="0" name="Xpath_allItems" searchProperties="true"><con:settings/><con:testStep type="request" name="GetAllItesm" id="1904264b-94a4-47f7-8666-9c9a780ab517"><con:settings/><con:config xsi:type="con:RequestStep" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"><con:interface>ICart</con:interface><con:operation>getItemByTitle</con:operation><con:request name="GetAllItesm" id="4c4667e1-4fea-4dc2-94be-e5591796d55a"><con:settings><con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;xml-fragment/></con:setting></con:settings><con:encoding>UTF-8</con:encoding><con:endpoint>http://ws1.parasoft.com/glue/store-01</con:endpoint><con:request><![CDATA[<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:stor="http://www.parasoft.com/wsdl/store-01/">\r
+   <soapenv:Header/>\r
+   <soapenv:Body>\r
+      <stor:getItemByTitle>\r
+         <stor:titleKeyword>${#TestCase#Title}</stor:titleKeyword>\r
+      </stor:getItemByTitle>\r
+   </soapenv:Body>\r
+</soapenv:Envelope>]]></con:request><con:assertion type="SOAP Response" id="4aa22d13-71bf-427d-b6c3-ae6ace0ceb59"/><con:assertion type="XPath Match" id="c6cc4813-e73e-41eb-856f-8e0672393d15" name="XPath Match" disabled="true"><con:configuration><path>declare namespace soap='http://schemas.xmlsoap.org/soap/envelope/';
+declare namespace n='http://www.parasoft.com/wsdl/store-01/';
+declare namespace n3='http://www.themindelectric.com/package/webtool.soap.examples.store/';
+declare namespace soapenc='http://schemas.xmlsoap.org/soap/encoding/';
+declare namespace n5='http://www.themindelectric.com/package/java.sql/';
+//n:Result/i[id=1]/price</path><content>99.99</content><allowWildcards>false</allowWildcards><ignoreNamspaceDifferences>false</ignoreNamspaceDifferences><ignoreComments>false</ignoreComments></con:configuration></con:assertion><con:assertion type="XPath Match" id="c19e1846-e8e1-4903-9b83-ba67f6b2d6a3" name="XPath Match 1"><con:configuration><path>declare namespace soap='http://schemas.xmlsoap.org/soap/envelope/';
+declare namespace n='http://www.parasoft.com/wsdl/store-01/';
+declare namespace n3='http://www.themindelectric.com/package/webtool.soap.examples.store/';
+declare namespace soapenc='http://schemas.xmlsoap.org/soap/encoding/';
+declare namespace n5='http://www.themindelectric.com/package/java.sql/';
+count(//n:Result/i)</path><content>${#TestCase#Count}</content><allowWildcards>false</allowWildcards><ignoreNamspaceDifferences>false</ignoreNamspaceDifferences><ignoreComments>false</ignoreComments></con:configuration></con:assertion><con:assertion type="XPath Match" id="3d55ed39-b4b6-4e18-b84a-cc6f9e923c7e" name="XPath Match 2"><con:configuration><path>declare namespace soap='http://schemas.xmlsoap.org/soap/envelope/';
+declare namespace n='http://www.parasoft.com/wsdl/store-01/';
+declare namespace n3='http://www.themindelectric.com/package/webtool.soap.examples.store/';
+declare namespace soapenc='http://schemas.xmlsoap.org/soap/encoding/';
+declare namespace n5='http://www.themindelectric.com/package/java.sql/';
+contains(//n:Result/i[1]/title,'How')</path><content>true</content><allowWildcards>false</allowWildcards><ignoreNamspaceDifferences>false</ignoreNamspaceDifferences><ignoreComments>false</ignoreComments></con:configuration></con:assertion><con:credentials><con:authType>No Authorization</con:authType></con:credentials><con:jmsConfig JMSDeliveryMode="PERSISTENT"/><con:jmsPropertyConfig/><con:wsaConfig mustUnderstand="NONE" version="200508"/><con:wsrmConfig version="1.2"/></con:request></con:config></con:testStep><con:properties><con:property><con:name>Title</con:name><con:value/></con:property><con:property><con:name>Count</con:name><con:value>9</con:value></con:property><con:property><con:name>Word</con:name><con:value>How</con:value></con:property></con:properties></con:testCase><con:properties><con:property><con:name>Title</con:name><con:value>C</con:value></con:property></con:properties></con:testSuite><con:properties><con:property><con:name>Title</con:name><con:value>A</con:value></con:property></con:properties><con:wssContainer/><con:oAuth2ProfileContainer/></con:soapui-project>
