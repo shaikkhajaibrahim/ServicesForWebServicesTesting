@@ -7,4 +7,6 @@
   <con:collectInfoForSupport>false</con:collectInfoForSupport>
   <con:project name="ContactInfo">D:/ServicesForWebServiceTesting/ServicesForWebServicesTesting/SoapUIProjects/Batch6/Workspaces/Projects/ContactInfo-soapui-project.xml</con:project>
   <con:project name="AdressInfo">D:/ServicesForWebServiceTesting/ServicesForWebServicesTesting/SoapUIProjects/Batch6/Workspaces/Projects/AdressInfo-soapui-project.xml</con:project>
+  <con:project name="calculator">C:/Users/sys/Documents/calculator-soapui-project.xml</con:project>
+  <con:project name="Rest Hello World">D:/ServicesForWebServiceTesting/ServicesForWebServicesTesting/SoapUIProjects/Batch6/Workspaces/Projects/Rest-Hello-World-soapui-project.xml</con:project>
 </con:soapui-workspace>
