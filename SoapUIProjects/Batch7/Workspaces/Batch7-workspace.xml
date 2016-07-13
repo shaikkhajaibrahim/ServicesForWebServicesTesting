@@ -8,4 +8,9 @@
   <con:project name="store-01">D:/ServicesForWebServiceTesting/ServicesForWebServicesTesting/SoapUIProjects/Batch7/Workspaces/Projects/store-01-soapui-project.xml</con:project>
   <con:collectInfoForSupport>false</con:collectInfoForSupport>
   <con:project name="Contacts FromPro">D:/ServicesForWebServiceTesting/ServicesForWebServicesTesting/SoapUIProjects/Batch7/Workspaces/Projects/Contacts-FromPro-soapui-project.xml</con:project>
+  <con:project name="GovvyPractice">C:/Users/sys/Documents/GovvyPractice-soapui-project.xml</con:project>
+  <con:project name="Groovy">C:/Users/sys/Documents/Groovy-soapui-project.xml</con:project>
+  <con:project status="CLOSED" name="Batch7-workspace.xml">D:/ServicesForWebServiceTesting/ServicesForWebServicesTesting/SoapUIProjects/Batch7/Workspaces/Batch7-workspace.xml</con:project>
+  <con:project name="GroovyExtended">D:/ServicesForWebServiceTesting/ServicesForWebServicesTesting/SoapUIProjects/OtherImportant/WorkSpace/Projects/GroovyExtended-soapui-project.xml</con:project>
+  <con:project name="WS-Security (requires username token)">D:/ServicesForWebServiceTesting/ServicesForWebServicesTesting/SoapUIProjects/OtherImportant/WorkSpace/Projects/WS-Security--requires-username-token--soapui-project.xml</con:project>
 </con:soapui-workspace>
