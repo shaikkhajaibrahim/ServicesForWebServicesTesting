@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<con:soapui-project id="38a13fcc-4876-4876-9a2f-722c37d8c212" activeEnvironment="Default" name="GroovySamplesExtended" soapui-version="5.2.1" abortOnError="false" runType="SEQUENTIAL" xmlns:con="http://eviware.com/soapui/config"><con:settings/><con:testSuite id="9e38c171-21f9-4b44-bb66-36d9be685dc6" name="ContextTestSuite"><con:settings/><con:runType>SEQUENTIAL</con:runType><con:testCase id="5244bf96-c147-4845-b4cd-4d9a29c66ed9" failOnError="true" failTestCaseOnErrors="true" keepSession="false" maxResults="0" name="LogTestCase" searchProperties="true"><con:settings/><con:testStep type="groovy" name="logHelloWorld" id="94099286-46c3-49c5-99ac-60d8f94acb81"><con:settings/><con:config><script>def logClass=log.getClass()
+log.info "The class name of Log is $logClass"
+log.info "The class for context is ${context.getClass()}"
+def prop=context.expand('${#TestCase#name}')
+log.info prop
+log.info context.getCurrentStep().getLabel()
+
+log.info context.getTestCase().getProperty("name").getValue()</script></con:config></con:testStep><con:properties><con:property><con:name>name</con:name><con:value>SOAP UI</con:value></con:property></con:properties></con:testCase><con:properties/></con:testSuite><con:properties/><con:wssContainer/><con:oAuth2ProfileContainer/></con:soapui-project>
