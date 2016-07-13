@@ -905,7 +905,8 @@ return "Response2"</con:dispatchPath><con:response name="Response 1" id="0389c86
          <web:GetCitiesByCountryResult>?</web:GetCitiesByCountryResult>
       </web:GetCitiesByCountryResponse>
    </soapenv:Body>
-</soapenv:Envelope>]]></con:responseContent><con:wsaConfig mustUnderstand="NONE" version="200508" action="http://www.webserviceX.NET/GetCitiesByCountry"/></con:response><con:dispatchConfig/></con:mockOperation><con:mockOperation name="GetWeather" id="04d665d5-539b-4719-a222-af3a155ba11f" interface="GlobalWeatherSoap" operation="GetWeather"><con:settings/><con:defaultResponse>Response 1</con:defaultResponse><con:dispatchStyle>SEQUENCE</con:dispatchStyle><con:response name="Response 1" id="d520c532-a732-48a1-bfd3-46dc66cf772a" httpResponseStatus="200" encoding="UTF-8"><con:settings/><con:responseContent><![CDATA[<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:web="http://www.webserviceX.NET">
+</soapenv:Envelope>]]></con:responseContent><con:wsaConfig mustUnderstand="NONE" version="200508" action="http://www.webserviceX.NET/GetCitiesByCountry"/></con:response><con:dispatchConfig/></con:mockOperation><con:mockOperation name="GetWeather" id="04d665d5-539b-4719-a222-af3a155ba11f" interface="GlobalWeatherSoap" operation="GetWeather"><con:settings/><con:defaultResponse>Response 1</con:defaultResponse><con:dispatchStyle>XPATH</con:dispatchStyle><con:dispatchPath>declare namespace web='http://www.webserviceX.NET';
+//web:GetWeather[1]/web:CityName[1]</con:dispatchPath><con:response name="Response 1" id="d520c532-a732-48a1-bfd3-46dc66cf772a" httpResponseStatus="200" encoding="UTF-8"><con:settings/><con:responseContent><![CDATA[<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:web="http://www.webserviceX.NET">
    <soapenv:Header/>
    <soapenv:Body>
       <web:GetWeatherResponse>
