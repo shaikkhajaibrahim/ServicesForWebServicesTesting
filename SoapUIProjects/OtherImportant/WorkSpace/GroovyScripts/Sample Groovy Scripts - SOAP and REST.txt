@@ -1,0 +1,92 @@
+*********Read SOAP test Request and Response using Groovy*********
+def groovyUtils = new com.eviware.soapui.support.GroovyUtils(context);
+def response = context.expand('getItemById#Response');
+def responseHolder = groovyUtils.getXmlHolder(response);
+title=responseHolder.getNodeValue("//n:Result/title")
+
+def request = context.expand('getItemByTitle#Request');
+def requestHolder = groovyUtils.getXmlHolder(request);
+requestHolder.setNodeValue("//stor:titleKeyword", title)
+requestHolder.updateProperty()
+
+
+********REST Script Assertion - Specific to Current Test Step**********
+import groovy.json.JsonSlurper
+
+//grab the request
+def RequestMessage=messageExchange.getRequestContent()
+//define a JsonSlurper for Request
+def reqjson=new JsonSlurper().parseText(RequestMessage)
+
+//grab the response
+def ResponseMessage = messageExchange.getResponseContent()
+//define a JsonSlurper for Response
+def respjson = new JsonSlurper().parseText(ResponseMessage)
+ 
+//verify the slurper isn't empty
+assert !(respjson.isEmpty())
+ 
+//verify the Id, Type and Guid aren't null
+assert respjson.authToken != null
+assert respjson.userInformation.userId != null
+assert "respjson.userInformation.userId" != "reqjson.userID"
+
+****Set REST Request header values using Groovy
+import com.eviware.soapui.support.types.StringToStringMap
+def headers = new StringToStringMap()
+headers.put("FTOKEN","ee6ee912-0469")   //Assigning value "ee6ee912-0469" to header "FTOKEN"
+//Setting Header and Value to TestStep "dealers"
+testRunner.testCase.testSteps["dealers"].getHttpRequest().setRequestHeaders(headers)
+//Setting Header and Value to TestStep "logout"
+testRunner.testCase.testSteps["logout"].getHttpRequest().setRequestHeaders(headers)
+
+
+*******Read REST Request and Response using Groovy
+import groovy.json.JsonSlurper
+
+def response = context.expand('${StepName#Response}')
+def request = context.expand('${StepName#Request}')
+
+**** Reading the different attributes of Response ****
+def jsonRes = new JsonSlurper().parseText(response)
+log.info jsonRes
+
+**** Reading the different attributes of Request ****
+def jsonReq = new JsonSlurper().parseText(request)
+log.info jsonReq
+
+
+Example: 
+JSON Request
+{ "EmployeeID":"1234",
+  "Department":"QA"
+}
+
+JSON Response 
+{ "EmployeeID":"1234"
+  "Name":"Kalyan"
+  "Designation":"QA Lead"
+  "Location":"Hyderabad" 
+}
+
+
+In order to read JSON in groovy we need to import JsonSlurper which has inbuilt method ParseText which helps in parsing JSON content.
+
+*** Groovy Code Below ***
+
+import groovy.json. JsonSlurper
+def slurper = new JsonSlurper()
+def request = context.expand( ‘${RequestName#Request}’ )
+def response = context.expand( ‘${RequestName#Response}’ )
+
+**** Reading JSON Request ****
+def jsonReq = slurper.parseText(request)
+log.info jsonReq.EmployeeID
+log.info jsonReq.Department
+
+**** Reading JSON Response ****
+def jsonRes = slurper.parseText(response)
+log.info jsonRes.EmployeeID
+log.info jsonRes.Name
+log.info jsonRes.Designation
+log.info jsonRes.Location

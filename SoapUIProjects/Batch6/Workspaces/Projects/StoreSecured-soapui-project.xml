@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<con:soapui-project id="31ca835a-554b-486f-a148-e1c9f91b1951" activeEnvironment="Default" name="store-01" soapui-version="5.2.1" abortOnError="false" runType="SEQUENTIAL" xmlns:con="http://eviware.com/soapui/config"><con:settings/><con:interface xsi:type="con:WsdlInterface" id="f2032b0a-6a1c-4218-8537-8e30034c7a90" wsaVersion="NONE" name="ICart" type="wsdl" bindingName="{http://www.parasoft.com/wsdl/store-01/}ICart" soapVersion="1_1" anonymous="optional" definition="http://soaptest.parasoft.com/store-01.wsdl" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"><con:settings/><con:definitionCache type="TEXT" rootPart="http://soaptest.parasoft.com/store-01.wsdl"><con:part><con:url>http://soaptest.parasoft.com/store-01.wsdl</con:url><con:content><![CDATA[<!--getItemById(int) - returns the book entry with the given item id. Currently valid values are 1, 2, 3, 4, 5 and 6.
+<con:soapui-project id="ac374045-901f-426a-90b4-d704219bcc7b" activeEnvironment="Default" name="StoreSecured" resourceRoot="" soapui-version="5.2.1" xmlns:con="http://eviware.com/soapui/config"><con:settings/><con:interface xsi:type="con:WsdlInterface" id="55fc7d31-44e4-4f90-a045-11d419803908" wsaVersion="NONE" name="ICart" type="wsdl" bindingName="{http://www.parasoft.com/wsdl/store-02/}ICart" soapVersion="1_1" anonymous="optional" definition="http://soaptest.parasoft.com/store-02.wsdl" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"><con:settings/><con:definitionCache type="TEXT" rootPart="http://soaptest.parasoft.com/store-02.wsdl"><con:part><con:url>http://soaptest.parasoft.com/store-02.wsdl</con:url><con:content><![CDATA[<!--getItemById(int) - returns the book entry with the given item id. Currently valid values are 1, 2, 3, 4, 5 and 6.
 
 getItemByTitle(String) - returns a list of Book objects that matched your title search query. The item price value which is returned by this operation increases by $1.00 every 5 invocations.
 Example keywords: linux, java, C++, program. Leave it blank to get ALL the books in the database.
@@ -13,7 +13,7 @@ removeOrder(int) - takes an order number and removes it from the pending orders 
 confirm() - confirms the currently pending orders. subsequent calls to getPendingOrders(int, int) or removeOrder(int) will result in nothing.
 
 addNewItem(Book) - enables you to add new book entries into the database (virtually). Feel free add anything you want; it will not really add them to the permanent database. New entries will only live through out your session.-->
-<wsdl:definitions name="Cart" targetNamespace="http://www.parasoft.com/wsdl/store-01/" xmlns:http="http://schemas.xmlsoap.org/wsdl/http/" xmlns:mime="http://schemas.xmlsoap.org/wsdl/mime/" xmlns:n11="http://www.themindelectric.com/package/webtool.soap.examples.store/" xmlns:n12="http://www.themindelectric.com/package/java.sql/" xmlns:n13="http://www.themindelectric.com/exceptions/" xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" xmlns:soap12="http://schemas.xmlsoap.org/wsdl/soap12/" xmlns:soapenc="http://schemas.xmlsoap.org/soap/encoding/" xmlns:tme="http://www.themindelectric.com/" xmlns:tns="http://www.parasoft.com/wsdl/store-01/" xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+<wsdl:definitions name="Cart" targetNamespace="http://www.parasoft.com/wsdl/store-02/" xmlns:http="http://schemas.xmlsoap.org/wsdl/http/" xmlns:mime="http://schemas.xmlsoap.org/wsdl/mime/" xmlns:n11="http://www.themindelectric.com/package/webtool.soap.examples.store/" xmlns:n12="http://www.themindelectric.com/package/java.sql/" xmlns:n13="http://www.themindelectric.com/exceptions/" xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" xmlns:soap12="http://schemas.xmlsoap.org/wsdl/soap12/" xmlns:soapenc="http://schemas.xmlsoap.org/soap/encoding/" xmlns:tme="http://www.themindelectric.com/" xmlns:tns="http://www.parasoft.com/wsdl/store-02/" xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
   <wsdl:types>
     <xsd:schema targetNamespace="http://www.themindelectric.com/package/webtool.soap.examples.store/">
       <xsd:import namespace="http://www.themindelectric.com/package/java.sql/"/>
@@ -72,9 +72,11 @@ addNewItem(Book) - enables you to add new book entries into the database (virtua
       </xsd:complexType>
     </xsd:schema>
     <xsd:schema targetNamespace="http://www.themindelectric.com/exceptions/">
-      <xsd:element name="exception" type="xsd:string"/>
+      <xsd:element name="exception">
+        <xsd:complexType/>
+      </xsd:element>
     </xsd:schema>
-    <xsd:schema elementFormDefault="qualified" targetNamespace="http://www.parasoft.com/wsdl/store-01/">
+    <xsd:schema elementFormDefault="qualified" targetNamespace="http://www.parasoft.com/wsdl/store-02/">
       <xsd:import namespace="http://www.themindelectric.com/package/webtool.soap.examples.store/"/>
       <xsd:element name="placeOrder">
         <xsd:complexType>
@@ -328,12 +330,12 @@ addNewItem(Book) - enables you to add new book entries into the database (virtua
     </wsdl:operation>
   </wsdl:binding>
   <wsdl:service name="Cart">
-    <wsdl:documentation>The Parasoft Book Store service</wsdl:documentation>
+    <wsdl:documentation>The Parasoft Book Store service with Basic HTTP authentication</wsdl:documentation>
     <wsdl:port binding="tns:ICart" name="ICart">
-      <soap:address location="http://ws1.parasoft.com/glue/store-01"/>
+      <soap:address location="http://ws1.parasoft.com/glue/store-02"/>
     </wsdl:port>
   </wsdl:service>
-</wsdl:definitions>]]></con:content><con:type>http://schemas.xmlsoap.org/wsdl/</con:type></con:part></con:definitionCache><con:endpoints><con:endpoint>http://ws1.parasoft.com/glue/store-01</con:endpoint></con:endpoints><con:operation id="ce2b824e-bb5c-45ad-94ac-38166b65bada" isOneWay="false" action="addNewItem" name="addNewItem" bindingOperationName="addNewItem" type="Request-Response" outputName="addNewItem5Out" inputName="addNewItem5In" receivesAttachments="false" sendsAttachments="false" anonymous="optional"><con:settings/><con:call id="d686c63e-507b-4d9e-bbed-8e77637f36bc" name="Request 1"><con:settings/><con:encoding>UTF-8</con:encoding><con:endpoint>http://ws1.parasoft.com/glue/store-01</con:endpoint><con:request><![CDATA[<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:stor="http://www.parasoft.com/wsdl/store-01/">\r
+</wsdl:definitions>]]></con:content><con:type>http://schemas.xmlsoap.org/wsdl/</con:type></con:part></con:definitionCache><con:endpoints><con:endpoint>http://ws1.parasoft.com/glue/store-02</con:endpoint></con:endpoints><con:operation id="f0a87f3b-d044-4937-ab0a-866e7cf31d30" isOneWay="false" action="addNewItem" name="addNewItem" bindingOperationName="addNewItem" type="Request-Response" outputName="addNewItem5Out" inputName="addNewItem5In" receivesAttachments="false" sendsAttachments="false" anonymous="optional"><con:settings/><con:call id="f6758fe2-7824-47cd-9b03-8be52be0df4e" name="Request 1"><con:settings/><con:encoding>UTF-8</con:encoding><con:endpoint>http://ws1.parasoft.com/glue/store-02</con:endpoint><con:request><![CDATA[<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:stor="http://www.parasoft.com/wsdl/store-02/">\r
    <soapenv:Header/>\r
    <soapenv:Body>\r
       <stor:addNewItem>\r
@@ -353,31 +355,31 @@ addNewItem(Book) - enables you to add new book entries into the database (virtua
          </stor:book>\r
       </stor:addNewItem>\r
    </soapenv:Body>\r
-</soapenv:Envelope>]]></con:request><con:wsaConfig mustUnderstand="NONE" version="200508" action="addNewItem"/></con:call></con:operation><con:operation id="842b5b73-da91-4354-895d-240e08127806" isOneWay="false" action="confirm" name="confirm" bindingOperationName="confirm" type="Request-Response" outputName="confirm6Out" inputName="confirm6In" receivesAttachments="false" sendsAttachments="false" anonymous="optional"><con:settings/><con:call id="44a76165-0df9-4e6a-b23f-b9c6b2a33fba" name="Request 1"><con:settings/><con:encoding>UTF-8</con:encoding><con:endpoint>http://ws1.parasoft.com/glue/store-01</con:endpoint><con:request><![CDATA[<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:stor="http://www.parasoft.com/wsdl/store-01/">\r
+</soapenv:Envelope>]]></con:request><con:wsaConfig mustUnderstand="NONE" version="200508" action="addNewItem"/></con:call></con:operation><con:operation id="e68a3e93-b1d4-449e-b676-697f6f43a6a4" isOneWay="false" action="confirm" name="confirm" bindingOperationName="confirm" type="Request-Response" outputName="confirm6Out" inputName="confirm6In" receivesAttachments="false" sendsAttachments="false" anonymous="optional"><con:settings/><con:call id="66e3cadc-1730-451d-92c9-f5ce70024be9" name="Request 1"><con:settings/><con:encoding>UTF-8</con:encoding><con:endpoint>http://ws1.parasoft.com/glue/store-02</con:endpoint><con:request><![CDATA[<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:stor="http://www.parasoft.com/wsdl/store-02/">\r
    <soapenv:Header/>\r
    <soapenv:Body>\r
       <stor:confirm/>\r
    </soapenv:Body>\r
-</soapenv:Envelope>]]></con:request><con:wsaConfig mustUnderstand="NONE" version="200508" action="confirm"/></con:call></con:operation><con:operation id="f7fdeb20-cbbe-4123-ba18-a0cb710c4619" isOneWay="false" action="getItemById" name="getItemById" bindingOperationName="getItemById" type="Request-Response" outputName="getItemById3Out" inputName="getItemById3In" receivesAttachments="false" sendsAttachments="false" anonymous="optional"><con:settings/><con:call id="cd11d476-820b-4be2-9402-ab9289fa49a0" name="Request 1"><con:settings><con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;xml-fragment/></con:setting></con:settings><con:encoding>UTF-8</con:encoding><con:endpoint>http://ws1.parasoft.com/glue/store-01</con:endpoint><con:request><![CDATA[<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:stor="http://www.parasoft.com/wsdl/store-01/">\r
+</soapenv:Envelope>]]></con:request><con:wsaConfig mustUnderstand="NONE" version="200508" action="confirm"/></con:call></con:operation><con:operation id="ecda4aca-26cc-4efe-8a3e-d68220da7147" isOneWay="false" action="getItemById" name="getItemById" bindingOperationName="getItemById" type="Request-Response" outputName="getItemById3Out" inputName="getItemById3In" receivesAttachments="false" sendsAttachments="false" anonymous="optional"><con:settings/><con:call id="417bfcad-234a-4f7d-825b-055af4426840" name="Request 1"><con:settings/><con:encoding>UTF-8</con:encoding><con:endpoint>http://ws1.parasoft.com/glue/store-02</con:endpoint><con:request><![CDATA[<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:stor="http://www.parasoft.com/wsdl/store-02/">\r
    <soapenv:Header/>\r
    <soapenv:Body>\r
       <stor:getItemById>\r
-         <stor:id>12</stor:id>\r
+         <stor:id>?</stor:id>\r
       </stor:getItemById>\r
    </soapenv:Body>\r
-</soapenv:Envelope>]]></con:request><con:credentials><con:authType>No Authorization</con:authType></con:credentials><con:jmsConfig JMSDeliveryMode="PERSISTENT"/><con:jmsPropertyConfig/><con:wsaConfig mustUnderstand="NONE" version="200508" action="getItemById"/><con:wsrmConfig version="1.2"/></con:call></con:operation><con:operation id="d3c71a89-7dc9-44b1-bb95-10593db75d5b" isOneWay="false" action="getItemByTitle" name="getItemByTitle" bindingOperationName="getItemByTitle" type="Request-Response" outputName="getItemByTitle2Out" inputName="getItemByTitle2In" receivesAttachments="false" sendsAttachments="false" anonymous="optional"><con:settings/><con:call id="4af09129-a28c-4d31-8a40-b5004ae43f8d" name="Request 1"><con:settings/><con:encoding>UTF-8</con:encoding><con:endpoint>http://ws1.parasoft.com/glue/store-01</con:endpoint><con:request><![CDATA[<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:stor="http://www.parasoft.com/wsdl/store-01/">\r
+</soapenv:Envelope>]]></con:request><con:wsaConfig mustUnderstand="NONE" version="200508" action="getItemById"/></con:call></con:operation><con:operation id="c765c216-ff0f-4e01-a254-2f0e4c8813d9" isOneWay="false" action="getItemByTitle" name="getItemByTitle" bindingOperationName="getItemByTitle" type="Request-Response" outputName="getItemByTitle2Out" inputName="getItemByTitle2In" receivesAttachments="false" sendsAttachments="false" anonymous="optional"><con:settings/><con:call id="6fef9bb9-e471-4656-877c-d667bb047391" name="Request 1"><con:settings/><con:encoding>UTF-8</con:encoding><con:endpoint>http://ws1.parasoft.com/glue/store-02</con:endpoint><con:request><![CDATA[<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:stor="http://www.parasoft.com/wsdl/store-02/">\r
    <soapenv:Header/>\r
    <soapenv:Body>\r
       <stor:getItemByTitle>\r
          <stor:titleKeyword>?</stor:titleKeyword>\r
       </stor:getItemByTitle>\r
    </soapenv:Body>\r
-</soapenv:Envelope>]]></con:request><con:wsaConfig mustUnderstand="NONE" version="200508" action="getItemByTitle"/></con:call></con:operation><con:operation id="4ae0842a-149f-4b97-a404-3abd3d0a8c0e" isOneWay="false" action="getPendingOrders" name="getPendingOrders" bindingOperationName="getPendingOrders" type="Request-Response" outputName="getPendingOrders4Out" inputName="getPendingOrders4In" receivesAttachments="false" sendsAttachments="false" anonymous="optional"><con:settings/><con:call id="6acd3f4b-1106-4cb8-8a86-da1a6ac9f945" name="Request 1"><con:settings/><con:encoding>UTF-8</con:encoding><con:endpoint>http://ws1.parasoft.com/glue/store-01</con:endpoint><con:request><![CDATA[<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:stor="http://www.parasoft.com/wsdl/store-01/">\r
+</soapenv:Envelope>]]></con:request><con:wsaConfig mustUnderstand="NONE" version="200508" action="getItemByTitle"/></con:call></con:operation><con:operation id="0fad0544-869e-43d4-956a-e36105e1f3fd" isOneWay="false" action="getPendingOrders" name="getPendingOrders" bindingOperationName="getPendingOrders" type="Request-Response" outputName="getPendingOrders4Out" inputName="getPendingOrders4In" receivesAttachments="false" sendsAttachments="false" anonymous="optional"><con:settings/><con:call id="f2526a94-1cbe-463a-92cf-1048ad6fc4d1" name="Request 1"><con:settings/><con:encoding>UTF-8</con:encoding><con:endpoint>http://ws1.parasoft.com/glue/store-02</con:endpoint><con:request><![CDATA[<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:stor="http://www.parasoft.com/wsdl/store-02/">\r
    <soapenv:Header/>\r
    <soapenv:Body>\r
       <stor:getPendingOrders/>\r
    </soapenv:Body>\r
-</soapenv:Envelope>]]></con:request><con:wsaConfig mustUnderstand="NONE" version="200508" action="getPendingOrders"/></con:call></con:operation><con:operation id="48ecc2e9-2f96-4e3a-8b49-40d41a6dfd68" isOneWay="false" action="placeOrder" name="placeOrder" bindingOperationName="placeOrder" type="Request-Response" outputName="placeOrder0Out" inputName="placeOrder0In" receivesAttachments="false" sendsAttachments="false" anonymous="optional"><con:settings/><con:call id="ee75dd14-9f69-4a94-a514-7bb314912c57" name="Request 1"><con:settings/><con:encoding>UTF-8</con:encoding><con:endpoint>http://ws1.parasoft.com/glue/store-01</con:endpoint><con:request><![CDATA[<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:stor="http://www.parasoft.com/wsdl/store-01/">\r
+</soapenv:Envelope>]]></con:request><con:wsaConfig mustUnderstand="NONE" version="200508" action="getPendingOrders"/></con:call></con:operation><con:operation id="0cc25846-1084-4571-bfad-34c9425d713c" isOneWay="false" action="placeOrder" name="placeOrder" bindingOperationName="placeOrder" type="Request-Response" outputName="placeOrder0Out" inputName="placeOrder0In" receivesAttachments="false" sendsAttachments="false" anonymous="optional"><con:settings/><con:call id="1ea4246a-c32f-46cd-98f3-194480f02156" name="Request 1"><con:settings/><con:encoding>UTF-8</con:encoding><con:endpoint>http://ws1.parasoft.com/glue/store-02</con:endpoint><con:request><![CDATA[<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:stor="http://www.parasoft.com/wsdl/store-02/">\r
    <soapenv:Header/>\r
    <soapenv:Body>\r
       <stor:placeOrder>\r
@@ -385,54 +387,18 @@ addNewItem(Book) - enables you to add new book entries into the database (virtua
          <stor:quantity>?</stor:quantity>\r
       </stor:placeOrder>\r
    </soapenv:Body>\r
-</soapenv:Envelope>]]></con:request><con:wsaConfig mustUnderstand="NONE" version="200508" action="placeOrder"/></con:call></con:operation><con:operation id="b9327b23-2da2-40ea-ad4d-88c8da079d9e" isOneWay="false" action="removeOrder" name="removeOrder" bindingOperationName="removeOrder" type="Request-Response" outputName="removeOrder1Out" inputName="removeOrder1In" receivesAttachments="false" sendsAttachments="false" anonymous="optional"><con:settings/><con:call id="baa36bcc-97e7-4898-9628-1b229c849597" name="Request 1"><con:settings/><con:encoding>UTF-8</con:encoding><con:endpoint>http://ws1.parasoft.com/glue/store-01</con:endpoint><con:request><![CDATA[<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:stor="http://www.parasoft.com/wsdl/store-01/">\r
+</soapenv:Envelope>]]></con:request><con:wsaConfig mustUnderstand="NONE" version="200508" action="placeOrder"/></con:call></con:operation><con:operation id="0e3cd659-a265-4e85-bbc1-21b09198c476" isOneWay="false" action="removeOrder" name="removeOrder" bindingOperationName="removeOrder" type="Request-Response" outputName="removeOrder1Out" inputName="removeOrder1In" receivesAttachments="false" sendsAttachments="false" anonymous="optional"><con:settings/><con:call id="c6c40c07-db48-4312-8c07-36e07d4dc31a" name="Request 1"><con:settings/><con:encoding>UTF-8</con:encoding><con:endpoint>http://ws1.parasoft.com/glue/store-02</con:endpoint><con:request><![CDATA[<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:stor="http://www.parasoft.com/wsdl/store-02/">\r
    <soapenv:Header/>\r
    <soapenv:Body>\r
       <stor:removeOrder>\r
          <stor:orderNumber>?</stor:orderNumber>\r
       </stor:removeOrder>\r
    </soapenv:Body>\r
-</soapenv:Envelope>]]></con:request><con:wsaConfig mustUnderstand="NONE" version="200508" action="removeOrder"/></con:call></con:operation></con:interface><con:testSuite id="bb788523-ba70-40f5-8fa5-7c96a8584b43" name="TestSuite 1"><con:settings/><con:runType>SEQUENTIAL</con:runType><con:testCase id="fad55a45-05a3-4fd3-9fc5-88c58bed8dd3" failOnError="true" failTestCaseOnErrors="true" keepSession="false" maxResults="0" name="TestCase 1" searchProperties="true"><con:settings/><con:testStep type="request" id="1c2336c7-53f2-4fe4-932d-935be4f4248f" name="addNewItem - Request 1"><con:settings/><con:config xsi:type="con:RequestStep" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"><con:interface>ICart</con:interface><con:operation>addNewItem</con:operation><con:request name="addNewItem - Request 1" outgoingWss="" incomingWss="" timeout="" sslKeystore="" useWsAddressing="false" useWsReliableMessaging="false" wssPasswordType="" id="24ca6813-9ff4-4f57-84fa-8a5eb5f5ce78"><con:settings><con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;xml-fragment/></con:setting></con:settings><con:encoding>UTF-8</con:encoding><con:endpoint>http://ws1.parasoft.com/glue/store-01</con:endpoint><con:request><![CDATA[<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:stor="http://www.parasoft.com/wsdl/store-01/">\r
-   <soapenv:Header/>\r
-   <soapenv:Body>\r
-      <stor:addNewItem>\r
-         <stor:book>\r
-            <id>${#TestCase#id}</id>\r
-            <title>${#TestCase#title}</title>\r
-            <quantity_in_stock>2</quantity_in_stock>\r
-            <price>12</price>\r
-            <isbn>0120341517</isbn>\r
-            <publication_date>2001-08-08T07:00:00.000Z</publication_date>\r
-            <description>gsdfg</description>\r
-            <authors>\r
-               <!--Zero or more repetitions:-->\r
-               <i>sfdsdfg</i>\r
-            </authors>\r
-            <publisher>adfasdf</publisher>\r
-         </stor:book>\r
-      </stor:addNewItem>\r
-   </soapenv:Body>\r
-</soapenv:Envelope>]]></con:request><con:assertion type="SOAP Response" id="b4c10ee3-23b7-4aeb-92f9-a813cd37eb5a" name="SOAP Response"/><con:credentials><con:authType>No Authorization</con:authType></con:credentials><con:jmsConfig JMSDeliveryMode="PERSISTENT"/><con:jmsPropertyConfig/><con:wsaConfig mustUnderstand="NONE" version="200508" action="addNewItem"/><con:wsrmConfig version="1.2"/></con:request></con:config></con:testStep><con:testStep type="transfer" name="Property Transfer" id="fd7d1f39-83d1-4f72-9782-625dbf9bf9d2"><con:settings/><con:config xsi:type="con:PropertyTransfersStep" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"><con:transfers setNullOnMissingSource="true" transferTextContent="true" failOnError="true" ignoreEmpty="false" transferToAll="false" entitize="false" transferChildNodes="false"><con:name>idtransfer</con:name><con:sourceType>Response</con:sourceType><con:sourceStep>addNewItem - Request 1</con:sourceStep><con:sourcePath>declare namespace soap='http://schemas.xmlsoap.org/soap/envelope/';
-declare namespace ns1='http://www.themindelectric.com/package/webtool.soap.examples.store/';
-declare namespace ns2='http://www.themindelectric.com/package/java.sql/';
-declare namespace ns3='http://www.parasoft.com/wsdl/store-01/';
-//ns3:Result/id
-</con:sourcePath><con:targetType>id</con:targetType><con:targetStep>#TestCase#</con:targetStep><con:targetPath>
-</con:targetPath><con:upgraded>true</con:upgraded></con:transfers><con:transfers setNullOnMissingSource="true" transferTextContent="true" failOnError="true" ignoreEmpty="false" transferToAll="false" entitize="false" transferChildNodes="false"><con:name>titletransfer</con:name><con:sourceType>Response</con:sourceType><con:sourceStep>addNewItem - Request 1</con:sourceStep><con:sourcePath>declare namespace soap='http://schemas.xmlsoap.org/soap/envelope/';
-declare namespace ns1='http://www.themindelectric.com/package/webtool.soap.examples.store/';
-declare namespace ns2='http://www.themindelectric.com/package/java.sql/';
-declare namespace ns3='http://www.parasoft.com/wsdl/store-01/';
-//ns3:Result/title
-</con:sourcePath><con:targetType>title</con:targetType><con:targetStep>#TestCase#</con:targetStep><con:targetPath>
-</con:targetPath><con:upgraded>true</con:upgraded></con:transfers></con:config></con:testStep><con:testStep type="request" id="55916a1a-a62d-4cc4-9aa0-227a9de4f516" name="getItemByTitle - Request 1"><con:settings/><con:config xsi:type="con:RequestStep" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"><con:interface>ICart</con:interface><con:operation>getItemByTitle</con:operation><con:request name="getItemByTitle - Request 1" outgoingWss="" incomingWss="" timeout="" sslKeystore="" useWsAddressing="false" useWsReliableMessaging="false" wssPasswordType="" id="fa628f1e-9be4-4473-a4bb-7b90fd8a330a"><con:settings><con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;xml-fragment/></con:setting></con:settings><con:encoding>UTF-8</con:encoding><con:endpoint>http://ws1.parasoft.com/glue/store-01</con:endpoint><con:request><![CDATA[<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:stor="http://www.parasoft.com/wsdl/store-01/">\r
+</soapenv:Envelope>]]></con:request><con:wsaConfig mustUnderstand="NONE" version="200508" action="removeOrder"/></con:call></con:operation></con:interface><con:testSuite id="2cbdd6c6-fc1f-4310-b0b3-928c5347a8b4" name="TestSuite 1"><con:settings/><con:runType>SEQUENTIAL</con:runType><con:testCase id="c87add49-3230-48bd-b519-75b1704e16cc" failOnError="true" failTestCaseOnErrors="true" keepSession="false" maxResults="0" name="TestCase 1" searchProperties="true"><con:settings/><con:testStep type="request" id="1a8fa212-f527-4fe7-a97a-6fcc92688251" name="getItemByTitle - Request 1"><con:settings/><con:config xsi:type="con:RequestStep" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"><con:interface>ICart</con:interface><con:operation>getItemByTitle</con:operation><con:request name="getItemByTitle - Request 1" outgoingWss="" incomingWss="" timeout="" sslKeystore="" useWsAddressing="false" useWsReliableMessaging="false" wssPasswordType="" id="93eae8a3-a2b8-4c0a-9a30-ff2eb6a6f349"><con:settings><con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;xml-fragment/></con:setting></con:settings><con:encoding>UTF-8</con:encoding><con:endpoint>http://ws1.parasoft.com/glue/store-02</con:endpoint><con:request><![CDATA[<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:stor="http://www.parasoft.com/wsdl/store-02/">\r
    <soapenv:Header/>\r
    <soapenv:Body>\r
       <stor:getItemByTitle>\r
-         <stor:titleKeyword>${#TestCase#title}</stor:titleKeyword>\r
+         <stor:titleKeyword></stor:titleKeyword>\r
       </stor:getItemByTitle>\r
    </soapenv:Body>\r
-</soapenv:Envelope>]]></con:request><con:assertion type="SOAP Response" id="c74c8c2d-f752-4394-92bb-6c75a5307fc5" name="SOAP Response"/><con:assertion type="XPath Match" id="86dcdd99-b4eb-4e85-a836-2b83a2bbf8c1" name="XPath Match"><con:configuration><path>declare namespace soap='http://schemas.xmlsoap.org/soap/envelope/';
-declare namespace n='http://www.parasoft.com/wsdl/store-01/';
-declare namespace n3='http://www.themindelectric.com/package/webtool.soap.examples.store/';
-declare namespace soapenc='http://schemas.xmlsoap.org/soap/encoding/';
-//n:Result/i[id=12]/title</path><content>&lt;title xsi:type="xsd:string" xmlns:n="http://www.parasoft.com/wsdl/store-01/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:soap="http://schemas.xmlsoap.org/soap/envelope/" xmlns:n3="http://www.themindelectric.com/package/webtool.soap.examples.store/" xmlns:soapenc="http://schemas.xmlsoap.org/soap/encoding/">propertyTransfer&lt;/title></content><allowWildcards>false</allowWildcards><ignoreNamspaceDifferences>false</ignoreNamspaceDifferences><ignoreComments>false</ignoreComments></con:configuration></con:assertion><con:credentials><con:authType>No Authorization</con:authType></con:credentials><con:jmsConfig JMSDeliveryMode="PERSISTENT"/><con:jmsPropertyConfig/><con:wsaConfig mustUnderstand="NONE" version="200508" action="getItemByTitle"/><con:wsrmConfig version="1.2"/></con:request></con:config></con:testStep><con:properties><con:property><con:name>id</con:name><con:value>13</con:value></con:property><con:property><con:name>title</con:name><con:value>propertyTransfer</con:value></con:property></con:properties><con:reportParameters/></con:testCase><con:properties/><con:reportParameters/></con:testSuite><con:properties/><con:wssContainer/><con:databaseConnectionContainer/><con:oAuth2ProfileContainer/><con:reporting><con:xmlTemplates/><con:parameters/></con:reporting></con:soapui-project>
+</soapenv:Envelope>]]></con:request><con:assertion type="SOAP Response" id="0681da84-8116-4fa0-985b-d2ec2c8ae312" name="SOAP Response"/><con:credentials><con:username>soaptest</con:username><con:password>soaptest</con:password><con:selectedAuthProfile>Basic</con:selectedAuthProfile><con:addedBasicAuthenticationTypes>Basic</con:addedBasicAuthenticationTypes><con:preemptive>true</con:preemptive><con:authType>Preemptive</con:authType></con:credentials><con:jmsConfig JMSDeliveryMode="PERSISTENT"/><con:jmsPropertyConfig/><con:wsaConfig mustUnderstand="NONE" version="200508" action="getItemByTitle"/><con:wsrmConfig version="1.2"/></con:request></con:config></con:testStep><con:properties/></con:testCase><con:properties/></con:testSuite><con:properties/><con:wssContainer/><con:oAuth2ProfileContainer/></con:soapui-project>

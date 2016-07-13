@@ -14,4 +14,6 @@
   <con:project name="Facebook">C:/Users/sys/Desktop/Facebook-soapui-project[1].xml</con:project>
   <con:project name="Google Maps">C:/Users/sys/Desktop/Google-Maps-soapui-project[1].xml</con:project>
   <con:project name="SoapuiSpecificGroovy">D:/ServicesForWebServiceTesting/ServicesForWebServicesTesting/SoapUIProjects/Batch6/Workspaces/Projects/SoapuiSpecificGroovy-soapui-project.xml</con:project>
+  <con:project name="StoreSecured">D:/ServicesForWebServiceTesting/ServicesForWebServicesTesting/SoapUIProjects/Batch6/Workspaces/Projects/StoreSecured-soapui-project.xml</con:project>
+  <con:project name="Practise">D:/ServicesForWebServiceTesting/ServicesForWebServicesTesting/SoapUIProjects/Practice/Practise-soapui-project/Practise-soapui-project.xml</con:project>
 </con:soapui-workspace>
