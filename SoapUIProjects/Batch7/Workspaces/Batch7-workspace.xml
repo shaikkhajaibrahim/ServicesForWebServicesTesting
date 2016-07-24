@@ -13,4 +13,5 @@
   <con:project status="CLOSED" name="Batch7-workspace.xml">D:/ServicesForWebServiceTesting/ServicesForWebServicesTesting/SoapUIProjects/Batch7/Workspaces/Batch7-workspace.xml</con:project>
   <con:project name="GroovyExtended">D:/ServicesForWebServiceTesting/ServicesForWebServicesTesting/SoapUIProjects/OtherImportant/WorkSpace/Projects/GroovyExtended-soapui-project.xml</con:project>
   <con:project name="WS-Security (requires username token)">D:/ServicesForWebServiceTesting/ServicesForWebServicesTesting/SoapUIProjects/OtherImportant/WorkSpace/Projects/WS-Security--requires-username-token--soapui-project.xml</con:project>
+  <con:project name="MockServiceDemo">D:/ServicesForWebServiceTesting/ServicesForWebServicesTesting/SoapUIProjects/Batch7/Workspaces/Projects/MockServiceDemo-soapui-project.xml</con:project>
 </con:soapui-workspace>

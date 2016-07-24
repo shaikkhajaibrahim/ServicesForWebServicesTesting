@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<con:soapui-project id="8aaf3b1a-ca87-4185-830b-0ad99c2c9dbd" activeEnvironment="Default" name="Groovy Samples" soapui-version="5.2.1" abortOnError="false" runType="SEQUENTIAL" xmlns:con="http://eviware.com/soapui/config"><con:settings/><con:testSuite id="d03d9f1c-cc32-4be5-89c2-a0cb9e2acefd" name="First"><con:settings/><con:runType>SEQUENTIAL</con:runType><con:testCase id="96403100-6db3-486f-8f59-4cf2228ad7b2" failOnError="true" failTestCaseOnErrors="true" keepSession="false" maxResults="0" name="Samples" searchProperties="true"><con:settings/><con:testStep type="groovy" name="PrimeNumber" id="69fef496-b66b-4d53-91ef-c2a85b5d5f61"><con:settings/><con:config><script>def number=170
+<con:soapui-project id="8aaf3b1a-ca87-4185-830b-0ad99c2c9dbd" activeEnvironment="Default" name="Groovy Samples" soapui-version="5.0.0" abortOnError="false" runType="SEQUENTIAL" resourceRoot="" xmlns:con="http://eviware.com/soapui/config"><con:settings/><con:testSuite id="d03d9f1c-cc32-4be5-89c2-a0cb9e2acefd" name="First"><con:settings/><con:runType>SEQUENTIAL</con:runType><con:testCase id="96403100-6db3-486f-8f59-4cf2228ad7b2" failOnError="true" failTestCaseOnErrors="true" keepSession="false" maxResults="0" name="Samples" searchProperties="true"><con:settings/><con:testStep type="groovy" name="PrimeNumber" id="69fef496-b66b-4d53-91ef-c2a85b5d5f61"><con:settings/><con:config><script>def number=170
 def isPrime=true
 for(index=2;index&lt;number;index++)
 {
@@ -17,4 +17,17 @@ if(isPrime)
 else{
 	log.info "Not Prime Number"
 }
-</script></con:config></con:testStep><con:properties/><con:reportParameters/></con:testCase><con:properties/><con:reportParameters/></con:testSuite><con:properties/><con:wssContainer/><con:databaseConnectionContainer/><con:oAuth2ProfileContainer/><con:reporting><con:xmlTemplates/><con:parameters/></con:reporting><con:sensitiveInformation/></con:soapui-project>
+</script></con:config></con:testStep><con:properties/><con:reportParameters/></con:testCase><con:testCase id="cf0eea6f-6682-4778-9c62-095d4a49adfb" failOnError="true" failTestCaseOnErrors="true" keepSession="false" maxResults="0" name="CompoundINterest" searchProperties="true"><con:settings/><con:testStep type="groovy" name="CompoundINtrest" id="2dadafc8-b60e-4a56-a3b9-fca11a9c31ea"><con:settings/><con:config><script>def p=100000
+def t=25
+def r=0.08
+def n=1
+def comp=0
+for(def index=0;index&lt;10;index++)
+{
+	t1=n*(t-index)
+	comp=comp+ p * (Math.pow(1+(r/n),t1))  
+}
+log.info "principal amount is "+(p*10)
+log.info "Total amount is "+comp
+</script></con:config></con:testStep><con:testStep type="groovy" name="StockBasePrice" id="6c4326d5-352e-4800-8d8a-5e975c85bc00"><con:settings/><con:config><script>def stockValues=[100.1,97.3,98.4,86.2,85.8]
+log.info stockValues.getClass()</script></con:config></con:testStep><con:properties/><con:reportParameters/></con:testCase><con:properties/><con:reportParameters/></con:testSuite><con:properties/><con:wssContainer/><con:databaseConnectionContainer/><con:oAuth2ProfileContainer/><con:reporting><con:xmlTemplates/><con:parameters/></con:reporting><con:sensitiveInformation/></con:soapui-project>
