@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<con:soapui-project id="b4db7a94-ff38-4df5-90ef-7801b2992c03" activeEnvironment="Default" name="Store" soapui-version="5.2.1" abortOnError="false" runType="SEQUENTIAL" resourceRoot="" xmlns:con="http://eviware.com/soapui/config"><con:settings/><con:interface xsi:type="con:WsdlInterface" id="537016a8-ba61-427d-b502-53c916978cc9" wsaVersion="NONE" name="ICart" type="wsdl" bindingName="{http://www.parasoft.com/wsdl/store-01/}ICart" soapVersion="1_1" anonymous="optional" definition="http://soaptest.parasoft.com/store-01.wsdl" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"><con:settings/><con:definitionCache type="TEXT" rootPart="http://soaptest.parasoft.com/store-01.wsdl"><con:part><con:url>http://soaptest.parasoft.com/store-01.wsdl</con:url><con:content><![CDATA[<!--getItemById(int) - returns the book entry with the given item id. Currently valid values are 1, 2, 3, 4, 5 and 6.
+<con:soapui-project id="b4db7a94-ff38-4df5-90ef-7801b2992c03" activeEnvironment="Default" name="Store" soapui-version="5.0.0" abortOnError="false" runType="SEQUENTIAL" resourceRoot="" xmlns:con="http://eviware.com/soapui/config"><con:settings/><con:interface xsi:type="con:WsdlInterface" id="537016a8-ba61-427d-b502-53c916978cc9" wsaVersion="NONE" name="ICart" type="wsdl" bindingName="{http://www.parasoft.com/wsdl/store-01/}ICart" soapVersion="1_1" anonymous="optional" definition="http://soaptest.parasoft.com/store-01.wsdl" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"><con:settings/><con:definitionCache type="TEXT" rootPart="http://soaptest.parasoft.com/store-01.wsdl"><con:part><con:url>http://soaptest.parasoft.com/store-01.wsdl</con:url><con:content><![CDATA[<!--getItemById(int) - returns the book entry with the given item id. Currently valid values are 1, 2, 3, 4, 5 and 6.
 
 getItemByTitle(String) - returns a list of Book objects that matched your title search query. The item price value which is returned by this operation increases by $1.00 every 5 invocations.
 Example keywords: linux, java, C++, program. Leave it blank to get ALL the books in the database.
@@ -409,14 +409,14 @@ declare namespace n='http://www.parasoft.com/wsdl/store-01/';
 declare namespace n3='http://www.themindelectric.com/package/webtool.soap.examples.store/';
 declare namespace soapenc='http://schemas.xmlsoap.org/soap/encoding/';
 declare namespace n5='http://www.themindelectric.com/package/java.sql/';
-count(//n:Result/i[1]/authors/i)</path><content>2</content><allowWildcards>false</allowWildcards><ignoreNamspaceDifferences>false</ignoreNamspaceDifferences><ignoreComments>false</ignoreComments></con:configuration></con:assertion><con:credentials><con:authType>No Authorization</con:authType></con:credentials><con:jmsConfig JMSDeliveryMode="PERSISTENT"/><con:jmsPropertyConfig/><con:wsaConfig mustUnderstand="NONE" version="200508" action="getItemByTitle"/><con:wsrmConfig version="1.2"/></con:request></con:config></con:testStep><con:properties/></con:testCase><con:properties/></con:testSuite><con:testSuite id="bc68c7a5-d03f-432f-b7b2-caa51c40bb6f" name="Properties"><con:settings/><con:runType>SEQUENTIAL</con:runType><con:testCase id="f0fc3a55-48b1-4ed4-a222-65498fcfe8d0" failOnError="true" failTestCaseOnErrors="true" keepSession="false" maxResults="0" name="PropertiesTC" searchProperties="true"><con:settings/><con:testStep type="request" name="GetAllItems" id="0f24f673-9311-4bd0-a81f-cac3fd1c7a36"><con:settings/><con:config xsi:type="con:RequestStep" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"><con:interface>ICart</con:interface><con:operation>getItemByTitle</con:operation><con:request name="GetAllItems" id="a38c65e5-0912-44c8-acfa-f67cb4f25d3b"><con:settings><con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;xml-fragment/></con:setting></con:settings><con:encoding>UTF-8</con:encoding><con:endpoint>http://ws1.parasoft.com/glue/store-01</con:endpoint><con:request><![CDATA[<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:stor="http://www.parasoft.com/wsdl/store-01/">\r
+count(//n:Result/i[1]/authors/i)</path><content>2</content><allowWildcards>false</allowWildcards><ignoreNamspaceDifferences>false</ignoreNamspaceDifferences><ignoreComments>false</ignoreComments></con:configuration></con:assertion><con:credentials><con:authType>No Authorization</con:authType></con:credentials><con:jmsConfig JMSDeliveryMode="PERSISTENT"/><con:jmsPropertyConfig/><con:wsaConfig mustUnderstand="NONE" version="200508" action="getItemByTitle"/><con:wsrmConfig version="1.2"/></con:request></con:config></con:testStep><con:properties/><con:reportParameters/></con:testCase><con:properties/><con:reportParameters/></con:testSuite><con:testSuite id="bc68c7a5-d03f-432f-b7b2-caa51c40bb6f" name="Properties"><con:settings/><con:runType>SEQUENTIAL</con:runType><con:testCase id="f0fc3a55-48b1-4ed4-a222-65498fcfe8d0" failOnError="true" failTestCaseOnErrors="true" keepSession="false" maxResults="0" name="PropertiesTC" searchProperties="true"><con:settings/><con:testStep type="request" name="GetAllItems" id="0f24f673-9311-4bd0-a81f-cac3fd1c7a36"><con:settings/><con:config xsi:type="con:RequestStep" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"><con:interface>ICart</con:interface><con:operation>getItemByTitle</con:operation><con:request name="GetAllItems" id="a38c65e5-0912-44c8-acfa-f67cb4f25d3b"><con:settings><con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;xml-fragment/></con:setting></con:settings><con:encoding>UTF-8</con:encoding><con:endpoint>http://ws1.parasoft.com/glue/store-01</con:endpoint><con:request><![CDATA[<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:stor="http://www.parasoft.com/wsdl/store-01/">\r
    <soapenv:Header/>\r
    <soapenv:Body>\r
       <stor:getItemByTitle>\r
          <stor:titleKeyword>${#TestSuite#Title}</stor:titleKeyword>\r
       </stor:getItemByTitle>\r
    </soapenv:Body>\r
-</soapenv:Envelope>]]></con:request><con:assertion type="SOAP Response" id="e1be22aa-f981-46b5-9ae6-f03aa5dcd8e8"/><con:credentials><con:authType>No Authorization</con:authType></con:credentials><con:jmsConfig JMSDeliveryMode="PERSISTENT"/><con:jmsPropertyConfig/><con:wsaConfig mustUnderstand="NONE" version="200508"/><con:wsrmConfig version="1.2"/></con:request></con:config></con:testStep><con:properties><con:property><con:name>Title</con:name><con:value/></con:property></con:properties></con:testCase><con:properties><con:property><con:name>Title</con:name><con:value/></con:property></con:properties></con:testSuite><con:testSuite id="a15905d1-8a4f-49b7-b16b-2b3feb053848" name="Properties Transfer"><con:settings/><con:runType>SEQUENTIAL</con:runType><con:testCase id="a227c22a-85d1-44d1-bf22-b999d2622bf0" failOnError="true" failTestCaseOnErrors="true" keepSession="false" maxResults="0" name="Transfer1id" searchProperties="true"><con:settings/><con:testStep type="request" id="a43b2d8e-503e-4241-b1d3-d2b7582a117d" name="getItemByTitle - Request 1"><con:settings/><con:config xsi:type="con:RequestStep" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"><con:interface>ICart</con:interface><con:operation>getItemByTitle</con:operation><con:request name="getItemByTitle - Request 1" outgoingWss="" incomingWss="" timeout="" sslKeystore="" useWsAddressing="false" useWsReliableMessaging="false" wssPasswordType="" id="8c255ba3-d049-4629-9f0a-043899e7db35"><con:settings><con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;xml-fragment/></con:setting></con:settings><con:encoding>UTF-8</con:encoding><con:endpoint>http://ws1.parasoft.com/glue/store-01</con:endpoint><con:request><![CDATA[<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:stor="http://www.parasoft.com/wsdl/store-01/">\r
+</soapenv:Envelope>]]></con:request><con:assertion type="SOAP Response" id="e1be22aa-f981-46b5-9ae6-f03aa5dcd8e8"/><con:credentials><con:authType>No Authorization</con:authType></con:credentials><con:jmsConfig JMSDeliveryMode="PERSISTENT"/><con:jmsPropertyConfig/><con:wsaConfig mustUnderstand="NONE" version="200508"/><con:wsrmConfig version="1.2"/></con:request></con:config></con:testStep><con:properties><con:property><con:name>Title</con:name><con:value/></con:property></con:properties><con:reportParameters/></con:testCase><con:properties><con:property><con:name>Title</con:name><con:value/></con:property></con:properties><con:reportParameters/></con:testSuite><con:testSuite id="a15905d1-8a4f-49b7-b16b-2b3feb053848" name="Properties Transfer"><con:settings/><con:runType>SEQUENTIAL</con:runType><con:testCase id="a227c22a-85d1-44d1-bf22-b999d2622bf0" failOnError="true" failTestCaseOnErrors="true" keepSession="false" maxResults="0" name="Transfer1id" searchProperties="true"><con:settings/><con:testStep type="request" id="a43b2d8e-503e-4241-b1d3-d2b7582a117d" name="getItemByTitle - Request 1"><con:settings/><con:config xsi:type="con:RequestStep" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"><con:interface>ICart</con:interface><con:operation>getItemByTitle</con:operation><con:request name="getItemByTitle - Request 1" outgoingWss="" incomingWss="" timeout="" sslKeystore="" useWsAddressing="false" useWsReliableMessaging="false" wssPasswordType="" id="8c255ba3-d049-4629-9f0a-043899e7db35"><con:settings><con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;xml-fragment/></con:setting></con:settings><con:encoding>UTF-8</con:encoding><con:endpoint>http://ws1.parasoft.com/glue/store-01</con:endpoint><con:request><![CDATA[<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:stor="http://www.parasoft.com/wsdl/store-01/">\r
    <soapenv:Header/>\r
    <soapenv:Body>\r
       <stor:getItemByTitle>\r
@@ -431,11 +431,148 @@ declare namespace ns3='http://www.parasoft.com/wsdl/store-01/';
 declare namespace ns1='http://www.themindelectric.com/package/webtool.soap.examples.store/';
 declare namespace ns2='http://www.themindelectric.com/package/java.sql/';
 declare namespace ns3='http://www.parasoft.com/wsdl/store-01/';
-//ns3:id</con:targetPath><con:upgraded>true</con:upgraded></con:transfers></con:config></con:testStep><con:testStep type="request" name="getItemById" id="9736eee6-1154-459c-aef8-d4d73fbb844c"><con:settings/><con:config xsi:type="con:RequestStep" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"><con:interface>ICart</con:interface><con:operation>getItemById</con:operation><con:request name="getItemById" id="c7020bb1-575c-4c0d-a20b-de717e282040"><con:settings><con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;xml-fragment/></con:setting></con:settings><con:encoding>UTF-8</con:encoding><con:endpoint>http://ws1.parasoft.com/glue/store-01</con:endpoint><con:request><![CDATA[<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:stor="http://www.parasoft.com/wsdl/store-01/">
+//ns3:id</con:targetPath><con:upgraded>true</con:upgraded></con:transfers><con:transfers setNullOnMissingSource="true" transferTextContent="true" failOnError="true" ignoreEmpty="false" transferToAll="false" entitize="false" transferChildNodes="false"><con:name>resp</con:name><con:sourceType>Response</con:sourceType><con:sourceStep>getItemByTitle - Request 1</con:sourceStep><con:targetType>response</con:targetType><con:targetStep>#TestSuite#</con:targetStep><con:upgraded>true</con:upgraded></con:transfers><con:transfers setNullOnMissingSource="true" transferTextContent="true" failOnError="true" ignoreEmpty="false" transferToAll="false" entitize="false" transferChildNodes="false"><con:name>title</con:name><con:sourceType>Response</con:sourceType><con:sourceStep>getItemByTitle - Request 1</con:sourceStep><con:sourcePath>declare namespace soap='http://schemas.xmlsoap.org/soap/envelope/';
+declare namespace ns1='http://www.themindelectric.com/package/webtool.soap.examples.store/';
+declare namespace ns2='http://www.themindelectric.com/package/java.sql/';
+declare namespace ns3='http://www.parasoft.com/wsdl/store-01/';
+//ns3:Result/i[1]/title</con:sourcePath><con:targetType>title</con:targetType><con:targetStep>#TestSuite#</con:targetStep><con:upgraded>true</con:upgraded></con:transfers></con:config></con:testStep><con:testStep type="request" name="getItemById" id="9736eee6-1154-459c-aef8-d4d73fbb844c"><con:settings/><con:config xsi:type="con:RequestStep" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"><con:interface>ICart</con:interface><con:operation>getItemById</con:operation><con:request name="getItemById" id="c7020bb1-575c-4c0d-a20b-de717e282040"><con:settings><con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;xml-fragment/></con:setting></con:settings><con:encoding>UTF-8</con:encoding><con:endpoint>http://ws1.parasoft.com/glue/store-01</con:endpoint><con:request><![CDATA[<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:stor="http://www.parasoft.com/wsdl/store-01/">
    <soapenv:Header/>
    <soapenv:Body>
       <stor:getItemById>
          <stor:id>9</stor:id>
       </stor:getItemById>
    </soapenv:Body>
-</soapenv:Envelope>]]></con:request><con:assertion type="SOAP Response" id="c80e6be9-e64e-4af5-9f39-2579a697eae3"/><con:credentials><con:authType>No Authorization</con:authType></con:credentials><con:jmsConfig JMSDeliveryMode="PERSISTENT"/><con:jmsPropertyConfig/><con:wsaConfig mustUnderstand="NONE" version="200508"/><con:wsrmConfig version="1.2"/></con:request></con:config></con:testStep><con:testStep type="properties" name="Properties" id="18b39263-797b-439a-bedb-dfb8ce72b8bc"><con:settings/><con:config xsi:type="con:PropertiesStep" saveFirst="true" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"><con:properties><con:property><con:name>x</con:name><con:value>10</con:value></con:property><con:property><con:name>y</con:name><con:value>20</con:value></con:property><con:property><con:name>addresult</con:name><con:value>30.0</con:value></con:property><con:property><con:name>mulresult</con:name><con:value>200.0</con:value></con:property><con:property><con:name>subresult</con:name><con:value>-10.0</con:value></con:property></con:properties></con:config></con:testStep><con:properties/></con:testCase><con:properties/></con:testSuite><con:properties/><con:wssContainer/><con:oAuth2ProfileContainer/></con:soapui-project>
+</soapenv:Envelope>]]></con:request><con:assertion type="SOAP Response" id="c80e6be9-e64e-4af5-9f39-2579a697eae3"/><con:credentials><con:authType>No Authorization</con:authType></con:credentials><con:jmsConfig JMSDeliveryMode="PERSISTENT"/><con:jmsPropertyConfig/><con:wsaConfig mustUnderstand="NONE" version="200508"/><con:wsrmConfig version="1.2"/></con:request></con:config></con:testStep><con:testStep type="properties" name="Properties" id="18b39263-797b-439a-bedb-dfb8ce72b8bc"><con:settings/><con:config xsi:type="con:PropertiesStep" saveFirst="true" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"><con:properties><con:property><con:name>x</con:name><con:value>10</con:value></con:property><con:property><con:name>y</con:name><con:value>20</con:value></con:property><con:property><con:name>addresult</con:name><con:value>30.0</con:value></con:property><con:property><con:name>mulresult</con:name><con:value>200.0</con:value></con:property><con:property><con:name>subresult</con:name><con:value>-10.0</con:value></con:property></con:properties></con:config></con:testStep><con:properties/><con:reportParameters/></con:testCase><con:properties><con:property><con:name>response</con:name><con:value><![CDATA[<soap:Envelope xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:soap="http://schemas.xmlsoap.org/soap/envelope/" xmlns:n3="http://www.themindelectric.com/package/webtool.soap.examples.store/" xmlns:soapenc="http://schemas.xmlsoap.org/soap/encoding/" xmlns:n5="http://www.themindelectric.com/package/java.sql/">
+   <soap:Body>
+      <n:getItemByTitleResponse xmlns:n="http://www.parasoft.com/wsdl/store-01/">
+         <n:Result xsi:type="n3:ArrayOfBook" soapenc:arrayType="n3:Book[]">
+            <i xsi:type="n3:Book">
+               <id xsi:type="xsd:int">1</id>
+               <title xsi:type="xsd:string">C++ How to Program (4th Edition)</title>
+               <quantity_in_stock xsi:type="xsd:int">20</quantity_in_stock>
+               <price xsi:type="xsd:float">99.99</price>
+               <isbn xsi:type="xsd:string">0130384747</isbn>
+               <publication_date xsi:type="n5:Date">2002-08-12T07:00:00.000Z</publication_date>
+               <description xsi:type="xsd:string">One of the best C++ books</description>
+               <authors xsi:type="xsd:ArrayOfstring" soapenc:arrayType="xsd:string[]">
+                  <i>Harvey M. Deitel</i>
+                  <i>Paul J. Deitel</i>
+               </authors>
+               <publisher xsi:type="xsd:string">Prentice Hall</publisher>
+            </i>
+            <i xsi:type="n3:Book">
+               <id xsi:type="xsd:int">2</id>
+               <title xsi:type="xsd:string">Java How to Program (4th Edition)</title>
+               <quantity_in_stock xsi:type="xsd:int">10</quantity_in_stock>
+               <price xsi:type="xsd:float">76.0</price>
+               <isbn xsi:type="xsd:string">0130341517</isbn>
+               <publication_date xsi:type="n5:Date">2001-08-08T07:00:00.000Z</publication_date>
+               <description xsi:type="xsd:string">Great for Java beginners</description>
+               <authors xsi:type="xsd:ArrayOfstring" soapenc:arrayType="xsd:string[]">
+                  <i>Harvey M. Deitel</i>
+                  <i>Paul J. Deitel</i>
+               </authors>
+               <publisher xsi:type="xsd:string">Prentice Hall</publisher>
+            </i>
+            <i xsi:type="n3:Book">
+               <id xsi:type="xsd:int">4</id>
+               <title xsi:type="xsd:string">Linux Administration Handbook</title>
+               <quantity_in_stock xsi:type="xsd:int">3</quantity_in_stock>
+               <price xsi:type="xsd:float">49.99</price>
+               <isbn xsi:type="xsd:string">0130084662</isbn>
+               <publication_date xsi:type="n5:Date">2002-03-25T08:00:00.000Z</publication_date>
+               <description xsi:type="xsd:string">Provides techniques and advice for administering three representative distributions Linux: Red Hat 7.2, SuSE 7.3, and Debian 3.0</description>
+               <authors xsi:type="xsd:ArrayOfstring" soapenc:arrayType="xsd:string[]">
+                  <i>Evi Nemeth</i>
+                  <i>Garth Snyder</i>
+                  <i>Trent R. Hein</i>
+                  <i>Adam Boggs</i>
+               </authors>
+               <publisher xsi:type="xsd:string">Prentice Hall</publisher>
+            </i>
+            <i xsi:type="n3:Book">
+               <id xsi:type="xsd:int">3</id>
+               <title xsi:type="xsd:string">Java in a Nutshell, Fourth Edition</title>
+               <quantity_in_stock xsi:type="xsd:int">5</quantity_in_stock>
+               <price xsi:type="xsd:float">27.97</price>
+               <isbn xsi:type="xsd:string">0596002831</isbn>
+               <publication_date xsi:type="n5:Date">2002-03-01T08:00:00.000Z</publication_date>
+               <description xsi:type="xsd:string">contains an accelerated introduction to the Java programming language and its key APIs so you can start writing code right away. Covers Java 1.4</description>
+               <authors xsi:type="xsd:ArrayOfstring" soapenc:arrayType="xsd:string[]">
+                  <i>David Flanagan</i>
+               </authors>
+               <publisher xsi:type="xsd:string">O'Reilly &amp; Associates</publisher>
+            </i>
+            <i xsi:type="n3:Book">
+               <id xsi:type="xsd:int">5</id>
+               <title xsi:type="xsd:string">Oracle PL/SQL Programming, 3rd Edition</title>
+               <quantity_in_stock xsi:type="xsd:int">4</quantity_in_stock>
+               <price xsi:type="xsd:float">38.47</price>
+               <isbn xsi:type="xsd:string">0596003811</isbn>
+               <publication_date xsi:type="n5:Date">2002-09-01T07:00:00.000Z</publication_date>
+               <description xsi:type="xsd:string">An indispensable reference for both novice and experienced PL/SQL developers</description>
+               <authors xsi:type="xsd:ArrayOfstring" soapenc:arrayType="xsd:string[]">
+                  <i>Steven Feuerstein</i>
+                  <i>Bill Pribyl</i>
+               </authors>
+               <publisher xsi:type="xsd:string">O'Reilly &amp; Associates</publisher>
+            </i>
+            <i xsi:type="n3:Book">
+               <id xsi:type="xsd:int">6</id>
+               <title xsi:type="xsd:string">PowerBuilder 7.0 Unleashed</title>
+               <quantity_in_stock xsi:type="xsd:int">0</quantity_in_stock>
+               <price xsi:type="xsd:float">34.99</price>
+               <isbn xsi:type="xsd:string">0672317826</isbn>
+               <publication_date xsi:type="n5:Date">1999-12-09T08:00:00.000Z</publication_date>
+               <description xsi:type="xsd:string">excellent one-volume reference to new features in Sybase's well-known programming tool, with good coverage of its support for distributed and Internet-based computing</description>
+               <authors xsi:type="xsd:ArrayOfstring" soapenc:arrayType="xsd:string[]">
+                  <i>Chetney Heiber</i>
+               </authors>
+               <publisher xsi:type="xsd:string">Sams</publisher>
+            </i>
+            <i xsi:type="n3:Book">
+               <id xsi:type="xsd:int">7</id>
+               <title xsi:type="xsd:string">The Next Leap in Productivity: What Top Managers Really Need to Know about Information Technology</title>
+               <quantity_in_stock xsi:type="xsd:int">20</quantity_in_stock>
+               <price xsi:type="xsd:float">29.99</price>
+               <isbn xsi:type="xsd:string">9780470398</isbn>
+               <publication_date xsi:type="n5:Date">2009-02-01T08:00:00.000Z</publication_date>
+               <description xsi:type="xsd:string">How much should top management really care about IT? That's the question Adam Kolawa bluntly poses in this feisty and compelling book going far beyond traditional business books written for the CIO community.</description>
+               <authors xsi:type="xsd:ArrayOfstring" soapenc:arrayType="xsd:string[]">
+                  <i>Adam Kolawa</i>
+               </authors>
+               <publisher xsi:type="xsd:string">Wiley</publisher>
+            </i>
+            <i xsi:type="n3:Book">
+               <id xsi:type="xsd:int">8</id>
+               <title xsi:type="xsd:string">Automated Defect Prevention: Best Practices in Software Management</title>
+               <quantity_in_stock xsi:type="xsd:int">12</quantity_in_stock>
+               <price xsi:type="xsd:float">13.24</price>
+               <isbn xsi:type="xsd:string">0470042125</isbn>
+               <publication_date xsi:type="n5:Date">2007-09-01T07:00:00.000Z</publication_date>
+               <description xsi:type="xsd:string">This book describes an approach to software management based on establishing an infrastructure that serves as the foundation for the project.</description>
+               <authors xsi:type="xsd:ArrayOfstring" soapenc:arrayType="xsd:string[]">
+                  <i>Adam Kolawa</i>
+                  <i>Dorota Huizinga</i>
+               </authors>
+               <publisher xsi:type="xsd:string">Wiley</publisher>
+            </i>
+            <i xsi:type="n3:Book">
+               <id xsi:type="xsd:int">9</id>
+               <title xsi:type="xsd:string">Bulletproofing Web Applications</title>
+               <quantity_in_stock xsi:type="xsd:int">3</quantity_in_stock>
+               <price xsi:type="xsd:float">9.99</price>
+               <isbn xsi:type="xsd:string">0764548662</isbn>
+               <publication_date xsi:type="n5:Date">2001-06-01T07:00:00.000Z</publication_date>
+               <description xsi:type="xsd:string">A road map for how to integrate error prevention and detection into the development process to ensure that Web applications are robust, scalable, efficient and reliable.</description>
+               <authors xsi:type="xsd:ArrayOfstring" soapenc:arrayType="xsd:string[]">
+                  <i>Adam Kolawa</i>
+                  <i>Wendell Hicken</i>
+                  <i>Cynthia Dunlop</i>
+               </authors>
+               <publisher xsi:type="xsd:string">Wiley</publisher>
+            </i>
+         </n:Result>
+      </n:getItemByTitleResponse>
+   </soap:Body>
+</soap:Envelope>]]></con:value></con:property><con:property><con:name>title</con:name><con:value>C++ How to Program (4th Edition)</con:value></con:property></con:properties><con:reportParameters/></con:testSuite><con:properties/><con:wssContainer/><con:databaseConnectionContainer/><con:oAuth2ProfileContainer/><con:reporting><con:xmlTemplates/><con:parameters/></con:reporting></con:soapui-project>
