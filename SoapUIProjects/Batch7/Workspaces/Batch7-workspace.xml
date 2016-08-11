@@ -15,4 +15,6 @@
   <con:project name="WS-Security (requires username token)">D:/ServicesForWebServiceTesting/ServicesForWebServicesTesting/SoapUIProjects/OtherImportant/WorkSpace/Projects/WS-Security--requires-username-token--soapui-project.xml</con:project>
   <con:project name="MockServiceDemo">D:/ServicesForWebServiceTesting/ServicesForWebServicesTesting/SoapUIProjects/Batch7/Workspaces/Projects/MockServiceDemo-soapui-project.xml</con:project>
   <con:project name="GroovySamplesExtended">D:/ServicesForWebServiceTesting/ServicesForWebServicesTesting/SoapUIProjects/Batch7/Workspaces/Projects/GroovySamplesExtended-soapui-project.xml</con:project>
+  <con:project name="RestHelloWorld">D:/ServicesForWebServiceTesting/ServicesForWebServicesTesting/SoapUIProjects/Batch7/Workspaces/Projects/RestHelloWorld-soapui-project.xml</con:project>
+  <con:project name="Twitter">C:/Temp/Twitter-soapui-project[1].xml</con:project>
 </con:soapui-workspace>

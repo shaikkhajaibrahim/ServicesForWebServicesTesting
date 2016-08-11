@@ -6,4 +6,5 @@
   <con:project name="Calcuator">D:/ServicesForWebServiceTesting/ServicesForWebServicesTesting/SoapUIProjects/Batch8/WorkSpace/Project/Calcuator-soapui-project.xml</con:project>
   <con:project name="pro">D:/ServicesForWebServiceTesting/ServicesForWebServicesTesting/SoapUIProjects/Batch8/WorkSpace/Project/pro-soapui-project.xml</con:project>
   <con:collectInfoForSupport>false</con:collectInfoForSupport>
+  <con:project name="ContactInfoService">D:/ServicesForWebServiceTesting/ServicesForWebServicesTesting/SoapUIProjects/Batch8/WorkSpace/Project/ContactInfoService-soapui-project.xml</con:project>
 </con:soapui-workspace>
