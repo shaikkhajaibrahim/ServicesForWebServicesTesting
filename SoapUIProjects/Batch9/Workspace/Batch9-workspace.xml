@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<con:soapui-workspace name="Batch9" soapui-version="5.2.1" xmlns:con="http://eviware.com/soapui/config">
+  <con:settings/>
+  <con:project name="HelloWorld">D:/ServicesForWebServiceTesting/ServicesForWebServicesTesting/SoapUIProjects/Batch9/Workspace/Project/HelloWorld-soapui-project.xml</con:project>
+  <con:project name="Hello World Ex">D:/ServicesForWebServiceTesting/ServicesForWebServicesTesting/SoapUIProjects/Batch9/Workspace/Project/Hello-World-Ex-soapui-project.xml</con:project>
+</con:soapui-workspace>
