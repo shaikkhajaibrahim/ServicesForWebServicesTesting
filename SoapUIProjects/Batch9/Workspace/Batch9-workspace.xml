@@ -3,4 +3,8 @@
   <con:settings/>
   <con:project name="HelloWorld">D:/ServicesForWebServiceTesting/ServicesForWebServicesTesting/SoapUIProjects/Batch9/Workspace/Project/HelloWorld-soapui-project.xml</con:project>
   <con:project name="Hello World Ex">D:/ServicesForWebServiceTesting/ServicesForWebServicesTesting/SoapUIProjects/Batch9/Workspace/Project/Hello-World-Ex-soapui-project.xml</con:project>
+  <con:project name="GeoIPService">D:/ServicesForWebServiceTesting/ServicesForWebServicesTesting/SoapUIProjects/Batch9/Workspace/Project/GeoIPService-soapui-project.xml</con:project>
+  <con:project name="Calculator">D:/ServicesForWebServiceTesting/ServicesForWebServicesTesting/SoapUIProjects/Batch9/Workspace/Project/Calculator-soapui-project.xml</con:project>
+  <con:project name="store">D:/ServicesForWebServiceTesting/ServicesForWebServicesTesting/SoapUIProjects/Batch9/Workspace/Project/store-soapui-project.xml</con:project>
+  <con:project name="GroovyPractice">D:/ServicesForWebServiceTesting/ServicesForWebServicesTesting/SoapUIProjects/Batch9/Workspace/Project/GroovyPractice-soapui-project.xml</con:project>
 </con:soapui-workspace>

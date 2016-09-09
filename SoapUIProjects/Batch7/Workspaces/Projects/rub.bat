@@ -1,0 +1,1 @@
+call "C:\Program Files\SmartBear\SoapUI-5.2.1\bin\testrunner.bat" -sSecureSmoke -r -j -f"C:\Temp\New Folder" D:\ServicesForWebServiceTesting\ServicesForWebServicesTesting\SoapUIProjects\Batch8\WorkSpace\Project\SecureStore-soapui-project.xml

@@ -8,4 +8,5 @@
   <con:collectInfoForSupport>false</con:collectInfoForSupport>
   <con:project name="ContactInfoService">D:/ServicesForWebServiceTesting/ServicesForWebServicesTesting/SoapUIProjects/Batch8/WorkSpace/Project/ContactInfoService-soapui-project.xml</con:project>
   <con:project name="DbTesting">D:/ServicesForWebServiceTesting/ServicesForWebServicesTesting/SoapUIProjects/Batch8/WorkSpace/Project/DbTesting-soapui-project.xml</con:project>
+  <con:project name="SecureStore">D:/ServicesForWebServiceTesting/ServicesForWebServicesTesting/SoapUIProjects/Batch8/WorkSpace/Project/SecureStore-soapui-project.xml</con:project>
 </con:soapui-workspace>

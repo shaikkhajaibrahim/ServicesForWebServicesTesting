@@ -1,0 +1,445 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<con:soapui-project id="9a8a6c2d-4544-4c96-b1e0-c3ac7a7e5e2e" activeEnvironment="Default" name="store" soapui-version="5.2.1" abortOnError="false" runType="SEQUENTIAL" resourceRoot="" xmlns:con="http://eviware.com/soapui/config"><con:settings/><con:interface xsi:type="con:WsdlInterface" id="ecb8ab3d-75f6-4ccb-ae68-d016ce1bcf58" wsaVersion="NONE" name="ICart" type="wsdl" bindingName="{http://www.parasoft.com/wsdl/store-01/}ICart" soapVersion="1_1" anonymous="optional" definition="http://soaptest.parasoft.com/store-01.wsdl" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"><con:settings/><con:definitionCache type="TEXT" rootPart="http://soaptest.parasoft.com/store-01.wsdl"><con:part><con:url>http://soaptest.parasoft.com/store-01.wsdl</con:url><con:content><![CDATA[<!--getItemById(int) - returns the book entry with the given item id. Currently valid values are 1, 2, 3, 4, 5 and 6.
+
+getItemByTitle(String) - returns a list of Book objects that matched your title search query. The item price value which is returned by this operation increases by $1.00 every 5 invocations.
+Example keywords: linux, java, C++, program. Leave it blank to get ALL the books in the database.
+
+placeOrder(int, int) - takes an item id and a quantity, returns an "Order" object which includes a Book object, quantity and a unique order number.
+
+getPendingOrders() - returns a list of orders that have been submitted using placeOrder(int, int) so far.
+
+removeOrder(int) - takes an order number and removes it from the pending orders and returns a string with a result message (success or failure, etc.). As you might expect, the order numbers it takes successfuly are the same as the ones returned by placeOrder(int, int).
+
+confirm() - confirms the currently pending orders. subsequent calls to getPendingOrders(int, int) or removeOrder(int) will result in nothing.
+
+addNewItem(Book) - enables you to add new book entries into the database (virtually). Feel free add anything you want; it will not really add them to the permanent database. New entries will only live through out your session.-->
+<wsdl:definitions name="Cart" targetNamespace="http://www.parasoft.com/wsdl/store-01/" xmlns:http="http://schemas.xmlsoap.org/wsdl/http/" xmlns:mime="http://schemas.xmlsoap.org/wsdl/mime/" xmlns:n11="http://www.themindelectric.com/package/webtool.soap.examples.store/" xmlns:n12="http://www.themindelectric.com/package/java.sql/" xmlns:n13="http://www.themindelectric.com/exceptions/" xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" xmlns:soap12="http://schemas.xmlsoap.org/wsdl/soap12/" xmlns:soapenc="http://schemas.xmlsoap.org/soap/encoding/" xmlns:tme="http://www.themindelectric.com/" xmlns:tns="http://www.parasoft.com/wsdl/store-01/" xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <wsdl:types>
+    <xsd:schema targetNamespace="http://www.themindelectric.com/package/webtool.soap.examples.store/">
+      <xsd:import namespace="http://www.themindelectric.com/package/java.sql/"/>
+      <xsd:import namespace="http://www.w3.org/2001/XMLSchema"/>
+      <xsd:complexType name="Order">
+        <xsd:sequence>
+          <xsd:element name="item" nillable="true" type="n11:Book"/>
+          <xsd:element name="quantity" type="xsd:int"/>
+          <xsd:element name="order_number" type="xsd:int"/>
+        </xsd:sequence>
+      </xsd:complexType>
+      <xsd:complexType name="Book">
+        <xsd:complexContent>
+          <xsd:extension base="n11:Item">
+            <xsd:sequence>
+              <xsd:element name="isbn" nillable="true" type="xsd:string"/>
+              <xsd:element name="publication_date" nillable="true" type="n12:Date"/>
+              <xsd:element name="description" nillable="true" type="xsd:string"/>
+              <xsd:element name="authors" nillable="true" type="xsd:ArrayOfstring"/>
+              <xsd:element name="publisher" nillable="true" type="xsd:string"/>
+            </xsd:sequence>
+          </xsd:extension>
+        </xsd:complexContent>
+      </xsd:complexType>
+      <xsd:complexType name="Item">
+        <xsd:sequence>
+          <xsd:element name="id" type="xsd:int"/>
+          <xsd:element name="title" nillable="true" type="xsd:string"/>
+          <xsd:element name="quantity_in_stock" type="xsd:int"/>
+          <xsd:element name="price" type="xsd:float"/>
+        </xsd:sequence>
+      </xsd:complexType>
+      <xsd:complexType name="ArrayOfBook">
+        <xsd:sequence>
+          <xsd:element maxOccurs="unbounded" minOccurs="0" name="i" type="n11:Book"/>
+        </xsd:sequence>
+      </xsd:complexType>
+      <xsd:complexType name="ArrayOfOrder">
+        <xsd:sequence>
+          <xsd:element maxOccurs="unbounded" minOccurs="0" name="i" type="n11:Order"/>
+        </xsd:sequence>
+      </xsd:complexType>
+    </xsd:schema>
+    <xsd:schema targetNamespace="http://www.themindelectric.com/package/java.sql/">
+      <xsd:complexType name="Date">
+        <xsd:simpleContent>
+          <xsd:extension base="xsd:dateTime"/>
+        </xsd:simpleContent>
+      </xsd:complexType>
+    </xsd:schema>
+    <xsd:schema targetNamespace="http://www.w3.org/2001/XMLSchema">
+      <xsd:complexType name="ArrayOfstring">
+        <xsd:sequence>
+          <xsd:element maxOccurs="unbounded" minOccurs="0" name="i" type="xsd:string"/>
+        </xsd:sequence>
+      </xsd:complexType>
+    </xsd:schema>
+    <xsd:schema targetNamespace="http://www.themindelectric.com/exceptions/">
+      <xsd:element name="exception" type="xsd:string"/>
+    </xsd:schema>
+    <xsd:schema elementFormDefault="qualified" targetNamespace="http://www.parasoft.com/wsdl/store-01/">
+      <xsd:import namespace="http://www.themindelectric.com/package/webtool.soap.examples.store/"/>
+      <xsd:element name="placeOrder">
+        <xsd:complexType>
+          <xsd:sequence>
+            <xsd:element name="itemId" type="xsd:int"/>
+            <xsd:element name="quantity" type="xsd:int"/>
+          </xsd:sequence>
+        </xsd:complexType>
+      </xsd:element>
+      <xsd:element name="placeOrderResponse">
+        <xsd:complexType>
+          <xsd:sequence>
+            <xsd:element name="Result" type="n11:Order"/>
+          </xsd:sequence>
+        </xsd:complexType>
+      </xsd:element>
+      <xsd:element name="removeOrder">
+        <xsd:complexType>
+          <xsd:sequence>
+            <xsd:element name="orderNumber" type="xsd:int"/>
+          </xsd:sequence>
+        </xsd:complexType>
+      </xsd:element>
+      <xsd:element name="removeOrderResponse">
+        <xsd:complexType>
+          <xsd:sequence>
+            <xsd:element name="Result" type="xsd:string"/>
+          </xsd:sequence>
+        </xsd:complexType>
+      </xsd:element>
+      <xsd:element name="getItemByTitle">
+        <xsd:complexType>
+          <xsd:sequence>
+            <xsd:element name="titleKeyword" type="xsd:string"/>
+          </xsd:sequence>
+        </xsd:complexType>
+      </xsd:element>
+      <xsd:element name="getItemByTitleResponse">
+        <xsd:complexType>
+          <xsd:sequence>
+            <xsd:element name="Result" type="n11:ArrayOfBook"/>
+          </xsd:sequence>
+        </xsd:complexType>
+      </xsd:element>
+      <xsd:element name="getItemById">
+        <xsd:complexType>
+          <xsd:sequence>
+            <xsd:element name="id" type="xsd:int"/>
+          </xsd:sequence>
+        </xsd:complexType>
+      </xsd:element>
+      <xsd:element name="getItemByIdResponse">
+        <xsd:complexType>
+          <xsd:sequence>
+            <xsd:element name="Result" type="n11:Book"/>
+          </xsd:sequence>
+        </xsd:complexType>
+      </xsd:element>
+      <xsd:element name="getPendingOrders">
+        <xsd:complexType>
+          <xsd:sequence/>
+        </xsd:complexType>
+      </xsd:element>
+      <xsd:element name="getPendingOrdersResponse">
+        <xsd:complexType>
+          <xsd:sequence>
+            <xsd:element name="Result" type="n11:ArrayOfOrder"/>
+          </xsd:sequence>
+        </xsd:complexType>
+      </xsd:element>
+      <xsd:element name="addNewItem">
+        <xsd:complexType>
+          <xsd:sequence>
+            <xsd:element name="book" type="n11:Book"/>
+          </xsd:sequence>
+        </xsd:complexType>
+      </xsd:element>
+      <xsd:element name="addNewItemResponse">
+        <xsd:complexType>
+          <xsd:sequence>
+            <xsd:element name="Result" type="n11:Book"/>
+          </xsd:sequence>
+        </xsd:complexType>
+      </xsd:element>
+      <xsd:element name="confirm">
+        <xsd:complexType>
+          <xsd:sequence/>
+        </xsd:complexType>
+      </xsd:element>
+      <xsd:element name="confirmResponse">
+        <xsd:complexType>
+          <xsd:sequence>
+            <xsd:element name="Result" type="xsd:boolean"/>
+          </xsd:sequence>
+        </xsd:complexType>
+      </xsd:element>
+    </xsd:schema>
+  </wsdl:types>
+  <wsdl:message name="placeOrder0In">
+    <wsdl:part element="tns:placeOrder" name="parameters"/>
+  </wsdl:message>
+  <wsdl:message name="exception">
+    <wsdl:part name="exception" element="n13:exception"/>
+  </wsdl:message>
+  <wsdl:message name="placeOrder0Out">
+    <wsdl:part element="tns:placeOrderResponse" name="parameters"/>
+  </wsdl:message>
+  <wsdl:message name="removeOrder1In">
+    <wsdl:part element="tns:removeOrder" name="parameters"/>
+  </wsdl:message>
+  <wsdl:message name="removeOrder1Out">
+    <wsdl:part element="tns:removeOrderResponse" name="parameters"/>
+  </wsdl:message>
+  <wsdl:message name="getItemByTitle2In">
+    <wsdl:part element="tns:getItemByTitle" name="parameters"/>
+  </wsdl:message>
+  <wsdl:message name="getItemByTitle2Out">
+    <wsdl:part element="tns:getItemByTitleResponse" name="parameters"/>
+  </wsdl:message>
+  <wsdl:message name="getItemById3In">
+    <wsdl:part element="tns:getItemById" name="parameters"/>
+  </wsdl:message>
+  <wsdl:message name="getItemById3Out">
+    <wsdl:part element="tns:getItemByIdResponse" name="parameters"/>
+  </wsdl:message>
+  <wsdl:message name="getPendingOrders4In">
+    <wsdl:part element="tns:getPendingOrders" name="parameters"/>
+  </wsdl:message>
+  <wsdl:message name="getPendingOrders4Out">
+    <wsdl:part element="tns:getPendingOrdersResponse" name="parameters"/>
+  </wsdl:message>
+  <wsdl:message name="addNewItem5In">
+    <wsdl:part element="tns:addNewItem" name="parameters"/>
+  </wsdl:message>
+  <wsdl:message name="addNewItem5Out">
+    <wsdl:part element="tns:addNewItemResponse" name="parameters"/>
+  </wsdl:message>
+  <wsdl:message name="confirm6In">
+    <wsdl:part element="tns:confirm" name="parameters"/>
+  </wsdl:message>
+  <wsdl:message name="confirm6Out">
+    <wsdl:part element="tns:confirmResponse" name="parameters"/>
+  </wsdl:message>
+  <wsdl:portType name="ICart">
+    <wsdl:operation name="placeOrder" parameterOrder="itemId quantity">
+      <wsdl:input message="tns:placeOrder0In" name="placeOrder0In"/>
+      <wsdl:output message="tns:placeOrder0Out" name="placeOrder0Out"/>
+      <wsdl:fault message="tns:exception" name="exception"/>
+    </wsdl:operation>
+    <wsdl:operation name="removeOrder" parameterOrder="orderNumber">
+      <wsdl:input message="tns:removeOrder1In" name="removeOrder1In"/>
+      <wsdl:output message="tns:removeOrder1Out" name="removeOrder1Out"/>
+    </wsdl:operation>
+    <wsdl:operation name="getItemByTitle" parameterOrder="titleKeyword">
+      <wsdl:input message="tns:getItemByTitle2In" name="getItemByTitle2In"/>
+      <wsdl:output message="tns:getItemByTitle2Out" name="getItemByTitle2Out"/>
+      <wsdl:fault message="tns:exception" name="exception"/>
+    </wsdl:operation>
+    <wsdl:operation name="getItemById" parameterOrder="id">
+      <wsdl:input message="tns:getItemById3In" name="getItemById3In"/>
+      <wsdl:output message="tns:getItemById3Out" name="getItemById3Out"/>
+      <wsdl:fault message="tns:exception" name="exception"/>
+    </wsdl:operation>
+    <wsdl:operation name="getPendingOrders">
+      <wsdl:input message="tns:getPendingOrders4In" name="getPendingOrders4In"/>
+      <wsdl:output message="tns:getPendingOrders4Out" name="getPendingOrders4Out"/>
+    </wsdl:operation>
+    <wsdl:operation name="addNewItem" parameterOrder="book">
+      <wsdl:documentation>Order[] getConfirmedOrders();</wsdl:documentation>
+      <wsdl:input message="tns:addNewItem5In" name="addNewItem5In"/>
+      <wsdl:output message="tns:addNewItem5Out" name="addNewItem5Out"/>
+    </wsdl:operation>
+    <wsdl:operation name="confirm">
+      <wsdl:input message="tns:confirm6In" name="confirm6In"/>
+      <wsdl:output message="tns:confirm6Out" name="confirm6Out"/>
+    </wsdl:operation>
+  </wsdl:portType>
+  <wsdl:binding name="ICart" type="tns:ICart">
+    <soap:binding style="document" transport="http://schemas.xmlsoap.org/soap/http"/>
+    <wsdl:operation name="placeOrder">
+      <soap:operation soapAction="placeOrder" style="document"/>
+      <wsdl:input name="placeOrder0In">
+        <soap:body use="literal"/>
+      </wsdl:input>
+      <wsdl:output name="placeOrder0Out">
+        <soap:body use="literal"/>
+      </wsdl:output>
+      <wsdl:fault name="exception">
+        <soap:fault name="exception" use="literal"/>
+      </wsdl:fault>
+    </wsdl:operation>
+    <wsdl:operation name="removeOrder">
+      <soap:operation soapAction="removeOrder" style="document"/>
+      <wsdl:input name="removeOrder1In">
+        <soap:body use="literal"/>
+      </wsdl:input>
+      <wsdl:output name="removeOrder1Out">
+        <soap:body use="literal"/>
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="getItemByTitle">
+      <soap:operation soapAction="getItemByTitle" style="document"/>
+      <wsdl:input name="getItemByTitle2In">
+        <soap:body use="literal"/>
+      </wsdl:input>
+      <wsdl:output name="getItemByTitle2Out">
+        <soap:body use="literal"/>
+      </wsdl:output>
+      <wsdl:fault name="exception">
+        <soap:fault name="exception" use="literal"/>
+      </wsdl:fault>
+    </wsdl:operation>
+    <wsdl:operation name="getItemById">
+      <soap:operation soapAction="getItemById" style="document"/>
+      <wsdl:input name="getItemById3In">
+        <soap:body use="literal"/>
+      </wsdl:input>
+      <wsdl:output name="getItemById3Out">
+        <soap:body use="literal"/>
+      </wsdl:output>
+      <wsdl:fault name="exception">
+        <soap:fault name="exception" use="literal"/>
+      </wsdl:fault>
+    </wsdl:operation>
+    <wsdl:operation name="getPendingOrders">
+      <soap:operation soapAction="getPendingOrders" style="document"/>
+      <wsdl:input name="getPendingOrders4In">
+        <soap:body use="literal"/>
+      </wsdl:input>
+      <wsdl:output name="getPendingOrders4Out">
+        <soap:body use="literal"/>
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="addNewItem">
+      <soap:operation soapAction="addNewItem" style="document"/>
+      <wsdl:input name="addNewItem5In">
+        <soap:body use="literal"/>
+      </wsdl:input>
+      <wsdl:output name="addNewItem5Out">
+        <soap:body use="literal"/>
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="confirm">
+      <soap:operation soapAction="confirm" style="document"/>
+      <wsdl:input name="confirm6In">
+        <soap:body use="literal"/>
+      </wsdl:input>
+      <wsdl:output name="confirm6Out">
+        <soap:body use="literal"/>
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:service name="Cart">
+    <wsdl:documentation>The Parasoft Book Store service</wsdl:documentation>
+    <wsdl:port binding="tns:ICart" name="ICart">
+      <soap:address location="http://ws1.parasoft.com/glue/store-01"/>
+    </wsdl:port>
+  </wsdl:service>
+</wsdl:definitions>]]></con:content><con:type>http://schemas.xmlsoap.org/wsdl/</con:type></con:part></con:definitionCache><con:endpoints><con:endpoint>http://ws1.parasoft.com/glue/store-01</con:endpoint></con:endpoints><con:operation id="93e67cdd-b572-4962-936c-1c0a607c458a" isOneWay="false" action="addNewItem" name="addNewItem" bindingOperationName="addNewItem" type="Request-Response" outputName="addNewItem5Out" inputName="addNewItem5In" receivesAttachments="false" sendsAttachments="false" anonymous="optional"><con:settings/><con:call id="bb392d88-5220-40b5-ada1-8c7cfaa805b6" name="Request 1"><con:settings/><con:encoding>UTF-8</con:encoding><con:endpoint>http://ws1.parasoft.com/glue/store-01</con:endpoint><con:request><![CDATA[<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:stor="http://www.parasoft.com/wsdl/store-01/">\r
+   <soapenv:Header/>\r
+   <soapenv:Body>\r
+      <stor:addNewItem>\r
+         <stor:book>\r
+            <id>?</id>\r
+            <title>?</title>\r
+            <quantity_in_stock>?</quantity_in_stock>\r
+            <price>?</price>\r
+            <isbn>?</isbn>\r
+            <publication_date>?</publication_date>\r
+            <description>?</description>\r
+            <authors>\r
+               <!--Zero or more repetitions:-->\r
+               <i>?</i>\r
+            </authors>\r
+            <publisher>?</publisher>\r
+         </stor:book>\r
+      </stor:addNewItem>\r
+   </soapenv:Body>\r
+</soapenv:Envelope>]]></con:request><con:wsaConfig mustUnderstand="NONE" version="200508" action="addNewItem"/></con:call></con:operation><con:operation id="8e247cf8-54fa-4a51-8c4d-6f9b7c6c0f0a" isOneWay="false" action="confirm" name="confirm" bindingOperationName="confirm" type="Request-Response" outputName="confirm6Out" inputName="confirm6In" receivesAttachments="false" sendsAttachments="false" anonymous="optional"><con:settings/><con:call id="6584d170-b800-428b-acfc-c4f6a62657e0" name="Request 1"><con:settings/><con:encoding>UTF-8</con:encoding><con:endpoint>http://ws1.parasoft.com/glue/store-01</con:endpoint><con:request><![CDATA[<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:stor="http://www.parasoft.com/wsdl/store-01/">\r
+   <soapenv:Header/>\r
+   <soapenv:Body>\r
+      <stor:confirm/>\r
+   </soapenv:Body>\r
+</soapenv:Envelope>]]></con:request><con:wsaConfig mustUnderstand="NONE" version="200508" action="confirm"/></con:call></con:operation><con:operation id="3dc7968f-9787-4ab2-bb8a-8a0e8ee22c74" isOneWay="false" action="getItemById" name="getItemById" bindingOperationName="getItemById" type="Request-Response" outputName="getItemById3Out" inputName="getItemById3In" receivesAttachments="false" sendsAttachments="false" anonymous="optional"><con:settings/><con:call id="68f52740-4c20-4c9a-8ca5-9926d28526db" name="Request 1"><con:settings/><con:encoding>UTF-8</con:encoding><con:endpoint>http://ws1.parasoft.com/glue/store-01</con:endpoint><con:request><![CDATA[<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:stor="http://www.parasoft.com/wsdl/store-01/">\r
+   <soapenv:Header/>\r
+   <soapenv:Body>\r
+      <stor:getItemById>\r
+         <stor:id>?</stor:id>\r
+      </stor:getItemById>\r
+   </soapenv:Body>\r
+</soapenv:Envelope>]]></con:request><con:wsaConfig mustUnderstand="NONE" version="200508" action="getItemById"/></con:call></con:operation><con:operation id="27c43505-b3ff-4062-8656-7d57f1b15bd6" isOneWay="false" action="getItemByTitle" name="getItemByTitle" bindingOperationName="getItemByTitle" type="Request-Response" outputName="getItemByTitle2Out" inputName="getItemByTitle2In" receivesAttachments="false" sendsAttachments="false" anonymous="optional"><con:settings/><con:call id="6b303329-2fe0-4cff-a23b-b8006364d7a4" name="Request 1"><con:settings/><con:encoding>UTF-8</con:encoding><con:endpoint>http://ws1.parasoft.com/glue/store-01</con:endpoint><con:request><![CDATA[<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:stor="http://www.parasoft.com/wsdl/store-01/">\r
+   <soapenv:Header/>\r
+   <soapenv:Body>\r
+      <stor:getItemByTitle>\r
+         <stor:titleKeyword>?</stor:titleKeyword>\r
+      </stor:getItemByTitle>\r
+   </soapenv:Body>\r
+</soapenv:Envelope>]]></con:request><con:wsaConfig mustUnderstand="NONE" version="200508" action="getItemByTitle"/></con:call></con:operation><con:operation id="3e31000d-6bce-438b-8396-d489147a58d2" isOneWay="false" action="getPendingOrders" name="getPendingOrders" bindingOperationName="getPendingOrders" type="Request-Response" outputName="getPendingOrders4Out" inputName="getPendingOrders4In" receivesAttachments="false" sendsAttachments="false" anonymous="optional"><con:settings/><con:call id="78bd08ff-9bdd-4ea2-b1f4-26d6ea054fc8" name="Request 1"><con:settings/><con:encoding>UTF-8</con:encoding><con:endpoint>http://ws1.parasoft.com/glue/store-01</con:endpoint><con:request><![CDATA[<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:stor="http://www.parasoft.com/wsdl/store-01/">\r
+   <soapenv:Header/>\r
+   <soapenv:Body>\r
+      <stor:getPendingOrders/>\r
+   </soapenv:Body>\r
+</soapenv:Envelope>]]></con:request><con:wsaConfig mustUnderstand="NONE" version="200508" action="getPendingOrders"/></con:call></con:operation><con:operation id="c501117e-477e-42a4-9329-82df340fd6c3" isOneWay="false" action="placeOrder" name="placeOrder" bindingOperationName="placeOrder" type="Request-Response" outputName="placeOrder0Out" inputName="placeOrder0In" receivesAttachments="false" sendsAttachments="false" anonymous="optional"><con:settings/><con:call id="5281c8ec-1fe2-4da6-8a0e-c892e1203705" name="Request 1"><con:settings/><con:encoding>UTF-8</con:encoding><con:endpoint>http://ws1.parasoft.com/glue/store-01</con:endpoint><con:request><![CDATA[<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:stor="http://www.parasoft.com/wsdl/store-01/">\r
+   <soapenv:Header/>\r
+   <soapenv:Body>\r
+      <stor:placeOrder>\r
+         <stor:itemId>?</stor:itemId>\r
+         <stor:quantity>?</stor:quantity>\r
+      </stor:placeOrder>\r
+   </soapenv:Body>\r
+</soapenv:Envelope>]]></con:request><con:wsaConfig mustUnderstand="NONE" version="200508" action="placeOrder"/></con:call></con:operation><con:operation id="b6cb1b99-5624-4298-9be0-b0cffcf3b514" isOneWay="false" action="removeOrder" name="removeOrder" bindingOperationName="removeOrder" type="Request-Response" outputName="removeOrder1Out" inputName="removeOrder1In" receivesAttachments="false" sendsAttachments="false" anonymous="optional"><con:settings/><con:call id="3a1581f0-e1fe-4449-b8d2-5d6a375ee1e8" name="Request 1"><con:settings/><con:encoding>UTF-8</con:encoding><con:endpoint>http://ws1.parasoft.com/glue/store-01</con:endpoint><con:request><![CDATA[<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:stor="http://www.parasoft.com/wsdl/store-01/">\r
+   <soapenv:Header/>\r
+   <soapenv:Body>\r
+      <stor:removeOrder>\r
+         <stor:orderNumber>?</stor:orderNumber>\r
+      </stor:removeOrder>\r
+   </soapenv:Body>\r
+</soapenv:Envelope>]]></con:request><con:wsaConfig mustUnderstand="NONE" version="200508" action="removeOrder"/></con:call></con:operation></con:interface><con:testSuite id="03172bad-1c13-4238-89ca-5cdefb7c2e58" name="XPathPractice"><con:settings/><con:runType>SEQUENTIAL</con:runType><con:testCase id="8d01b980-7830-4258-bf81-e0e24c5ae9c2" failOnError="true" failTestCaseOnErrors="true" keepSession="false" maxResults="0" name="Practice_01" searchProperties="true"><con:settings/><con:testStep type="request" name="GetAllBooks" id="fdb72157-202d-4b58-8cf5-2656a988068f"><con:settings/><con:config xsi:type="con:RequestStep" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"><con:interface>ICart</con:interface><con:operation>getItemByTitle</con:operation><con:request name="GetAllBooks" id="35aab4eb-273a-4d51-bf28-752429242ae5"><con:settings><con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;xml-fragment/></con:setting></con:settings><con:encoding>UTF-8</con:encoding><con:endpoint>http://ws1.parasoft.com/glue/store-01</con:endpoint><con:request><![CDATA[<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:stor="http://www.parasoft.com/wsdl/store-01/">\r
+   <soapenv:Header/>\r
+   <soapenv:Body>\r
+      <stor:getItemByTitle>\r
+         <stor:titleKeyword></stor:titleKeyword>\r
+      </stor:getItemByTitle>\r
+   </soapenv:Body>\r
+</soapenv:Envelope>]]></con:request><con:assertion type="SOAP Response" id="252b02fc-e473-4b15-9b04-51bc1192ee9a"/><con:assertion type="XPath Match" id="d7d06afe-f4c0-47b3-91a5-c21108f55669" name="XPath Match"><con:configuration><path>declare namespace soap='http://schemas.xmlsoap.org/soap/envelope/';
+declare namespace n='http://www.parasoft.com/wsdl/store-01/';
+declare namespace n3='http://www.themindelectric.com/package/webtool.soap.examples.store/';
+declare namespace soapenc='http://schemas.xmlsoap.org/soap/encoding/';
+declare namespace n5='http://www.themindelectric.com/package/java.sql/';
+count(//n:Result/i)</path><content>9</content><allowWildcards>false</allowWildcards><ignoreNamspaceDifferences>false</ignoreNamspaceDifferences><ignoreComments>false</ignoreComments></con:configuration></con:assertion><con:assertion type="XPath Match" id="e7f5f665-7459-42de-9809-8f245a417aac" name="lastbooksprice"><con:configuration><path>declare namespace soap='http://schemas.xmlsoap.org/soap/envelope/';
+declare namespace n='http://www.parasoft.com/wsdl/store-01/';
+declare namespace n3='http://www.themindelectric.com/package/webtool.soap.examples.store/';
+declare namespace soapenc='http://schemas.xmlsoap.org/soap/encoding/';
+declare namespace n5='http://www.themindelectric.com/package/java.sql/';
+//n:Result/i[last()]/price</path><content>9.99</content><allowWildcards>false</allowWildcards><ignoreNamspaceDifferences>false</ignoreNamspaceDifferences><ignoreComments>false</ignoreComments></con:configuration></con:assertion><con:assertion type="XPath Match" id="e762d224-519b-4ab9-9f5d-965b5083e86f" name="firstbookauthorcount"><con:configuration><path>declare namespace soap='http://schemas.xmlsoap.org/soap/envelope/';
+declare namespace n='http://www.parasoft.com/wsdl/store-01/';
+declare namespace n3='http://www.themindelectric.com/package/webtool.soap.examples.store/';
+declare namespace soapenc='http://schemas.xmlsoap.org/soap/encoding/';
+declare namespace n5='http://www.themindelectric.com/package/java.sql/';
+count(//n:Result/i[1]/authors/i)</path><content>2</content><allowWildcards>false</allowWildcards><ignoreNamspaceDifferences>false</ignoreNamspaceDifferences><ignoreComments>false</ignoreComments></con:configuration></con:assertion><con:assertion type="XPath Match" id="fb0912a6-9872-4ead-904e-3a4e8e93a53c" name="pricew with id 1"><con:configuration><path>declare namespace soap='http://schemas.xmlsoap.org/soap/envelope/';
+declare namespace n='http://www.parasoft.com/wsdl/store-01/';
+declare namespace n3='http://www.themindelectric.com/package/webtool.soap.examples.store/';
+declare namespace soapenc='http://schemas.xmlsoap.org/soap/encoding/';
+declare namespace n5='http://www.themindelectric.com/package/java.sql/';
+//n:Result/i[id=1]/price</path><content>99.99</content><allowWildcards>false</allowWildcards><ignoreNamspaceDifferences>false</ignoreNamspaceDifferences><ignoreComments>false</ignoreComments></con:configuration></con:assertion><con:assertion type="XPath Match" id="857470d3-db4a-41fa-8e92-a40206527697" name="firstauthor of id 3"><con:configuration><path>declare namespace soap='http://schemas.xmlsoap.org/soap/envelope/';
+declare namespace n='http://www.parasoft.com/wsdl/store-01/';
+declare namespace n3='http://www.themindelectric.com/package/webtool.soap.examples.store/';
+declare namespace soapenc='http://schemas.xmlsoap.org/soap/encoding/';
+declare namespace n5='http://www.themindelectric.com/package/java.sql/';
+//n:Result/i[id=3]/authors/i[1]</path><content>David Flanagan</content><allowWildcards>false</allowWildcards><ignoreNamspaceDifferences>false</ignoreNamspaceDifferences><ignoreComments>false</ignoreComments></con:configuration></con:assertion><con:assertion type="XPath Match" id="f8918ac1-638c-4cf2-9080-da9817221413" name="count of books where price gt 10"><con:configuration><path>declare namespace soap='http://schemas.xmlsoap.org/soap/envelope/';
+declare namespace n='http://www.parasoft.com/wsdl/store-01/';
+declare namespace n3='http://www.themindelectric.com/package/webtool.soap.examples.store/';
+declare namespace soapenc='http://schemas.xmlsoap.org/soap/encoding/';
+declare namespace n5='http://www.themindelectric.com/package/java.sql/';
+count(//n:Result/i[price>10])</path><content>8</content><allowWildcards>false</allowWildcards><ignoreNamspaceDifferences>false</ignoreNamspaceDifferences><ignoreComments>false</ignoreComments></con:configuration></con:assertion><con:credentials><con:authType>No Authorization</con:authType></con:credentials><con:jmsConfig JMSDeliveryMode="PERSISTENT"/><con:jmsPropertyConfig/><con:wsaConfig mustUnderstand="NONE" version="200508"/><con:wsrmConfig version="1.2"/></con:request></con:config></con:testStep><con:testStep type="request" name="GetItemById" id="a5badf66-a2f9-4d5f-873b-2123fa92e20d"><con:settings/><con:config xsi:type="con:RequestStep" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"><con:interface>ICart</con:interface><con:operation>getItemById</con:operation><con:request name="GetItemById" id="ce758459-370d-488b-b541-5ab089f18e3a"><con:settings><con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;xml-fragment/></con:setting></con:settings><con:encoding>UTF-8</con:encoding><con:endpoint>http://ws1.parasoft.com/glue/store-01</con:endpoint><con:request><![CDATA[<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:stor="http://www.parasoft.com/wsdl/store-01/">\r
+   <soapenv:Header/>\r
+   <soapenv:Body>\r
+      <stor:getItemById>\r
+         <stor:id>1</stor:id>\r
+      </stor:getItemById>\r
+   </soapenv:Body>\r
+</soapenv:Envelope>]]></con:request><con:assertion type="SOAP Response" id="37f161e8-1052-445f-bdea-b15d9d37ba33"/><con:credentials><con:authType>No Authorization</con:authType></con:credentials><con:jmsConfig JMSDeliveryMode="PERSISTENT"/><con:jmsPropertyConfig/><con:wsaConfig mustUnderstand="NONE" version="200508"/><con:wsrmConfig version="1.2"/></con:request></con:config></con:testStep><con:properties/></con:testCase><con:properties/></con:testSuite><con:testSuite id="c0b3b47f-3297-41be-8276-7b4023845374" name="Groovy"><con:settings/><con:runType>SEQUENTIAL</con:runType><con:testCase id="c99c7a6f-97e9-405b-b40e-509c3bd90e0d" failOnError="true" failTestCaseOnErrors="true" keepSession="false" maxResults="0" name="HelloWorld" searchProperties="true"><con:settings/><con:testStep type="groovy" name="Hello World" id="3aa072df-3ffa-42c0-8cce-b6081148a84a"><con:settings/><con:config><script>def name="Quality Thought"
+def year=2011
+def isEducationInstitution=true
+log.info name.getClass()
+log.info year.getClass()
+log.info isEducationInstitution.getClass()
+</script></con:config></con:testStep><con:properties/></con:testCase><con:properties/></con:testSuite><con:properties/><con:wssContainer/><con:oAuth2ProfileContainer/></con:soapui-project>
