@@ -7,4 +7,5 @@
   <con:project name="Calculator">D:/ServicesForWebServiceTesting/ServicesForWebServicesTesting/SoapUIProjects/Batch9/Workspace/Project/Calculator-soapui-project.xml</con:project>
   <con:project name="store">D:/ServicesForWebServiceTesting/ServicesForWebServicesTesting/SoapUIProjects/Batch9/Workspace/Project/store-soapui-project.xml</con:project>
   <con:project name="GroovyPractice">D:/ServicesForWebServiceTesting/ServicesForWebServicesTesting/SoapUIProjects/Batch9/Workspace/Project/GroovyPractice-soapui-project.xml</con:project>
+  <con:collectInfoForSupport>false</con:collectInfoForSupport>
 </con:soapui-workspace>
