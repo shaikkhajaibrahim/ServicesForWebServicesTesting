@@ -442,4 +442,46 @@ def isEducationInstitution=true
 log.info name.getClass()
 log.info year.getClass()
 log.info isEducationInstitution.getClass()
-</script></con:config></con:testStep><con:properties/></con:testCase><con:properties/></con:testSuite><con:properties/><con:wssContainer/><con:oAuth2ProfileContainer/></con:soapui-project>
+</script></con:config></con:testStep><con:properties/></con:testCase><con:properties/></con:testSuite><con:testSuite id="e2a8508b-8873-48b7-8178-5cef32248c23" name="PropertyTransfer"><con:settings/><con:runType>SEQUENTIAL</con:runType><con:testCase id="c805b3a8-2c31-42fd-91f5-14f86776032e" failOnError="true" failTestCaseOnErrors="true" keepSession="false" maxResults="0" name="Demo 01" searchProperties="true"><con:settings/><con:testStep type="request" name="GetAllItems" id="3f0240c9-72ba-4265-8e18-73db84bbe3d4"><con:settings/><con:config xsi:type="con:RequestStep" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"><con:interface>ICart</con:interface><con:operation>getItemByTitle</con:operation><con:request name="GetAllItems" id="728f1a11-7972-4649-9f3c-aa340ac4375b"><con:settings><con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;xml-fragment/></con:setting></con:settings><con:encoding>UTF-8</con:encoding><con:endpoint>http://ws1.parasoft.com/glue/store-01</con:endpoint><con:request><![CDATA[<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:stor="http://www.parasoft.com/wsdl/store-01/">\r
+   <soapenv:Header/>\r
+   <soapenv:Body>\r
+      <stor:getItemByTitle>\r
+         <stor:titleKeyword></stor:titleKeyword>\r
+      </stor:getItemByTitle>\r
+   </soapenv:Body>\r
+</soapenv:Envelope>]]></con:request><con:assertion type="SOAP Response" id="5921926b-9232-40b5-818b-5a0ccd112d9b"/><con:credentials><con:authType>No Authorization</con:authType></con:credentials><con:jmsConfig JMSDeliveryMode="PERSISTENT"/><con:jmsPropertyConfig/><con:wsaConfig mustUnderstand="NONE" version="200508"/><con:wsrmConfig version="1.2"/></con:request></con:config></con:testStep><con:testStep type="transfer" name="Property Transfer" id="b689e57b-53f3-4e8d-b41f-756c982c8805"><con:settings/><con:config xsi:type="con:PropertyTransfersStep" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"><con:transfers setNullOnMissingSource="true" transferTextContent="true" failOnError="true" ignoreEmpty="false" transferToAll="false" entitize="false" transferChildNodes="false"><con:name>idTransfer</con:name><con:sourceType>Response</con:sourceType><con:sourceStep>GetAllItems</con:sourceStep><con:sourcePath>declare namespace soap='http://schemas.xmlsoap.org/soap/envelope/';
+declare namespace ns1='http://www.themindelectric.com/package/webtool.soap.examples.store/';
+declare namespace ns2='http://www.themindelectric.com/package/java.sql/';
+declare namespace ns3='http://www.parasoft.com/wsdl/store-01/';
+//ns3:Result/i[last()]/id</con:sourcePath><con:targetType>Request</con:targetType><con:targetStep>GetItemById</con:targetStep><con:targetPath>declare namespace soap='http://schemas.xmlsoap.org/soap/envelope/';
+declare namespace ns1='http://www.themindelectric.com/package/webtool.soap.examples.store/';
+declare namespace ns2='http://www.themindelectric.com/package/java.sql/';
+declare namespace ns3='http://www.parasoft.com/wsdl/store-01/';
+//ns3:id</con:targetPath><con:upgraded>true</con:upgraded></con:transfers><con:transfers setNullOnMissingSource="true" transferTextContent="true" failOnError="true" ignoreEmpty="false" transferToAll="false" entitize="false" transferChildNodes="false"><con:name>titleTrtansfer</con:name><con:sourceType>Response</con:sourceType><con:sourceStep>GetAllItems</con:sourceStep><con:sourcePath>declare namespace soap='http://schemas.xmlsoap.org/soap/envelope/';
+declare namespace ns1='http://www.themindelectric.com/package/webtool.soap.examples.store/';
+declare namespace ns2='http://www.themindelectric.com/package/java.sql/';
+declare namespace ns3='http://www.parasoft.com/wsdl/store-01/';
+//ns3:Result/i[2]/title</con:sourcePath><con:targetType>Request</con:targetType><con:targetStep>GetItemByTitle</con:targetStep><con:targetPath>declare namespace soap='http://schemas.xmlsoap.org/soap/envelope/';
+declare namespace ns1='http://www.themindelectric.com/package/webtool.soap.examples.store/';
+declare namespace ns2='http://www.themindelectric.com/package/java.sql/';
+declare namespace ns3='http://www.parasoft.com/wsdl/store-01/';
+//ns3:titleKeyword
+</con:targetPath><con:upgraded>true</con:upgraded></con:transfers><con:transfers setNullOnMissingSource="true" transferTextContent="true" failOnError="true" ignoreEmpty="false" transferToAll="false" entitize="false" transferChildNodes="false"><con:name>count</con:name><con:sourceType>Response</con:sourceType><con:sourceStep>GetAllItems</con:sourceStep><con:sourcePath>declare namespace soap='http://schemas.xmlsoap.org/soap/envelope/';
+declare namespace ns1='http://www.themindelectric.com/package/webtool.soap.examples.store/';
+declare namespace ns2='http://www.themindelectric.com/package/java.sql/';
+declare namespace ns3='http://www.parasoft.com/wsdl/store-01/';
+count(//ns3:Result/i)</con:sourcePath><con:targetType>count</con:targetType><con:targetStep>#TestCase#</con:targetStep><con:upgraded>true</con:upgraded></con:transfers></con:config></con:testStep><con:testStep type="request" name="GetItemById" id="3a2a3aad-04ec-4289-8a2b-f6f25dea23c3"><con:settings/><con:config xsi:type="con:RequestStep" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"><con:interface>ICart</con:interface><con:operation>getItemById</con:operation><con:request name="GetItemById" id="f81f6e70-0608-41a5-97c7-829c0f4d19ed"><con:settings><con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;xml-fragment/></con:setting></con:settings><con:encoding>UTF-8</con:encoding><con:endpoint>http://ws1.parasoft.com/glue/store-01</con:endpoint><con:request><![CDATA[<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:stor="http://www.parasoft.com/wsdl/store-01/">
+   <soapenv:Header/>
+   <soapenv:Body>
+      <stor:getItemById>
+         <stor:id>9</stor:id>
+      </stor:getItemById>
+   </soapenv:Body>
+</soapenv:Envelope>]]></con:request><con:assertion type="SOAP Response" id="819eacfa-0b2e-447b-923e-b7fa53750408"/><con:credentials><con:authType>No Authorization</con:authType></con:credentials><con:jmsConfig JMSDeliveryMode="PERSISTENT"/><con:jmsPropertyConfig/><con:wsaConfig mustUnderstand="NONE" version="200508"/><con:wsrmConfig version="1.2"/></con:request></con:config></con:testStep><con:testStep type="request" name="GetItemByTitle" id="5fec5224-2f37-4eda-ba86-3796b4b4d9fb"><con:settings/><con:config xsi:type="con:RequestStep" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"><con:interface>ICart</con:interface><con:operation>getItemByTitle</con:operation><con:request name="GetItemByTitle" id="8dd11266-e10f-44a2-9005-ec69a835a3d0"><con:settings><con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;xml-fragment/></con:setting></con:settings><con:encoding>UTF-8</con:encoding><con:endpoint>http://ws1.parasoft.com/glue/store-01</con:endpoint><con:request><![CDATA[<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:stor="http://www.parasoft.com/wsdl/store-01/">
+   <soapenv:Header/>
+   <soapenv:Body>
+      <stor:getItemByTitle>
+         <stor:titleKeyword>Java How to Program (4th Edition)</stor:titleKeyword>
+      </stor:getItemByTitle>
+   </soapenv:Body>
+</soapenv:Envelope>]]></con:request><con:assertion type="SOAP Response" id="170d0715-7588-4e91-ac63-52d6610e3011"/><con:credentials><con:authType>No Authorization</con:authType></con:credentials><con:jmsConfig JMSDeliveryMode="PERSISTENT"/><con:jmsPropertyConfig/><con:wsaConfig mustUnderstand="NONE" version="200508"/><con:wsrmConfig version="1.2"/></con:request></con:config></con:testStep><con:properties><con:property><con:name>count</con:name><con:value>9</con:value></con:property></con:properties></con:testCase><con:properties/></con:testSuite><con:properties/><con:wssContainer/><con:oAuth2ProfileContainer/></con:soapui-project>
