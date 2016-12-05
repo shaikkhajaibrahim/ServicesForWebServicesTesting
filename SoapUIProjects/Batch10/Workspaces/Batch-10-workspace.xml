@@ -4,5 +4,6 @@
   <con:project name="SoapHelloWorld">E:/Soapui/ServicesForWebServicesTesting/SoapUIProjects/Batch10/Workspaces/Projects/SoapHelloWorld-soapui-project.xml</con:project>
   <con:project name="numbersfortesting">E:/Soapui/ServicesForWebServicesTesting/SoapUIProjects/Batch10/Workspaces/Projects/numbersfortesting-soapui-project.xml</con:project>
   <con:project name="storeforpractice">E:/Soapui/ServicesForWebServicesTesting/SoapUIProjects/Batch10/Workspaces/Projects/storeforpractice-soapui-project.xml</con:project>
+  <con:project name="calculator">E:/Soapui/ServicesForWebServicesTesting/SoapUIProjects/Batch10/Workspaces/Projects/calculator-soapui-project.xml</con:project>
   <con:collectInfoForSupport>false</con:collectInfoForSupport>
 </con:soapui-workspace>
