@@ -1,9 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<con:soapui-workspace name="Batch-10" soapui-version="5.2.1" xmlns:con="http://eviware.com/soapui/config">
+<con:soapui-workspace name="Batch-10" soapui-version="5.0.0" xmlns:con="http://eviware.com/soapui/config">
   <con:settings/>
   <con:project name="SoapHelloWorld">E:/Soapui/ServicesForWebServicesTesting/SoapUIProjects/Batch10/Workspaces/Projects/SoapHelloWorld-soapui-project.xml</con:project>
   <con:project name="numbersfortesting">E:/Soapui/ServicesForWebServicesTesting/SoapUIProjects/Batch10/Workspaces/Projects/numbersfortesting-soapui-project.xml</con:project>
   <con:project name="storeforpractice">E:/Soapui/ServicesForWebServicesTesting/SoapUIProjects/Batch10/Workspaces/Projects/storeforpractice-soapui-project.xml</con:project>
   <con:project name="calculator">E:/Soapui/ServicesForWebServicesTesting/SoapUIProjects/Batch10/Workspaces/Projects/calculator-soapui-project.xml</con:project>
   <con:collectInfoForSupport>false</con:collectInfoForSupport>
+  <con:project name="calculatorpro">E:/Soapui/ServicesForWebServicesTesting/SoapUIProjects/Batch10/Workspaces/Projects/calculatorpro-soapui-project.xml</con:project>
+  <con:project name="store-dd">E:/Soapui/ServicesForWebServicesTesting/SoapUIProjects/Batch10/Workspaces/Projects/store-dd-soapui-project.xml</con:project>
 </con:soapui-workspace>
