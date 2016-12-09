@@ -8,4 +8,6 @@
   <con:collectInfoForSupport>false</con:collectInfoForSupport>
   <con:project name="calculatorpro">E:/Soapui/ServicesForWebServicesTesting/SoapUIProjects/Batch10/Workspaces/Projects/calculatorpro-soapui-project.xml</con:project>
   <con:project name="store-dd">E:/Soapui/ServicesForWebServicesTesting/SoapUIProjects/Batch10/Workspaces/Projects/store-dd-soapui-project.xml</con:project>
+  <con:project name="ContactInfoService">E:/Soapui/ServicesForWebServicesTesting/SoapUIProjects/Batch10/Workspaces/Projects/ContactInfoService-soapui-project.xml</con:project>
+  <con:project name="ContactsPro">E:/Soapui/ServicesForWebServicesTesting/SoapUIProjects/Batch10/Workspaces/Projects/ContactsPro-soapui-project.xml</con:project>
 </con:soapui-workspace>
