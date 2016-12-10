@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<con:soapui-project id="3635b5fd-c13f-4e4a-b4de-2ead232cef79" activeEnvironment="Default" name="Groovy" soapui-version="5.2.1" xmlns:con="http://eviware.com/soapui/config"><con:settings/><con:testSuite id="d5c56d12-6dac-46be-a7e6-36d25190e7d9" name="Hello World"><con:settings/><con:runType>SEQUENTIAL</con:runType><con:testCase id="94a10ef2-8214-4c50-ae68-21a261eec51e" failOnError="true" failTestCaseOnErrors="true" keepSession="false" maxResults="0" name="Hello World" searchProperties="true"><con:settings/><con:testStep type="groovy" name="myFirst" id="2111ec99-dd15-4390-9149-fae79fc70914"><con:settings/><con:config><script>int a=1
+int b =2
+log.info a
+log.info b
+String inst="Quality Thought"
+log.info inst
+
+</script></con:config></con:testStep><con:testStep type="groovy" name="Groovy Script" id="9e5556b9-0412-4f99-8b7d-1a831dfac529"><con:settings/><con:config><script>def a=1
+def b=2
+def inst="Quality Thought"
+
+log.info a
+log.info b
+inst =" Quality Thought Technologies"
+log.info inst
+
+</script></con:config></con:testStep><con:testStep type="groovy" name="Decision Making" id="e8b15321-8f4c-49a4-a522-9393ce107e8c"><con:settings/><con:config><script>def os= context.expand('${#TestCase#os}')
+if( os == "windows")
+{
+	log.info "0"
+}
+else if (os == "linux")
+{
+	log.info "1"
+}
+else
+{
+	log.info "not supported"
+}
+</script></con:config></con:testStep><con:testStep type="groovy" name="Loops" id="b9107af3-faa9-4487-b90e-9ac7afce1006"><con:settings/><con:config><script>int max=context.expand('${#TestCase#max}').toInteger()
+for(int index=0; index&lt;=max; index++)
+{
+	log.info index
+}
+</script></con:config></con:testStep><con:properties><con:property><con:name>os</con:name><con:value>linux</con:value></con:property><con:property><con:name>max</con:name><con:value>kljfds</con:value></con:property></con:properties></con:testCase><con:properties/></con:testSuite><con:properties/><con:wssContainer/><con:oAuth2ProfileContainer/><con:sensitiveInformation/></con:soapui-project>
