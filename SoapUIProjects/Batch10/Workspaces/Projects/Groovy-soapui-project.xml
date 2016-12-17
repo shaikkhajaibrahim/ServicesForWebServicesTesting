@@ -1,5 +1,36 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<con:soapui-project id="3635b5fd-c13f-4e4a-b4de-2ead232cef79" activeEnvironment="Default" name="Groovy" soapui-version="5.2.1" xmlns:con="http://eviware.com/soapui/config"><con:settings/><con:testSuite id="d5c56d12-6dac-46be-a7e6-36d25190e7d9" name="Hello World"><con:settings/><con:runType>SEQUENTIAL</con:runType><con:testCase id="94a10ef2-8214-4c50-ae68-21a261eec51e" failOnError="true" failTestCaseOnErrors="true" keepSession="false" maxResults="0" name="Hello World" searchProperties="true"><con:settings/><con:testStep type="groovy" name="myFirst" id="2111ec99-dd15-4390-9149-fae79fc70914"><con:settings/><con:config><script>int a=1
+<con:soapui-project id="3635b5fd-c13f-4e4a-b4de-2ead232cef79" activeEnvironment="Default" name="Groovy" soapui-version="5.2.1" abortOnError="false" runType="SEQUENTIAL" xmlns:con="http://eviware.com/soapui/config"><con:settings><con:setting id="com.eviware.soapui.impl.wsdl.actions.iface.tools.soapui.TestRunnerAction@values-local"><![CDATA[<xml-fragment xmlns:con="http://eviware.com/soapui/config">
+  <con:entry key="Environment" value="Default"/>
+  <con:entry key="Global Properties" value=""/>
+  <con:entry key="TestSuite" value="&lt;all>"/>
+  <con:entry key="Password" value=""/>
+  <con:entry key="TestRunner Path" value=""/>
+  <con:entry key="Tool Args" value=""/>
+  <con:entry key="Ignore Errors" value="false"/>
+  <con:entry key="Host:Port" value=""/>
+  <con:entry key="user-settings.xml Password" value=""/>
+  <con:entry key="WSS Password Type" value=""/>
+  <con:entry key="Save Project" value="false"/>
+  <con:entry key="Enable UI" value="false"/>
+  <con:entry key="System Properties" value=""/>
+  <con:entry key="Domain" value=""/>
+  <con:entry key="Coverage Report" value="false"/>
+  <con:entry key="Export JUnit Results" value="true"/>
+  <con:entry key="Export JUnit Results with test properties" value="true"/>
+  <con:entry key="Open Report" value="false"/>
+  <con:entry key="Project Properties" value=""/>
+  <con:entry key="Export All" value="false"/>
+  <con:entry key="Project Password" value=""/>
+  <con:entry key="Report Format(s)" value=""/>
+  <con:entry key="TestCase" value="&lt;all>"/>
+  <con:entry key="Print Report" value="false"/>
+  <con:entry key="Username" value=""/>
+  <con:entry key="Root Folder" value=""/>
+  <con:entry key="Select Report Type" value=""/>
+  <con:entry key="Save After" value="false"/>
+  <con:entry key="Add Settings" value="false"/>
+  <con:entry key="Endpoint" value=""/>
+</xml-fragment>]]></con:setting></con:settings><con:testSuite id="d5c56d12-6dac-46be-a7e6-36d25190e7d9" name="Hello World"><con:settings/><con:runType>SEQUENTIAL</con:runType><con:testCase id="94a10ef2-8214-4c50-ae68-21a261eec51e" failOnError="true" failTestCaseOnErrors="true" keepSession="false" maxResults="0" name="Hello World" searchProperties="true"><con:settings/><con:testStep type="groovy" name="myFirst" id="2111ec99-dd15-4390-9149-fae79fc70914"><con:settings/><con:config><script>int a=1
 int b =2
 log.info a
 log.info b
@@ -33,4 +64,8 @@ for(int index=0; index&lt;=max; index++)
 {
 	log.info index
 }
-</script></con:config></con:testStep><con:properties><con:property><con:name>os</con:name><con:value>linux</con:value></con:property><con:property><con:name>max</con:name><con:value>kljfds</con:value></con:property></con:properties></con:testCase><con:properties/></con:testSuite><con:properties/><con:wssContainer/><con:oAuth2ProfileContainer/><con:sensitiveInformation/></con:soapui-project>
+</script></con:config></con:testStep><con:properties><con:property><con:name>os</con:name><con:value>linux</con:value></con:property><con:property><con:name>max</con:name><con:value>5</con:value></con:property></con:properties><con:reportParameters/></con:testCase><con:testCase id="ec45a081-eebf-489d-b4dd-a0ceab275301" failOnError="true" failTestCaseOnErrors="true" keepSession="false" maxResults="0" name="Second Attempt of mine" searchProperties="true"><con:settings/><con:testStep type="groovy" name="FetchTestCaseName" id="50f4ef71-c015-484c-a53c-033f23c5e4bf"><con:settings/><con:config><script>log.info context.getClass()
+
+def  testCase=context.getTestCase()
+log.info testCase.getLabel()</script></con:config></con:testStep><con:testStep type="groovy" name="Groovy Script" id="df1a3255-3eb2-4aba-a4bb-4416b88ceb84"><con:settings/><con:config><script>log.info log.getClass()
+log.info log.getLevel()</script></con:config></con:testStep><con:properties/></con:testCase><con:properties/><con:reportParameters/></con:testSuite><con:properties/><con:wssContainer/><con:databaseConnectionContainer/><con:oAuth2ProfileContainer/><con:reporting><con:xmlTemplates/><con:parameters/></con:reporting><con:sensitiveInformation/></con:soapui-project>
