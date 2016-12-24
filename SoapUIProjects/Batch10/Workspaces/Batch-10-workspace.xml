@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<con:soapui-workspace name="Batch-10" soapui-version="5.2.1" xmlns:con="http://eviware.com/soapui/config">
+<con:soapui-workspace name="Batch-10" soapui-version="5.0.0" xmlns:con="http://eviware.com/soapui/config">
   <con:settings/>
   <con:project name="SoapHelloWorld">E:/Soapui/ServicesForWebServicesTesting/SoapUIProjects/Batch10/Workspaces/Projects/SoapHelloWorld-soapui-project.xml</con:project>
   <con:project name="numbersfortesting">E:/Soapui/ServicesForWebServicesTesting/SoapUIProjects/Batch10/Workspaces/Projects/numbersfortesting-soapui-project.xml</con:project>
@@ -11,4 +11,8 @@
   <con:project name="ContactInfoService">E:/Soapui/ServicesForWebServicesTesting/SoapUIProjects/Batch10/Workspaces/Projects/ContactInfoService-soapui-project.xml</con:project>
   <con:project name="ContactsPro">E:/Soapui/ServicesForWebServicesTesting/SoapUIProjects/Batch10/Workspaces/Projects/ContactsPro-soapui-project.xml</con:project>
   <con:project name="Groovy">E:/Soapui/ServicesForWebServicesTesting/SoapUIProjects/Batch10/Workspaces/Projects/Groovy-soapui-project.xml</con:project>
+  <con:project name="REST Project 1">E:/Soapui/ServicesForWebServicesTesting/SoapUIProjects/Batch10/Workspaces/Projects/REST-Project-1-soapui-project.xml</con:project>
+  <con:project name="REST Project 2">E:/Soapui/ServicesForWebServicesTesting/SoapUIProjects/Batch10/Workspaces/Projects/REST-Project-2-soapui-project.xml</con:project>
+  <con:project name="REST Project 3">E:/Soapui/ServicesForWebServicesTesting/SoapUIProjects/Batch10/Workspaces/Projects/REST-Project-3-soapui-project.xml</con:project>
+  <con:project name="store-02pro">E:/Soapui/ServicesForWebServicesTesting/SoapUIProjects/Batch10/Workspaces/Projects/store-02pro-soapui-project.xml</con:project>
 </con:soapui-workspace>
